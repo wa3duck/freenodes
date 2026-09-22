@@ -17,12 +17,12 @@ proxies:
   servername: usa.oblaco.bet
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 02
-  server: 140.238.213.114
-  port: 50160
+  server: 82.38.64.229
+  port: 8443
   udp: true
   type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 03
   server: 45.90.59.15
@@ -36,16 +36,8 @@ proxies:
     public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
     short-id: 19253fae84102271
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
 - name: 🇨🇭 瑞士 04
-  server: 82.38.64.229
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 05
   server: 179.255.191.40
   port: 8443
   udp: true
@@ -54,10 +46,25 @@ proxies:
   tls: true
   servername: switz.luxes.network
   skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /assets
+- name: 🇨🇭 瑞士 05
+  server: 82.38.139.24
+  port: 8445
+  udp: true
+  type: vless
+  uuid: c6f6ecc2-26af-4e2f-95a7-e7018819a716
+  tls: true
+  reality-opts:
+    public-key: _UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8
+    short-id: 6ba85179e30d4fc2
+  servername: hetzner.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: Google
 - name: 🇨🇭 瑞士 06
   server: 151.242.2.81
   port: 443
@@ -70,13 +77,20 @@ proxies:
   network: ws
   ws-opts:
     path: /cdn/v3/live
+    headers:
+      Host: cf9.rumedia-cdn.com
 - name: 🇨🇭 瑞士 07
-  server: 132.243.175.144
-  port: 8388
+  server: 34.65.54.139
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  uuid: bd93a117-2e9d-4e1e-b9b9-69d8d7089bdb
+  tls: true
+  reality-opts:
+    public-key: DE-S0R0KYYTuBsuQmT-iip6rJ2QsuH6z3SJYlsNyUUI
+    short-id: 5214a92cad4ad90e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇭 瑞士 08
   server: 131.123.34.145
   port: 8081
@@ -86,6 +100,13 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
+- name: 🇨🇭 瑞士 09
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,6 +120,7 @@ proxy-groups:
   - 🇨🇭 瑞士 06
   - 🇨🇭 瑞士 07
   - 🇨🇭 瑞士 08
+  - 🇨🇭 瑞士 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -112,5 +134,6 @@ proxy-groups:
   - 🇨🇭 瑞士 06
   - 🇨🇭 瑞士 07
   - 🇨🇭 瑞士 08
+  - 🇨🇭 瑞士 09
 rules:
 - MATCH,PROXIES

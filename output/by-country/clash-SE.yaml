@@ -5,76 +5,100 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 02
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 03
-  server: 13.61.0.108
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 04
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 05
-  server: 51.20.72.15
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 06
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 07
   server: 16.170.214.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 08
-  server: 16.170.163.124
+- name: 🇸🇪 瑞典 02
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 09
-  server: 16.170.221.224
-  port: 443
+- name: 🇸🇪 瑞典 03
+  server: 70.34.212.124
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 10
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 04
   server: 16.171.55.2
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 05
+  server: 13.62.228.76
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 06
+  server: 16.170.163.124
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 07
+  server: 194.238.57.23
+  port: 443
+  udp: true
+  type: vless
+  uuid: 303c2140-19ff-4eea-b1b1-865d4160d261
+  tls: true
+  reality-opts:
+    public-key: uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g
+    short-id: 53499a662395
+  servername: ai.android
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇸🇪 瑞典 08
+  server: 51.20.72.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 09
+  server: 143.246.196.152
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 10
+  server: 91.193.17.156
+  port: 9458
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇸🇪 瑞典 11
+  server: 13.61.0.108
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 12
   server: 143.246.195.98
   port: 8081
   udp: true
@@ -83,19 +107,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 12
-  server: 31.207.7.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12ee5833-c8f5-4534-94e7-6d5c338008df
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
-    short-id: 2d6d073dc88f22a8
-  servername: se.global-cdn.org
-  client-fingerprint: safari
 - name: 🇸🇪 瑞典 13
   server: 143.246.195.138
   port: 8081
@@ -114,25 +125,7 @@ proxies:
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 15
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 16
-  server: 143.246.196.152
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 17
-  server: 193.42.39.10
+  server: 79.141.174.147
   port: 33743
   udp: true
   type: vless
@@ -141,10 +134,19 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 16
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
@@ -166,7 +168,6 @@ proxy-groups:
   - 🇸🇪 瑞典 14
   - 🇸🇪 瑞典 15
   - 🇸🇪 瑞典 16
-  - 🇸🇪 瑞典 17
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -188,6 +189,5 @@ proxy-groups:
   - 🇸🇪 瑞典 14
   - 🇸🇪 瑞典 15
   - 🇸🇪 瑞典 16
-  - 🇸🇪 瑞典 17
 rules:
 - MATCH,PROXIES

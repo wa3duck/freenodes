@@ -7,29 +7,37 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 01",
       "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 02",
+      "server": "217.30.10.44",
       "server_port": 9076,
       "method": "aes-256-cfb",
       "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 02",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 03",
       "server": "217.30.10.44",
-      "server_port": 9041,
+      "server_port": 9042,
       "method": "aes-256-cfb",
-      "password": "U6qnYRhfyDmn8sgn"
+      "password": "S7KwUu7yBy58S3Ga"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 04",
+      "server": "217.30.10.44",
+      "server_port": 9071,
+      "method": "aes-256-cfb",
+      "password": "mENfxTFQpRKKh4As"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 05",
       "server": "217.30.10.44",
       "server_port": 9006,
       "method": "aes-256-cfb",
@@ -37,24 +45,40 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 05",
+      "tag": "🇵🇱 波兰 06",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9052,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 06",
+      "tag": "🇵🇱 波兰 07",
       "server": "217.30.10.44",
-      "server_port": 9099,
+      "server_port": 9041,
       "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
+      "password": "U6qnYRhfyDmn8sgn"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 08",
+      "server": "217.30.10.44",
+      "server_port": 9095,
+      "method": "aes-256-cfb",
+      "password": "N7j3pdTYkKmsy8CR"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 09",
+      "server": "217.30.10.44",
+      "server_port": 9063,
+      "method": "aes-256-cfb",
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 07",
-      "server": "185.223.57.16",
+      "tag": "🇵🇱 波兰 10",
+      "server": "185.223.57.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -62,7 +86,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -76,8 +100,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 11",
+      "server": "217.30.10.44",
+      "server_port": 9099,
+      "method": "aes-256-cfb",
+      "password": "7heRqkPG3hg4UnRm"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 08",
+      "tag": "🇵🇱 波兰 12",
       "server": "217.60.33.215",
       "server_port": 443,
       "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
@@ -89,26 +121,26 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 09",
-      "server": "admin.wwwinternetvideo.click",
+      "tag": "🇵🇱 波兰 13",
+      "server": "45.192.12.93",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 10",
-      "server": "144.31.131.38",
+      "tag": "🇵🇱 波兰 14",
+      "server": "2.59.253.251",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "prod.pl-node-01.security-sbrf.ru",
+        "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -122,28 +154,45 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 11",
-      "server": "82.118.22.161",
+      "tag": "🇵🇱 波兰 15",
+      "server": "92.62.251.18",
       "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "uuid": "89a0fe83-dcb3-4e3c-92ed-407fc668e7b1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "pl-1.brodvpn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 12",
+      "tag": "🇵🇱 波兰 16",
+      "server": "2.56.172.228",
+      "server_port": 8443,
+      "uuid": "5b754a1a-11aa-4df9-a8ba-44af9a579fe1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "poland.b2ai.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 17",
       "server": "144.31.171.108",
       "server_port": 8444,
       "uuid": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
@@ -164,27 +213,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 13",
-      "server": "138.124.183.18",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
-      "tls": {
-        "enabled": true,
-        "server_name": "hub-pl-01.hanvpn.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "pl01-grpc-8e47a"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 14",
+      "tag": "🇵🇱 波兰 18",
       "server": "34.118.70.195",
       "server_port": 443,
       "uuid": "d518b4e2-bd6e-4d4e-a26e-238154d8d60c",
@@ -193,7 +222,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -203,9 +232,24 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 19",
+      "server": "188.114.96.19",
+      "server_port": 80,
+      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 15",
-      "server": "144.31.5.64",
+      "tag": "🇵🇱 波兰 20",
+      "server": "pl6.moritech.net",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
@@ -218,13 +262,13 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "ios"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 16",
+      "tag": "🇵🇱 波兰 21",
       "server": "144.31.5.3",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -232,35 +276,20 @@
       "tls": {
         "enabled": true,
         "server_name": "pl4.moritech.net",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 17",
-      "server": "150.251.113.34",
+      "tag": "🇵🇱 波兰 22",
+      "server": "144.31.2.33",
       "server_port": 443,
-      "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8",
-          "short_id": "150a627d15154cf2"
-        }
+        "server_name": "pl3.moritech.net",
+        "insecure": false
       }
     },
     {
@@ -284,7 +313,12 @@
         "🇵🇱 波兰 14",
         "🇵🇱 波兰 15",
         "🇵🇱 波兰 16",
-        "🇵🇱 波兰 17"
+        "🇵🇱 波兰 17",
+        "🇵🇱 波兰 18",
+        "🇵🇱 波兰 19",
+        "🇵🇱 波兰 20",
+        "🇵🇱 波兰 21",
+        "🇵🇱 波兰 22"
       ]
     },
     {
@@ -307,7 +341,12 @@
         "🇵🇱 波兰 14",
         "🇵🇱 波兰 15",
         "🇵🇱 波兰 16",
-        "🇵🇱 波兰 17"
+        "🇵🇱 波兰 17",
+        "🇵🇱 波兰 18",
+        "🇵🇱 波兰 19",
+        "🇵🇱 波兰 20",
+        "🇵🇱 波兰 21",
+        "🇵🇱 波兰 22"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

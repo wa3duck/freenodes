@@ -5,16 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 01
-  server: 64.176.5.166
-  port: 80
+  server: 64.176.2.21
+  port: 8388
   udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
+  type: ss
+  cipher: aes-256-gcm
+  password: xBStBEVqvGwHPocc
 - name: 🇨🇱 智利 02
   server: platform118.golnamakcert.top
   port: 80
@@ -27,6 +23,17 @@ proxies:
     headers:
       Host: platform118.halalkhor.info
 - name: 🇨🇱 智利 03
+  server: 64.176.5.166
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇨🇱 智利 04
   server: 34.176.98.128
   port: 443
   udp: true
@@ -37,8 +44,8 @@ proxies:
     public-key: 3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw
     short-id: d7676b6a468a03b3
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇱 智利 04
+  client-fingerprint: safari
+- name: 🇨🇱 智利 05
   server: platform109.golnamakcert.top
   port: 80
   udp: true
@@ -58,6 +65,7 @@ proxy-groups:
   - 🇨🇱 智利 02
   - 🇨🇱 智利 03
   - 🇨🇱 智利 04
+  - 🇨🇱 智利 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +75,6 @@ proxy-groups:
   - 🇨🇱 智利 02
   - 🇨🇱 智利 03
   - 🇨🇱 智利 04
+  - 🇨🇱 智利 05
 rules:
 - MATCH,PROXIES

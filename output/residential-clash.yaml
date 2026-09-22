@@ -4,45 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 01
-  server: 104.18.34.14
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 02
+- name: 🇹🇼 中国台湾 01
   server: r3mrcg001286ek2.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇰🇷 韩国 03
-  server: 49.254.204.134
-  port: 1774
+- name: 🇹🇼 中国台湾 02
+  server: 118.167.206.152
+  port: 24215
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 中国台湾 04
-  server: ttszhrmghgdssbkqf.cfooov.xyz
-  port: 42241
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: safari
+- name: 🇰🇷 韩国 03
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 61205
   udp: true
   type: vless
   uuid: 55848813-689e-4a39-82cf-00748cbc7289
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ
-    short-id: 1cb574e4d5d8
-  servername: www.apple.com
+    public-key: PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI
+    short-id: d1f38c0f15ed22
+  servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 05
+- name: 🇭🇰 中国香港 04
   server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   port: 443
   udp: true
@@ -61,20 +54,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 01
+  - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
   - 🇰🇷 韩国 03
-  - 🇹🇼 中国台湾 04
-  - 🇭🇰 中国香港 05
+  - 🇭🇰 中国香港 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 01
+  - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
   - 🇰🇷 韩国 03
-  - 🇹🇼 中国台湾 04
-  - 🇭🇰 中国香港 05
+  - 🇭🇰 中国香港 04
 rules:
 - MATCH,PROXIES

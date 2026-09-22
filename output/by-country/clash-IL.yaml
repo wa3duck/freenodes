@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 02
   server: 185.95.231.233
   port: 443
@@ -29,30 +29,6 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: random
-- name: 🇮🇱 以色列 03
-  server: 45.140.205.2
-  port: 443
-  udp: true
-  type: vless
-  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg
-  servername: promo.ch.iki-servers.com
-  client-fingerprint: safari
-- name: 🇮🇱 以色列 04
-  server: 45.140.205.2
-  port: 443
-  udp: true
-  type: vless
-  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg
-  servername: promo.ch.iki-servers.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -61,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 01
   - 🇮🇱 以色列 02
-  - 🇮🇱 以色列 03
-  - 🇮🇱 以色列 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 01
   - 🇮🇱 以色列 02
-  - 🇮🇱 以色列 03
-  - 🇮🇱 以色列 04
 rules:
 - MATCH,PROXIES

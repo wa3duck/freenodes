@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 01
-  server: 104.18.34.14
-  port: 2052
+- name: 🇱🇰 斯里兰卡 01
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 01
+  - 🇱🇰 斯里兰卡 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 01
+  - 🇱🇰 斯里兰卡 01
 rules:
 - MATCH,PROXIES

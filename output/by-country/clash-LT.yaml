@@ -6,20 +6,20 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 01
   server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 02
-  server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 02
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 03
-  server: 84.32.215.94
+  server: 84.32.215.5
   port: 443
   udp: true
   type: vless
