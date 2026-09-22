@@ -2185,7 +2185,7 @@ def make_node_name(item, idx, force_residential=False):
     # Scamalytics 风控分: 高风险节点名内标注 (R分数), 低危不标 (保持简洁)
     fraud = item.get("fraud_score", -1)
     risk_tag = f" R{fraud}" if 0 <= fraud < 75 and fraud >= 40 else (" ⚠R" if fraud >= 75 else "")
-    return f"{flag} {cname} {idx:02d}"  # 纯净命名: 国旗 国家 序号
+    return f"{flag} {cname.split(' (')[0]} {idx:02d}"  # 纯净命名: 国旗 国家 序号 (去掉英文括注)
 
 
 def export_all(unique_nodes, residential, non_residential):
