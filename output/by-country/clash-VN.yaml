@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 越南 (Vietnam) 01
+- name: 🇻🇳 越南 01
   server: clhkzzzdbgwxxndnlm.cfooov.xyz
   port: 14400
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: 545525c503fd5b
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇻🇳 越南 (Vietnam) 02
+- name: 🇻🇳 越南 02
   server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
   port: 48737
   udp: true
@@ -30,7 +30,7 @@ proxies:
     short-id: 545525c503fd5b
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇻🇳 越南 (Vietnam) 03
+- name: 🇻🇳 越南 03
   server: sczznmbbbzgwlwzdhsql.jiedddym.com
   port: 19643
   udp: true
@@ -48,16 +48,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 越南 (Vietnam) 01
-  - 🇻🇳 越南 (Vietnam) 02
-  - 🇻🇳 越南 (Vietnam) 03
+  - 🇻🇳 越南 01
+  - 🇻🇳 越南 02
+  - 🇻🇳 越南 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 (Vietnam) 01
-  - 🇻🇳 越南 (Vietnam) 02
-  - 🇻🇳 越南 (Vietnam) 03
+  - 🇻🇳 越南 01
+  - 🇻🇳 越南 02
+  - 🇻🇳 越南 03
 rules:
 - MATCH,PROXIES

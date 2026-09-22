@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 01",
+      "tag": "🇮🇳 印度 01",
       "server": "vpn-in-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -17,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02",
+      "tag": "🇮🇳 印度 02",
       "server": "34.47.245.203",
       "server_port": 443,
       "uuid": "3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc",
@@ -37,7 +37,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 03",
+      "tag": "🇮🇳 印度 03",
       "server": "35.154.58.87",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -49,7 +49,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04",
+      "tag": "🇮🇳 印度 04",
       "server": "35.244.28.130",
       "server_port": 443,
       "password": "M7v%w11Se*",
@@ -61,7 +61,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05",
+      "tag": "🇮🇳 印度 05",
       "server": "34.93.188.70",
       "server_port": 443,
       "uuid": "5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed",
@@ -81,7 +81,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 06",
+      "tag": "🇮🇳 印度 06",
       "server": "34.131.228.210",
       "server_port": 443,
       "password": "M7v%w11Se*",
@@ -93,7 +93,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 07",
+      "tag": "🇮🇳 印度 07",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -116,26 +116,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01",
-        "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04",
-        "🇮🇳 印度 (India) 05",
-        "🇮🇳 印度 (India) 06",
-        "🇮🇳 印度 (India) 07"
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇮🇳 印度 07"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01",
-        "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04",
-        "🇮🇳 印度 (India) 05",
-        "🇮🇳 印度 (India) 06",
-        "🇮🇳 印度 (India) 07"
+        "🇮🇳 印度 01",
+        "🇮🇳 印度 02",
+        "🇮🇳 印度 03",
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05",
+        "🇮🇳 印度 06",
+        "🇮🇳 印度 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

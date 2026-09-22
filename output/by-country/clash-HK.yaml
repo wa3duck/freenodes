@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01
+- name: 🇭🇰 中国香港 01
   server: 89.223.95.77
   port: 22324
   udp: true
@@ -12,14 +12,14 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02
+- name: 🇭🇰 中国香港 02
   server: sth.free-outline.giize.com
   port: 1081
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: uez5t2b4575tgkoi
-- name: 🇭🇰 中国香港 (Hong Kong) 03
+- name: 🇭🇰 中国香港 03
   server: 47.240.80.220
   port: 2052
   udp: true
@@ -27,7 +27,7 @@ proxies:
   password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
   sni: vpn.12169.top
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
+- name: 🇭🇰 中国香港 04
   server: 202.146.222.174
   port: 443
   udp: true
@@ -35,7 +35,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05
+- name: 🇭🇰 中国香港 05
   server: hk-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -48,7 +48,7 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06
+- name: 🇭🇰 中国香港 06
   server: 202.146.222.89
   port: 443
   udp: true
@@ -56,7 +56,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
+- name: 🇭🇰 中国香港 07
   server: 202.146.222.29
   port: 443
   udp: true
@@ -64,7 +64,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08
+- name: 🇭🇰 中国香港 08
   server: dnlmchnmzhmqwah.cfooov.xyz
   port: 30198
   udp: true
@@ -77,7 +77,7 @@ proxies:
     short-id: dcb9c81d1094
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09
+- name: 🇭🇰 中国香港 09
   server: nas.aizhzo.com
   port: 5010
   udp: true
@@ -87,7 +87,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 10
+- name: 🇭🇰 中国香港 10
   server: dog-hk.kunlun01dns.com
   port: 21019
   udp: true
@@ -95,7 +95,7 @@ proxies:
   uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 11
+- name: 🇭🇰 中国香港 11
   server: champion.xn--kivt58h.lol
   port: 80
   udp: true
@@ -106,7 +106,7 @@ proxies:
     path: /
     headers:
       Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 12
+- name: 🇭🇰 中国香港 12
   server: 93ucrn4i0pffuabk.v.3dns.vip
   port: 443
   udp: true
@@ -122,7 +122,7 @@ proxies:
     path: /ws-vmess
     headers:
       Host: 93ucrn4i0pffuabk.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 13
+- name: 🇭🇰 中国香港 13
   server: 16.163.98.204
   port: 443
   udp: true
@@ -136,7 +136,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 14
+- name: 🇭🇰 中国香港 14
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -144,7 +144,7 @@ proxies:
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 15
+- name: 🇭🇰 中国香港 15
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -152,7 +152,7 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 16
+- name: 🇭🇰 中国香港 16
   server: 31.58.181.88
   port: 8443
   udp: true
@@ -164,7 +164,7 @@ proxies:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 17
+- name: 🇭🇰 中国香港 17
   server: 172.67.130.159
   port: 2096
   udp: true
@@ -179,7 +179,7 @@ proxies:
     path: /f7i3lo6xbs
     headers:
       Host: cdn-hk.skyvora.app
-- name: 🇭🇰 中国香港 (Hong Kong) 18
+- name: 🇭🇰 中国香港 18
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -187,7 +187,7 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 19
+- name: 🇭🇰 中国香港 19
   server: 119.246.1.143
   port: 443
   udp: true
@@ -195,7 +195,7 @@ proxies:
   password: BxceQaOe
   sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 20
+- name: 🇭🇰 中国香港 20
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -213,50 +213,50 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01
-  - 🇭🇰 中国香港 (Hong Kong) 02
-  - 🇭🇰 中国香港 (Hong Kong) 03
-  - 🇭🇰 中国香港 (Hong Kong) 04
-  - 🇭🇰 中国香港 (Hong Kong) 05
-  - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
-  - 🇭🇰 中国香港 (Hong Kong) 08
-  - 🇭🇰 中国香港 (Hong Kong) 09
-  - 🇭🇰 中国香港 (Hong Kong) 10
-  - 🇭🇰 中国香港 (Hong Kong) 11
-  - 🇭🇰 中国香港 (Hong Kong) 12
-  - 🇭🇰 中国香港 (Hong Kong) 13
-  - 🇭🇰 中国香港 (Hong Kong) 14
-  - 🇭🇰 中国香港 (Hong Kong) 15
-  - 🇭🇰 中国香港 (Hong Kong) 16
-  - 🇭🇰 中国香港 (Hong Kong) 17
-  - 🇭🇰 中国香港 (Hong Kong) 18
-  - 🇭🇰 中国香港 (Hong Kong) 19
-  - 🇭🇰 中国香港 (Hong Kong) 20
+  - 🇭🇰 中国香港 01
+  - 🇭🇰 中国香港 02
+  - 🇭🇰 中国香港 03
+  - 🇭🇰 中国香港 04
+  - 🇭🇰 中国香港 05
+  - 🇭🇰 中国香港 06
+  - 🇭🇰 中国香港 07
+  - 🇭🇰 中国香港 08
+  - 🇭🇰 中国香港 09
+  - 🇭🇰 中国香港 10
+  - 🇭🇰 中国香港 11
+  - 🇭🇰 中国香港 12
+  - 🇭🇰 中国香港 13
+  - 🇭🇰 中国香港 14
+  - 🇭🇰 中国香港 15
+  - 🇭🇰 中国香港 16
+  - 🇭🇰 中国香港 17
+  - 🇭🇰 中国香港 18
+  - 🇭🇰 中国香港 19
+  - 🇭🇰 中国香港 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01
-  - 🇭🇰 中国香港 (Hong Kong) 02
-  - 🇭🇰 中国香港 (Hong Kong) 03
-  - 🇭🇰 中国香港 (Hong Kong) 04
-  - 🇭🇰 中国香港 (Hong Kong) 05
-  - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
-  - 🇭🇰 中国香港 (Hong Kong) 08
-  - 🇭🇰 中国香港 (Hong Kong) 09
-  - 🇭🇰 中国香港 (Hong Kong) 10
-  - 🇭🇰 中国香港 (Hong Kong) 11
-  - 🇭🇰 中国香港 (Hong Kong) 12
-  - 🇭🇰 中国香港 (Hong Kong) 13
-  - 🇭🇰 中国香港 (Hong Kong) 14
-  - 🇭🇰 中国香港 (Hong Kong) 15
-  - 🇭🇰 中国香港 (Hong Kong) 16
-  - 🇭🇰 中国香港 (Hong Kong) 17
-  - 🇭🇰 中国香港 (Hong Kong) 18
-  - 🇭🇰 中国香港 (Hong Kong) 19
-  - 🇭🇰 中国香港 (Hong Kong) 20
+  - 🇭🇰 中国香港 01
+  - 🇭🇰 中国香港 02
+  - 🇭🇰 中国香港 03
+  - 🇭🇰 中国香港 04
+  - 🇭🇰 中国香港 05
+  - 🇭🇰 中国香港 06
+  - 🇭🇰 中国香港 07
+  - 🇭🇰 中国香港 08
+  - 🇭🇰 中国香港 09
+  - 🇭🇰 中国香港 10
+  - 🇭🇰 中国香港 11
+  - 🇭🇰 中国香港 12
+  - 🇭🇰 中国香港 13
+  - 🇭🇰 中国香港 14
+  - 🇭🇰 中国香港 15
+  - 🇭🇰 中国香港 16
+  - 🇭🇰 中国香港 17
+  - 🇭🇰 中国香港 18
+  - 🇭🇰 中国香港 19
+  - 🇭🇰 中国香港 20
 rules:
 - MATCH,PROXIES

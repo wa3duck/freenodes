@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01
+- name: 🇺🇸 美国 01
   server: 104.18.34.14
   port: 2052
   udp: true
@@ -20,12 +20,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01
+  - 🇺🇸 美国 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01
+  - 🇺🇸 美国 01
 rules:
 - MATCH,PROXIES

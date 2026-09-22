@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇱 以色列 (Israel) 01
+- name: 🇮🇱 以色列 01
   server: 185.95.231.156
   port: 443
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 02
+- name: 🇮🇱 以色列 02
   server: 185.95.231.233
   port: 443
   udp: true
@@ -30,7 +30,7 @@ proxies:
     short-id: a1b2c3d4
   servername: store.steampowered.com
   client-fingerprint: random
-- name: 🇮🇱 以色列 (Israel) 03
+- name: 🇮🇱 以色列 03
   server: 45.140.205.2
   port: 443
   udp: true
@@ -42,7 +42,7 @@ proxies:
     public-key: he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg
   servername: promo.ch.iki-servers.com
   client-fingerprint: safari
-- name: 🇮🇱 以色列 (Israel) 04
+- name: 🇮🇱 以色列 04
   server: 45.140.205.2
   port: 443
   udp: true
@@ -59,18 +59,18 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇱 以色列 (Israel) 01
-  - 🇮🇱 以色列 (Israel) 02
-  - 🇮🇱 以色列 (Israel) 03
-  - 🇮🇱 以色列 (Israel) 04
+  - 🇮🇱 以色列 01
+  - 🇮🇱 以色列 02
+  - 🇮🇱 以色列 03
+  - 🇮🇱 以色列 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇱 以色列 (Israel) 01
-  - 🇮🇱 以色列 (Israel) 02
-  - 🇮🇱 以色列 (Israel) 03
-  - 🇮🇱 以色列 (Israel) 04
+  - 🇮🇱 以色列 01
+  - 🇮🇱 以色列 02
+  - 🇮🇱 以色列 03
+  - 🇮🇱 以色列 04
 rules:
 - MATCH,PROXIES

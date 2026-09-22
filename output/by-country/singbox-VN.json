@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01",
+      "tag": "🇻🇳 越南 01",
       "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
       "server_port": 14400,
       "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
@@ -26,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 02",
+      "tag": "🇻🇳 越南 02",
       "server": "jpzzqqnzdbgwhbhzsrgh.cfooov.xyz",
       "server_port": 48737,
       "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
@@ -47,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 03",
+      "tag": "🇻🇳 越南 03",
       "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
       "server_port": 19643,
       "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
@@ -71,18 +71,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01",
-        "🇻🇳 越南 (Vietnam) 02",
-        "🇻🇳 越南 (Vietnam) 03"
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01",
-        "🇻🇳 越南 (Vietnam) 02",
-        "🇻🇳 越南 (Vietnam) 03"
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

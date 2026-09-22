@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01
+- name: 🇷🇺 俄罗斯 01
   server: 94.249.187.46
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
-- name: 🇷🇺 俄罗斯 (Russia) 02
+- name: 🇷🇺 俄罗斯 02
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -19,7 +19,7 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: hy.quattro-tech.ru
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03
+- name: 🇷🇺 俄罗斯 03
   server: 46.8.200.91
   port: 443
   udp: true
@@ -38,16 +38,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01
-  - 🇷🇺 俄罗斯 (Russia) 02
-  - 🇷🇺 俄罗斯 (Russia) 03
+  - 🇷🇺 俄罗斯 01
+  - 🇷🇺 俄罗斯 02
+  - 🇷🇺 俄罗斯 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01
-  - 🇷🇺 俄罗斯 (Russia) 02
-  - 🇷🇺 俄罗斯 (Russia) 03
+  - 🇷🇺 俄罗斯 01
+  - 🇷🇺 俄罗斯 02
+  - 🇷🇺 俄罗斯 03
 rules:
 - MATCH,PROXIES

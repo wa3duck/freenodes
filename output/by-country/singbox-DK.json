@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇩🇰 丹麦 (Denmark) 01",
+      "tag": "🇩🇰 丹麦 01",
       "server": "38.180.214.110",
       "server_port": 5600,
       "method": "aes-256-gcm",
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 (Denmark) 01"
+        "🇩🇰 丹麦 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 (Denmark) 01"
+        "🇩🇰 丹麦 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

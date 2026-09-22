@@ -4,70 +4,70 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01
+- name: 🇧🇬 保加利亚 01
   server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 02
+- name: 🇧🇬 保加利亚 02
   server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 03
+- name: 🇧🇬 保加利亚 03
   server: 213.183.63.60
   port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 04
+- name: 🇧🇬 保加利亚 04
   server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 05
+- name: 🇧🇬 保加利亚 05
   server: 213.183.63.60
   port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 06
+- name: 🇧🇬 保加利亚 06
   server: 213.183.63.60
   port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 07
+- name: 🇧🇬 保加利亚 07
   server: 213.183.63.60
   port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 08
+- name: 🇧🇬 保加利亚 08
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 09
+- name: 🇧🇬 保加利亚 09
   server: 213.183.63.60
   port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 10
+- name: 🇧🇬 保加利亚 10
   server: 193.148.59.178
   port: 443
   udp: true
@@ -80,7 +80,7 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: edge
-- name: 🇧🇬 保加利亚 (Bulgaria) 11
+- name: 🇧🇬 保加利亚 11
   server: 131.123.37.199
   port: 8081
   udp: true
@@ -89,7 +89,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 12
+- name: 🇧🇬 保加利亚 12
   server: 131.123.41.18
   port: 8081
   udp: true
@@ -98,7 +98,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 13
+- name: 🇧🇬 保加利亚 13
   server: 131.123.41.177
   port: 8081
   udp: true
@@ -107,7 +107,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 14
+- name: 🇧🇬 保加利亚 14
   server: 131.123.41.18
   port: 443
   udp: true
@@ -120,7 +120,7 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: random
-- name: 🇧🇬 保加利亚 (Bulgaria) 15
+- name: 🇧🇬 保加利亚 15
   server: 131.123.41.31
   port: 8081
   udp: true
@@ -129,7 +129,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 16
+- name: 🇧🇬 保加利亚 16
   server: prep.wwwinternetvideo.click
   port: 443
   udp: true
@@ -147,42 +147,42 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01
-  - 🇧🇬 保加利亚 (Bulgaria) 02
-  - 🇧🇬 保加利亚 (Bulgaria) 03
-  - 🇧🇬 保加利亚 (Bulgaria) 04
-  - 🇧🇬 保加利亚 (Bulgaria) 05
-  - 🇧🇬 保加利亚 (Bulgaria) 06
-  - 🇧🇬 保加利亚 (Bulgaria) 07
-  - 🇧🇬 保加利亚 (Bulgaria) 08
-  - 🇧🇬 保加利亚 (Bulgaria) 09
-  - 🇧🇬 保加利亚 (Bulgaria) 10
-  - 🇧🇬 保加利亚 (Bulgaria) 11
-  - 🇧🇬 保加利亚 (Bulgaria) 12
-  - 🇧🇬 保加利亚 (Bulgaria) 13
-  - 🇧🇬 保加利亚 (Bulgaria) 14
-  - 🇧🇬 保加利亚 (Bulgaria) 15
-  - 🇧🇬 保加利亚 (Bulgaria) 16
+  - 🇧🇬 保加利亚 01
+  - 🇧🇬 保加利亚 02
+  - 🇧🇬 保加利亚 03
+  - 🇧🇬 保加利亚 04
+  - 🇧🇬 保加利亚 05
+  - 🇧🇬 保加利亚 06
+  - 🇧🇬 保加利亚 07
+  - 🇧🇬 保加利亚 08
+  - 🇧🇬 保加利亚 09
+  - 🇧🇬 保加利亚 10
+  - 🇧🇬 保加利亚 11
+  - 🇧🇬 保加利亚 12
+  - 🇧🇬 保加利亚 13
+  - 🇧🇬 保加利亚 14
+  - 🇧🇬 保加利亚 15
+  - 🇧🇬 保加利亚 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01
-  - 🇧🇬 保加利亚 (Bulgaria) 02
-  - 🇧🇬 保加利亚 (Bulgaria) 03
-  - 🇧🇬 保加利亚 (Bulgaria) 04
-  - 🇧🇬 保加利亚 (Bulgaria) 05
-  - 🇧🇬 保加利亚 (Bulgaria) 06
-  - 🇧🇬 保加利亚 (Bulgaria) 07
-  - 🇧🇬 保加利亚 (Bulgaria) 08
-  - 🇧🇬 保加利亚 (Bulgaria) 09
-  - 🇧🇬 保加利亚 (Bulgaria) 10
-  - 🇧🇬 保加利亚 (Bulgaria) 11
-  - 🇧🇬 保加利亚 (Bulgaria) 12
-  - 🇧🇬 保加利亚 (Bulgaria) 13
-  - 🇧🇬 保加利亚 (Bulgaria) 14
-  - 🇧🇬 保加利亚 (Bulgaria) 15
-  - 🇧🇬 保加利亚 (Bulgaria) 16
+  - 🇧🇬 保加利亚 01
+  - 🇧🇬 保加利亚 02
+  - 🇧🇬 保加利亚 03
+  - 🇧🇬 保加利亚 04
+  - 🇧🇬 保加利亚 05
+  - 🇧🇬 保加利亚 06
+  - 🇧🇬 保加利亚 07
+  - 🇧🇬 保加利亚 08
+  - 🇧🇬 保加利亚 09
+  - 🇧🇬 保加利亚 10
+  - 🇧🇬 保加利亚 11
+  - 🇧🇬 保加利亚 12
+  - 🇧🇬 保加利亚 13
+  - 🇧🇬 保加利亚 14
+  - 🇧🇬 保加利亚 15
+  - 🇧🇬 保加利亚 16
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 01",
+      "tag": "🇫🇮 芬兰 01",
       "server": "152.233.54.104",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
@@ -29,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "tag": "🇫🇮 芬兰 02",
       "server": "95.217.24.119",
       "server_port": 2087,
       "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f",
@@ -50,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03",
+      "tag": "🇫🇮 芬兰 03",
       "server": "185.79.138.71",
       "server_port": 448,
       "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
@@ -70,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04",
+      "tag": "🇫🇮 芬兰 04",
       "server": "83.219.97.26",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
@@ -91,7 +91,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05",
+      "tag": "🇫🇮 芬兰 05",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -111,7 +111,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06",
+      "tag": "🇫🇮 芬兰 06",
       "server": "fi.snobvpn.online",
       "server_port": 80,
       "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
@@ -122,7 +122,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07",
+      "tag": "🇫🇮 芬兰 07",
       "server": "95.217.24.119",
       "server_port": 2083,
       "uuid": "d78de562-872e-43dd-be48-e9d7b06c87a3",
@@ -143,7 +143,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08",
+      "tag": "🇫🇮 芬兰 08",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -164,7 +164,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 09",
+      "tag": "🇫🇮 芬兰 09",
       "server": "37.143.129.244",
       "server_port": 443,
       "uuid": "0e6de971-69e8-4536-b06d-8b6eae57021b",
@@ -185,7 +185,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 10",
+      "tag": "🇫🇮 芬兰 10",
       "server": "150.241.71.245",
       "server_port": 443,
       "uuid": "c795bdd5-0460-42bd-927b-fbff154d2ab5",
@@ -206,7 +206,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 11",
+      "tag": "🇫🇮 芬兰 11",
       "server": "212.193.18.183",
       "server_port": 8443,
       "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
@@ -226,7 +226,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 12",
+      "tag": "🇫🇮 芬兰 12",
       "server": "212.193.18.183",
       "server_port": 8446,
       "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
@@ -250,7 +250,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 13",
+      "tag": "🇫🇮 芬兰 13",
       "server": "31.76.226.100",
       "server_port": 443,
       "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
@@ -273,7 +273,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 14",
+      "tag": "🇫🇮 芬兰 14",
       "server": "assets-fi.pleiades.codes",
       "server_port": 443,
       "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
@@ -296,7 +296,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 15",
+      "tag": "🇫🇮 芬兰 15",
       "server": "31.76.80.230",
       "server_port": 8443,
       "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
@@ -318,42 +318,42 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 芬兰 (Finland) 01",
-        "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04",
-        "🇫🇮 芬兰 (Finland) 05",
-        "🇫🇮 芬兰 (Finland) 06",
-        "🇫🇮 芬兰 (Finland) 07",
-        "🇫🇮 芬兰 (Finland) 08",
-        "🇫🇮 芬兰 (Finland) 09",
-        "🇫🇮 芬兰 (Finland) 10",
-        "🇫🇮 芬兰 (Finland) 11",
-        "🇫🇮 芬兰 (Finland) 12",
-        "🇫🇮 芬兰 (Finland) 13",
-        "🇫🇮 芬兰 (Finland) 14",
-        "🇫🇮 芬兰 (Finland) 15"
+        "🇫🇮 芬兰 01",
+        "🇫🇮 芬兰 02",
+        "🇫🇮 芬兰 03",
+        "🇫🇮 芬兰 04",
+        "🇫🇮 芬兰 05",
+        "🇫🇮 芬兰 06",
+        "🇫🇮 芬兰 07",
+        "🇫🇮 芬兰 08",
+        "🇫🇮 芬兰 09",
+        "🇫🇮 芬兰 10",
+        "🇫🇮 芬兰 11",
+        "🇫🇮 芬兰 12",
+        "🇫🇮 芬兰 13",
+        "🇫🇮 芬兰 14",
+        "🇫🇮 芬兰 15"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 芬兰 (Finland) 01",
-        "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04",
-        "🇫🇮 芬兰 (Finland) 05",
-        "🇫🇮 芬兰 (Finland) 06",
-        "🇫🇮 芬兰 (Finland) 07",
-        "🇫🇮 芬兰 (Finland) 08",
-        "🇫🇮 芬兰 (Finland) 09",
-        "🇫🇮 芬兰 (Finland) 10",
-        "🇫🇮 芬兰 (Finland) 11",
-        "🇫🇮 芬兰 (Finland) 12",
-        "🇫🇮 芬兰 (Finland) 13",
-        "🇫🇮 芬兰 (Finland) 14",
-        "🇫🇮 芬兰 (Finland) 15"
+        "🇫🇮 芬兰 01",
+        "🇫🇮 芬兰 02",
+        "🇫🇮 芬兰 03",
+        "🇫🇮 芬兰 04",
+        "🇫🇮 芬兰 05",
+        "🇫🇮 芬兰 06",
+        "🇫🇮 芬兰 07",
+        "🇫🇮 芬兰 08",
+        "🇫🇮 芬兰 09",
+        "🇫🇮 芬兰 10",
+        "🇫🇮 芬兰 11",
+        "🇫🇮 芬兰 12",
+        "🇫🇮 芬兰 13",
+        "🇫🇮 芬兰 14",
+        "🇫🇮 芬兰 15"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

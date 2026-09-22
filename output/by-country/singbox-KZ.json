@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+      "tag": "🇰🇿 哈萨克斯坦 01",
       "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
@@ -17,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
+      "tag": "🇰🇿 哈萨克斯坦 02",
       "server": "83.222.23.81",
       "server_port": 38065,
       "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
@@ -37,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
+      "tag": "🇰🇿 哈萨克斯坦 03",
       "server": "178.236.16.98",
       "server_port": 35728,
       "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
@@ -57,7 +57,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04",
+      "tag": "🇰🇿 哈萨克斯坦 04",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -77,7 +77,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05",
+      "tag": "🇰🇿 哈萨克斯坦 05",
       "server": "77.73.232.61",
       "server_port": 19747,
       "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
@@ -97,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 06",
+      "tag": "🇰🇿 哈萨克斯坦 06",
       "server": "84.240.206.178",
       "server_port": 443,
       "uuid": "a5a311a8-6b0b-4ddc-b354-79acb4e19d67",
@@ -118,7 +118,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 07",
+      "tag": "🇰🇿 哈萨克斯坦 07",
       "server": "176.109.104.195",
       "server_port": 9882,
       "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
@@ -145,26 +145,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07"
+        "🇰🇿 哈萨克斯坦 01",
+        "🇰🇿 哈萨克斯坦 02",
+        "🇰🇿 哈萨克斯坦 03",
+        "🇰🇿 哈萨克斯坦 04",
+        "🇰🇿 哈萨克斯坦 05",
+        "🇰🇿 哈萨克斯坦 06",
+        "🇰🇿 哈萨克斯坦 07"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07"
+        "🇰🇿 哈萨克斯坦 01",
+        "🇰🇿 哈萨克斯坦 02",
+        "🇰🇿 哈萨克斯坦 03",
+        "🇰🇿 哈萨克斯坦 04",
+        "🇰🇿 哈萨克斯坦 05",
+        "🇰🇿 哈萨克斯坦 06",
+        "🇰🇿 哈萨克斯坦 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

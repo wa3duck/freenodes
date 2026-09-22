@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇾 马来西亚 (Malaysia) 01
+- name: 🇲🇾 马来西亚 01
   server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
   port: 16967
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: 0888830f7006f1
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇲🇾 马来西亚 (Malaysia) 02
+- name: 🇲🇾 马来西亚 02
   server: clhkzzzdbgwxxndnlm.cfooov.xyz
   port: 60507
   udp: true
@@ -30,7 +30,7 @@ proxies:
     short-id: 0888830f7006f1
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇲🇾 马来西亚 (Malaysia) 03
+- name: 🇲🇾 马来西亚 03
   server: sczznmbbbzgwlwzdhsql.jiedddym.com
   port: 31378
   udp: true
@@ -48,16 +48,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇲🇾 马来西亚 (Malaysia) 01
-  - 🇲🇾 马来西亚 (Malaysia) 02
-  - 🇲🇾 马来西亚 (Malaysia) 03
+  - 🇲🇾 马来西亚 01
+  - 🇲🇾 马来西亚 02
+  - 🇲🇾 马来西亚 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇾 马来西亚 (Malaysia) 01
-  - 🇲🇾 马来西亚 (Malaysia) 02
-  - 🇲🇾 马来西亚 (Malaysia) 03
+  - 🇲🇾 马来西亚 01
+  - 🇲🇾 马来西亚 02
+  - 🇲🇾 马来西亚 03
 rules:
 - MATCH,PROXIES

@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 巴西 (Brazil) 01
+- name: 🇧🇷 巴西 01
   server: 172.233.14.17
   port: 22324
   udp: true
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 巴西 (Brazil) 01
+  - 🇧🇷 巴西 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 (Brazil) 01
+  - 🇧🇷 巴西 01
 rules:
 - MATCH,PROXIES

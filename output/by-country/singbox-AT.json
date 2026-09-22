@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 01",
+      "tag": "🇦🇹 奥地利 01",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02",
+      "tag": "🇦🇹 奥地利 02",
       "server": "152.53.1.40",
       "server_port": 443,
       "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
@@ -37,16 +37,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 01",
+        "🇦🇹 奥地利 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

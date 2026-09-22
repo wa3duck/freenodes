@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01",
+      "tag": "🇨🇭 瑞士 01",
       "server": "138.124.60.146",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -26,7 +26,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02",
+      "tag": "🇨🇭 瑞士 02",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -38,7 +38,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03",
+      "tag": "🇨🇭 瑞士 03",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -59,7 +59,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04",
+      "tag": "🇨🇭 瑞士 04",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -71,7 +71,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "tag": "🇨🇭 瑞士 05",
       "server": "179.255.191.40",
       "server_port": 8443,
       "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
@@ -94,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06",
+      "tag": "🇨🇭 瑞士 06",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -110,7 +110,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07",
+      "tag": "🇨🇭 瑞士 07",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -118,7 +118,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08",
+      "tag": "🇨🇭 瑞士 08",
       "server": "131.123.34.145",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -132,28 +132,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01",
-        "🇨🇭 瑞士 (Switzerland) 02",
-        "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05",
-        "🇨🇭 瑞士 (Switzerland) 06",
-        "🇨🇭 瑞士 (Switzerland) 07",
-        "🇨🇭 瑞士 (Switzerland) 08"
+        "🇨🇭 瑞士 01",
+        "🇨🇭 瑞士 02",
+        "🇨🇭 瑞士 03",
+        "🇨🇭 瑞士 04",
+        "🇨🇭 瑞士 05",
+        "🇨🇭 瑞士 06",
+        "🇨🇭 瑞士 07",
+        "🇨🇭 瑞士 08"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01",
-        "🇨🇭 瑞士 (Switzerland) 02",
-        "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05",
-        "🇨🇭 瑞士 (Switzerland) 06",
-        "🇨🇭 瑞士 (Switzerland) 07",
-        "🇨🇭 瑞士 (Switzerland) 08"
+        "🇨🇭 瑞士 01",
+        "🇨🇭 瑞士 02",
+        "🇨🇭 瑞士 03",
+        "🇨🇭 瑞士 04",
+        "🇨🇭 瑞士 05",
+        "🇨🇭 瑞士 06",
+        "🇨🇭 瑞士 07",
+        "🇨🇭 瑞士 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

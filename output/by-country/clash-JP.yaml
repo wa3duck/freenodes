@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01
+- name: 🇯🇵 日本 01
   server: 18.179.39.119
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 02
+- name: 🇯🇵 日本 02
   server: 168.110.60.104
   port: 18112
   udp: true
@@ -19,42 +19,42 @@ proxies:
   uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 03
+- name: 🇯🇵 日本 03
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04
+- name: 🇯🇵 日本 04
   server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 05
+- name: 🇯🇵 日本 05
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 06
+- name: 🇯🇵 日本 06
   server: 18.179.111.96
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 07
+- name: 🇯🇵 日本 07
   server: 13.230.153.249
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 08
+- name: 🇯🇵 日本 08
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -62,7 +62,7 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 09
+- name: 🇯🇵 日本 09
   server: 154.31.114.248
   port: 50159
   udp: true
@@ -75,7 +75,7 @@ proxies:
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 10
+- name: 🇯🇵 日本 10
   server: 151.242.165.75
   port: 19011
   udp: true
@@ -88,14 +88,14 @@ proxies:
     short-id: 0e7472e0ef2dc0a2
   servername: www.sony.co.nz
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11
+- name: 🇯🇵 日本 11
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 12
+- name: 🇯🇵 日本 12
   server: 151.242.165.75
   port: 19001
   udp: true
@@ -107,7 +107,7 @@ proxies:
     public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
   servername: www.speedtest.org
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 13
+- name: 🇯🇵 日本 13
   server: 151.242.165.75
   port: 19012
   udp: true
@@ -120,14 +120,14 @@ proxies:
     short-id: d09eb5a304f8a989
   servername: www.sony.bg
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14
+- name: 🇯🇵 日本 14
   server: 3.112.209.209
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 15
+- name: 🇯🇵 日本 15
   server: 103.75.118.228
   port: 11452
   udp: true
@@ -140,7 +140,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 16
+- name: 🇯🇵 日本 16
   server: 47.74.3.200
   port: 443
   udp: true
@@ -153,7 +153,7 @@ proxies:
     short-id: ab3b914f0c9d9de5
   servername: www.logitech.com
   client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 17
+- name: 🇯🇵 日本 17
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -161,7 +161,7 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18
+- name: 🇯🇵 日本 18
   server: 18.183.215.124
   port: 28573
   udp: true
@@ -174,7 +174,7 @@ proxies:
     short-id: 03653bc03be10c97
   servername: www.sony.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 19
+- name: 🇯🇵 日本 19
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -187,7 +187,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 20
+- name: 🇯🇵 日本 20
   server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
   port: 21844
   udp: true
@@ -200,7 +200,7 @@ proxies:
     short-id: 9b1bc2a5f2414a
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 21
+- name: 🇯🇵 日本 21
   server: 175.41.232.194
   port: 443
   udp: true
@@ -214,7 +214,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 22
+- name: 🇯🇵 日本 22
   server: 18.181.170.52
   port: 443
   udp: true
@@ -228,7 +228,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 23
+- name: 🇯🇵 日本 23
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -241,7 +241,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 24
+- name: 🇯🇵 日本 24
   server: 13.115.139.162
   port: 443
   udp: true
@@ -255,7 +255,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 25
+- name: 🇯🇵 日本 25
   server: 13.158.39.80
   port: 443
   udp: true
@@ -269,7 +269,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 26
+- name: 🇯🇵 日本 26
   server: 18.182.141.80
   port: 443
   udp: true
@@ -283,7 +283,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 27
+- name: 🇯🇵 日本 27
   server: 13.193.215.10
   port: 443
   udp: true
@@ -297,7 +297,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 28
+- name: 🇯🇵 日本 28
   server: 18.180.86.39
   port: 443
   udp: true
@@ -311,7 +311,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 29
+- name: 🇯🇵 日本 29
   server: 43.213.230.249
   port: 443
   udp: true
@@ -325,13 +325,13 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇯🇵 日本 (Japan) 30
+- name: 🇯🇵 日本 30
   server: 137.220.221.179
   port: 443
   udp: true
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 31
+- name: 🇯🇵 日本 31
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -344,7 +344,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 32
+- name: 🇯🇵 日本 32
   server: 172.67.130.159
   port: 2096
   udp: true
@@ -359,7 +359,7 @@ proxies:
     path: /vqyps6kf3
     headers:
       Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 33
+- name: 🇯🇵 日本 33
   server: zfd-jpv2.kunlun01dns.com
   port: 16122
   udp: true
@@ -367,7 +367,7 @@ proxies:
   uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 34
+- name: 🇯🇵 日本 34
   server: clhkzzzdbgwxxndnlm.cfooov.xyz
   port: 50500
   udp: true
@@ -380,7 +380,7 @@ proxies:
     short-id: 9b1bc2a5f2414a
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 35
+- name: 🇯🇵 日本 35
   server: 104.21.33.59
   port: 443
   udp: true
@@ -399,80 +399,80 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02
-  - 🇯🇵 日本 (Japan) 03
-  - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
-  - 🇯🇵 日本 (Japan) 13
-  - 🇯🇵 日本 (Japan) 14
-  - 🇯🇵 日本 (Japan) 15
-  - 🇯🇵 日本 (Japan) 16
-  - 🇯🇵 日本 (Japan) 17
-  - 🇯🇵 日本 (Japan) 18
-  - 🇯🇵 日本 (Japan) 19
-  - 🇯🇵 日本 (Japan) 20
-  - 🇯🇵 日本 (Japan) 21
-  - 🇯🇵 日本 (Japan) 22
-  - 🇯🇵 日本 (Japan) 23
-  - 🇯🇵 日本 (Japan) 24
-  - 🇯🇵 日本 (Japan) 25
-  - 🇯🇵 日本 (Japan) 26
-  - 🇯🇵 日本 (Japan) 27
-  - 🇯🇵 日本 (Japan) 28
-  - 🇯🇵 日本 (Japan) 29
-  - 🇯🇵 日本 (Japan) 30
-  - 🇯🇵 日本 (Japan) 31
-  - 🇯🇵 日本 (Japan) 32
-  - 🇯🇵 日本 (Japan) 33
-  - 🇯🇵 日本 (Japan) 34
-  - 🇯🇵 日本 (Japan) 35
+  - 🇯🇵 日本 01
+  - 🇯🇵 日本 02
+  - 🇯🇵 日本 03
+  - 🇯🇵 日本 04
+  - 🇯🇵 日本 05
+  - 🇯🇵 日本 06
+  - 🇯🇵 日本 07
+  - 🇯🇵 日本 08
+  - 🇯🇵 日本 09
+  - 🇯🇵 日本 10
+  - 🇯🇵 日本 11
+  - 🇯🇵 日本 12
+  - 🇯🇵 日本 13
+  - 🇯🇵 日本 14
+  - 🇯🇵 日本 15
+  - 🇯🇵 日本 16
+  - 🇯🇵 日本 17
+  - 🇯🇵 日本 18
+  - 🇯🇵 日本 19
+  - 🇯🇵 日本 20
+  - 🇯🇵 日本 21
+  - 🇯🇵 日本 22
+  - 🇯🇵 日本 23
+  - 🇯🇵 日本 24
+  - 🇯🇵 日本 25
+  - 🇯🇵 日本 26
+  - 🇯🇵 日本 27
+  - 🇯🇵 日本 28
+  - 🇯🇵 日本 29
+  - 🇯🇵 日本 30
+  - 🇯🇵 日本 31
+  - 🇯🇵 日本 32
+  - 🇯🇵 日本 33
+  - 🇯🇵 日本 34
+  - 🇯🇵 日本 35
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01
-  - 🇯🇵 日本 (Japan) 02
-  - 🇯🇵 日本 (Japan) 03
-  - 🇯🇵 日本 (Japan) 04
-  - 🇯🇵 日本 (Japan) 05
-  - 🇯🇵 日本 (Japan) 06
-  - 🇯🇵 日本 (Japan) 07
-  - 🇯🇵 日本 (Japan) 08
-  - 🇯🇵 日本 (Japan) 09
-  - 🇯🇵 日本 (Japan) 10
-  - 🇯🇵 日本 (Japan) 11
-  - 🇯🇵 日本 (Japan) 12
-  - 🇯🇵 日本 (Japan) 13
-  - 🇯🇵 日本 (Japan) 14
-  - 🇯🇵 日本 (Japan) 15
-  - 🇯🇵 日本 (Japan) 16
-  - 🇯🇵 日本 (Japan) 17
-  - 🇯🇵 日本 (Japan) 18
-  - 🇯🇵 日本 (Japan) 19
-  - 🇯🇵 日本 (Japan) 20
-  - 🇯🇵 日本 (Japan) 21
-  - 🇯🇵 日本 (Japan) 22
-  - 🇯🇵 日本 (Japan) 23
-  - 🇯🇵 日本 (Japan) 24
-  - 🇯🇵 日本 (Japan) 25
-  - 🇯🇵 日本 (Japan) 26
-  - 🇯🇵 日本 (Japan) 27
-  - 🇯🇵 日本 (Japan) 28
-  - 🇯🇵 日本 (Japan) 29
-  - 🇯🇵 日本 (Japan) 30
-  - 🇯🇵 日本 (Japan) 31
-  - 🇯🇵 日本 (Japan) 32
-  - 🇯🇵 日本 (Japan) 33
-  - 🇯🇵 日本 (Japan) 34
-  - 🇯🇵 日本 (Japan) 35
+  - 🇯🇵 日本 01
+  - 🇯🇵 日本 02
+  - 🇯🇵 日本 03
+  - 🇯🇵 日本 04
+  - 🇯🇵 日本 05
+  - 🇯🇵 日本 06
+  - 🇯🇵 日本 07
+  - 🇯🇵 日本 08
+  - 🇯🇵 日本 09
+  - 🇯🇵 日本 10
+  - 🇯🇵 日本 11
+  - 🇯🇵 日本 12
+  - 🇯🇵 日本 13
+  - 🇯🇵 日本 14
+  - 🇯🇵 日本 15
+  - 🇯🇵 日本 16
+  - 🇯🇵 日本 17
+  - 🇯🇵 日本 18
+  - 🇯🇵 日本 19
+  - 🇯🇵 日本 20
+  - 🇯🇵 日本 21
+  - 🇯🇵 日本 22
+  - 🇯🇵 日本 23
+  - 🇯🇵 日本 24
+  - 🇯🇵 日本 25
+  - 🇯🇵 日本 26
+  - 🇯🇵 日本 27
+  - 🇯🇵 日本 28
+  - 🇯🇵 日本 29
+  - 🇯🇵 日本 30
+  - 🇯🇵 日本 31
+  - 🇯🇵 日本 32
+  - 🇯🇵 日本 33
+  - 🇯🇵 日本 34
+  - 🇯🇵 日本 35
 rules:
 - MATCH,PROXIES

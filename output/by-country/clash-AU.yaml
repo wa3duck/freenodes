@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇺 澳大利亚 (Australia) 01
+- name: 🇦🇺 澳大利亚 01
   server: 82.198.246.250
   port: 180
   udp: true
@@ -12,7 +12,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 02
+- name: 🇦🇺 澳大利亚 02
   server: vpn-au-002.fastervpn.world
   port: 443
   udp: true
@@ -20,7 +20,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: whatsapp.com
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 03
+- name: 🇦🇺 澳大利亚 03
   server: 34.87.244.111
   port: 443
   udp: true
@@ -32,7 +32,7 @@ proxies:
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04
+- name: 🇦🇺 澳大利亚 04
   server: 51.161.204.244
   port: 443
   udp: true
@@ -45,7 +45,7 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 05
+- name: 🇦🇺 澳大利亚 05
   server: 34.87.229.148
   port: 443
   udp: true
@@ -57,7 +57,7 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 06
+- name: 🇦🇺 澳大利亚 06
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -75,22 +75,22 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
-  - 🇦🇺 澳大利亚 (Australia) 03
-  - 🇦🇺 澳大利亚 (Australia) 04
-  - 🇦🇺 澳大利亚 (Australia) 05
-  - 🇦🇺 澳大利亚 (Australia) 06
+  - 🇦🇺 澳大利亚 01
+  - 🇦🇺 澳大利亚 02
+  - 🇦🇺 澳大利亚 03
+  - 🇦🇺 澳大利亚 04
+  - 🇦🇺 澳大利亚 05
+  - 🇦🇺 澳大利亚 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
-  - 🇦🇺 澳大利亚 (Australia) 03
-  - 🇦🇺 澳大利亚 (Australia) 04
-  - 🇦🇺 澳大利亚 (Australia) 05
-  - 🇦🇺 澳大利亚 (Australia) 06
+  - 🇦🇺 澳大利亚 01
+  - 🇦🇺 澳大利亚 02
+  - 🇦🇺 澳大利亚 03
+  - 🇦🇺 澳大利亚 04
+  - 🇦🇺 澳大利亚 05
+  - 🇦🇺 澳大利亚 06
 rules:
 - MATCH,PROXIES

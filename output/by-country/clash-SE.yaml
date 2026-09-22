@@ -4,77 +4,77 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 瑞典 (Sweden) 01
+- name: 🇸🇪 瑞典 01
   server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 02
+- name: 🇸🇪 瑞典 02
   server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 (Sweden) 03
+- name: 🇸🇪 瑞典 03
   server: 13.61.0.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04
+- name: 🇸🇪 瑞典 04
   server: 51.20.122.188
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 05
+- name: 🇸🇪 瑞典 05
   server: 51.20.72.15
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 06
+- name: 🇸🇪 瑞典 06
   server: 13.62.228.76
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 07
+- name: 🇸🇪 瑞典 07
   server: 16.170.214.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 08
+- name: 🇸🇪 瑞典 08
   server: 16.170.163.124
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 09
+- name: 🇸🇪 瑞典 09
   server: 16.170.221.224
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 10
+- name: 🇸🇪 瑞典 10
   server: 16.171.55.2
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 11
+- name: 🇸🇪 瑞典 11
   server: 143.246.195.98
   port: 8081
   udp: true
@@ -83,7 +83,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 12
+- name: 🇸🇪 瑞典 12
   server: 31.207.7.104
   port: 443
   udp: true
@@ -96,7 +96,7 @@ proxies:
     short-id: 2d6d073dc88f22a8
   servername: se.global-cdn.org
   client-fingerprint: safari
-- name: 🇸🇪 瑞典 (Sweden) 13
+- name: 🇸🇪 瑞典 13
   server: 143.246.195.138
   port: 8081
   udp: true
@@ -105,7 +105,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 14
+- name: 🇸🇪 瑞典 14
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -113,7 +113,7 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 15
+- name: 🇸🇪 瑞典 15
   server: 143.246.194.60
   port: 8081
   udp: true
@@ -122,7 +122,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 16
+- name: 🇸🇪 瑞典 16
   server: 143.246.196.152
   port: 8081
   udp: true
@@ -131,7 +131,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 17
+- name: 🇸🇪 瑞典 17
   server: 193.42.39.10
   port: 33743
   udp: true
@@ -150,44 +150,44 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 瑞典 (Sweden) 01
-  - 🇸🇪 瑞典 (Sweden) 02
-  - 🇸🇪 瑞典 (Sweden) 03
-  - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
-  - 🇸🇪 瑞典 (Sweden) 06
-  - 🇸🇪 瑞典 (Sweden) 07
-  - 🇸🇪 瑞典 (Sweden) 08
-  - 🇸🇪 瑞典 (Sweden) 09
-  - 🇸🇪 瑞典 (Sweden) 10
-  - 🇸🇪 瑞典 (Sweden) 11
-  - 🇸🇪 瑞典 (Sweden) 12
-  - 🇸🇪 瑞典 (Sweden) 13
-  - 🇸🇪 瑞典 (Sweden) 14
-  - 🇸🇪 瑞典 (Sweden) 15
-  - 🇸🇪 瑞典 (Sweden) 16
-  - 🇸🇪 瑞典 (Sweden) 17
+  - 🇸🇪 瑞典 01
+  - 🇸🇪 瑞典 02
+  - 🇸🇪 瑞典 03
+  - 🇸🇪 瑞典 04
+  - 🇸🇪 瑞典 05
+  - 🇸🇪 瑞典 06
+  - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
+  - 🇸🇪 瑞典 09
+  - 🇸🇪 瑞典 10
+  - 🇸🇪 瑞典 11
+  - 🇸🇪 瑞典 12
+  - 🇸🇪 瑞典 13
+  - 🇸🇪 瑞典 14
+  - 🇸🇪 瑞典 15
+  - 🇸🇪 瑞典 16
+  - 🇸🇪 瑞典 17
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 (Sweden) 01
-  - 🇸🇪 瑞典 (Sweden) 02
-  - 🇸🇪 瑞典 (Sweden) 03
-  - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
-  - 🇸🇪 瑞典 (Sweden) 06
-  - 🇸🇪 瑞典 (Sweden) 07
-  - 🇸🇪 瑞典 (Sweden) 08
-  - 🇸🇪 瑞典 (Sweden) 09
-  - 🇸🇪 瑞典 (Sweden) 10
-  - 🇸🇪 瑞典 (Sweden) 11
-  - 🇸🇪 瑞典 (Sweden) 12
-  - 🇸🇪 瑞典 (Sweden) 13
-  - 🇸🇪 瑞典 (Sweden) 14
-  - 🇸🇪 瑞典 (Sweden) 15
-  - 🇸🇪 瑞典 (Sweden) 16
-  - 🇸🇪 瑞典 (Sweden) 17
+  - 🇸🇪 瑞典 01
+  - 🇸🇪 瑞典 02
+  - 🇸🇪 瑞典 03
+  - 🇸🇪 瑞典 04
+  - 🇸🇪 瑞典 05
+  - 🇸🇪 瑞典 06
+  - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
+  - 🇸🇪 瑞典 09
+  - 🇸🇪 瑞典 10
+  - 🇸🇪 瑞典 11
+  - 🇸🇪 瑞典 12
+  - 🇸🇪 瑞典 13
+  - 🇸🇪 瑞典 14
+  - 🇸🇪 瑞典 15
+  - 🇸🇪 瑞典 16
+  - 🇸🇪 瑞典 17
 rules:
 - MATCH,PROXIES

@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01
+- name: 🇭🇰 中国香港 01
   server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   port: 443
   udp: true
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01
+  - 🇭🇰 中国香港 01
 rules:
 - MATCH,PROXIES

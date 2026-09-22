@@ -4,21 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇬 新加坡 (Singapore) 01
+- name: 🇸🇬 新加坡 01
   server: 167.150.100.115
   port: 27755
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-- name: 🇸🇬 新加坡 (Singapore) 02
+- name: 🇸🇬 新加坡 02
   server: 167.150.100.93
   port: 29824
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
-- name: 🇸🇬 新加坡 (Singapore) 03
+- name: 🇸🇬 新加坡 03
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -26,7 +26,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 04
+- name: 🇸🇬 新加坡 04
   server: 172.237.70.226
   port: 22324
   udp: true
@@ -34,14 +34,14 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 05
+- name: 🇸🇬 新加坡 05
   server: 194.233.74.160
   port: 2342
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: XV4bvaJIWoxl3IYEC1e6W7
-- name: 🇸🇬 新加坡 (Singapore) 06
+- name: 🇸🇬 新加坡 06
   server: 146.235.16.130
   port: 33738
   udp: true
@@ -54,7 +54,7 @@ proxies:
   udp-relay-mode: bbr
   alpn:
   - h3
-- name: 🇸🇬 新加坡 (Singapore) 07
+- name: 🇸🇬 新加坡 07
   server: 138.2.73.238
   port: 50160
   udp: true
@@ -62,7 +62,7 @@ proxies:
   password: f87376e17da040ed04c9665ce8972930
   sni: 138.2.73.238
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08
+- name: 🇸🇬 新加坡 08
   server: 206.206.76.75
   port: 443
   udp: true
@@ -75,7 +75,7 @@ proxies:
     short-id: 9930177816ab09da
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 09
+- name: 🇸🇬 新加坡 09
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -88,7 +88,7 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 10
+- name: 🇸🇬 新加坡 10
   server: 45.192.247.199
   port: 443
   udp: true
@@ -102,7 +102,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 11
+- name: 🇸🇬 新加坡 11
   server: sg2-8sb.6121999.dpdns.org
   port: 19825
   udp: true
@@ -115,7 +115,7 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 12
+- name: 🇸🇬 新加坡 12
   server: 141.11.90.160
   port: 443
   udp: true
@@ -129,7 +129,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 13
+- name: 🇸🇬 新加坡 13
   server: msjp.mangshe.xyz
   port: 20562
   udp: true
@@ -137,7 +137,7 @@ proxies:
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 14
+- name: 🇸🇬 新加坡 14
   server: sg-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -150,7 +150,7 @@ proxies:
     short-id: fc13d6208ebbae16
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 15
+- name: 🇸🇬 新加坡 15
   server: 45.149.186.133
   port: 443
   udp: true
@@ -164,7 +164,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 16
+- name: 🇸🇬 新加坡 16
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -172,7 +172,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 17
+- name: 🇸🇬 新加坡 17
   server: 191.223.217.68
   port: 8443
   udp: true
@@ -186,7 +186,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 18
+- name: 🇸🇬 新加坡 18
   server: 47.82.155.79
   port: 443
   udp: true
@@ -200,7 +200,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 19
+- name: 🇸🇬 新加坡 19
   server: 185.225.20.99
   port: 8443
   udp: true
@@ -214,7 +214,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 20
+- name: 🇸🇬 新加坡 20
   server: 54.254.226.116
   port: 443
   udp: true
@@ -228,7 +228,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 21
+- name: 🇸🇬 新加坡 21
   server: 54.255.175.251
   port: 8443
   udp: true
@@ -242,7 +242,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 22
+- name: 🇸🇬 新加坡 22
   server: 47.131.189.221
   port: 443
   udp: true
@@ -256,7 +256,7 @@ proxies:
     path: /?ed=2560
     headers:
       Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 23
+- name: 🇸🇬 新加坡 23
   server: 217.217.254.126
   port: 2053
   udp: true
@@ -268,7 +268,7 @@ proxies:
     short-id: 87829de0e2bb82cb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 24
+- name: 🇸🇬 新加坡 24
   server: 54.169.200.246
   port: 41688
   udp: true
@@ -281,7 +281,7 @@ proxies:
     short-id: 7f342137c20387
   servername: www.intel.com
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 25
+- name: 🇸🇬 新加坡 25
   server: 172.67.130.159
   port: 2096
   udp: true
@@ -295,7 +295,7 @@ proxies:
     path: /78bc8
     headers:
       Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 (Singapore) 26
+- name: 🇸🇬 新加坡 26
   server: 54.251.9.130
   port: 24146
   udp: true
@@ -308,7 +308,7 @@ proxies:
     short-id: 7205d9079521832c
   servername: www.intel.com
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 27
+- name: 🇸🇬 新加坡 27
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -321,7 +321,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 28
+- name: 🇸🇬 新加坡 28
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -334,7 +334,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 29
+- name: 🇸🇬 新加坡 29
   server: 3.0.111.82
   port: 17623
   udp: true
@@ -352,68 +352,68 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇸🇬 新加坡 (Singapore) 01
-  - 🇸🇬 新加坡 (Singapore) 02
-  - 🇸🇬 新加坡 (Singapore) 03
-  - 🇸🇬 新加坡 (Singapore) 04
-  - 🇸🇬 新加坡 (Singapore) 05
-  - 🇸🇬 新加坡 (Singapore) 06
-  - 🇸🇬 新加坡 (Singapore) 07
-  - 🇸🇬 新加坡 (Singapore) 08
-  - 🇸🇬 新加坡 (Singapore) 09
-  - 🇸🇬 新加坡 (Singapore) 10
-  - 🇸🇬 新加坡 (Singapore) 11
-  - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13
-  - 🇸🇬 新加坡 (Singapore) 14
-  - 🇸🇬 新加坡 (Singapore) 15
-  - 🇸🇬 新加坡 (Singapore) 16
-  - 🇸🇬 新加坡 (Singapore) 17
-  - 🇸🇬 新加坡 (Singapore) 18
-  - 🇸🇬 新加坡 (Singapore) 19
-  - 🇸🇬 新加坡 (Singapore) 20
-  - 🇸🇬 新加坡 (Singapore) 21
-  - 🇸🇬 新加坡 (Singapore) 22
-  - 🇸🇬 新加坡 (Singapore) 23
-  - 🇸🇬 新加坡 (Singapore) 24
-  - 🇸🇬 新加坡 (Singapore) 25
-  - 🇸🇬 新加坡 (Singapore) 26
-  - 🇸🇬 新加坡 (Singapore) 27
-  - 🇸🇬 新加坡 (Singapore) 28
-  - 🇸🇬 新加坡 (Singapore) 29
+  - 🇸🇬 新加坡 01
+  - 🇸🇬 新加坡 02
+  - 🇸🇬 新加坡 03
+  - 🇸🇬 新加坡 04
+  - 🇸🇬 新加坡 05
+  - 🇸🇬 新加坡 06
+  - 🇸🇬 新加坡 07
+  - 🇸🇬 新加坡 08
+  - 🇸🇬 新加坡 09
+  - 🇸🇬 新加坡 10
+  - 🇸🇬 新加坡 11
+  - 🇸🇬 新加坡 12
+  - 🇸🇬 新加坡 13
+  - 🇸🇬 新加坡 14
+  - 🇸🇬 新加坡 15
+  - 🇸🇬 新加坡 16
+  - 🇸🇬 新加坡 17
+  - 🇸🇬 新加坡 18
+  - 🇸🇬 新加坡 19
+  - 🇸🇬 新加坡 20
+  - 🇸🇬 新加坡 21
+  - 🇸🇬 新加坡 22
+  - 🇸🇬 新加坡 23
+  - 🇸🇬 新加坡 24
+  - 🇸🇬 新加坡 25
+  - 🇸🇬 新加坡 26
+  - 🇸🇬 新加坡 27
+  - 🇸🇬 新加坡 28
+  - 🇸🇬 新加坡 29
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇬 新加坡 (Singapore) 01
-  - 🇸🇬 新加坡 (Singapore) 02
-  - 🇸🇬 新加坡 (Singapore) 03
-  - 🇸🇬 新加坡 (Singapore) 04
-  - 🇸🇬 新加坡 (Singapore) 05
-  - 🇸🇬 新加坡 (Singapore) 06
-  - 🇸🇬 新加坡 (Singapore) 07
-  - 🇸🇬 新加坡 (Singapore) 08
-  - 🇸🇬 新加坡 (Singapore) 09
-  - 🇸🇬 新加坡 (Singapore) 10
-  - 🇸🇬 新加坡 (Singapore) 11
-  - 🇸🇬 新加坡 (Singapore) 12
-  - 🇸🇬 新加坡 (Singapore) 13
-  - 🇸🇬 新加坡 (Singapore) 14
-  - 🇸🇬 新加坡 (Singapore) 15
-  - 🇸🇬 新加坡 (Singapore) 16
-  - 🇸🇬 新加坡 (Singapore) 17
-  - 🇸🇬 新加坡 (Singapore) 18
-  - 🇸🇬 新加坡 (Singapore) 19
-  - 🇸🇬 新加坡 (Singapore) 20
-  - 🇸🇬 新加坡 (Singapore) 21
-  - 🇸🇬 新加坡 (Singapore) 22
-  - 🇸🇬 新加坡 (Singapore) 23
-  - 🇸🇬 新加坡 (Singapore) 24
-  - 🇸🇬 新加坡 (Singapore) 25
-  - 🇸🇬 新加坡 (Singapore) 26
-  - 🇸🇬 新加坡 (Singapore) 27
-  - 🇸🇬 新加坡 (Singapore) 28
-  - 🇸🇬 新加坡 (Singapore) 29
+  - 🇸🇬 新加坡 01
+  - 🇸🇬 新加坡 02
+  - 🇸🇬 新加坡 03
+  - 🇸🇬 新加坡 04
+  - 🇸🇬 新加坡 05
+  - 🇸🇬 新加坡 06
+  - 🇸🇬 新加坡 07
+  - 🇸🇬 新加坡 08
+  - 🇸🇬 新加坡 09
+  - 🇸🇬 新加坡 10
+  - 🇸🇬 新加坡 11
+  - 🇸🇬 新加坡 12
+  - 🇸🇬 新加坡 13
+  - 🇸🇬 新加坡 14
+  - 🇸🇬 新加坡 15
+  - 🇸🇬 新加坡 16
+  - 🇸🇬 新加坡 17
+  - 🇸🇬 新加坡 18
+  - 🇸🇬 新加坡 19
+  - 🇸🇬 新加坡 20
+  - 🇸🇬 新加坡 21
+  - 🇸🇬 新加坡 22
+  - 🇸🇬 新加坡 23
+  - 🇸🇬 新加坡 24
+  - 🇸🇬 新加坡 25
+  - 🇸🇬 新加坡 26
+  - 🇸🇬 新加坡 27
+  - 🇸🇬 新加坡 28
+  - 🇸🇬 新加坡 29
 rules:
 - MATCH,PROXIES

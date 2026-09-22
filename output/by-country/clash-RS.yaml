@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇸 塞尔维亚 (Serbia) 01
+- name: 🇷🇸 塞尔维亚 01
   server: 213.171.25.29
   port: 9889
   udp: true
@@ -24,12 +24,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇷🇸 塞尔维亚 (Serbia) 01
+  - 🇷🇸 塞尔维亚 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇸 塞尔维亚 (Serbia) 01
+  - 🇷🇸 塞尔维亚 01
 rules:
 - MATCH,PROXIES

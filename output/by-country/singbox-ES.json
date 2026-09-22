@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 01",
+      "tag": "🇪🇸 西班牙 01",
       "server": "66.163.118.73",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02",
+      "tag": "🇪🇸 西班牙 02",
       "server": "92.118.127.16",
       "server_port": 443,
       "uuid": "72f8e59f-7a0d-44f2-a8db-b4c3e1e36716",
@@ -34,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03",
+      "tag": "🇪🇸 西班牙 03",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -54,7 +54,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04",
+      "tag": "🇪🇸 西班牙 04",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -62,7 +62,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 05",
+      "tag": "🇪🇸 西班牙 05",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -70,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06",
+      "tag": "🇪🇸 西班牙 06",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -91,7 +91,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07",
+      "tag": "🇪🇸 西班牙 07",
       "server": "87.76.179.117",
       "server_port": 7443,
       "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
@@ -115,26 +115,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02",
-        "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05",
-        "🇪🇸 西班牙 (Spain) 06",
-        "🇪🇸 西班牙 (Spain) 07"
+        "🇪🇸 西班牙 01",
+        "🇪🇸 西班牙 02",
+        "🇪🇸 西班牙 03",
+        "🇪🇸 西班牙 04",
+        "🇪🇸 西班牙 05",
+        "🇪🇸 西班牙 06",
+        "🇪🇸 西班牙 07"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02",
-        "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05",
-        "🇪🇸 西班牙 (Spain) 06",
-        "🇪🇸 西班牙 (Spain) 07"
+        "🇪🇸 西班牙 01",
+        "🇪🇸 西班牙 02",
+        "🇪🇸 西班牙 03",
+        "🇪🇸 西班牙 04",
+        "🇪🇸 西班牙 05",
+        "🇪🇸 西班牙 06",
+        "🇪🇸 西班牙 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

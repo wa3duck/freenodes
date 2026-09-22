@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇸 西班牙 (Spain) 01
+- name: 🇪🇸 西班牙 01
   server: 66.163.118.73
   port: 22324
   udp: true
@@ -12,7 +12,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 02
+- name: 🇪🇸 西班牙 02
   server: 92.118.127.16
   port: 443
   udp: true
@@ -25,7 +25,7 @@ proxies:
     short-id: 908563a721d9bdcd
   servername: sp1.extremumnews.com
   client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 03
+- name: 🇪🇸 西班牙 03
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -37,21 +37,21 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 04
+- name: 🇪🇸 西班牙 04
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 05
+- name: 🇪🇸 西班牙 05
   server: 108.181.121.226
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 06
+- name: 🇪🇸 西班牙 06
   server: 46.28.71.247
   port: 443
   udp: true
@@ -64,7 +64,7 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇪🇸 西班牙 (Spain) 07
+- name: 🇪🇸 西班牙 07
   server: 87.76.179.117
   port: 7443
   udp: true
@@ -82,24 +82,24 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇸 西班牙 (Spain) 01
-  - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
-  - 🇪🇸 西班牙 (Spain) 04
-  - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
+  - 🇪🇸 西班牙 01
+  - 🇪🇸 西班牙 02
+  - 🇪🇸 西班牙 03
+  - 🇪🇸 西班牙 04
+  - 🇪🇸 西班牙 05
+  - 🇪🇸 西班牙 06
+  - 🇪🇸 西班牙 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 (Spain) 01
-  - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
-  - 🇪🇸 西班牙 (Spain) 04
-  - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
+  - 🇪🇸 西班牙 01
+  - 🇪🇸 西班牙 02
+  - 🇪🇸 西班牙 03
+  - 🇪🇸 西班牙 04
+  - 🇪🇸 西班牙 05
+  - 🇪🇸 西班牙 06
+  - 🇪🇸 西班牙 07
 rules:
 - MATCH,PROXIES

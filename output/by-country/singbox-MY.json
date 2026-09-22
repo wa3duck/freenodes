@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01",
+      "tag": "🇲🇾 马来西亚 01",
       "server": "jpzzqqnzdbgwhbhzsrgh.cfooov.xyz",
       "server_port": 16967,
       "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
@@ -26,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02",
+      "tag": "🇲🇾 马来西亚 02",
       "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
       "server_port": 60507,
       "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
@@ -47,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 03",
+      "tag": "🇲🇾 马来西亚 03",
       "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
       "server_port": 31378,
       "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
@@ -71,18 +71,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01",
-        "🇲🇾 马来西亚 (Malaysia) 02",
-        "🇲🇾 马来西亚 (Malaysia) 03"
+        "🇲🇾 马来西亚 01",
+        "🇲🇾 马来西亚 02",
+        "🇲🇾 马来西亚 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01",
-        "🇲🇾 马来西亚 (Malaysia) 02",
-        "🇲🇾 马来西亚 (Malaysia) 03"
+        "🇲🇾 马来西亚 01",
+        "🇲🇾 马来西亚 02",
+        "🇲🇾 马来西亚 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

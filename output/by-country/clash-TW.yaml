@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01
+- name: 🇹🇼 中国台湾 01
   server: 35.221.158.209
   port: 32981
   udp: true
@@ -17,7 +17,7 @@ proxies:
     short-id: 70f4b7a4c40636
   servername: www.sony.com
   client-fingerprint: qq
-- name: 🇹🇼 中国台湾 (Taiwan) 02
+- name: 🇹🇼 中国台湾 02
   server: 35.201.163.218
   port: 30837
   udp: true
@@ -30,7 +30,7 @@ proxies:
     short-id: 97101ba788915e5a
   servername: www.sony.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03
+- name: 🇹🇼 中国台湾 03
   server: 35.201.230.136
   port: 443
   udp: true
@@ -43,7 +43,7 @@ proxies:
     short-id: 5e13a6d43d0644c9
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 04
+- name: 🇹🇼 中国台湾 04
   server: 118.167.206.152
   port: 24215
   udp: true
@@ -54,7 +54,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: safari
-- name: 🇹🇼 中国台湾 (Taiwan) 05
+- name: 🇹🇼 中国台湾 05
   server: 60.248.219.78
   port: 443
   udp: true
@@ -68,7 +68,7 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 06
+- name: 🇹🇼 中国台湾 06
   server: 35.194.157.16
   port: 43450
   udp: true
@@ -81,7 +81,7 @@ proxies:
     short-id: e65d010354bdad73
   servername: www.amd.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 07
+- name: 🇹🇼 中国台湾 07
   server: 104.199.134.231
   port: 28364
   udp: true
@@ -94,7 +94,7 @@ proxies:
     short-id: 7241c359c2dfab
   servername: www.sony.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 08
+- name: 🇹🇼 中国台湾 08
   server: 103.115.109.49
   port: 443
   udp: true
@@ -102,7 +102,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 103.115.109.49
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 09
+- name: 🇹🇼 中国台湾 09
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
@@ -115,28 +115,28 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01
-  - 🇹🇼 中国台湾 (Taiwan) 02
-  - 🇹🇼 中国台湾 (Taiwan) 03
-  - 🇹🇼 中国台湾 (Taiwan) 04
-  - 🇹🇼 中国台湾 (Taiwan) 05
-  - 🇹🇼 中国台湾 (Taiwan) 06
-  - 🇹🇼 中国台湾 (Taiwan) 07
-  - 🇹🇼 中国台湾 (Taiwan) 08
-  - 🇹🇼 中国台湾 (Taiwan) 09
+  - 🇹🇼 中国台湾 01
+  - 🇹🇼 中国台湾 02
+  - 🇹🇼 中国台湾 03
+  - 🇹🇼 中国台湾 04
+  - 🇹🇼 中国台湾 05
+  - 🇹🇼 中国台湾 06
+  - 🇹🇼 中国台湾 07
+  - 🇹🇼 中国台湾 08
+  - 🇹🇼 中国台湾 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01
-  - 🇹🇼 中国台湾 (Taiwan) 02
-  - 🇹🇼 中国台湾 (Taiwan) 03
-  - 🇹🇼 中国台湾 (Taiwan) 04
-  - 🇹🇼 中国台湾 (Taiwan) 05
-  - 🇹🇼 中国台湾 (Taiwan) 06
-  - 🇹🇼 中国台湾 (Taiwan) 07
-  - 🇹🇼 中国台湾 (Taiwan) 08
-  - 🇹🇼 中国台湾 (Taiwan) 09
+  - 🇹🇼 中国台湾 01
+  - 🇹🇼 中国台湾 02
+  - 🇹🇼 中国台湾 03
+  - 🇹🇼 中国台湾 04
+  - 🇹🇼 中国台湾 05
+  - 🇹🇼 中国台湾 06
+  - 🇹🇼 中国台湾 07
+  - 🇹🇼 中国台湾 08
+  - 🇹🇼 中国台湾 09
 rules:
 - MATCH,PROXIES

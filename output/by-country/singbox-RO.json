@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01",
+      "tag": "🇷🇴 罗马尼亚 01",
       "server": "85.204.107.185",
       "server_port": 8443,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
@@ -17,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
+      "tag": "🇷🇴 罗马尼亚 02",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -38,7 +38,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03",
+      "tag": "🇷🇴 罗马尼亚 03",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -59,7 +59,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04",
+      "tag": "🇷🇴 罗马尼亚 04",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -75,7 +75,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05",
+      "tag": "🇷🇴 罗马尼亚 05",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
@@ -87,7 +87,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06",
+      "tag": "🇷🇴 罗马尼亚 06",
       "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -98,24 +98,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01",
-        "🇷🇴 罗马尼亚 (Romania) 02",
-        "🇷🇴 罗马尼亚 (Romania) 03",
-        "🇷🇴 罗马尼亚 (Romania) 04",
-        "🇷🇴 罗马尼亚 (Romania) 05",
-        "🇷🇴 罗马尼亚 (Romania) 06"
+        "🇷🇴 罗马尼亚 01",
+        "🇷🇴 罗马尼亚 02",
+        "🇷🇴 罗马尼亚 03",
+        "🇷🇴 罗马尼亚 04",
+        "🇷🇴 罗马尼亚 05",
+        "🇷🇴 罗马尼亚 06"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01",
-        "🇷🇴 罗马尼亚 (Romania) 02",
-        "🇷🇴 罗马尼亚 (Romania) 03",
-        "🇷🇴 罗马尼亚 (Romania) 04",
-        "🇷🇴 罗马尼亚 (Romania) 05",
-        "🇷🇴 罗马尼亚 (Romania) 06"
+        "🇷🇴 罗马尼亚 01",
+        "🇷🇴 罗马尼亚 02",
+        "🇷🇴 罗马尼亚 03",
+        "🇷🇴 罗马尼亚 04",
+        "🇷🇴 罗马尼亚 05",
+        "🇷🇴 罗马尼亚 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

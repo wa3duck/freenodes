@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01
+- name: 🇹🇼 中国台湾 01
   server: r3mrcg001286ek2.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 (Taiwan) 02
+- name: 🇹🇼 中国台湾 02
   server: ttszhrmghgdssbkqf.cfooov.xyz
   port: 42241
   udp: true
@@ -29,14 +29,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01
-  - 🇹🇼 中国台湾 (Taiwan) 02
+  - 🇹🇼 中国台湾 01
+  - 🇹🇼 中国台湾 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01
-  - 🇹🇼 中国台湾 (Taiwan) 02
+  - 🇹🇼 中国台湾 01
+  - 🇹🇼 中国台湾 02
 rules:
 - MATCH,PROXIES
