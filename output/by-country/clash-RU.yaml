@@ -1,0 +1,47 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+name: 🇷🇺 俄罗斯 01
+  server: 46.173.17.19
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc47db0c-c6f2-4665-bdb2-8f717822ce9d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Hhp-DQNkUYOkbWR64BHWc7gGYfeqU8yYAwX6sTsqf3A
+    short-id: 4d5163ec7a1bf048
+  servername: 9f8hqeju.datahubfiles.com
+  client-fingerprint: chrome
+name: 🇷🇺 俄罗斯 02
+  server: tr3.wba-pn.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: af2a0c18-b08c-471f-baa3-259ac2ce3a85
+  tls: true
+  servername: tr3.wba-pn.ru
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+proxy-groups:
+name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇷🇺 俄罗斯 01
+  - 🇷🇺 俄罗斯 02
+name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇷🇺 俄罗斯 01
+  - 🇷🇺 俄罗斯 02
+rules:
+- MATCH,PROXIES

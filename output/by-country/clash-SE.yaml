@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+name: 🇸🇪 瑞典 01
+  server: 51.20.72.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+name: 🇸🇪 瑞典 02
+  server: 16.170.221.224
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+name: 🇸🇪 瑞典 03
+  server: 143.246.194.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  servername: www.ikea.com
+  client-fingerprint: safari
+name: 🇸🇪 瑞典 04
+  server: 13.62.228.76
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+proxy-groups:
+name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇸🇪 瑞典 01
+  - 🇸🇪 瑞典 02
+  - 🇸🇪 瑞典 03
+  - 🇸🇪 瑞典 04
+name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇸🇪 瑞典 01
+  - 🇸🇪 瑞典 02
+  - 🇸🇪 瑞典 03
+  - 🇸🇪 瑞典 04
+rules:
+- MATCH,PROXIES

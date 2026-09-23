@@ -1,0 +1,89 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+name: 🇳🇱 荷兰 01
+  server: 213.165.56.169
+  port: 443
+  udp: true
+  type: vless
+  uuid: 974f2c7e-a292-4207-8315-ef4151bdca41
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo
+  servername: fl-api.bachidze.com
+  client-fingerprint: firefox
+name: 🇳🇱 荷兰 02
+  server: 87.58.220.77
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ed7bfe0-9645-483d-925a-b8e618291d36
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aQD1AVNprkpHlqyx4YBHiMEi5-hb-Gmi_pdiY-_Lvzg
+    short-id: 9f41ab7b3c
+  servername: www.vk.com
+  client-fingerprint: firefox
+name: 🇳🇱 荷兰 03
+  server: 150.251.143.3
+  port: 16857
+  udp: true
+  type: vless
+  uuid: 44ff6d71-319e-4bcb-a956-58d31290e45b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lB6OaYmyeYYrTWzaE3U4Elp0TayJt4136HcLfnrdFQ0
+    short-id: '31'
+  servername: image.semiconductor.samsung.com
+  client-fingerprint: firefox
+name: 🇳🇱 荷兰 04
+  server: 34.147.59.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: f76627ae-2626-4c53-ab57-da0e4d377a53
+  tls: true
+  reality-opts:
+    public-key: ODBW9YQs2TYvh_KBUQvbvAh61EULeZvqvwjc2RysKTs
+    short-id: 973452cd8674dbaf
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+name: 🇳🇱 荷兰 05
+  server: 185.86.145.253
+  port: 443
+  udp: true
+  type: vless
+  uuid: 864820cf-cf99-4f0f-bdcd-a409e3b0a1f7
+  tls: true
+  reality-opts:
+    public-key: Mkxs9LT0tRg208EbLXmP-_dQYlsPOgaTwZ3acwgVVWs
+  servername: ads.x5.ru
+  client-fingerprint: firefox
+proxy-groups:
+name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇳🇱 荷兰 01
+  - 🇳🇱 荷兰 02
+  - 🇳🇱 荷兰 03
+  - 🇳🇱 荷兰 04
+  - 🇳🇱 荷兰 05
+name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇳🇱 荷兰 01
+  - 🇳🇱 荷兰 02
+  - 🇳🇱 荷兰 03
+  - 🇳🇱 荷兰 04
+  - 🇳🇱 荷兰 05
+rules:
+- MATCH,PROXIES

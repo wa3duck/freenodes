@@ -1,0 +1,107 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+name: 🇩🇪 德国 01
+  server: 64.118.158.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  servername: buckeye-retail-website.amazon.com
+  client-fingerprint: chrome
+name: 🇩🇪 德国 02
+  server: 31.76.100.41
+  port: 443
+  udp: true
+  type: vless
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
+name: 🇩🇪 德国 03
+  server: 31.76.100.41
+  port: 443
+  udp: true
+  type: vless
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
+name: 🇩🇪 德国 04
+  server: 34.185.172.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3255d065-119c-4103-a422-ea9d301b0707
+  tls: true
+  reality-opts:
+    public-key: -XH2d9x4wRi--KvR6XTcZW9HXbikI2_262zfYDr1uFw
+    short-id: 690ec9207866c84e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+name: 🇩🇪 德国 05
+  server: 77.110.105.102
+  port: 443
+  udp: true
+  type: vless
+  uuid: 89a0fe83-dcb3-4e3c-92ed-407fc668e7b1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: ru-1.brodvpn.com
+  skip-cert-verify: false
+  client-fingerprint: safari
+name: 🇩🇪 德国 06
+  server: 104.18.32.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1f87cbe7-316b-49ba-a416-d3c2af72ed50
+  tls: true
+  servername: spidertest.vibenest.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws/1f87cbe7-316b-49ba-a416-d3c2af72ed50
+    headers:
+      Host: spidertest.vibenest.net
+proxy-groups:
+name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇪 德国 01
+  - 🇩🇪 德国 02
+  - 🇩🇪 德国 03
+  - 🇩🇪 德国 04
+  - 🇩🇪 德国 05
+  - 🇩🇪 德国 06
+name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 01
+  - 🇩🇪 德国 02
+  - 🇩🇪 德国 03
+  - 🇩🇪 德国 04
+  - 🇩🇪 德国 05
+  - 🇩🇪 德国 06
+rules:
+- MATCH,PROXIES

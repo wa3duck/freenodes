@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+name: 🇫🇷 法国 01
+  server: 77.110.104.125
+  port: 8443
+  udp: true
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  reality-opts:
+    public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
+    short-id: 2da4299da566b7
+  servername: maps.apple.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: your-custom-path
+name: 🇫🇷 法国 02
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: t.me
+  skip-cert-verify: true
+name: 🇫🇷 法国 03
+  server: fr.node.katahost.org
+  port: 2000
+  udp: true
+  type: vless
+  uuid: cc3dfc2d-dead-41be-97bf-410a40891f38
+  tls: true
+  servername: zalupa.gayvibe.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+proxy-groups:
+name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇫🇷 法国 01
+  - 🇫🇷 法国 02
+  - 🇫🇷 法国 03
+name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇫🇷 法国 01
+  - 🇫🇷 法国 02
+  - 🇫🇷 法国 03
+rules:
+- MATCH,PROXIES

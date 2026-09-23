@@ -1,0 +1,142 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 01",
+      "server": "213.165.56.169",
+      "server_port": 443,
+      "uuid": "974f2c7e-a292-4207-8315-ef4151bdca41",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fl-api.bachidze.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 02",
+      "server": "87.58.220.77",
+      "server_port": 443,
+      "uuid": "1ed7bfe0-9645-483d-925a-b8e618291d36",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aQD1AVNprkpHlqyx4YBHiMEi5-hb-Gmi_pdiY-_Lvzg",
+          "short_id": "9f41ab7b3c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 03",
+      "server": "150.251.143.3",
+      "server_port": 16857,
+      "uuid": "44ff6d71-319e-4bcb-a956-58d31290e45b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "image.semiconductor.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lB6OaYmyeYYrTWzaE3U4Elp0TayJt4136HcLfnrdFQ0",
+          "short_id": "31"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 04",
+      "server": "34.147.59.126",
+      "server_port": 443,
+      "uuid": "f76627ae-2626-4c53-ab57-da0e4d377a53",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ODBW9YQs2TYvh_KBUQvbvAh61EULeZvqvwjc2RysKTs",
+          "short_id": "973452cd8674dbaf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 05",
+      "server": "185.86.145.253",
+      "server_port": 443,
+      "uuid": "864820cf-cf99-4f0f-bdcd-a409e3b0a1f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Mkxs9LT0tRg208EbLXmP-_dQYlsPOgaTwZ3acwgVVWs",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇳🇱 荷兰 05"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇳🇱 荷兰 01",
+        "🇳🇱 荷兰 02",
+        "🇳🇱 荷兰 03",
+        "🇳🇱 荷兰 04",
+        "🇳🇱 荷兰 05"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

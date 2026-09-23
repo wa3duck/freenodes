@@ -1,0 +1,86 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 01",
+      "server": "77.110.104.125",
+      "server_port": 8443,
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY",
+          "short_id": "2da4299da566b7"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "your-custom-path"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 02",
+      "server": "62.210.7.139",
+      "server_port": 60111,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 03",
+      "server": "fr.node.katahost.org",
+      "server_port": 2000,
+      "uuid": "cc3dfc2d-dead-41be-97bf-410a40891f38",
+      "tls": {
+        "enabled": true,
+        "server_name": "zalupa.gayvibe.dpdns.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇫🇷 法国 03"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇫🇷 法国 01",
+        "🇫🇷 法国 02",
+        "🇫🇷 法国 03"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
