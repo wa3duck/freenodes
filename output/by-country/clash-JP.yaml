@@ -5,47 +5,504 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 01
-  server: 13.115.71.198
+  server: 162.159.228.255
   port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 02
-  server: 18.179.39.119
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 03
-  server: 152.69.195.67
-  port: 47878
   udp: true
   type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
+- name: 🇯🇵 日本 02
+  server: 192.241.229.131
+  port: 74
+  udp: true
+  type: vless
+  uuid: 8fd85405-c28b-42ce-87a8-646cbe38ced4
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 03
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 27334ef0-a362-4b1b-8773-849c8a944ae1
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 - name: 🇯🇵 日本 04
-  server: 18.181.145.202
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: fd202fce-8a77-43b0-9e96-6a15e638b087
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 05
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 9b3382ec-3207-414b-9711-6ede64ac56a6
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 06
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 46869f66-b7b3-4e52-bb32-ce6ae0a6791f
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 07
+  server: 146.190.174.67
+  port: 386
+  udp: true
+  type: vless
+  uuid: b59f13d6-5e51-4fc4-864d-c6a942b39c86
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇯🇵 日本 08
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: d279f394-301e-4cbf-ba56-65e8c061e451
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 09
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: c7dcd436-76e0-4f8f-9a28-d9c20bff304a
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 10
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 09dfe01f-db37-4de2-82e3-bc6692192512
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 11
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 088b8483-f76b-46be-b710-4f756a0fe487
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 12
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 423d9455-09ce-471c-8cee-cec0366a2c7a
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 13
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 71f4c34f-6d8a-4f6c-a1d8-7bcca7a0599e
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 14
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: e09dd424-6706-43eb-8901-f8e07d3aec0c
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 15
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 61c766f6-ae5e-45c3-af3a-931add740bd1
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 16
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 63bdf641-c984-4b8c-8cdd-190c5568debb
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 17
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 495c9e67-3a14-46a1-a1b7-aebe23cdff6e
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇯🇵 日本 18
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 8ac3692f-93ca-4534-b07c-1cb881ecb216
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 19
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: c7ba4965-c763-43a6-9aad-b4fb1f7303f6
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: safari
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 20
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 5dc655f7-0de5-44ca-9eed-72d5d6d8b4e0
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 21
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 795afc16-eac7-44b1-8f3e-29488d73cf3a
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 日本 22
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 23
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: c87cdd8d-bc58-4e49-b8d9-7843098fe3be
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 24
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: b24e9a6a-d069-464d-86d4-e822e315f6d5
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 25
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: 1eb148ad-8549-4d07-858f-253a8f5c33c4
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 日本 26
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: f9819b5b-3231-4b04-b1ca-f1134b25a212
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 27
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: 0e296d67-6b7b-4f0e-9f84-fd5a42ecc99e
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 28
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: b3a15df4-c8ad-4e98-b427-7a679aee2b18
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 29
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: 6c7c10f8-2387-4756-ab4b-64c9c6981f0e
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇯🇵 日本 30
+  server: 18.181.165.254
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 05
+- name: 🇯🇵 日本 31
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: d0130b90-7d09-4484-9809-426bfb6ebd6d
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 32
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 06
-  server: 18.179.111.96
+- name: 🇯🇵 日本 33
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 34
+  server: 18.179.39.119
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 07
+- name: 🇯🇵 日本 35
+  server: 54.199.248.166
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 36
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: 4f1f5604-a256-4432-a477-52c3dce7dded
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 37
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 38
+  server: 18.181.145.202
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 39
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -53,52 +510,42 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 08
-  server: oc.imfun.fun
-  port: 18112
-  udp: true
-  type: vmess
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 09
-  server: 154.31.114.248
-  port: 50159
+- name: 🇯🇵 日本 40
+  server: 128.241.25.215
+  port: 30036
   udp: true
   type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  flow: xtls-rprx-vision
+  uuid: 87e7d0b2-faf6-4644-97ae-ad9bffca2c97
   tls: true
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇯🇵 日本 10
-  server: 38.207.130.15
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 41
+  server: 57.129.130.200
+  port: 52014
+  udp: true
+  type: vless
+  uuid: c8b0617e-010f-43a8-b3d0-d5358febf0c9
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 42
+  server: 137.220.221.179
   port: 443
   udp: true
   type: vless
-  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
-    short-id: 6d962e8d8a0dce
-  servername: amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 11
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 12
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 43
   server: 18.183.215.124
   port: 28573
   udp: true
@@ -110,8 +557,278 @@ proxies:
     public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
     short-id: 03653bc03be10c97
   servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 44
+  server: 154.31.114.248
+  port: 50159
+  udp: true
+  type: vless
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 45
+  server: 47.74.3.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
+    short-id: ab3b914f0c9d9de5
+  servername: www.logitech.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 13
+- name: 🇯🇵 日本 46
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: a351220c-f8dc-4c52-8a2d-f4470f886a53
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 47
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 3ab412c8-fe1a-44a2-a1c3-8b6d916cbc29
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 日本 48
+  server: 57.129.130.200
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 93c53b59-1523-4621-9528-77b016a28304
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 日本 49
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 2c190197-fdb7-41c3-9bd6-76476cfcaa5d
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 50
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: c6b947a2-d603-4d5c-ab9e-c942b034ea2a
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 51
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: eb9ee088-57d8-4d68-ad00-da4ce09daca3
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 52
+  server: 45.76.87.125
+  port: 14750
+  udp: true
+  type: vless
+  uuid: 30f6c75f-8fcd-4555-854f-439f09d3e2e3
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 日本 53
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 54
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 9befc0d2-22e5-4836-9f8b-92b5b26d6c7d
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 55
+  server: 57.129.130.63
+  port: 52014
+  udp: true
+  type: vless
+  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 56
+  server: 35.243.84.20
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0c4c6ebb-603f-4429-8682-beef6b65b80d
+  tls: true
+  reality-opts:
+    public-key: Ti7zRkfweHdrQ5QHI9o_zEgHn39xRfMG2C2Gfp_AMHE
+    short-id: 8380ad05cd21a69f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 57
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: ec7f1e33-f34e-451e-b069-0692f0c091e1
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇯🇵 日本 58
+  server: 178.83.110.32
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 9bb71136-2380-4b6a-97be-1d4ba11d5a55
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 59
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 60
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 61
+  server: 80.240.18.227
+  port: 10051
+  udp: true
+  type: vless
+  uuid: 73996ef7-544c-45e7-abc0-973218c727e2
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 62
+  server: 80.66.196.150
+  port: 9447
+  udp: true
+  type: vless
+  uuid: a50543e9-25c4-4b1c-a7e2-2326f3cd5529
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 63
+  server: jumpernode.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+    short-id: 6d962e8d8a0dce
+  servername: amazon.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 64
   server: 8.209.217.129
   port: 443
   udp: true
@@ -124,9 +841,112 @@ proxies:
     short-id: 01b4986b50245272
   servername: www.logitech.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 14
-  server: 103.75.118.228
-  port: 12683
+- name: 🇯🇵 日本 65
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 10a1cfcd-5f1f-4f77-a9d4-30a3f3973848
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 66
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 67
+  server: 46.101.46.169
+  port: 486
+  udp: true
+  type: vless
+  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 68
+  server: 13.231.19.51
+  port: 11690
+  udp: true
+  type: vless
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  servername: www.tesla.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 69
+  server: 159.65.48.114
+  port: 74
+  udp: true
+  type: vless
+  uuid: 587fe27b-aced-4cbf-8283-ad4647f01a8c
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 70
+  server: 172.111.146.64
+  port: 80
+  udp: true
+  type: vless
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇯🇵 日本 71
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 4c6609bf-8457-4260-b4fa-321379e57a4e
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 日本 72
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 20fb6676-e05b-4fad-92f2-53c9e6bbbec1
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 73
+  server: 3.114.220.22
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -136,8 +956,33 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 15
+  client-fingerprint: ios
+- name: 🇯🇵 日本 74
+  server: 206.190.237.167
+  port: 17577
+  udp: true
+  type: vmess
+  uuid: 3ceb8486-fb82-462c-e989-89182fe660a5
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /3ceb8486
+- name: 🇯🇵 日本 75
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 1dc80bcf-b9f6-49ca-b506-0c7efdee49fc
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 76
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -150,7 +995,22 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 16
+- name: 🇯🇵 日本 77
+  server: 57.129.52.47
+  port: 52014
+  udp: true
+  type: vless
+  uuid: ecc4675b-1607-4699-8b20-23af97b671af
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 日本 78
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -162,69 +1022,794 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 79
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: ed3619c2-7067-496a-88cd-12215dcd5650
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇯🇵 日本 17
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 18
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 19
-  server: 103.75.118.228
-  port: 11452
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 80
+  server: 147.45.42.73
+  port: 20443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
+  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
   tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 20
-  server: 13.230.153.249
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 21
-  server: 3.114.220.22
-  port: 18007
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 81
+  server: 116.204.164.60
+  port: 7443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
+  uuid: fc85cf23-75e6-4b91-b468-8adc9407047b
   tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 22
-  server: 47.74.3.200
-  port: 443
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 82
+  server: 185.125.103.62
+  port: 8082
   udp: true
   type: vless
-  uuid: 7fb42fab-ea8a-4f0f-af9e-55df8ae6cb1d
-  flow: xtls-rprx-vision
+  uuid: bec56743-98e0-4bbd-8466-2f8213c8d92d
   tls: true
-  reality-opts:
-    public-key: kb1uhDsBcfsCD6acCuFcVERW29dscNGIjKPd67NArVk
-    short-id: ab3b914f0c9d9de5
-  servername: www.logitech.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 23
-  server: 104.21.33.59
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 83
+  server: 116.204.164.27
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 3e438472-0f1e-4bbf-be5a-67d034afd8c0
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 84
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 81f042b3-13d9-4686-9d92-5350f19d909c
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 日本 85
+  server: 129.153.71.28
+  port: 28863
+  udp: true
+  type: vless
+  uuid: ba617d96-0837-4159-ab7f-99205bae020b
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 86
+  server: 116.204.164.27
+  port: 7443
+  udp: true
+  type: vless
+  uuid: c9b314e9-47f1-4d4d-be52-30b538777b14
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 87
+  server: 37.120.222.70
+  port: 8082
+  udp: true
+  type: vless
+  uuid: f3481e31-2fe2-4545-89b6-e7b566699ba4
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 88
+  server: 147.45.42.73
+  port: 20443
+  udp: true
+  type: vless
+  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: '/@Marisa_kristi '
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 89
+  server: 5.9.117.252
+  port: 4433
+  udp: true
+  type: vless
+  uuid: ef286b0e-21ed-4e2b-9110-e2ddc7627892
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 90
+  server: 116.204.164.30
+  port: 7443
+  udp: true
+  type: vless
+  uuid: dcd08975-739e-44c7-9022-7c7fcb87e74b
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 91
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: cbdbf318-e010-4fb9-941f-6da4beab70e3
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇯🇵 日本 92
+  server: 116.204.164.30
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 097e0483-50a9-4adf-8f62-031057710d11
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/@Marisa_kristi '
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 93
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 613132d0-df24-4f82-af68-a3a6bd1ff1f1
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 94
+  server: 79.137.199.52
+  port: 21
+  udp: true
+  type: vless
+  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 95
+  server: 116.204.164.30
+  port: 7443
+  udp: true
+  type: vless
+  uuid: d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 96
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: 4738dcaa-80c4-4d8b-9006-832692887bbb
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇯🇵 日本 97
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: d5f8cb9f-0fde-45a9-8c2f-52a03207f26b
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 日本 98
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: fbbc292b-4168-446d-a692-34a77ae9485e
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 99
+  server: 5.75.195.83
+  port: 56879
+  udp: true
+  type: vless
+  uuid: f8847ac2-e586-400f-841b-00081ea4592e
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 100
+  server: 116.204.164.17
+  port: 7443
+  udp: true
+  type: vless
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 101
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 12d65cdc-3391-4227-a2d5-52deb9948ae5
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 102
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 5dab35d2-5ac4-4fdc-81b2-14ee121db77b
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 103
+  server: 116.204.164.60
+  port: 7443
+  udp: true
+  type: vless
+  uuid: c676be7d-b481-4bba-88d0-65855e09dc67
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 104
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 8e6709d7-5e17-4f9c-87db-afa184f513cf
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 105
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 04d2aebd-246f-4348-805f-a8e6840365fc
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 日本 106
+  server: 54.178.110.17
+  port: 4443
+  udp: true
+  type: vless
+  uuid: d5fbd83b-7346-4ad9-94c0-76293724824d
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: '/@Marisa_kristi '
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 107
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: a56a5bae-45e5-4f0d-9e31-40af97733fd9
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 108
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: bd0b9388-e59e-4e05-98d0-51bb665fc455
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 109
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 3dbf58d7-53fc-4fad-8779-1c867e024fd0
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 110
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: 342200c2-4bb1-4906-8615-3aea59e178a0
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 111
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: d3fca73d-7967-46c6-ab35-fb86d3c8f293
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 112
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: ec168467-38e2-49f9-8720-de2a64544f86
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 113
+  server: 54.178.110.17
+  port: 4443
+  udp: true
+  type: vless
+  uuid: ca4f25f2-e3ff-47ed-ba35-ce0d02b6333d
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 114
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: 90899e26-6c8d-46df-954d-14a86c0a1813
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 115
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: a2e2d050-ca0c-44a1-8e55-8946c5b04961
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 116
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: ffbd46ce-f17e-4726-b972-b9570027c125
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 117
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 72a672a7-ad57-4083-a79a-66a856cecd12
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 118
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: 9dbc54c6-aad1-4b30-8c4d-8abe0c0ea826
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 119
+  server: 144.31.135.38
+  port: 9444
+  udp: true
+  type: vless
+  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 120
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: e431e7d1-2bbe-4907-8015-29f05d3558ac
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 121
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: f938296c-d0c9-4801-b865-91373a1b3e10
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 122
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: d6c21f6f-2e7e-479d-a4d9-4069995867ed
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 日本 123
+  server: 116.204.164.27
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 67ad6de6-ac67-4af7-8209-98ba3bd88834
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 124
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 7fdb95f9-c758-486c-865a-7c1219823670
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇯🇵 日本 125
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: fec364d6-03f3-4e2c-852b-c317ffecde04
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 126
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: 2a731bb4-6c55-40ef-8c8d-80969db19e08
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 日本 127
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 52ea9acf-8c78-4589-9e10-824bdbd3f121
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 128
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 129
+  server: 57.129.130.10
+  port: 52014
+  udp: true
+  type: vless
+  uuid: bca740c6-6704-48ba-99da-7d7a31768d73
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 130
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 3fecd61b-bc7b-4f43-bdca-cf0fa7fae3a5
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 131
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: b640d4c8-9d60-408e-869f-da32b7c28a38
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 132
+  server: 188.34.142.174
+  port: 444
+  udp: true
+  type: vless
+  uuid: da46ec1f-84ad-4470-866f-010b58357b19
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 133
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -232,74 +1817,103 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 24
-  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
-  port: 21844
+- name: 🇯🇵 日本 134
+  server: 116.204.164.5
+  port: 7443
   udp: true
   type: vless
-  uuid: 55848813-689e-4a39-82cf-00748cbc7289
-  flow: xtls-rprx-vision
+  uuid: 6eb831ea-8829-457b-a5d1-52f640a97486
   tls: true
-  reality-opts:
-    public-key: 5y1oP72Hsd1syjBQD3qETBEaIwH6JqOKAyeYGkEUrXc
-    short-id: 9b1bc2a5f2414a
-  servername: addons.mozilla.org
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇯🇵 日本 25
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 26
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
   network: ws
   ws-opts:
-    path: /vless/
-- name: 🇯🇵 日本 27
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇯🇵 日本 28
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  network: ws
-  ws-opts:
-    path: /vless/
+    path: /@Marisa_kristi
     headers:
-      Host: join---i10vpn---join---i10vpn---join---i10vpn---join---i10vpn
-- name: 🇯🇵 日本 29
-  server: 172.111.146.64
-  port: 80
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇯🇵 日本 135
+  server: 84.22.150.239
+  port: 444
   udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: dc83276f-268a-4b18-9f63-63c73e11ffd8
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /@Marisa_kristi
     headers:
-      Host: 172.111.146.64
-- name: 🇯🇵 日本 30
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 136
+  server: 2.26.91.98
+  port: 1443
+  udp: true
+  type: vless
+  uuid: fd30c61d-82bf-449c-aa9e-565d0ab64b75
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 137
+  server: 2.26.91.98
+  port: 1443
+  udp: true
+  type: vless
+  uuid: e75feb84-1638-4817-9c31-53eacb147362
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 138
+  server: 210.152.85.154
+  port: 19364
+  udp: true
+  type: vless
+  uuid: 9dc0aa1f-8df6-4d80-b17c-7b92cdfc514d
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇯🇵 日本 139
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 140
   server: 172.67.130.159
   port: 2096
   udp: true
@@ -308,45 +1922,607 @@ proxies:
   tls: true
   servername: cdn-jp.skyvora.app
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vqyps6kf3
     headers:
       Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 31
-  server: aa.ccmusic.jp
+- name: 🇯🇵 日本 141
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 554757ea-7269-448f-805d-5fdf87451807
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇯🇵 日本 142
+  server: 84.22.150.39
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 5cc814de-2bbb-4409-ad8c-ee841ca7bad1
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/@Marisa_kristi '
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 143
+  server: 84.22.150.239
+  port: 444
+  udp: true
+  type: vless
+  uuid: 4054ad5f-e7db-4cad-bb5c-91108323c169
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 144
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 09de62f5-662a-4906-a66d-b1713b198bff
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 145
+  server: 109.120.155.155
+  port: 444
+  udp: true
+  type: vless
+  uuid: 99ab6748-3d57-4562-9451-843c15960b9b
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇯🇵 日本 146
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 79c351da-fdeb-4761-b514-46e1f4914d00
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 日本 147
+  server: 2.26.91.98
+  port: 1443
+  udp: true
+  type: vless
+  uuid: 9ba09caf-da90-48ef-9dac-1a4611bc88d1
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 日本 148
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: b80ea549-156d-4cc1-8683-3f53d5b335cb
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 日本 149
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 60dca33b-7804-41da-b158-ecf71d95ff85
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇯🇵 日本 150
+  server: 83.147.216.223
+  port: 4433
+  udp: true
+  type: vless
+  uuid: b491331e-3be5-4097-8bc1-fa86de978c29
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 151
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: deb1ae4f-a6b3-4ba3-8fb7-b18a05252928
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 152
+  server: 89.22.224.146
+  port: 43788
+  udp: true
+  type: vless
+  uuid: acc10ba5-a222-44b3-8a1a-4f247ffc6466
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 日本 153
+  server: 13.230.153.249
   port: 443
   udp: true
-  type: trojan
-  password: tsuchiya
-  sni: aa.ccmusic.jp
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 154
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 7326c27d-597d-45e1-a67f-51d351548cd8
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
   skip-cert-verify: false
-- name: 🇯🇵 日本 32
-  server: clhkzzzdbgwxxndnlm.cfooov.xyz
-  port: 50500
-  udp: true
-  type: vless
-  uuid: 55848813-689e-4a39-82cf-00748cbc7289
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5y1oP72Hsd1syjBQD3qETBEaIwH6JqOKAyeYGkEUrXc
-    short-id: 9b1bc2a5f2414a
-  servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇯🇵 日本 33
-  server: 13.231.19.51
-  port: 11690
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 155
+  server: 91.186.218.227
+  port: 4443
   udp: true
   type: vless
-  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  flow: xtls-rprx-vision
+  uuid: ac454bef-c84b-484b-97c1-140b25267344
   tls: true
-  reality-opts:
-    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
-    short-id: 034885e346fd30
-  servername: www.tesla.com
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇯🇵 日本 156
+  server: 175.195.149.58
+  port: 10280
+  udp: true
+  type: vless
+  uuid: 8638521a-7d64-4ad0-9112-83aa1fc19867
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 157
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 8a51621b-02d4-4c06-b6f9-96771e537db6
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 158
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: d548eca0-3f96-4967-922b-d612b792f125
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 159
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: cdbac875-8f1d-42a1-b500-3ce797a6a167
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 160
+  server: 211.48.30.184
+  port: 30017
+  udp: true
+  type: vless
+  uuid: beec57a5-8266-4279-b279-f495bdc70699
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 161
+  server: 220.71.172.2
+  port: 16034
+  udp: true
+  type: vless
+  uuid: 169f3aa8-6b52-4f3e-83d2-f96bac71e503
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇯🇵 日本 162
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 54f89a61-2837-48c7-95ea-24b7c24b4b03
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 163
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 6a13fa6a-5c5f-4afe-82f7-9d550531239e
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 164
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: d492bf74-6555-4b57-94f0-52b56adbc760
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+- name: 🇯🇵 日本 165
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 208250f3-2dd1-4421-87d4-5e8691fd7b15
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+- name: 🇯🇵 日本 166
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: df7984c1-44df-451d-8af5-a8d04d53870f
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 167
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 95162241-dd8b-4438-a3da-7858d06e6ace
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇯🇵 日本 168
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 35325935-2cd2-4c62-aee1-4797dde0fae3
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 日本 169
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: b98eab2e-ceed-42fa-bf77-442d81de0c83
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 170
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 686c3936-3fac-42d2-96ee-ccbf873df459
+  tls: true
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇯🇵 日本 171
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 3011e40c-228f-4f2e-9dbf-5b256887e071
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇯🇵 日本 172
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 8a9dff00-0705-4c1b-9126-8c1bdc8b5d0a
+  tls: true
+  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+- name: 🇯🇵 日本 173
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 7e622534-4a90-40ba-bb30-5cb5403be121
+  tls: true
+  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
+- name: 🇯🇵 日本 174
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: e3f097e5-0214-47ce-9127-7e5a5e968ffa
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇯🇵 日本 175
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: d94fe65a-bdfb-46af-9d90-d54096aa9f4f
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 176
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 45deab47-28e0-4048-b7a2-1ab672f684f8
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇯🇵 日本 177
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: bc9b7d03-eeae-46f6-a0da-9af799c0c747
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇯🇵 日本 178
+  server: 175.41.179.37
+  port: 51262
+  udp: true
+  type: vless
+  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
+  tls: true
+  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇯🇵 日本 179
+  server: 54.179.79.12
+  port: 53646
+  udp: true
+  type: vless
+  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇯🇵 日本 180
+  server: 91.186.218.227
+  port: 4443
+  udp: true
+  type: vless
+  uuid: e6059f19-eb60-4165-9bb7-271750d2629e
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇯🇵 日本 181
+  server: 18.179.111.96
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 182
+  server: 152.69.195.67
+  port: 47878
+  udp: true
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 日本 183
+  server: 168.110.60.104
+  port: 18112
+  udp: true
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -385,6 +2561,156 @@ proxy-groups:
   - 🇯🇵 日本 31
   - 🇯🇵 日本 32
   - 🇯🇵 日本 33
+  - 🇯🇵 日本 34
+  - 🇯🇵 日本 35
+  - 🇯🇵 日本 36
+  - 🇯🇵 日本 37
+  - 🇯🇵 日本 38
+  - 🇯🇵 日本 39
+  - 🇯🇵 日本 40
+  - 🇯🇵 日本 41
+  - 🇯🇵 日本 42
+  - 🇯🇵 日本 43
+  - 🇯🇵 日本 44
+  - 🇯🇵 日本 45
+  - 🇯🇵 日本 46
+  - 🇯🇵 日本 47
+  - 🇯🇵 日本 48
+  - 🇯🇵 日本 49
+  - 🇯🇵 日本 50
+  - 🇯🇵 日本 51
+  - 🇯🇵 日本 52
+  - 🇯🇵 日本 53
+  - 🇯🇵 日本 54
+  - 🇯🇵 日本 55
+  - 🇯🇵 日本 56
+  - 🇯🇵 日本 57
+  - 🇯🇵 日本 58
+  - 🇯🇵 日本 59
+  - 🇯🇵 日本 60
+  - 🇯🇵 日本 61
+  - 🇯🇵 日本 62
+  - 🇯🇵 日本 63
+  - 🇯🇵 日本 64
+  - 🇯🇵 日本 65
+  - 🇯🇵 日本 66
+  - 🇯🇵 日本 67
+  - 🇯🇵 日本 68
+  - 🇯🇵 日本 69
+  - 🇯🇵 日本 70
+  - 🇯🇵 日本 71
+  - 🇯🇵 日本 72
+  - 🇯🇵 日本 73
+  - 🇯🇵 日本 74
+  - 🇯🇵 日本 75
+  - 🇯🇵 日本 76
+  - 🇯🇵 日本 77
+  - 🇯🇵 日本 78
+  - 🇯🇵 日本 79
+  - 🇯🇵 日本 80
+  - 🇯🇵 日本 81
+  - 🇯🇵 日本 82
+  - 🇯🇵 日本 83
+  - 🇯🇵 日本 84
+  - 🇯🇵 日本 85
+  - 🇯🇵 日本 86
+  - 🇯🇵 日本 87
+  - 🇯🇵 日本 88
+  - 🇯🇵 日本 89
+  - 🇯🇵 日本 90
+  - 🇯🇵 日本 91
+  - 🇯🇵 日本 92
+  - 🇯🇵 日本 93
+  - 🇯🇵 日本 94
+  - 🇯🇵 日本 95
+  - 🇯🇵 日本 96
+  - 🇯🇵 日本 97
+  - 🇯🇵 日本 98
+  - 🇯🇵 日本 99
+  - 🇯🇵 日本 100
+  - 🇯🇵 日本 101
+  - 🇯🇵 日本 102
+  - 🇯🇵 日本 103
+  - 🇯🇵 日本 104
+  - 🇯🇵 日本 105
+  - 🇯🇵 日本 106
+  - 🇯🇵 日本 107
+  - 🇯🇵 日本 108
+  - 🇯🇵 日本 109
+  - 🇯🇵 日本 110
+  - 🇯🇵 日本 111
+  - 🇯🇵 日本 112
+  - 🇯🇵 日本 113
+  - 🇯🇵 日本 114
+  - 🇯🇵 日本 115
+  - 🇯🇵 日本 116
+  - 🇯🇵 日本 117
+  - 🇯🇵 日本 118
+  - 🇯🇵 日本 119
+  - 🇯🇵 日本 120
+  - 🇯🇵 日本 121
+  - 🇯🇵 日本 122
+  - 🇯🇵 日本 123
+  - 🇯🇵 日本 124
+  - 🇯🇵 日本 125
+  - 🇯🇵 日本 126
+  - 🇯🇵 日本 127
+  - 🇯🇵 日本 128
+  - 🇯🇵 日本 129
+  - 🇯🇵 日本 130
+  - 🇯🇵 日本 131
+  - 🇯🇵 日本 132
+  - 🇯🇵 日本 133
+  - 🇯🇵 日本 134
+  - 🇯🇵 日本 135
+  - 🇯🇵 日本 136
+  - 🇯🇵 日本 137
+  - 🇯🇵 日本 138
+  - 🇯🇵 日本 139
+  - 🇯🇵 日本 140
+  - 🇯🇵 日本 141
+  - 🇯🇵 日本 142
+  - 🇯🇵 日本 143
+  - 🇯🇵 日本 144
+  - 🇯🇵 日本 145
+  - 🇯🇵 日本 146
+  - 🇯🇵 日本 147
+  - 🇯🇵 日本 148
+  - 🇯🇵 日本 149
+  - 🇯🇵 日本 150
+  - 🇯🇵 日本 151
+  - 🇯🇵 日本 152
+  - 🇯🇵 日本 153
+  - 🇯🇵 日本 154
+  - 🇯🇵 日本 155
+  - 🇯🇵 日本 156
+  - 🇯🇵 日本 157
+  - 🇯🇵 日本 158
+  - 🇯🇵 日本 159
+  - 🇯🇵 日本 160
+  - 🇯🇵 日本 161
+  - 🇯🇵 日本 162
+  - 🇯🇵 日本 163
+  - 🇯🇵 日本 164
+  - 🇯🇵 日本 165
+  - 🇯🇵 日本 166
+  - 🇯🇵 日本 167
+  - 🇯🇵 日本 168
+  - 🇯🇵 日本 169
+  - 🇯🇵 日本 170
+  - 🇯🇵 日本 171
+  - 🇯🇵 日本 172
+  - 🇯🇵 日本 173
+  - 🇯🇵 日本 174
+  - 🇯🇵 日本 175
+  - 🇯🇵 日本 176
+  - 🇯🇵 日本 177
+  - 🇯🇵 日本 178
+  - 🇯🇵 日本 179
+  - 🇯🇵 日本 180
+  - 🇯🇵 日本 181
+  - 🇯🇵 日本 182
+  - 🇯🇵 日本 183
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -423,5 +2749,155 @@ proxy-groups:
   - 🇯🇵 日本 31
   - 🇯🇵 日本 32
   - 🇯🇵 日本 33
+  - 🇯🇵 日本 34
+  - 🇯🇵 日本 35
+  - 🇯🇵 日本 36
+  - 🇯🇵 日本 37
+  - 🇯🇵 日本 38
+  - 🇯🇵 日本 39
+  - 🇯🇵 日本 40
+  - 🇯🇵 日本 41
+  - 🇯🇵 日本 42
+  - 🇯🇵 日本 43
+  - 🇯🇵 日本 44
+  - 🇯🇵 日本 45
+  - 🇯🇵 日本 46
+  - 🇯🇵 日本 47
+  - 🇯🇵 日本 48
+  - 🇯🇵 日本 49
+  - 🇯🇵 日本 50
+  - 🇯🇵 日本 51
+  - 🇯🇵 日本 52
+  - 🇯🇵 日本 53
+  - 🇯🇵 日本 54
+  - 🇯🇵 日本 55
+  - 🇯🇵 日本 56
+  - 🇯🇵 日本 57
+  - 🇯🇵 日本 58
+  - 🇯🇵 日本 59
+  - 🇯🇵 日本 60
+  - 🇯🇵 日本 61
+  - 🇯🇵 日本 62
+  - 🇯🇵 日本 63
+  - 🇯🇵 日本 64
+  - 🇯🇵 日本 65
+  - 🇯🇵 日本 66
+  - 🇯🇵 日本 67
+  - 🇯🇵 日本 68
+  - 🇯🇵 日本 69
+  - 🇯🇵 日本 70
+  - 🇯🇵 日本 71
+  - 🇯🇵 日本 72
+  - 🇯🇵 日本 73
+  - 🇯🇵 日本 74
+  - 🇯🇵 日本 75
+  - 🇯🇵 日本 76
+  - 🇯🇵 日本 77
+  - 🇯🇵 日本 78
+  - 🇯🇵 日本 79
+  - 🇯🇵 日本 80
+  - 🇯🇵 日本 81
+  - 🇯🇵 日本 82
+  - 🇯🇵 日本 83
+  - 🇯🇵 日本 84
+  - 🇯🇵 日本 85
+  - 🇯🇵 日本 86
+  - 🇯🇵 日本 87
+  - 🇯🇵 日本 88
+  - 🇯🇵 日本 89
+  - 🇯🇵 日本 90
+  - 🇯🇵 日本 91
+  - 🇯🇵 日本 92
+  - 🇯🇵 日本 93
+  - 🇯🇵 日本 94
+  - 🇯🇵 日本 95
+  - 🇯🇵 日本 96
+  - 🇯🇵 日本 97
+  - 🇯🇵 日本 98
+  - 🇯🇵 日本 99
+  - 🇯🇵 日本 100
+  - 🇯🇵 日本 101
+  - 🇯🇵 日本 102
+  - 🇯🇵 日本 103
+  - 🇯🇵 日本 104
+  - 🇯🇵 日本 105
+  - 🇯🇵 日本 106
+  - 🇯🇵 日本 107
+  - 🇯🇵 日本 108
+  - 🇯🇵 日本 109
+  - 🇯🇵 日本 110
+  - 🇯🇵 日本 111
+  - 🇯🇵 日本 112
+  - 🇯🇵 日本 113
+  - 🇯🇵 日本 114
+  - 🇯🇵 日本 115
+  - 🇯🇵 日本 116
+  - 🇯🇵 日本 117
+  - 🇯🇵 日本 118
+  - 🇯🇵 日本 119
+  - 🇯🇵 日本 120
+  - 🇯🇵 日本 121
+  - 🇯🇵 日本 122
+  - 🇯🇵 日本 123
+  - 🇯🇵 日本 124
+  - 🇯🇵 日本 125
+  - 🇯🇵 日本 126
+  - 🇯🇵 日本 127
+  - 🇯🇵 日本 128
+  - 🇯🇵 日本 129
+  - 🇯🇵 日本 130
+  - 🇯🇵 日本 131
+  - 🇯🇵 日本 132
+  - 🇯🇵 日本 133
+  - 🇯🇵 日本 134
+  - 🇯🇵 日本 135
+  - 🇯🇵 日本 136
+  - 🇯🇵 日本 137
+  - 🇯🇵 日本 138
+  - 🇯🇵 日本 139
+  - 🇯🇵 日本 140
+  - 🇯🇵 日本 141
+  - 🇯🇵 日本 142
+  - 🇯🇵 日本 143
+  - 🇯🇵 日本 144
+  - 🇯🇵 日本 145
+  - 🇯🇵 日本 146
+  - 🇯🇵 日本 147
+  - 🇯🇵 日本 148
+  - 🇯🇵 日本 149
+  - 🇯🇵 日本 150
+  - 🇯🇵 日本 151
+  - 🇯🇵 日本 152
+  - 🇯🇵 日本 153
+  - 🇯🇵 日本 154
+  - 🇯🇵 日本 155
+  - 🇯🇵 日本 156
+  - 🇯🇵 日本 157
+  - 🇯🇵 日本 158
+  - 🇯🇵 日本 159
+  - 🇯🇵 日本 160
+  - 🇯🇵 日本 161
+  - 🇯🇵 日本 162
+  - 🇯🇵 日本 163
+  - 🇯🇵 日本 164
+  - 🇯🇵 日本 165
+  - 🇯🇵 日本 166
+  - 🇯🇵 日本 167
+  - 🇯🇵 日本 168
+  - 🇯🇵 日本 169
+  - 🇯🇵 日本 170
+  - 🇯🇵 日本 171
+  - 🇯🇵 日本 172
+  - 🇯🇵 日本 173
+  - 🇯🇵 日本 174
+  - 🇯🇵 日本 175
+  - 🇯🇵 日本 176
+  - 🇯🇵 日本 177
+  - 🇯🇵 日本 178
+  - 🇯🇵 日本 179
+  - 🇯🇵 日本 180
+  - 🇯🇵 日本 181
+  - 🇯🇵 日本 182
+  - 🇯🇵 日本 183
 rules:
 - MATCH,PROXIES

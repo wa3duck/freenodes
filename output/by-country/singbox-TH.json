@@ -13,7 +13,7 @@
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "ais.speedtest.net"
+          "Host": "aIs.SpEeDtEsT.nEt"
         }
       }
     },
@@ -28,7 +28,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,

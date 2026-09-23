@@ -12,7 +12,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 02
-  server: 118.167.206.152
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -21,20 +21,18 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇰🇷 韩国 03
-  server: clhkzzzdbgwxxndnlm.cfooov.xyz
-  port: 61205
-  udp: true
-  type: vless
-  uuid: 55848813-689e-4a39-82cf-00748cbc7289
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI
-    short-id: d1f38c0f15ed22
-  servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 03
+  server: hkgb707.ifastcdncache.com
+  port: 60852
+  udp: true
+  type: vmess
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇭🇰 中国香港 04
   server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
   port: 443
@@ -56,7 +54,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
-  - 🇰🇷 韩国 03
+  - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
 - name: AUTO
   type: url-test
@@ -65,7 +63,7 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
-  - 🇰🇷 韩国 03
+  - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
 rules:
 - MATCH,PROXIES

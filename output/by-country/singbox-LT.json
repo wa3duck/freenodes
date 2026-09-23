@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 01",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 02",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9008,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "vless",

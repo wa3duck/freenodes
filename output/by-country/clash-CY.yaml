@@ -27,8 +27,21 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 03
+  server: 5.253.30.99
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: qq
+- name: 🇨🇾 塞浦路斯 04
   server: hydra.yokkastars.com
   port: 2443
   udp: true
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
   - 🇨🇾 塞浦路斯 03
+  - 🇨🇾 塞浦路斯 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
   - 🇨🇾 塞浦路斯 03
+  - 🇨🇾 塞浦路斯 04
 rules:
 - MATCH,PROXIES

@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 01",
-      "server": "16.170.214.108",
+      "server": "16.170.163.124",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -14,14 +14,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 02",
-      "server": "13.48.104.64",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 03",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -29,8 +21,16 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 03",
+      "server": "13.61.0.108",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 04",
-      "server": "16.171.55.2",
+      "server": "16.170.214.108",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -46,14 +46,150 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 06",
-      "server": "16.170.163.124",
+      "server": "172.238.244.13",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 07",
+      "server": "16.170.221.224",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 08",
+      "server": "13.48.104.64",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 09",
+      "server": "16.171.55.2",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 07",
+      "tag": "🇸🇪 瑞典 10",
+      "server": "79.141.174.147",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 11",
+      "server": "31.207.7.104",
+      "server_port": 443,
+      "uuid": "12ee5833-c8f5-4534-94e7-6d5c338008df",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.global-cdn.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q",
+          "short_id": "2d6d073dc88f22a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 12",
+      "server": "91.193.17.156",
+      "server_port": 9458,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 13",
+      "server": "143.246.194.213",
+      "server_port": 443,
+      "uuid": "dc9e93bc-b53a-11f1-91d3-52540030ba36",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ikea.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 14",
+      "server": "143.246.196.152",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 15",
+      "server": "143.246.195.138",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 16",
       "server": "194.238.57.23",
       "server_port": 443,
       "uuid": "303c2140-19ff-4eea-b1b1-865d4160d261",
@@ -75,59 +211,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 08",
-      "server": "51.20.72.15",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 09",
-      "server": "143.246.196.152",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 10",
-      "server": "91.193.17.156",
-      "server_port": 9458,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 11",
-      "server": "13.61.0.108",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 12",
+      "tag": "🇸🇪 瑞典 17",
       "server": "143.246.195.98",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -137,61 +222,55 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 13",
-      "server": "143.246.195.138",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 18",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 14",
+      "tag": "🇸🇪 瑞典 19",
       "server": "se-node.rumedia-cdn.com",
       "server_port": 25443,
       "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
       "tls": {
         "enabled": true,
         "server_name": "cf2.rumedia-cdn.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 15",
-      "server": "79.141.174.147",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 16",
+      "tag": "🇸🇪 瑞典 20",
       "server": "143.246.194.60",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
         "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 21",
+      "server": "2.56.121.43",
+      "server_port": 443,
+      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ikea.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM",
+          "short_id": "86229a5e3b1e6ef4"
+        }
       }
     },
     {
@@ -214,7 +293,12 @@
         "🇸🇪 瑞典 13",
         "🇸🇪 瑞典 14",
         "🇸🇪 瑞典 15",
-        "🇸🇪 瑞典 16"
+        "🇸🇪 瑞典 16",
+        "🇸🇪 瑞典 17",
+        "🇸🇪 瑞典 18",
+        "🇸🇪 瑞典 19",
+        "🇸🇪 瑞典 20",
+        "🇸🇪 瑞典 21"
       ]
     },
     {
@@ -236,7 +320,12 @@
         "🇸🇪 瑞典 13",
         "🇸🇪 瑞典 14",
         "🇸🇪 瑞典 15",
-        "🇸🇪 瑞典 16"
+        "🇸🇪 瑞典 16",
+        "🇸🇪 瑞典 17",
+        "🇸🇪 瑞典 18",
+        "🇸🇪 瑞典 19",
+        "🇸🇪 瑞典 20",
+        "🇸🇪 瑞典 21"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

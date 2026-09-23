@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 01
-  server: 82.198.246.37
+  server: 82.198.246.97
   port: 180
   udp: true
   type: vmess
@@ -13,18 +13,26 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 02
-  server: 34.87.244.111
+  server: 45.12.30.40
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime28.workers.dev
+- name: 🇦🇺 澳大利亚 03
+  server: 172.105.169.70
   port: 443
   udp: true
   type: vless
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 03
+  servername: 172.105.169.70
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 04
   server: 51.161.204.244
   port: 443
   udp: true
@@ -36,8 +44,8 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 04
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 05
   server: 34.87.229.148
   port: 443
   udp: true
@@ -49,20 +57,24 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 05
-  server: vpn-au-002.fastervpn.world
+- name: 🇦🇺 澳大利亚 06
+  server: 34.87.244.111
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 06
+  type: vless
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇦🇺 澳大利亚 07
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
   type: vless
-  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
+  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -81,6 +93,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 04
   - 🇦🇺 澳大利亚 05
   - 🇦🇺 澳大利亚 06
+  - 🇦🇺 澳大利亚 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +105,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 04
   - 🇦🇺 澳大利亚 05
   - 🇦🇺 澳大利亚 06
+  - 🇦🇺 澳大利亚 07
 rules:
 - MATCH,PROXIES

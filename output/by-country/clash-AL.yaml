@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 01
-  server: 156.226.168.221
-  port: 35193
+- name: 🇦🇱 AL 01
+  server: 194.93.61.100
+  port: 443
   udp: true
   type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
+  uuid: 41e71ba7-d389-47aa-94f7-ed1f55fdbcdf
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: random
+    public-key: E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ
+    short-id: 17d334ad29b2ff40
+  servername: cdnjs.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 01
+  - 🇦🇱 AL 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 01
+  - 🇦🇱 AL 01
 rules:
 - MATCH,PROXIES

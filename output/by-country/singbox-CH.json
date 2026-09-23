@@ -15,7 +15,7 @@
         "server_name": "usa.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,8 +25,68 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 02",
+      "server": "104.21.117.9",
+      "server_port": 443,
+      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn2950.bbxff.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "netlivpn2950.bbxff.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 03",
+      "server": "104.21.200.243",
+      "server_port": 2053,
+      "uuid": "7074b9d7-2183-8919-fc11-ca5e00000000",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn2584.vjvdgbc.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn2584.vjvdgbc.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 04",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn2950.bbxff.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 05",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -38,7 +98,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 03",
+      "tag": "🇨🇭 瑞士 06",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -48,7 +108,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -59,7 +119,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 04",
+      "tag": "🇨🇭 瑞士 07",
       "server": "179.255.191.40",
       "server_port": 8443,
       "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
@@ -67,81 +127,17 @@
         "enabled": true,
         "server_name": "switz.luxes.network",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       },
       "transport": {
         "type": "ws",
         "path": "/assets"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 05",
-      "server": "82.38.139.24",
-      "server_port": 8445,
-      "uuid": "c6f6ecc2-26af-4e2f-95a7-e7018819a716",
-      "tls": {
-        "enabled": true,
-        "server_name": "hetzner.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_UazRMiBq9RqMaVrHeLsvUuoBkGFo9Gm-A4ivuZ6ZS8",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "Google"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 06",
-      "server": "151.242.2.81",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf9.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 07",
-      "server": "34.65.54.139",
-      "server_port": 443,
-      "uuid": "bd93a117-2e9d-4e1e-b9b9-69d8d7089bdb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DE-S0R0KYYTuBsuQmT-iip6rJ2QsuH6z3SJYlsNyUUI",
-          "short_id": "5214a92cad4ad90e"
-        }
       }
     },
     {
@@ -156,12 +152,44 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 09",
+      "server": "151.242.2.81",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf9.rumedia-cdn.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 10",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 11",
+      "server": "152.67.75.161",
+      "server_port": 443,
+      "password": "3a702d4d1de4949005d8431220e040fb",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c13f29db6a638ad2b211b9ce2669ef27"
+      }
     },
     {
       "type": "selector",
@@ -176,7 +204,9 @@
         "🇨🇭 瑞士 06",
         "🇨🇭 瑞士 07",
         "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09"
+        "🇨🇭 瑞士 09",
+        "🇨🇭 瑞士 10",
+        "🇨🇭 瑞士 11"
       ]
     },
     {
@@ -191,7 +221,9 @@
         "🇨🇭 瑞士 06",
         "🇨🇭 瑞士 07",
         "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09"
+        "🇨🇭 瑞士 09",
+        "🇨🇭 瑞士 10",
+        "🇨🇭 瑞士 11"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

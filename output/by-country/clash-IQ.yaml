@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01
-  server: 193.56.135.212
-  port: 9543
+  server: 172.67.141.75
+  port: 443
   udp: true
   type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
+  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
   tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
+  servername: frosty-pond-7436.shhabbyat914.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /NmrU9ImDG7jA7oFEem
+    headers:
+      Host: frosty-pond-7436.shhabbyat914.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

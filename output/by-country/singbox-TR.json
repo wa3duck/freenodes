@@ -4,15 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 01",
-      "server": "206.1.97.212",
-      "server_port": 28351,
-      "uuid": "Nitro_Skybot@",
-      "security": "auto",
+      "server": "104.17.169.13",
+      "server_port": 2053,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "tls": {
+        "enabled": true,
+        "server_name": "index.harmonica01.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/axch1mttbxz2k55y01",
+        "headers": {
+          "Host": "index.harmonica01.workers.dev"
+        }
       }
     },
     {
@@ -27,7 +41,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
