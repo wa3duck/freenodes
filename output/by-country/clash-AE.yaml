@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: b01e6de1-67df-4a56-a3e3-c6eb1a140caf
+  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,16 +17,18 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 02
-  server: 45.130.125.201
-  port: 80
+  server: 78.40.195.140
+  port: 443
   udp: true
   type: vless
-  uuid: dc8a9493-c54a-459e-d060-81a700000001
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.netizo09.workers.dev
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
+    short-id: 98096455d963bdbb
+  servername: www.booking.com
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 03
   server: 130.49.161.70
   port: 443
@@ -38,14 +40,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 04
-  server: 85.204.107.172
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 05
   server: 94.183.224.45
   port: 443
   udp: true
@@ -58,19 +52,25 @@ proxies:
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
   client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 05
+  server: 85.204.107.175
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
 - name: 🇦🇪 阿联酋 06
-  server: 139.185.44.42
-  port: 8443
+  server: 84.235.244.108
+  port: 22573
   udp: true
   type: vless
-  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
-    short-id: 855834d3b002ad21
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 07
   server: 146.70.102.82
   port: 443
@@ -84,17 +84,6 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 08
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,7 +96,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
-  - 🇦🇪 阿联酋 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,6 +108,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
-  - 🇦🇪 阿联酋 08
 rules:
 - MATCH,PROXIES

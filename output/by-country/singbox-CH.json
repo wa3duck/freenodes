@@ -6,99 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 01",
-      "server": "138.124.60.146",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 02",
-      "server": "104.21.117.9",
-      "server_port": 443,
-      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn2950.bbxff.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "netlivpn2950.bbxff.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 03",
-      "server": "104.21.200.243",
-      "server_port": 2053,
-      "uuid": "7074b9d7-2183-8919-fc11-ca5e00000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn2584.vjvdgbc.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn2584.vjvdgbc.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 04",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
-      "transport": {
-        "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn2950.bbxff.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 05",
-      "server": "82.38.64.229",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 06",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -119,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 07",
+      "tag": "🇨🇭 瑞士 02",
       "server": "179.255.191.40",
       "server_port": 8443,
       "uuid": "d544c858-b1ba-45b2-8868-8197daf2a6ee",
@@ -127,9 +34,6 @@
         "enabled": true,
         "server_name": "switz.luxes.network",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "safari"
@@ -142,7 +46,53 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 08",
+      "tag": "🇨🇭 瑞士 03",
+      "server": "199.232.249.220",
+      "server_port": 443,
+      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
+      "tls": {
+        "enabled": true,
+        "server_name": "global.fastly.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "sardach3.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 04",
+      "server": "151.242.2.81",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf9.rumedia-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 05",
       "server": "131.123.34.145",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -152,32 +102,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 09",
-      "server": "151.242.2.81",
-      "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 10",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 11",
+      "tag": "🇨🇭 瑞士 06",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -201,12 +127,7 @@
         "🇨🇭 瑞士 03",
         "🇨🇭 瑞士 04",
         "🇨🇭 瑞士 05",
-        "🇨🇭 瑞士 06",
-        "🇨🇭 瑞士 07",
-        "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09",
-        "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11"
+        "🇨🇭 瑞士 06"
       ]
     },
     {
@@ -218,12 +139,7 @@
         "🇨🇭 瑞士 03",
         "🇨🇭 瑞士 04",
         "🇨🇭 瑞士 05",
-        "🇨🇭 瑞士 06",
-        "🇨🇭 瑞士 07",
-        "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09",
-        "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11"
+        "🇨🇭 瑞士 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

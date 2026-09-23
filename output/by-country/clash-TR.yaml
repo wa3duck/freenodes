@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
-  server: 104.17.169.13
-  port: 2053
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  tls: true
-  servername: index.harmonica01.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /axch1mttbxz2k55y01
-    headers:
-      Host: index.harmonica01.workers.dev
-- name: 🇹🇷 土耳其 02
   server: 78.135.73.47
   port: 443
   udp: true
@@ -31,8 +16,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 03
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 02
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -44,6 +29,21 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 03
+  server: 146.75.84.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: bechbad.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select

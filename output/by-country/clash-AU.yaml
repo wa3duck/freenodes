@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 01
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -13,26 +13,38 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 02
-  server: 45.12.30.40
-  port: 8880
+  server: 149.88.23.207
+  port: 18000
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇦🇺 澳大利亚 03
-  server: 172.105.169.70
+  server: 34.87.229.148
   port: 443
   udp: true
   type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
   tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 04
+  server: 34.87.244.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 05
   server: 51.161.204.244
   port: 443
   udp: true
@@ -45,36 +57,20 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 05
-  server: 34.87.229.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
-  tls: true
-  reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-    short-id: 8a7d5e0248cdb1b1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 06
-  server: 34.87.244.111
+  server: vpn-au-002.fastervpn.world
   port: 443
   udp: true
-  type: vless
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  tls: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  servername: www.cloudflare.com
-  client-fingerprint: ios
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 07
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
   type: vless
-  uuid: 3da32b09-10e5-4ef9-b422-2e476dd72d87
+  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
