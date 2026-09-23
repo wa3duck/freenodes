@@ -6,26 +6,26 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 01",
-      "server": "195.238.126.84",
-      "server_port": 9039,
+      "server": "195.238.126.20",
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 02",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 03",
       "server": "195.238.126.20",
-      "server_port": 9008,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -39,9 +39,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 05",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "vless",
@@ -55,7 +55,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

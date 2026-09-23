@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 01
   server: 213.183.63.60
-  port: 9030
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 02
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 03
-  server: 213.183.63.60
   port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 04
+- name: 🇧🇬 保加利亚 02
   server: 213.183.63.60
-  port: 9066
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 03
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 04
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 05
   server: 213.183.63.60
   port: 9061
@@ -48,38 +48,32 @@ proxies:
   password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 07
   server: 213.183.63.60
-  port: 9028
+  port: 9029
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
+  password: dU3DSNS8wYPXzEKw
 - name: 🇧🇬 保加利亚 08
   server: 213.183.63.60
-  port: 9049
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 09
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 10
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 10
-  server: 193.148.59.178
-  port: 443
-  udp: true
-  type: vless
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
-  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 11
   server: 131.123.41.18
   port: 8081
@@ -108,15 +102,32 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 14
-  server: 131.123.41.31
-  port: 8081
+  server: 193.148.59.178
+  port: 443
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 15
+  server: 136.175.82.85
+  port: 18775
+  udp: true
+  type: vless
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
+  client-fingerprint: ios
+- name: 🇧🇬 保加利亚 16
   server: 131.123.41.18
   port: 443
   udp: true
@@ -128,20 +139,16 @@ proxies:
     public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
-  client-fingerprint: random
-- name: 🇧🇬 保加利亚 16
-  server: prep.wwwinternetvideo.click
-  port: 443
+  client-fingerprint: ''
+- name: 🇧🇬 保加利亚 17
+  server: 131.123.41.31
+  port: 8081
   udp: true
   type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: chrome
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
@@ -163,6 +170,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 14
   - 🇧🇬 保加利亚 15
   - 🇧🇬 保加利亚 16
+  - 🇧🇬 保加利亚 17
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -184,5 +192,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 14
   - 🇧🇬 保加利亚 15
   - 🇧🇬 保加利亚 16
+  - 🇧🇬 保加利亚 17
 rules:
 - MATCH,PROXIES

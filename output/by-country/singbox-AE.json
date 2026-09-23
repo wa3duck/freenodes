@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 01",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "0817a3bb-c8fb-4ddf-a05e-321565b39cd8",
+      "uuid": "ba90d4f6-de5c-466e-9b05-975f49ef528c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -25,29 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 02",
-      "server": "78.40.195.140",
-      "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.booking.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
-          "short_id": "98096455d963bdbb"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 03",
+      "tag": "🇦🇪 阿联酋 02",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -59,6 +38,27 @@
       "obfs": {
         "type": "salamander",
         "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 03",
+      "server": "78.40.195.140",
+      "server_port": 443,
+      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.booking.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo",
+          "short_id": "98096455d963bdbb"
+        }
       }
     },
     {
@@ -85,13 +85,13 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 05",
-      "server": "85.204.107.175",
+      "server": "85.204.107.178",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
-        "insecure": true
+        "insecure": false
       }
     },
     {

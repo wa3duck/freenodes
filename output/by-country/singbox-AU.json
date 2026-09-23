@@ -6,18 +6,31 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 01",
-      "server": "82.198.246.250",
+      "server": "82.198.246.233",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 02",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
+      }
     },
     {
       "type": "vless",
@@ -50,7 +63,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -62,42 +75,9 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 05",
-      "server": "51.161.204.244",
-      "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 06",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 07",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "38b8e2fb-b9a0-40a6-b42c-335def2765cf",
+      "uuid": "52e89791-cc65-4cdb-9d3a-7c06df9f6ebd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -122,9 +102,7 @@
         "🇦🇺 澳大利亚 02",
         "🇦🇺 澳大利亚 03",
         "🇦🇺 澳大利亚 04",
-        "🇦🇺 澳大利亚 05",
-        "🇦🇺 澳大利亚 06",
-        "🇦🇺 澳大利亚 07"
+        "🇦🇺 澳大利亚 05"
       ]
     },
     {
@@ -135,9 +113,7 @@
         "🇦🇺 澳大利亚 02",
         "🇦🇺 澳大利亚 03",
         "🇦🇺 澳大利亚 04",
-        "🇦🇺 澳大利亚 05",
-        "🇦🇺 澳大利亚 06",
-        "🇦🇺 澳大利亚 07"
+        "🇦🇺 澳大利亚 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

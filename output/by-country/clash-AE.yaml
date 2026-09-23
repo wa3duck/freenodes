@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 0817a3bb-c8fb-4ddf-a05e-321565b39cd8
+  uuid: ba90d4f6-de5c-466e-9b05-975f49ef528c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,6 +17,16 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 02
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 03
   server: 78.40.195.140
   port: 443
   udp: true
@@ -28,17 +38,7 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 03
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 04
   server: 94.183.224.45
   port: 443
@@ -53,13 +53,13 @@ proxies:
   servername: dzen.ru
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 05
-  server: 85.204.107.175
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇦🇪 阿联酋 06
   server: 84.235.244.108
   port: 22573

@@ -5,26 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 01
-  server: 195.238.126.84
-  port: 9039
+  server: 195.238.126.20
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 02
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 03
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 03
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 04
   server: 195.238.126.20
   port: 9011
@@ -34,11 +34,11 @@ proxies:
   password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 05
   server: 195.238.126.20
-  port: 9012
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 06
   server: 84.32.215.94
   port: 443
@@ -51,7 +51,7 @@ proxies:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
     short-id: 4fa44664f6a566d3
   servername: lt.aether-runet.top
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
