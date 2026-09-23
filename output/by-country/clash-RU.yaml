@@ -5,27 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 01
-  server: 162.159.24.131
-  port: 8080
+  server: 130.49.218.208
+  port: 5432
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 130.49.218.208
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 02
-  server: 162.159.38.127
-  port: 2086
+  server: 62.113.41.165
+  port: 888
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hF-qqin2wYhP7zS47SyR0Q
 - name: 🇷🇺 俄罗斯 03
   server: 195.133.23.200
   port: 10081
@@ -39,7 +35,7 @@ proxies:
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: itsallproxy.quattro-tech.ru
+  sni: hy.quattro-tech.ru
   skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 05
   server: 46.8.200.91
@@ -56,6 +52,25 @@ proxies:
     headers:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 06
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 07
+  server: 94.249.187.46
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇷🇺 俄罗斯 08
   server: fbsv6.guardora.pro
   port: 443
   udp: true
@@ -81,6 +96,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 04
   - 🇷🇺 俄罗斯 05
   - 🇷🇺 俄罗斯 06
+  - 🇷🇺 俄罗斯 07
+  - 🇷🇺 俄罗斯 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,5 +109,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 04
   - 🇷🇺 俄罗斯 05
   - 🇷🇺 俄罗斯 06
+  - 🇷🇺 俄罗斯 07
+  - 🇷🇺 俄罗斯 08
 rules:
 - MATCH,PROXIES

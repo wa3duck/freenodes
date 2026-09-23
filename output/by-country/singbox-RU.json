@@ -6,30 +6,27 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 01",
-      "server": "162.159.24.131",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+      "server": "130.49.218.208",
+      "server_port": 5432,
+      "uuid": "cc01f435-d561-4525-bf1f-7a9876d33207",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "130.49.218.208",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 02",
-      "server": "162.159.38.127",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
+      "server": "62.113.41.165",
+      "server_port": 888,
+      "method": "chacha20-ietf-poly1305",
+      "password": "hF-qqin2wYhP7zS47SyR0Q"
     },
     {
       "type": "shadowsocks",
@@ -47,7 +44,7 @@
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
+        "server_name": "hy.quattro-tech.ru",
         "insecure": false
       }
     },
@@ -73,6 +70,34 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 06",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 07",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 08",
       "server": "fbsv6.guardora.pro",
       "server_port": 443,
       "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
@@ -106,7 +131,9 @@
         "🇷🇺 俄罗斯 03",
         "🇷🇺 俄罗斯 04",
         "🇷🇺 俄罗斯 05",
-        "🇷🇺 俄罗斯 06"
+        "🇷🇺 俄罗斯 06",
+        "🇷🇺 俄罗斯 07",
+        "🇷🇺 俄罗斯 08"
       ]
     },
     {
@@ -118,7 +145,9 @@
         "🇷🇺 俄罗斯 03",
         "🇷🇺 俄罗斯 04",
         "🇷🇺 俄罗斯 05",
-        "🇷🇺 俄罗斯 06"
+        "🇷🇺 俄罗斯 06",
+        "🇷🇺 俄罗斯 07",
+        "🇷🇺 俄罗斯 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 01
-  server: 36.224.141.124
-  port: 50099
+- name: 🇨🇴 哥伦比亚 01
+  server: 157.137.219.244
+  port: 62145
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  type: vless
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 01
+  - 🇨🇴 哥伦比亚 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 01
+  - 🇨🇴 哥伦比亚 01
 rules:
 - MATCH,PROXIES

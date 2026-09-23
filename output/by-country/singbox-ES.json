@@ -4,24 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 01",
+      "server": "85.90.217.42",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 02",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 02",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 03",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 03",
+      "tag": "🇪🇸 西班牙 04",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -30,7 +38,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -41,44 +49,15 @@
     },
     {
       "type": "vmess",
-      "tag": "🇪🇸 西班牙 04",
-      "server": "85.90.217.42",
+      "tag": "🇪🇸 西班牙 05",
+      "server": "66.163.118.73",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 05",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "vless",
       "tag": "🇪🇸 西班牙 06",
-      "server": "87.76.179.117",
-      "server_port": 7443,
-      "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
-          "short_id": "d2061bb1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 07",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -94,6 +73,27 @@
           "enabled": true,
           "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
           "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 07",
+      "server": "87.76.179.117",
+      "server_port": 7443,
+      "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
         }
       }
     },

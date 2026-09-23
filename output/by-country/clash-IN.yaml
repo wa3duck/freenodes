@@ -5,14 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01
-  server: vpn-in-001.fastervpn.world
+  server: 34.47.245.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
+  tls: true
+  reality-opts:
+    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
+    short-id: 50440423703c945f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 02
+  server: 13.207.151.141
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
+  sni: vpn-in-001.fastervpn.world
   skip-cert-verify: true
-- name: 🇮🇳 印度 02
+- name: 🇮🇳 印度 03
+  server: 148.113.5.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
+    short-id: 221873918e0bb74d
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 04
   server: 34.93.188.70
   port: 443
   udp: true
@@ -24,7 +49,7 @@ proxies:
     short-id: b9299afa0dcac824
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 03
+- name: 🇮🇳 印度 05
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -35,35 +60,15 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 04
-  server: 35.244.28.130
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: tttyder.wsone.icu
-  skip-cert-verify: true
-- name: 🇮🇳 印度 05
-  server: 13.207.151.141
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 06
+  server: vpn-in-001.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇮🇳 印度 06
-  server: 34.47.245.203
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
-  tls: true
-  reality-opts:
-    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
-    short-id: 50440423703c945f
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇮🇳 印度 07
   server: 34.131.228.210
   port: 443
@@ -73,17 +78,6 @@ proxies:
   sni: hyfuuf6.wsone.icu
   skip-cert-verify: true
 - name: 🇮🇳 印度 08
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇮🇳 印度 09
   server: 139.84.166.47
   port: 8388
   udp: true
@@ -103,7 +97,6 @@ proxy-groups:
   - 🇮🇳 印度 06
   - 🇮🇳 印度 07
   - 🇮🇳 印度 08
-  - 🇮🇳 印度 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,6 +110,5 @@ proxy-groups:
   - 🇮🇳 印度 06
   - 🇮🇳 印度 07
   - 🇮🇳 印度 08
-  - 🇮🇳 印度 09
 rules:
 - MATCH,PROXIES

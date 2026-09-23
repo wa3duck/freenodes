@@ -5,21 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 01
-  server: 45.32.120.173
-  port: 443
+  server: 149.88.23.207
+  port: 18000
   udp: true
   type: vmess
-  uuid: XEXEVIL
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 02
-  server: 138.2.73.61
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: To6vtBYY2vHB3dYSu3rGxLOObUWvC8zGLJMtn+/LEPU=
-- name: 🇸🇬 新加坡 03
   server: 172.237.70.226
   port: 22324
   udp: true
@@ -27,7 +20,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 04
+- name: 🇸🇬 新加坡 03
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -35,46 +28,42 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 05
-  server: 167.150.100.93
-  port: 29824
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
-- name: 🇸🇬 新加坡 06
+- name: 🇸🇬 新加坡 04
   server: 134.185.89.83
   port: 56927
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: Gy4t/ay4dV3dWTnsOtaDn5i0LZfX2dLEuhLZk4H0Ufk=
-- name: 🇸🇬 新加坡 07
-  server: 146.235.16.130
-  port: 19825
-  udp: true
-  type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 08
-  server: 206.206.76.75
+- name: 🇸🇬 新加坡 05
+  server: 45.32.120.173
   port: 443
   udp: true
-  type: vless
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: XEXEVIL
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 06
+  server: 103.36.91.32
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇸🇬 新加坡 07
+  server: 167.150.100.115
+  port: 27755
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+- name: 🇸🇬 新加坡 08
+  server: 167.150.100.93
+  port: 29824
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
 - name: 🇸🇬 新加坡 09
   server: 5.223.74.174
   port: 2053
@@ -87,28 +76,8 @@ proxies:
     public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
     short-id: 36151c48e28cfb65
   servername: 5.223.74.174
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 10
-  server: 167.150.100.115
-  port: 27755
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-- name: 🇸🇬 新加坡 11
-  server: sgbes1.vihodest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Hd9jUd_WcEOk5TR4g2AHGkEFi0eGGIlJ-rbgUxu-Dlc
-    short-id: 99747caa5ffca51f
-  servername: sgbes1.vihodest.net
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 12
   server: 138.2.73.238
   port: 50160
   udp: true
@@ -116,7 +85,7 @@ proxies:
   password: f87376e17da040ed04c9665ce8972930
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 13
+- name: 🇸🇬 新加坡 11
   server: 54.169.200.246
   port: 41688
   udp: true
@@ -128,20 +97,21 @@ proxies:
     public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
     short-id: 7f342137c20387
   servername: www.intel.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 14
-  server: 217.217.254.126
-  port: 2053
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 12
+  server: 206.206.76.75
+  port: 443
   udp: true
   type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 15
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 13
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -153,21 +123,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 16
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 17
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 14
   server: 3.0.111.82
   port: 17623
   udp: true
@@ -180,19 +137,56 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 18
-  server: sg4.miyazono-kaori.com
-  port: 443
+- name: 🇸🇬 新加坡 15
+  server: 217.217.254.126
+  port: 2053
   udp: true
   type: vless
-  uuid: ff8d05b5-4aec-40cc-86a1-ccfbcf811fea
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 16
+  server: 13.214.221.206
+  port: 8686
+  udp: true
+  type: vless
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  tls: true
+  reality-opts:
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+    short-id: 628b3c90c98ead4f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 17
+  server: 146.235.16.130
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: I2PQq5bidT2RjVCJt2r-eSVpLNY61quSYgS2dseomF8
-    short-id: 1dd8558159ecd0
-  servername: www.changiairport.com
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 18
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
 - name: 🇸🇬 新加坡 19
   server: 172.67.130.159
   port: 2096
@@ -202,11 +196,19 @@ proxies:
   tls: true
   servername: cdn-sg.skyvora.app
   skip-cert-verify: false
+  client-fingerprint: edge
   network: ws
   ws-opts:
     path: /78bc8
     headers:
       Host: cdn-sg.skyvora.app
+- name: 🇸🇬 新加坡 20
+  server: 138.2.73.61
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: To6vtBYY2vHB3dYSu3rGxLOObUWvC8zGLJMtn+/LEPU=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -231,6 +233,7 @@ proxy-groups:
   - 🇸🇬 新加坡 17
   - 🇸🇬 新加坡 18
   - 🇸🇬 新加坡 19
+  - 🇸🇬 新加坡 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -255,5 +258,6 @@ proxy-groups:
   - 🇸🇬 新加坡 17
   - 🇸🇬 新加坡 18
   - 🇸🇬 新加坡 19
+  - 🇸🇬 新加坡 20
 rules:
 - MATCH,PROXIES

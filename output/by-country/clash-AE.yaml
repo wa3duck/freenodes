@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: ba90d4f6-de5c-466e-9b05-975f49ef528c
+  uuid: 431acd7d-ef6c-4d2b-b471-bcdddca8050c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -27,6 +27,17 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 03
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: e1bd06de-a075-4ad5-b73f-b54587368cc7
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: morning-feather-dc98.136-25b.workers.dev
+- name: 🇦🇪 阿联酋 04
   server: 78.40.195.140
   port: 443
   udp: true
@@ -38,8 +49,8 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 04
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 05
   server: 94.183.224.45
   port: 443
   udp: true
@@ -51,17 +62,17 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 05
-  server: 85.204.107.178
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 06
+  server: 85.204.107.183
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 06
-  server: 84.235.244.108
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 07
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -71,7 +82,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 07
+- name: 🇦🇪 阿联酋 08
   server: 146.70.102.82
   port: 443
   udp: true
@@ -96,6 +107,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
+  - 🇦🇪 阿联酋 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,5 +120,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
+  - 🇦🇪 阿联酋 08
 rules:
 - MATCH,PROXIES
