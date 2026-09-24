@@ -12,6 +12,27 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 02
+  server: 89.41.172.85
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇮🇹 意大利 03
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 04
+  server: 57.131.48.45
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇮🇹 意大利 05
   server: 31.77.154.14
   port: 8443
   udp: true
@@ -25,40 +46,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇮🇹 意大利 03
-  server: 57.131.48.45
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇮🇹 意大利 04
-  server: 31.76.113.231
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: 4fa44664f6a566d3
-  servername: italia.superbuba.top
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 05
-  server: 57.131.38.163
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇮🇹 意大利 06
-  server: italia.superbuba.top
+  server: 31.77.201.33
   port: 443
   udp: true
   type: vless
@@ -71,40 +60,19 @@ proxies:
   servername: italia.superbuba.top
   client-fingerprint: firefox
 - name: 🇮🇹 意大利 07
-  server: 91.201.65.122
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇮🇹 意大利 08
-  server: 91.201.65.122
-  port: 9059
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
-- name: 🇮🇹 意大利 09
-  server: 82.118.16.187
+  server: 31.76.113.231
   port: 443
   udp: true
   type: vless
-  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
-    short-id: cd6065902eea7a02
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 10
-  server: 91.201.65.122
-  port: 9050
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FG5ddLsMPbV5CutE
-- name: 🇮🇹 意大利 11
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: 4fa44664f6a566d3
+  servername: italia.superbuba.top
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 08
   server: 31.76.113.212
   port: 443
   udp: true
@@ -117,14 +85,60 @@ proxies:
     short-id: 4fa44664f6a566d3
   servername: italia.superbuba.top
   client-fingerprint: firefox
+- name: 🇮🇹 意大利 09
+  server: 82.118.16.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
+    short-id: cd6065902eea7a02
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 10
+  server: 91.201.65.122
+  port: 9059
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇮🇹 意大利 11
+  server: 91.201.65.122
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
 - name: 🇮🇹 意大利 12
+  server: 91.201.65.122
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+- name: 🇮🇹 意大利 13
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇹 意大利 14
   server: 91.201.65.122
   port: 9053
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: SBM7R883jBmnqe6C
-- name: 🇮🇹 意大利 13
+- name: 🇮🇹 意大利 15
   server: 204.216.216.23
   port: 1114
   udp: true
@@ -136,8 +150,8 @@ proxies:
     public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
     short-id: 79a1e14b
   servername: yahoo.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 14
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 16
   server: 82.118.16.189
   port: 443
   udp: true
@@ -149,13 +163,14 @@ proxies:
     public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 15
-  server: 204.216.216.23
-  port: 10086
+  client-fingerprint: qq
+- name: 🇮🇹 意大利 17
+  server: 91.201.65.122
+  port: 9050
   udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  type: ss
+  cipher: aes-256-cfb
+  password: FG5ddLsMPbV5CutE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -176,6 +191,8 @@ proxy-groups:
   - 🇮🇹 意大利 13
   - 🇮🇹 意大利 14
   - 🇮🇹 意大利 15
+  - 🇮🇹 意大利 16
+  - 🇮🇹 意大利 17
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -196,5 +213,7 @@ proxy-groups:
   - 🇮🇹 意大利 13
   - 🇮🇹 意大利 14
   - 🇮🇹 意大利 15
+  - 🇮🇹 意大利 16
+  - 🇮🇹 意大利 17
 rules:
 - MATCH,PROXIES

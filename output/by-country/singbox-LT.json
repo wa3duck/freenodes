@@ -15,13 +15,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 02",
       "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 03",
+      "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 03",
+      "tag": "🇱🇹 立陶宛 04",
       "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
@@ -29,39 +37,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 04",
+      "tag": "🇱🇹 立陶宛 05",
       "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
       "password": "xaupMUvhptwxdDUg"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 05",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 06",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 07",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 08",
+      "tag": "🇱🇹 立陶宛 06",
       "server": "84.32.215.5",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -90,9 +74,7 @@
         "🇱🇹 立陶宛 03",
         "🇱🇹 立陶宛 04",
         "🇱🇹 立陶宛 05",
-        "🇱🇹 立陶宛 06",
-        "🇱🇹 立陶宛 07",
-        "🇱🇹 立陶宛 08"
+        "🇱🇹 立陶宛 06"
       ]
     },
     {
@@ -104,9 +86,7 @@
         "🇱🇹 立陶宛 03",
         "🇱🇹 立陶宛 04",
         "🇱🇹 立陶宛 05",
-        "🇱🇹 立陶宛 06",
-        "🇱🇹 立陶宛 07",
-        "🇱🇹 立陶宛 08"
+        "🇱🇹 立陶宛 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

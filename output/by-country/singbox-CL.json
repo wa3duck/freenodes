@@ -6,26 +6,26 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 01",
-      "server": "64.176.18.104",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109",
-        "headers": {
-          "Host": "platform109.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 02",
       "server": "64.176.5.166",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
         "path": "/platform117"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 02",
+      "server": "64.176.23.207",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
       }
     },
     {
@@ -45,14 +45,14 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 04",
-      "server": "64.176.23.207",
+      "server": "64.176.18.104",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform118",
+        "path": "/platform109",
         "headers": {
-          "Host": "platform118.halalkhor.info"
+          "Host": "platform109.halalkhor.info"
         }
       }
     },

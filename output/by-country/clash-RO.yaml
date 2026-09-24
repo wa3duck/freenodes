@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 01
-  server: 85.204.107.187
+  server: 85.204.107.183
   port: 8443
   udp: true
   type: hysteria2
@@ -34,6 +34,16 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 04
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 05
   server: 146.70.124.85
   port: 443
   udp: true
@@ -46,7 +56,7 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 05
+- name: 🇷🇴 罗马尼亚 06
   server: 193.163.203.253
   port: 443
   udp: true
@@ -59,8 +69,8 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 06
-  server: 154.46.31.106
+- name: 🇷🇴 罗马尼亚 07
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
@@ -77,6 +87,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 04
   - 🇷🇴 罗马尼亚 05
   - 🇷🇴 罗马尼亚 06
+  - 🇷🇴 罗马尼亚 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +99,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 04
   - 🇷🇴 罗马尼亚 05
   - 🇷🇴 罗马尼亚 06
+  - 🇷🇴 罗马尼亚 07
 rules:
 - MATCH,PROXIES

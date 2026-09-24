@@ -5,14 +5,182 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 01
-  server: 149.88.23.207
-  port: 18000
+  server: 172.64.32.103
+  port: 2052
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 02
+  server: 104.18.39.218
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 03
+  server: 108.162.198.178
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 04
+  server: 162.159.24.131
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 05
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: e22b50d5-dcc5-4dff-afd6-6124a2f08545
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇸🇬 新加坡 06
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  tls: true
+  servername: 057.electrocellco-cf-057.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+- name: 🇸🇬 新加坡 07
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 08
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: steep-bonus-8e6a.amirhon1376.workers.dev
+- name: 🇸🇬 新加坡 09
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  tls: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 10
+  server: 188.114.97.8
+  port: 443
+  udp: true
+  type: vless
+  uuid: eb24c3b4-7936-45e2-a253-e54fd1955a7f
+  tls: true
+  servername: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/6NGHNFKsvK41KeQo?ed=2560
+    headers:
+      Host: c0yr9j09y2l9g0td8wa5.2whbrirhjgslm43zjcqei.workers.dev
+- name: 🇸🇬 新加坡 11
+  server: 104.21.8.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: b19419fa-8009-455b-b059-765e2856883a
+  tls: true
+  servername: akbarian34.j9z65ce2uyks.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/Q5xRgb8wfW3RTYFIfDA16PzboJrjLuZ9
+    headers:
+      Host: akbarian34.j9z65ce2uyks.workers.dev
+- name: 🇸🇬 新加坡 12
+  server: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: af0db32b-2cb0-48c7-b04e-96003f8c2369
+  tls: true
+  servername: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/ZONyHuyg0cpDAFQTzm3u?ed=2560
+    headers:
+      Host: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
+- name: 🇸🇬 新加坡 13
+  server: 172.64.53.55
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 14
+  server: 172.64.154.8
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 15
   server: 172.237.70.226
   port: 22324
   udp: true
@@ -20,7 +188,29 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 03
+- name: 🇸🇬 新加坡 16
+  server: 167.150.100.93
+  port: 29824
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
+- name: 🇸🇬 新加坡 17
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 18
+  server: 167.150.100.115
+  port: 27755
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+- name: 🇸🇬 新加坡 19
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -28,14 +218,28 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 04
-  server: 134.185.89.83
-  port: 56927
+- name: 🇸🇬 新加坡 20
+  server: 103.36.91.32
+  port: 8388
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: Gy4t/ay4dV3dWTnsOtaDn5i0LZfX2dLEuhLZk4H0Ufk=
-- name: 🇸🇬 新加坡 05
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇸🇬 新加坡 21
+  server: 38.47.96.220
+  port: 11424
+  udp: true
+  type: vless
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
+  tls: true
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
+- name: 🇸🇬 新加坡 22
   server: 45.32.120.173
   port: 443
   udp: true
@@ -43,28 +247,7 @@ proxies:
   uuid: XEXEVIL
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 06
-  server: 103.36.91.32
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇸🇬 新加坡 07
-  server: 167.150.100.115
-  port: 27755
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
-- name: 🇸🇬 新加坡 08
-  server: 167.150.100.93
-  port: 29824
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
-- name: 🇸🇬 新加坡 09
+- name: 🇸🇬 新加坡 23
   server: 5.223.74.174
   port: 2053
   udp: true
@@ -77,7 +260,17 @@ proxies:
     short-id: 36151c48e28cfb65
   servername: 5.223.74.174
   client-fingerprint: random
-- name: 🇸🇬 新加坡 10
+- name: 🇸🇬 新加坡 24
+  server: 138.2.89.249
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d042d150716709bb778cc73889cddb02
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
+- name: 🇸🇬 新加坡 25
   server: 138.2.73.238
   port: 50160
   udp: true
@@ -85,20 +278,7 @@ proxies:
   password: f87376e17da040ed04c9665ce8972930
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 11
-  server: 54.169.200.246
-  port: 41688
-  udp: true
-  type: vless
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  servername: www.intel.com
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 12
+- name: 🇸🇬 新加坡 26
   server: 206.206.76.75
   port: 443
   udp: true
@@ -111,57 +291,20 @@ proxies:
     short-id: 9930177816ab09da
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 13
-  server: 3.0.111.82
-  port: 10574
+- name: 🇸🇬 新加坡 27
+  server: 54.169.200.246
+  port: 41688
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 14
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  servername: www.intel.com
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 15
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 16
-  server: 13.214.221.206
-  port: 8686
-  udp: true
-  type: vless
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  tls: true
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-    short-id: 628b3c90c98ead4f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 17
+- name: 🇸🇬 新加坡 28
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -174,7 +317,103 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 18
+- name: 🇸🇬 新加坡 29
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: a56a5bae-45e5-4f0d-9e31-40af97733fd9
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇸🇬 新加坡 30
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 31
+  server: 104.21.8.201
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
+  tls: true
+  servername: cdn-sg.skyvora.app
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /78bc8
+    headers:
+      Host: cdn-sg.skyvora.app
+- name: 🇸🇬 新加坡 32
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 33
+  server: 188.114.96.3
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  tls: true
+  servername: Ez-98919A.MOtoRicb.Workers.DeV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+- name: 🇸🇬 新加坡 34
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 35
+  server: 161.118.195.134
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Ey3vUMfWWhjRrV32cdoAECiIo+rMD8DkztitlYHT13g=
+- name: 🇸🇬 新加坡 36
+  server: 138.2.73.61
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: To6vtBYY2vHB3dYSu3rGxLOObUWvC8zGLJMtn+/LEPU=
+- name: 🇸🇬 新加坡 37
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -186,29 +425,18 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 19
-  server: 172.67.130.159
-  port: 2096
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 38
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
-  uuid: 832c8f42-7fe1-4aa4-9171-eb9dddbf6fef
-  tls: true
-  servername: cdn-sg.skyvora.app
-  skip-cert-verify: false
-  client-fingerprint: edge
+  uuid: 2388e166-3890-33ae-f77e-efac00000002
   network: ws
   ws-opts:
-    path: /78bc8
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
-      Host: cdn-sg.skyvora.app
-- name: 🇸🇬 新加坡 20
-  server: 138.2.73.61
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: To6vtBYY2vHB3dYSu3rGxLOObUWvC8zGLJMtn+/LEPU=
+      Host: netlivpn4813.ddhshhshs.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -234,6 +462,24 @@ proxy-groups:
   - 🇸🇬 新加坡 18
   - 🇸🇬 新加坡 19
   - 🇸🇬 新加坡 20
+  - 🇸🇬 新加坡 21
+  - 🇸🇬 新加坡 22
+  - 🇸🇬 新加坡 23
+  - 🇸🇬 新加坡 24
+  - 🇸🇬 新加坡 25
+  - 🇸🇬 新加坡 26
+  - 🇸🇬 新加坡 27
+  - 🇸🇬 新加坡 28
+  - 🇸🇬 新加坡 29
+  - 🇸🇬 新加坡 30
+  - 🇸🇬 新加坡 31
+  - 🇸🇬 新加坡 32
+  - 🇸🇬 新加坡 33
+  - 🇸🇬 新加坡 34
+  - 🇸🇬 新加坡 35
+  - 🇸🇬 新加坡 36
+  - 🇸🇬 新加坡 37
+  - 🇸🇬 新加坡 38
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -259,5 +505,23 @@ proxy-groups:
   - 🇸🇬 新加坡 18
   - 🇸🇬 新加坡 19
   - 🇸🇬 新加坡 20
+  - 🇸🇬 新加坡 21
+  - 🇸🇬 新加坡 22
+  - 🇸🇬 新加坡 23
+  - 🇸🇬 新加坡 24
+  - 🇸🇬 新加坡 25
+  - 🇸🇬 新加坡 26
+  - 🇸🇬 新加坡 27
+  - 🇸🇬 新加坡 28
+  - 🇸🇬 新加坡 29
+  - 🇸🇬 新加坡 30
+  - 🇸🇬 新加坡 31
+  - 🇸🇬 新加坡 32
+  - 🇸🇬 新加坡 33
+  - 🇸🇬 新加坡 34
+  - 🇸🇬 新加坡 35
+  - 🇸🇬 新加坡 36
+  - 🇸🇬 新加坡 37
+  - 🇸🇬 新加坡 38
 rules:
 - MATCH,PROXIES

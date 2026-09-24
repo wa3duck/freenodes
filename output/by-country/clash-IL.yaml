@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 02
   server: 185.95.231.233
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 03
   server: 193.202.10.2
   port: 40443
@@ -42,7 +42,7 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

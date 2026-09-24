@@ -5,28 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 01
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 02
   server: 217.60.182.79
   port: 443
   udp: true
   type: hysteria2
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 03
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 02
   server: 94.183.170.147
   port: 8443
   udp: true
   type: vless
-  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
   tls: true
   reality-opts:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
@@ -36,15 +27,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 04
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 05
+- name: 🇪🇪 爱沙尼亚 03
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -53,20 +36,49 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 06
-  server: 45.11.27.86
+  client-fingerprint: qq
+- name: 🇪🇪 爱沙尼亚 04
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 05
+  server: 94.183.170.135
   port: 443
   udp: true
   type: vless
-  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 06
+  server: 5.181.201.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
-    short-id: d0aae44f
-  servername: 5post-gate.x5.ru
+    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
+    short-id: 38018dde3e27335e
+  servername: est1.loozerp.wiki
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 07
+  server: netlivpn5002.whwbbb.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  tls: true
+  servername: netlivpn5002.whwbbb.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +90,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 04
   - 🇪🇪 爱沙尼亚 05
   - 🇪🇪 爱沙尼亚 06
+  - 🇪🇪 爱沙尼亚 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +102,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 04
   - 🇪🇪 爱沙尼亚 05
   - 🇪🇪 爱沙尼亚 06
+  - 🇪🇪 爱沙尼亚 07
 rules:
 - MATCH,PROXIES

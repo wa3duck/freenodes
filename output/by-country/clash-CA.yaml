@@ -5,32 +5,73 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 01
+  server: 158.51.123.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 02
+  server: 149.22.95.183
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 03
+  server: 185.156.47.97
+  port: 9443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
+- name: 🇨🇦 加拿大 04
   server: 15.235.75.71
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: FD3rCuOsxOay
-- name: 🇨🇦 加拿大 02
-  server: 51.222.200.165
-  port: 5000
+- name: 🇨🇦 加拿大 05
+  server: 134.195.198.214
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 06
+  server: 142.4.216.225
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: mrs2e9a
+- name: 🇨🇦 加拿大 07
+  server: 51.222.136.236
+  port: 8882
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 03
-  server: 66.70.179.198
-  port: 2053
+  password: kDWvXYZoTBcGkC4
+- name: 🇨🇦 加拿大 08
+  server: 23.162.200.198
+  port: 18000
   udp: true
-  type: vless
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  tls: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 04
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 09
+  server: 66.163.113.176
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 10
   server: 134.195.196.211
   port: 18000
   udp: true
@@ -38,68 +79,29 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 05
-  server: 51.79.64.198
-  port: 8119
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇨🇦 加拿大 06
-  server: 158.69.112.254
+- name: 🇨🇦 加拿大 11
+  server: 15.223.122.197
   port: 443
   udp: true
-  type: vless
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  servername: www.speedtest.net
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 07
-  server: 142.4.216.225
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-- name: 🇨🇦 加拿大 08
-  server: 138.197.141.58
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 09
-  server: 185.156.47.97
-  port: 9443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-- name: 🇨🇦 加拿大 10
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 15.223.122.197
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 12
   server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 11
-  server: 130.107.73.148
-  port: 41373
+- name: 🇨🇦 加拿大 13
+  server: 138.197.141.58
+  port: 8080
   udp: true
-  type: vless
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  servername: google.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 12
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 14
   server: 23.132.28.51
   port: 443
   udp: true
@@ -111,16 +113,34 @@ proxies:
     public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
     short-id: a7c31f92
   servername: candy.atlasparser.site
-  client-fingerprint: qq
-- name: 🇨🇦 加拿大 13
-  server: 15.223.122.197
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 15
+  server: 130.107.73.148
+  port: 41373
+  udp: true
+  type: vless
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  servername: google.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 16
+  server: 158.69.112.254
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 15.223.122.197
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 14
+  type: vless
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  servername: www.speedtest.net
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 17
   server: 209.200.246.148
   port: 443
   udp: true
@@ -133,49 +153,26 @@ proxies:
     short-id: f98843107912e782
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇨🇦 加拿大 15
-  server: 23.162.200.198
-  port: 18000
+- name: 🇨🇦 加拿大 18
+  server: 51.222.141.125
+  port: 445
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 16
-  server: mygptagent.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: mygptagent.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇨🇦 加拿大 17
-  server: 34.186.193.91
-  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 19
+  server: 66.70.179.198
+  port: 2053
   udp: true
   type: vless
-  uuid: 2ea95ec3-6b09-470e-952a-ebb171b0d666
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   tls: true
   reality-opts:
-    public-key: 0dSYzX_uvVr-YmiONeKxPt7TdFkaFeYopYfjobxxEC4
-    short-id: 341ec000a90f1ced
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 18
-  server: 158.51.123.42
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 19
+- name: 🇨🇦 加拿大 20
   server: 104.21.8.201
   port: 2096
   udp: true
@@ -189,20 +186,6 @@ proxies:
     path: /fqg7aacd8s
     headers:
       Host: cdn-ca.skyvora.app
-- name: 🇨🇦 加拿大 20
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
-  tls: true
-  servername: playlux.homes
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /raccoonwsvless
-    headers:
-      Host: playlux.homes
 - name: 🇨🇦 加拿大 21
   server: 66.70.179.124
   port: 443
@@ -215,42 +198,47 @@ proxies:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
     short-id: af7e79b5
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 22
-  server: 149.22.95.183
+  server: 34.186.193.91
   port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  type: vless
+  uuid: 2ea95ec3-6b09-470e-952a-ebb171b0d666
+  tls: true
+  reality-opts:
+    public-key: 0dSYzX_uvVr-YmiONeKxPt7TdFkaFeYopYfjobxxEC4
+    short-id: 341ec000a90f1ced
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 23
-  server: 51.222.136.236
-  port: 8882
+  server: 51.222.155.32
+  port: 5003
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  password: g5MeD6Ft3CWlJId
 - name: 🇨🇦 加拿大 24
-  server: 51.222.141.125
-  port: 445
+  server: 51.222.200.165
+  port: 5000
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  password: Y6R9pAtvxxzmGC
 - name: 🇨🇦 加拿大 25
-  server: 51.79.85.185
-  port: 8118
+  server: 51.222.107.43
+  port: 2083
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
 - name: 🇨🇦 加拿大 26
-  server: 51.79.85.185
-  port: 8118
+  server: 51.222.155.113
+  port: 5601
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  password: Y6R9pAtvxxzmGC
 - name: 🇨🇦 加拿大 27
   server: 51.79.85.185
   port: 8118
@@ -259,13 +247,12 @@ proxies:
   cipher: aes-256-gcm
   password: cdBIDV42DCwnfIN
 - name: 🇨🇦 加拿大 28
-  server: 66.163.113.176
-  port: 22324
+  server: 51.222.12.127
+  port: 445
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
 proxy-groups:
 - name: PROXIES
   type: select

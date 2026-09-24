@@ -5,13 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 01
-  server: 85.90.217.42
-  port: 22324
+  server: 108.162.198.178
+  port: 2095
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇪🇸 西班牙 02
   server: 140.174.184.5
   port: 8388
@@ -27,6 +30,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 04
+  server: 85.90.217.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 05
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -37,29 +48,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 05
-  server: 66.163.118.73
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 06
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇪🇸 西班牙 07
   server: 87.76.179.117
   port: 7443
   udp: true
@@ -71,8 +61,35 @@ proxies:
     public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
     short-id: d2061bb1
   servername: www.samsung.com
-  client-fingerprint: qq
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 07
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 08
+  server: mygptagent.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: 🇪🇸 西班牙 09
   server: 196.245.52.147
   port: 25535
   udp: true
@@ -84,6 +101,14 @@ proxies:
     short-id: 7642ce57308852e7
   servername: www.microsoft.com
   client-fingerprint: qq
+- name: 🇪🇸 西班牙 10
+  server: 66.163.118.73
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -97,6 +122,8 @@ proxy-groups:
   - 🇪🇸 西班牙 06
   - 🇪🇸 西班牙 07
   - 🇪🇸 西班牙 08
+  - 🇪🇸 西班牙 09
+  - 🇪🇸 西班牙 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +137,7 @@ proxy-groups:
   - 🇪🇸 西班牙 06
   - 🇪🇸 西班牙 07
   - 🇪🇸 西班牙 08
+  - 🇪🇸 西班牙 09
+  - 🇪🇸 西班牙 10
 rules:
 - MATCH,PROXIES
