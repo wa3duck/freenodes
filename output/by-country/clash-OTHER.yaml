@@ -4,28 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 01
-  server: free.sahanwickramasinghe.me
-  port: 80
+- name: 🌐 其他地区 01
+  server: 104.18.14.103
+  port: 443
   udp: true
   type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  tls: true
+  servername: server9.9966338.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /imnotarealherox
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 01
+  - 🌐 其他地区 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 01
+  - 🌐 其他地区 01
 rules:
 - MATCH,PROXIES

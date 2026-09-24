@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 01
-  server: 149.22.87.204
+  server: 13.230.223.121
   port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇯🇵 日本 02
-  server: 149.22.87.240
+  server: 18.179.39.119
   port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇯🇵 日本 03
   server: 54.95.40.17
   port: 443
@@ -26,6 +26,19 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇯🇵 日本 04
+  server: 54.199.248.166
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 05
+  server: 137.220.221.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 06
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -33,35 +46,22 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 05
-  server: 13.115.71.198
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 06
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: 🇯🇵 日本 07
-  server: 18.179.111.96
+  server: 13.113.166.191
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇯🇵 日本 08
-  server: 152.69.195.67
-  port: 47878
+  server: 149.22.87.241
+  port: 443
   udp: true
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 09
-  server: 18.181.145.202
+  server: 13.231.184.186
   port: 443
   udp: true
   type: ss
@@ -88,22 +88,39 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 12
-  server: 172.111.146.64
-  port: 80
-  udp: true
-  type: vless
-  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇯🇵 日本 13
-  server: 18.181.165.254
+  server: 149.22.87.240
   port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 13
+  server: 18.183.215.124
+  port: 28573
+  udp: true
+  type: vless
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 14
+  server: 103.75.118.228
+  port: 12683
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 15
   server: 168.138.43.75
   port: 80
   udp: true
@@ -115,22 +132,8 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: none
-- name: 🇯🇵 日本 15
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+      Host: 168.138.43.75
 - name: 🇯🇵 日本 16
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 17
   server: 38.207.130.15
   port: 443
   udp: true
@@ -142,41 +145,40 @@ proxies:
     public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
     short-id: 6d962e8d8a0dce
   servername: amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 17
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 18
-  server: 103.137.215.122
-  port: 443
-  udp: true
-  type: vless
-  uuid: ea1c1e20-7263-4b08-a01b-690b29af66b3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c
-    short-id: 2223411c2ad9c55f
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 19
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 20
-  server: open.w2m.ink
-  port: 443
+  server: 138.3.208.26
+  port: 50160
   udp: true
   type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
   skip-cert-verify: true
+- name: 🇯🇵 日本 19
+  server: 64.176.51.214
+  port: 23462
+  udp: true
+  type: vmess
+  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /a15206
+- name: 🇯🇵 日本 20
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 21
   server: 103.75.118.228
   port: 11452
@@ -189,10 +191,10 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇯🇵 日本 22
-  server: 103.75.118.228
-  port: 12683
+  server: 3.114.220.22
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -204,46 +206,41 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 23
-  server: 18.183.215.124
-  port: 28573
+  server: open.w2m.ink
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: false
+- name: 🇯🇵 日本 24
+  server: 3.114.220.22
+  port: 10583
   udp: true
   type: vless
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  servername: www.sony.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 24
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 25
-  server: 84.247.155.196
-  port: 80
+  server: 74.222.12.141
+  port: 2087
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  password: 665e00335bb2fb5f7ee8243952205e5e
 - name: 🇯🇵 日本 26
-  server: or.521166.xyz
-  port: 2083
+  server: msjp.mangshe.xyz
+  port: 20561
   udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: or.521166.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: 🇯🇵 日本 27
   server: 3.114.220.22
   port: 19645
@@ -258,27 +255,20 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 28
-  server: 104.16.10.185
-  port: 443
+  server: or.521166.xyz
+  port: 2083
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: jp3.yohototo.top
+  servername: or.521166.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+    path: /or3
 - name: 🇯🇵 日本 29
-  server: ehwn62tnx5g8.cdn000.com
-  port: 30204
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-- name: 🇯🇵 日本 30
   server: 34.84.126.188
   port: 443
   udp: true
@@ -289,49 +279,62 @@ proxies:
     public-key: qMPnrSiXgWvw2ETefb46OfJKnYpfX6HfyGdWpWWxtVI
     short-id: 780152c21e234b5a
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 31
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 30
   server: open.w2m.ink
-  port: 5443
+  port: 443
   udp: true
   type: hysteria2
   password: my_super_password_123
   sni: open.w2m.ink
-  skip-cert-verify: true
+  skip-cert-verify: false
+- name: 🇯🇵 日本 31
+  server: 103.137.215.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: ea1c1e20-7263-4b08-a01b-690b29af66b3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c
+    short-id: 2223411c2ad9c55f
+  servername: www.apple.com
+  client-fingerprint: safari
 - name: 🇯🇵 日本 32
-  server: 3.114.220.22
-  port: 10583
+  server: 172.111.146.64
+  port: 80
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
 - name: 🇯🇵 日本 33
-  server: family.bucket.x1.kfc-520.com
-  port: 10202
+  server: 84.247.155.196
+  port: 443
   udp: true
-  type: vless
-  uuid: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: E0R7f_nEkbcnc97Z82aDMo2bUVGgcIzChCVYwsQmXnc
-    short-id: 88bd7f
-  servername: www.apple.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 34
-  server: msjp1.mangshe.xyz
-  port: 20561
+  server: 161.34.39.108
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: false
+- name: 🇯🇵 日本 35
+  server: open.2ml.cc.cd
+  port: 5443
   udp: true
   type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -371,6 +374,7 @@ proxy-groups:
   - 🇯🇵 日本 32
   - 🇯🇵 日本 33
   - 🇯🇵 日本 34
+  - 🇯🇵 日本 35
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -410,5 +414,6 @@ proxy-groups:
   - 🇯🇵 日本 32
   - 🇯🇵 日本 33
   - 🇯🇵 日本 34
+  - 🇯🇵 日本 35
 rules:
 - MATCH,PROXIES

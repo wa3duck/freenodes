@@ -5,25 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 01
-  server: 31.58.181.88
-  port: 8443
+  server: 47.238.210.5
+  port: 13779
   udp: true
   type: vless
-  uuid: 4a239f83-479c-4790-a9c7-fe7ddd483a4c
-  flow: xtls-rprx-vision
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
   tls: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: edge
 - name: 🇭🇰 中国香港 02
-  server: 185.22.154.239
-  port: 10301
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 03
   server: 47.240.80.220
   port: 2052
   udp: true
@@ -31,7 +24,7 @@ proxies:
   password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
   sni: vpn.12169.top
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 04
+- name: 🇭🇰 中国香港 03
   server: 34.92.145.185
   port: 443
   udp: true
@@ -42,81 +35,66 @@ proxies:
     public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
     short-id: 64b3f192fc0669e1
   servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 05
-  server: 119.246.1.143
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me/ripaojiedian
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 06
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 07
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 04
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
+  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 08
-  server: ehwn62tnx5g8.cdn000.com
-  port: 30003
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: Y2FkNzhhZWQ0MzA1NzlhZA==:NGMxZWEyZDMtZjBiMS00Yw==
-- name: 🇭🇰 中国香港 09
-  server: 202.146.222.89
+- name: 🇭🇰 中国香港 05
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 10
-  server: hk-1.gsafevpnapi.com
-  port: 20270
+- name: 🇭🇰 中国香港 06
+  server: 185.22.154.239
+  port: 10301
   udp: true
-  type: vless
-  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
-    short-id: d5b538acf8a93540
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 11
-  server: hk04.ccdn3.work
-  port: 793
-  udp: true
-  type: vless
-  uuid: d09c4ed0-a8bf-11f0-b155-cb2d176add19
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dhwO3fomENJoBQO-T4NPxmTDgTOsUsTpG3NsaJdxsWw
-    short-id: bf92e87fff488bd3
-  servername: i1.hdslb.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 12
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+- name: 🇭🇰 中国香港 07
   server: mz.hkychina.com
   port: 8443
   udp: true
   type: hysteria2
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 13
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 08
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 09
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 10
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  type: vmess
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: 🇭🇰 中国香港 11
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -129,59 +107,15 @@ proxies:
     short-id: af1bdd293097b664
   servername: tesla.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 14
-  server: hk2.xiaoliyu.cyou
-  port: 4433
+- name: 🇭🇰 中国香港 12
+  server: 2.27.109.179
+  port: 45464
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 15
-  server: i2psm3knof5qjjix.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-- name: 🇭🇰 中国香港 16
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-- name: 🇭🇰 中国香港 17
-  server: 93ucrn4i0pffuabk.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
-- name: 🇭🇰 中国香港 18
+- name: 🇭🇰 中国香港 13
   server: www.shopify.com
   port: 443
   udp: true
@@ -197,25 +131,14 @@ proxies:
     path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
     headers:
       Host: yoga-suggesting-recording-calls.trycloudflare.com
-- name: 🇭🇰 中国香港 19
-  server: 89.223.95.77
-  port: 22324
+- name: 🇭🇰 中国香港 14
+  server: 119.246.1.143
+  port: 443
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 20
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
-  type: vless
-  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+  type: trojan
+  password: BxceQaOe
+  sni: 119.246.1.143
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -235,12 +158,6 @@ proxy-groups:
   - 🇭🇰 中国香港 12
   - 🇭🇰 中国香港 13
   - 🇭🇰 中国香港 14
-  - 🇭🇰 中国香港 15
-  - 🇭🇰 中国香港 16
-  - 🇭🇰 中国香港 17
-  - 🇭🇰 中国香港 18
-  - 🇭🇰 中国香港 19
-  - 🇭🇰 中国香港 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -260,11 +177,5 @@ proxy-groups:
   - 🇭🇰 中国香港 12
   - 🇭🇰 中国香港 13
   - 🇭🇰 中国香港 14
-  - 🇭🇰 中国香港 15
-  - 🇭🇰 中国香港 16
-  - 🇭🇰 中国香港 17
-  - 🇭🇰 中国香港 18
-  - 🇭🇰 中国香港 19
-  - 🇭🇰 中国香港 20
 rules:
 - MATCH,PROXIES

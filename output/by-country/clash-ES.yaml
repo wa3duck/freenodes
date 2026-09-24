@@ -20,6 +20,21 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇪🇸 西班牙 03
+  server: 66.163.118.73
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 04
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 05
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -30,15 +45,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 04
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 05
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 06
   server: 46.28.71.247
   port: 443
   udp: true
@@ -50,20 +58,7 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 06
-  server: esbe.vihodest.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE
-    short-id: e93196a756abca09
-  servername: esbe.vihodest.net
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇪🇸 西班牙 07
   server: 87.76.179.117
   port: 7443
@@ -76,15 +71,20 @@ proxies:
     public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
     short-id: d2061bb1
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: edge
 - name: 🇪🇸 西班牙 08
-  server: 66.163.118.73
-  port: 22324
+  server: esbe.vihodest.net
+  port: 443
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 88956de8-38db-449c-8410-4b70a4fb5c9b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE
+    short-id: e93196a756abca09
+  servername: esbe.vihodest.net
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

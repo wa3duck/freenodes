@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 01
-  server: r3mrcg001286ek2.cybervena.com
+  server: 36.224.141.124
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
 - name: 🇹🇼 中国台湾 02
-  server: 118.167.206.152
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -21,13 +21,15 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 03
-  server: test.keoplentuio.xyz
-  port: 2053
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 03
+  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: hysteria2
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 04
   server: hk01.kfc-520.com
   port: 60001
@@ -36,6 +38,12 @@ proxies:
   password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
   sni: hk01.kfc-520.com
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 05
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,8 +51,9 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
-  - 🇹🇷 土耳其 03
+  - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
+  - 🇹🇷 土耳其 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,7 +61,8 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
-  - 🇹🇷 土耳其 03
+  - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
+  - 🇹🇷 土耳其 05
 rules:
 - MATCH,PROXIES

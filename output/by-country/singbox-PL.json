@@ -7,45 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 01",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9063,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 02",
-      "server": "217.30.10.44",
-      "server_port": 9006,
-      "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 03",
-      "server": "217.30.10.44",
-      "server_port": 9062,
-      "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 04",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 05",
-      "server": "217.30.10.44",
-      "server_port": 9099,
-      "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 06",
       "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
@@ -53,7 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 07",
+      "tag": "🇵🇱 波兰 03",
       "server": "217.30.10.44",
       "server_port": 9071,
       "method": "aes-256-cfb",
@@ -61,7 +29,31 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 08",
+      "tag": "🇵🇱 波兰 04",
+      "server": "217.30.10.44",
+      "server_port": 9099,
+      "method": "aes-256-cfb",
+      "password": "7heRqkPG3hg4UnRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 05",
+      "server": "217.30.10.44",
+      "server_port": 9076,
+      "method": "aes-256-cfb",
+      "password": "S2zDyyPcmZN2h8EC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 06",
+      "server": "217.30.10.44",
+      "server_port": 9006,
+      "method": "aes-256-cfb",
+      "password": "FAdUvMJUq5vDgKEq"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 07",
       "server": "217.30.10.44",
       "server_port": 9041,
       "method": "aes-256-cfb",
@@ -69,16 +61,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 09",
+      "tag": "🇵🇱 波兰 08",
       "server": "217.30.10.44",
-      "server_port": 9063,
+      "server_port": 9062,
       "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 10",
-      "server": "185.223.57.10",
+      "tag": "🇵🇱 波兰 09",
+      "server": "185.223.57.16",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -100,20 +92,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 11",
-      "server": "45.192.12.93",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 12",
+      "tag": "🇵🇱 波兰 10",
       "server": "144.31.131.38",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -134,40 +114,31 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 13",
+      "tag": "🇵🇱 波兰 11",
       "server": "217.60.33.215",
       "server_port": 443,
       "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
       "tls": {
         "enabled": true,
         "server_name": "streambox.wwwinternetvideo.click",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 14",
-      "server": "82.118.22.161",
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 12",
+      "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 15",
+      "tag": "🇵🇱 波兰 13",
       "server": "144.31.171.108",
       "server_port": 8444,
       "uuid": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
@@ -188,29 +159,44 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 16",
+      "tag": "🇵🇱 波兰 14",
       "server": "146.59.116.19",
       "server_port": 17000,
       "method": "aes-256-gcm",
       "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 15",
+      "server": "188.114.96.19",
+      "server_port": 80,
+      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 17",
-      "server": "144.31.2.33",
+      "tag": "🇵🇱 波兰 16",
+      "server": "pl6.moritech.net",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl3.moritech.net",
+        "server_name": "pl6.moritech.net",
         "insecure": false,
         "alpn": [
           "h2"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         }
       }
     },
@@ -234,8 +220,7 @@
         "🇵🇱 波兰 13",
         "🇵🇱 波兰 14",
         "🇵🇱 波兰 15",
-        "🇵🇱 波兰 16",
-        "🇵🇱 波兰 17"
+        "🇵🇱 波兰 16"
       ]
     },
     {
@@ -257,8 +242,7 @@
         "🇵🇱 波兰 13",
         "🇵🇱 波兰 14",
         "🇵🇱 波兰 15",
-        "🇵🇱 波兰 16",
-        "🇵🇱 波兰 17"
+        "🇵🇱 波兰 16"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

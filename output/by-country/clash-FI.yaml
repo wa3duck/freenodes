@@ -5,19 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 37.143.129.244
+  server: 2.27.175.71
   port: 443
   udp: true
   type: vless
-  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
-  flow: xtls-rprx-vision
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇮 芬兰 02
+  server: de.i-love-russia.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
+  sni: de.i-love-russia.online
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 03
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
   tls: true
   reality-opts:
-    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
-    short-id: 48fd192dc4e46bc0
-  servername: gateway.icloud.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 02
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 04
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -29,30 +49,6 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 03
-  server: 2.27.175.71
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇮 芬兰 04
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: random
 - name: 🇫🇮 芬兰 05
   server: 83.219.97.26
   port: 443
@@ -79,28 +75,27 @@ proxies:
   servername: images.unsplash.com
   client-fingerprint: random
 - name: 🇫🇮 芬兰 07
-  server: de.i-love-russia.online
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
-  sni: de.i-love-russia.online
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 08
-  server: 2.27.13.62
+  server: 37.143.129.244
   port: 443
   udp: true
   type: vless
-  uuid: 92c863cb-7b96-405c-bc04-ff4d73465f1a
+  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
+  flow: xtls-rprx-vision
   tls: true
-  servername: dissolvedvpn.eu.cc
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
+    short-id: 48fd192dc4e46bc0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 08
+  server: fi.snobvpn.online
+  port: 80
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
   network: ws
   ws-opts:
-    path: /dissolved-ws/
-    headers:
-      Host: dissolvedvpn.eu.cc
+    path: /snob-ws
 - name: 🇫🇮 芬兰 09
   server: 212.193.18.183
   port: 8446
@@ -117,12 +112,26 @@ proxies:
   grpc-opts:
     grpc-service-name: snob-grpc
 - name: 🇫🇮 芬兰 10
-  server: p1tun3.greewebservices.ir
-  port: 2070
+  server: 217.144.188.131
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cVvgP0Bz69hsErPBvqKbwQ
+  type: vless
+  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RoZB6zAaInm8X5feCKpL0_wMZRQYxQHWsirP0SYum2g
+    short-id: f3a9c21e8b6d4571
+  servername: admin.vkroom-it-service.xyz
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 11
+  server: me6.movieseryalirani.ir
+  port: 57361
+  udp: true
+  type: vmess
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,6 +147,7 @@ proxy-groups:
   - 🇫🇮 芬兰 08
   - 🇫🇮 芬兰 09
   - 🇫🇮 芬兰 10
+  - 🇫🇮 芬兰 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -153,5 +163,6 @@ proxy-groups:
   - 🇫🇮 芬兰 08
   - 🇫🇮 芬兰 09
   - 🇫🇮 芬兰 10
+  - 🇫🇮 芬兰 11
 rules:
 - MATCH,PROXIES

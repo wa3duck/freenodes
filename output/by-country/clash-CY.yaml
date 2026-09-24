@@ -15,7 +15,7 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 02
   server: 2.56.121.43
   port: 443
@@ -28,18 +28,7 @@ proxies:
     public-key: vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM
     short-id: 86229a5e3b1e6ef4
   servername: www.ikea.com
-  client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 03
-  server: api-1.hysteria.ltd
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 73606ef5-51ab-4182-8ae8-41a50e1a9d52
-  flow: xtls-rprx-vision
-  tls: true
-  servername: api-1.hysteria.ltd
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
-  - 🇨🇾 塞浦路斯 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
-  - 🇨🇾 塞浦路斯 03
 rules:
 - MATCH,PROXIES
