@@ -12,14 +12,14 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 02
-  server: 51.20.72.15
+  server: 51.20.122.188
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 03
-  server: 51.20.122.188
+  server: 13.62.228.76
   port: 443
   udp: true
   type: ss
@@ -33,41 +33,55 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 05
-  server: 13.61.0.108
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 06
-  server: 16.170.163.124
+  server: 51.20.96.231
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 07
-  server: 16.170.221.224
+  server: 16.170.163.124
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 08
-  server: 13.62.228.76
+  server: 16.170.214.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 09
-  server: 172.238.244.13
-  port: 17000
+  server: 16.170.221.224
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 10
+  server: 51.20.143.248
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 11
+  server: 51.20.72.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 12
   server: 143.246.196.152
   port: 8081
   udp: true
@@ -76,7 +90,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 11
+- name: 🇸🇪 瑞典 13
   server: 79.141.174.147
   port: 33743
   udp: true
@@ -90,53 +104,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 12
-  server: 143.246.195.138
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 13
-  server: 143.246.195.98
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
 - name: 🇸🇪 瑞典 14
-  server: 91.193.17.156
-  port: 9458
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 15
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 16
-  server: 16.170.214.108
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 17
   server: 143.246.196.122
   port: 443
   udp: true
@@ -148,6 +116,32 @@ proxies:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
   client-fingerprint: chrome
+- name: 🇸🇪 瑞典 15
+  server: 143.246.195.98
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 16
+  server: 143.246.195.138
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 17
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 18
   server: 143.246.194.60
   port: 8081
@@ -169,7 +163,14 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 20
+  server: 172.238.244.13
+  port: 17000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 proxy-groups:
 - name: PROXIES
   type: select
@@ -194,6 +195,7 @@ proxy-groups:
   - 🇸🇪 瑞典 17
   - 🇸🇪 瑞典 18
   - 🇸🇪 瑞典 19
+  - 🇸🇪 瑞典 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -218,5 +220,6 @@ proxy-groups:
   - 🇸🇪 瑞典 17
   - 🇸🇪 瑞典 18
   - 🇸🇪 瑞典 19
+  - 🇸🇪 瑞典 20
 rules:
 - MATCH,PROXIES

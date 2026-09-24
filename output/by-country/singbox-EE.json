@@ -4,23 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 01",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": true
+        "server_name": "109.206.241.10",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 02",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "estproxy4.lockdwn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 03",
       "server": "94.183.170.147",
       "server_port": 8443,
-      "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
+      "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -41,7 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 03",
+      "tag": "🇪🇪 爱沙尼亚 04",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -51,22 +69,6 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 04",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
           "fingerprint": "chrome"
         }
       }
@@ -74,48 +76,22 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 05",
-      "server": "94.183.170.135",
+      "server": "45.11.27.86",
       "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 06",
-      "server": "5.181.201.43",
-      "server_port": 443,
-      "uuid": "f495298f-2bdb-4fd8-9ac9-5dd33d1b482a",
+      "uuid": "a2738d8d-ed26-4b13-a4a2-b89c7238cd10",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "est1.loozerp.wiki",
+        "server_name": "5post-gate.x5.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8",
-          "short_id": "38018dde3e27335e"
+          "public_key": "IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk",
+          "short_id": "d0aae44f"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 07",
-      "server": "netlivpn5002.whwbbb.workers.dev",
-      "server_port": 443,
-      "uuid": "a88e61a0-2b38-f6df-c5c7-d20600000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn5002.whwbbb.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {
@@ -127,9 +103,7 @@
         "🇪🇪 爱沙尼亚 02",
         "🇪🇪 爱沙尼亚 03",
         "🇪🇪 爱沙尼亚 04",
-        "🇪🇪 爱沙尼亚 05",
-        "🇪🇪 爱沙尼亚 06",
-        "🇪🇪 爱沙尼亚 07"
+        "🇪🇪 爱沙尼亚 05"
       ]
     },
     {
@@ -140,9 +114,7 @@
         "🇪🇪 爱沙尼亚 02",
         "🇪🇪 爱沙尼亚 03",
         "🇪🇪 爱沙尼亚 04",
-        "🇪🇪 爱沙尼亚 05",
-        "🇪🇪 爱沙尼亚 06",
-        "🇪🇪 爱沙尼亚 07"
+        "🇪🇪 爱沙尼亚 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 01
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 75efda17-fdc2-43d8-a2c6-fbdba0289244
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 02
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 03
   server: 78.40.195.140
   port: 443
   udp: true
@@ -17,44 +39,7 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 02
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 98983e4e-31df-4061-bc86-1d6ade4b551b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 03
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 04
-  server: 104.21.108.4
-  port: 443
-  udp: true
-  type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c300000018
-  tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: '/sync '
-    headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-- name: 🇦🇪 阿联酋 05
   server: 94.183.224.45
   port: 443
   udp: true
@@ -66,17 +51,17 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: qq
-- name: 🇦🇪 阿联酋 06
-  server: 85.204.107.171
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 05
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 07
-  server: 84.235.244.108
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 06
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -86,7 +71,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 08
+- name: 🇦🇪 阿联酋 07
   server: 146.70.102.82
   port: 443
   udp: true
@@ -111,7 +96,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
-  - 🇦🇪 阿联酋 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,6 +108,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
-  - 🇦🇪 阿联酋 08
 rules:
 - MATCH,PROXIES

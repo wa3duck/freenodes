@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -57,12 +57,51 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
           "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
           "short_id": "db46e2946fc466fd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 04",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 05",
+      "server": "platform117.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 06",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
         }
       }
     },
@@ -73,7 +112,10 @@
         "auto",
         "🇮🇱 以色列 01",
         "🇮🇱 以色列 02",
-        "🇮🇱 以色列 03"
+        "🇮🇱 以色列 03",
+        "🇮🇱 以色列 04",
+        "🇮🇱 以色列 05",
+        "🇮🇱 以色列 06"
       ]
     },
     {
@@ -82,7 +124,10 @@
       "outbounds": [
         "🇮🇱 以色列 01",
         "🇮🇱 以色列 02",
-        "🇮🇱 以色列 03"
+        "🇮🇱 以色列 03",
+        "🇮🇱 以色列 04",
+        "🇮🇱 以色列 05",
+        "🇮🇱 以色列 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

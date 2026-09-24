@@ -5,62 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 01
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: courses.mftplus.qzz.io
-- name: 🇨🇿 捷克 02
-  server: 104.17.147.22
-  port: 443
-  udp: true
-  type: vless
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  tls: true
-  servername: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /CmtD3y72juVnvSxU?ed=2560
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇨🇿 捷克 03
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
-  tls: true
-  servername: fornewiran.ade-1000.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy
-    headers:
-      Host: fornewiran.ade-1000.workers.dev
-- name: 🇨🇿 捷克 04
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro
-- name: 🇨🇿 捷克 05
-  server: 153.76.185.148
+  server: 153.76.185.96
   port: 3090
   udp: true
   type: vless
-  uuid: 1552d599-a036-4389-a5c0-bf14dfaddc1a
+  uuid: be2c444d-74a1-407c-a88c-cba06f9a58dc
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -70,19 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 01
-  - 🇨🇿 捷克 02
-  - 🇨🇿 捷克 03
-  - 🇨🇿 捷克 04
-  - 🇨🇿 捷克 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 01
-  - 🇨🇿 捷克 02
-  - 🇨🇿 捷克 03
-  - 🇨🇿 捷克 04
-  - 🇨🇿 捷克 05
 rules:
 - MATCH,PROXIES

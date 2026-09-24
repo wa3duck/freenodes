@@ -5,52 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
-  server: 104.21.70.21
-  port: 443
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
-  servername: index.harmonica01.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /axch1mttbxz2k55y01fp=unsafe
-    headers:
-      Host: index.harmonica01.workers.dev
-- name: 🇹🇷 土耳其 02
-  server: 185.71.219.128
-  port: 80
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play.google.com
-- name: 🇹🇷 土耳其 03
-  server: 185.71.219.128
-  port: 2052
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  tls: true
-  servername: 185.71.219.128
-  skip-cert-verify: false
-  client-fingerprint: ios
-- name: 🇹🇷 土耳其 04
-  server: 194.135.34.157
-  port: 6443
-  udp: true
-  type: vless
-  uuid: 43562697-135a-479a-92c8-4c96b46ace07
-  flow: xtls-rprx-vision
-  tls: true
-  servername: turkey-api.locallynet.org
-  skip-cert-verify: false
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 05
+- name: 🇹🇷 土耳其 02
   server: 78.135.73.47
   port: 443
   udp: true
@@ -63,44 +29,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 06
-  server: 185.71.219.128
-  port: 2082
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  tls: true
-  servername: 185.71.219.128
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /
-    headers:
-      Host: play.google.com
-- name: 🇹🇷 土耳其 07
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 08
-  server: 185.71.219.128
-  port: 8080
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  tls: true
-  servername: 185.71.219.128
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 09
+- name: 🇹🇷 土耳其 03
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -114,12 +43,6 @@ proxy-groups:
   - 🇹🇷 土耳其 01
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
-  - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
-  - 🇹🇷 土耳其 06
-  - 🇹🇷 土耳其 07
-  - 🇹🇷 土耳其 08
-  - 🇹🇷 土耳其 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,11 +51,5 @@ proxy-groups:
   - 🇹🇷 土耳其 01
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
-  - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
-  - 🇹🇷 土耳其 06
-  - 🇹🇷 土耳其 07
-  - 🇹🇷 土耳其 08
-  - 🇹🇷 土耳其 09
 rules:
 - MATCH,PROXIES

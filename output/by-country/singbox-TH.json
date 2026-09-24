@@ -28,47 +28,7 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 03",
-      "server": "34.15.162.1",
-      "server_port": 443,
-      "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
-          "short_id": "ca672c53fbbac555"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 04",
-      "server": "34.15.176.240",
-      "server_port": 443,
-      "uuid": "742dc674-a491-4a42-a551-b3ea6dd2f447",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U",
-          "short_id": "856c0a3cd1426a5c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 05",
-      "server": "104.16.111.193",
+      "server": "104.16.10.2",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
@@ -91,9 +51,7 @@
         "auto",
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04",
-        "🇹🇭 泰国 05"
+        "🇹🇭 泰国 03"
       ]
     },
     {
@@ -102,9 +60,7 @@
       "outbounds": [
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04",
-        "🇹🇭 泰国 05"
+        "🇹🇭 泰国 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

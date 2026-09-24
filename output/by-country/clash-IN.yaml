@@ -5,13 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01
-  server: 139.84.166.47
-  port: 8388
+  server: vpn-in-001.fastervpn.world
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: GEdoeeqLZtkJRgSa
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
 - name: 🇮🇳 印度 02
+  server: 35.154.58.87
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇮🇳 印度 03
   server: 35.244.28.130
   port: 443
   udp: true
@@ -19,19 +28,15 @@ proxies:
   password: M7v%w11Se*
   sni: tttyder.wsone.icu
   skip-cert-verify: true
-- name: 🇮🇳 印度 03
-  server: 34.47.245.203
+- name: 🇮🇳 印度 04
+  server: 34.131.228.210
   port: 443
   udp: true
-  type: vless
-  uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
-  tls: true
-  reality-opts:
-    public-key: dB68n-Vyph0_KBtBIe45b5GCB4F1IqpBF_ohlN-KpkY
-    short-id: 50440423703c945f
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 04
+  type: trojan
+  password: M7v%w11Se*
+  sni: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+- name: 🇮🇳 印度 05
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -43,62 +48,6 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 05
-  server: 34.93.188.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed
-  tls: true
-  reality-opts:
-    public-key: 97C6O3repofpoaJzvu1d4o7amhJGA8hF_yJls7SNIgU
-    short-id: b9299afa0dcac824
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 06
-  server: 148.113.5.44
-  port: 443
-  udp: true
-  type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇮🇳 印度 07
-  server: 13.207.151.141
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇮🇳 印度 08
-  server: 35.154.58.87
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇮🇳 印度 09
-  server: 34.131.228.210
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: true
-- name: 🇮🇳 印度 10
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,11 +58,6 @@ proxy-groups:
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
   - 🇮🇳 印度 05
-  - 🇮🇳 印度 06
-  - 🇮🇳 印度 07
-  - 🇮🇳 印度 08
-  - 🇮🇳 印度 09
-  - 🇮🇳 印度 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,10 +68,5 @@ proxy-groups:
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
   - 🇮🇳 印度 05
-  - 🇮🇳 印度 06
-  - 🇮🇳 印度 07
-  - 🇮🇳 印度 08
-  - 🇮🇳 印度 09
-  - 🇮🇳 印度 10
 rules:
 - MATCH,PROXIES

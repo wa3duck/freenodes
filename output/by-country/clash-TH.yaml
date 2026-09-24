@@ -24,31 +24,7 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 03
-  server: 34.15.162.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
-  tls: true
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇭 泰国 04
-  server: 34.15.176.240
-  port: 443
-  udp: true
-  type: vless
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  tls: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-    short-id: 856c0a3cd1426a5c
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇭 泰国 05
-  server: 104.16.111.193
+  server: 104.16.10.2
   port: 443
   udp: true
   type: vless
@@ -69,8 +45,6 @@ proxy-groups:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
-  - 🇹🇭 泰国 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,7 +53,5 @@ proxy-groups:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
-  - 🇹🇭 泰国 05
 rules:
 - MATCH,PROXIES

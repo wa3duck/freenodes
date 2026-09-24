@@ -7,25 +7,25 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 01",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9030,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "GeregetR8cvQHzYr"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 02",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 03",
       "server": "213.183.63.60",
-      "server_port": 9064,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
@@ -39,25 +39,25 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 05",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 06",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9028,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "9eeJ2fwnZA5Fxgz8"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 07",
       "server": "213.183.63.60",
-      "server_port": 9028,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "shadowsocks",
@@ -71,17 +71,17 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 09",
       "server": "213.183.63.60",
-      "server_port": 9030,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 10",
       "server": "213.183.63.60",
-      "server_port": 9049,
+      "server_port": 9029,
       "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "vless",
@@ -107,27 +107,6 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 12",
-      "server": "136.175.82.85",
-      "server_port": 18775,
-      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 13",
       "server": "131.123.37.199",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -138,18 +117,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 14",
-      "server": "131.123.41.18",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 15",
+      "tag": "🇧🇬 保加利亚 13",
       "server": "131.123.41.177",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -160,18 +128,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 16",
-      "server": "131.123.41.31",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
+      "tag": "🇧🇬 保加利亚 14",
+      "server": "136.175.82.85",
+      "server_port": 18775,
+      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
+          "short_id": "6ba85179e30d4fc2"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 17",
+      "tag": "🇧🇬 保加利亚 15",
       "server": "131.123.41.18",
       "server_port": 443,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -192,21 +170,24 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 18",
-      "server": "108.165.233.223",
-      "server_port": 443,
-      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
-        "insecure": false
-      },
+      "tag": "🇧🇬 保加利亚 16",
+      "server": "131.123.41.31",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPNfp=chrome",
-        "headers": {
-          "Host": "netlivpn4813.ddhshhshs.workers.dev"
-        }
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 17",
+      "server": "131.123.41.18",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
       }
     },
     {
@@ -230,8 +211,7 @@
         "🇧🇬 保加利亚 14",
         "🇧🇬 保加利亚 15",
         "🇧🇬 保加利亚 16",
-        "🇧🇬 保加利亚 17",
-        "🇧🇬 保加利亚 18"
+        "🇧🇬 保加利亚 17"
       ]
     },
     {
@@ -254,8 +234,7 @@
         "🇧🇬 保加利亚 14",
         "🇧🇬 保加利亚 15",
         "🇧🇬 保加利亚 16",
-        "🇧🇬 保加利亚 17",
-        "🇧🇬 保加利亚 18"
+        "🇧🇬 保加利亚 17"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

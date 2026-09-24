@@ -4,23 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇴 哥伦比亚 01
-  server: 157.137.219.244
-  port: 62145
+- name: 🇺🇸 美国 01
+  server: 172.64.32.103
+  port: 2086
   udp: true
   type: vless
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇴 哥伦比亚 01
+  - 🇺🇸 美国 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇴 哥伦比亚 01
+  - 🇺🇸 美国 01
 rules:
 - MATCH,PROXIES

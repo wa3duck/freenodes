@@ -6,46 +6,7 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 01",
-      "server": "64.176.5.166",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 02",
-      "server": "64.176.23.207",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 03",
-      "server": "64.176.18.215",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113",
-        "headers": {
-          "Host": "platform113.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 04",
-      "server": "64.176.18.104",
+      "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -57,46 +18,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇱 智利 05",
-      "server": "34.176.98.128",
-      "server_port": 443,
-      "uuid": "4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw",
-          "short_id": "d7676b6a468a03b3"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 01",
-        "🇨🇱 智利 02",
-        "🇨🇱 智利 03",
-        "🇨🇱 智利 04",
-        "🇨🇱 智利 05"
+        "🇨🇱 智利 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 01",
-        "🇨🇱 智利 02",
-        "🇨🇱 智利 03",
-        "🇨🇱 智利 04",
-        "🇨🇱 智利 05"
+        "🇨🇱 智利 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
