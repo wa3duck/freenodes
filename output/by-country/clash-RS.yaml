@@ -15,7 +15,7 @@ proxies:
     public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
     short-id: aa
   servername: dl.google.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel

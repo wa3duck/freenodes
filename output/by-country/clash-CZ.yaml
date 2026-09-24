@@ -5,11 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 01
-  server: 153.76.185.96
+  server: 153.76.185.93
   port: 3090
   udp: true
   type: vless
-  uuid: be2c444d-74a1-407c-a88c-cba06f9a58dc
+  uuid: 52504f52-ddd4-43fe-9fc6-8fb354ca2a2f
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 02
+  server: 153.76.185.100
+  port: 3090
+  udp: true
+  type: vless
+  uuid: 0ea51e02-ed67-439b-a562-7e3d7b4430c3
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -19,11 +28,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 01
+  - 🇨🇿 捷克 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 01
+  - 🇨🇿 捷克 02
 rules:
 - MATCH,PROXIES

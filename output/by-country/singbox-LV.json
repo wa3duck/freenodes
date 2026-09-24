@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 01",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
@@ -23,45 +23,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 03",
       "server": "185.135.86.175",
-      "server_port": 9082,
-      "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 04",
-      "server": "185.135.86.175",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 05",
-      "server": "185.135.86.175",
-      "server_port": 9094,
-      "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 06",
-      "server": "185.135.86.175",
       "server_port": 9034,
       "method": "aes-256-cfb",
       "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 07",
-      "server": "185.135.86.175",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 08",
+      "tag": "🇱🇻 拉脱维亚 04",
       "server": "185.135.86.175",
       "server_port": 9007,
       "method": "aes-256-cfb",
@@ -69,7 +37,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 09",
+      "tag": "🇱🇻 拉脱维亚 05",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 06",
+      "server": "185.135.86.175",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 07",
       "server": "185.135.86.175",
       "server_port": 9036,
       "method": "aes-256-cfb",
@@ -77,7 +61,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 10",
+      "tag": "🇱🇻 拉脱维亚 08",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -95,6 +79,22 @@
           "short_id": "33acba1b"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 09",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 10",
+      "server": "185.135.86.175",
+      "server_port": 9017,
+      "method": "aes-256-cfb",
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "selector",

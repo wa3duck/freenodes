@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 01
-  server: 132.243.242.97
-  port: 9543
-  udp: true
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 02
   server: 194.76.154.31
   port: 40443
   udp: true
@@ -28,7 +15,31 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
+- name: 🇨🇾 塞浦路斯 02
+  server: 2.56.121.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM
+    short-id: 86229a5e3b1e6ef4
+  servername: www.ikea.com
+  client-fingerprint: random
+- name: 🇨🇾 塞浦路斯 03
+  server: api-1.hysteria.ltd
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 73606ef5-51ab-4182-8ae8-41a50e1a9d52
+  flow: xtls-rprx-vision
+  tls: true
+  servername: api-1.hysteria.ltd
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
+  - 🇨🇾 塞浦路斯 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
+  - 🇨🇾 塞浦路斯 03
 rules:
 - MATCH,PROXIES

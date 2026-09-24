@@ -22,9 +22,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: ais.speedtest.net
 - name: 🇹🇭 泰国 03
-  server: 104.16.10.2
+  server: 104.18.26.90
   port: 443
   udp: true
   type: vless
@@ -32,6 +32,7 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
