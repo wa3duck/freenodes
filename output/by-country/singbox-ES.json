@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 01",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 02",
+      "tag": "🇪🇸 西班牙 01",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -21,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 03",
+      "tag": "🇪🇸 西班牙 02",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -41,23 +33,36 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 04",
+      "tag": "🇪🇸 西班牙 03",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "WSyL4XTwNsdv"
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 05",
-      "server": "85.90.217.42",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 04",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 06",
+      "tag": "🇪🇸 西班牙 05",
       "server": "esbe.vihodest.net",
       "server_port": 443,
       "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
@@ -78,28 +83,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 07",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 08",
+      "tag": "🇪🇸 西班牙 06",
       "server": "87.76.179.117",
       "server_port": 7443,
       "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
@@ -109,7 +93,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -117,6 +101,14 @@
           "short_id": "d2061bb1"
         }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 07",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -129,8 +121,7 @@
         "🇪🇸 西班牙 04",
         "🇪🇸 西班牙 05",
         "🇪🇸 西班牙 06",
-        "🇪🇸 西班牙 07",
-        "🇪🇸 西班牙 08"
+        "🇪🇸 西班牙 07"
       ]
     },
     {
@@ -143,8 +134,7 @@
         "🇪🇸 西班牙 04",
         "🇪🇸 西班牙 05",
         "🇪🇸 西班牙 06",
-        "🇪🇸 西班牙 07",
-        "🇪🇸 西班牙 08"
+        "🇪🇸 西班牙 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

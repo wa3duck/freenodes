@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 01
-  server: 143.246.216.64
+  server: 143.246.219.51
   port: 8081
   udp: true
   type: vless
@@ -14,7 +14,17 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇲🇩 摩尔多瓦 02
-  server: 143.246.219.51
+  server: md-new.failspace.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: md-new.failspace.top
+  skip-cert-verify: false
+- name: 🇲🇩 摩尔多瓦 03
+  server: 143.246.216.64
   port: 8081
   udp: true
   type: vless
@@ -29,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇲🇩 摩尔多瓦 01
   - 🇲🇩 摩尔多瓦 02
+  - 🇲🇩 摩尔多瓦 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇲🇩 摩尔多瓦 01
   - 🇲🇩 摩尔多瓦 02
+  - 🇲🇩 摩尔多瓦 03
 rules:
 - MATCH,PROXIES

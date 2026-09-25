@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 巴西 01
-  server: 92.53.189.40
+- name: 🇺🇦 乌克兰 01
+  server: 104.129.164.30
   port: 8880
   udp: true
   type: vless
@@ -14,18 +14,18 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: vms.lifetime19.workers.dev
+      Host: vms.lifetime40.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 巴西 01
+  - 🇺🇦 乌克兰 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 01
+  - 🇺🇦 乌克兰 01
 rules:
 - MATCH,PROXIES

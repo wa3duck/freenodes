@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 01
-  server: 188.114.97.6
+  server: 172.67.153.156
   port: 443
   udp: true
   type: vless
-  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
   tls: true
-  servername: server9.9966338.xyz
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /imnotarealherox
+    path: /pai50288
     headers:
-      Host: server9.9966338.xyz
+      Host: ccs2g.pai50288.uk
 proxy-groups:
 - name: PROXIES
   type: select
