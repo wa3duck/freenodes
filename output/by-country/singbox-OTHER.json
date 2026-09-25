@@ -6,17 +6,13 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 01",
-      "server": "104.18.14.103",
+      "server": "188.114.97.6",
       "server_port": 443,
       "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
       "tls": {
         "enabled": true,
         "server_name": "server9.9966338.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",

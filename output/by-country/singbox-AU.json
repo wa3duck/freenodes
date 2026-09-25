@@ -4,16 +4,44 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇦🇺 澳大利亚 01",
-      "server": "82.198.246.233",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
+      "server": "www.calmlunch.com",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 02",
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 03",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
       "uuid": "38b8e2fb-b9a0-40a6-b42c-335def2765cf",
@@ -33,24 +61,19 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 03",
-      "server": "51.161.204.244",
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 04",
+      "server": "152.67.115.203",
       "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
+      "password": "633bc3be486b646190661ac2387c150a",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
       }
     },
     {
@@ -60,7 +83,8 @@
         "auto",
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03"
+        "🇦🇺 澳大利亚 03",
+        "🇦🇺 澳大利亚 04"
       ]
     },
     {
@@ -69,7 +93,8 @@
       "outbounds": [
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03"
+        "🇦🇺 澳大利亚 03",
+        "🇦🇺 澳大利亚 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

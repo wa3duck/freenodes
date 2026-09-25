@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 01
-  server: 104.18.14.103
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -13,7 +13,6 @@ proxies:
   tls: true
   servername: server9.9966338.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /imnotarealherox

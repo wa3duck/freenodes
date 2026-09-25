@@ -5,26 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 2.27.175.71
+  server: 83.219.97.26
   port: 443
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
   tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 02
-  server: de.i-love-russia.online
-  port: 443
+  server: 95.217.24.236
+  port: 2087
   udp: true
-  type: hysteria2
-  password: a6cf39b3-0424-42a2-abf7-b426da69b1a4
-  sni: de.i-love-russia.online
-  skip-cert-verify: true
+  type: vless
+  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
+    short-id: a32cfb5deca913ad
+  servername: 62.238.41.21
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 03
   server: 185.79.138.71
   port: 448
@@ -36,7 +40,7 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 04
   server: 95.216.27.15
   port: 2053
@@ -50,18 +54,31 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 05
-  server: 83.219.97.26
+  server: 2.27.175.71
   port: 443
   udp: true
   type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇮 芬兰 06
+  server: 196.196.206.38
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 06
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+  servername: finkafsb.finiki.lol
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 07
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -74,29 +91,7 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: random
-- name: 🇫🇮 芬兰 07
-  server: 37.143.129.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
-    short-id: 48fd192dc4e46bc0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 08
-  server: fi.snobvpn.online
-  port: 80
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  network: ws
-  ws-opts:
-    path: /snob-ws
-- name: 🇫🇮 芬兰 09
   server: 212.193.18.183
   port: 8446
   udp: true
@@ -111,7 +106,59 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: snob-grpc
+- name: 🇫🇮 芬兰 09
+  server: 212.193.18.183
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  tls: true
+  reality-opts:
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+    short-id: a1b2c3d4e5f6
+  servername: maps.apple.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 10
+  server: 2.27.13.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: 92c863cb-7b96-405c-bc04-ff4d73465f1a
+  tls: true
+  servername: dissolvedvpn.eu.cc
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /dissolved-ws/
+    headers:
+      Host: dissolvedvpn.eu.cc
+- name: 🇫🇮 芬兰 11
+  server: me6.movieseryalirani.ir
+  port: 57361
+  udp: true
+  type: vmess
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 12
+  server: fi.snobvpn.online
+  port: 80
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  network: ws
+  ws-opts:
+    path: /snob-ws
+- name: 🇫🇮 芬兰 13
+  server: iq5ny.pleiades.codes
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 14
   server: 217.144.188.131
   port: 443
   udp: true
@@ -123,15 +170,33 @@ proxies:
     public-key: RoZB6zAaInm8X5feCKpL0_wMZRQYxQHWsirP0SYum2g
     short-id: f3a9c21e8b6d4571
   servername: admin.vkroom-it-service.xyz
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 11
-  server: me6.movieseryalirani.ir
-  port: 57361
+  client-fingerprint: ios
+- name: 🇫🇮 芬兰 15
+  server: 188.124.59.145
+  port: 18443
   udp: true
-  type: vmess
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 8df7343e-2427-41fb-aad1-6c563296faf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1KY_jqa2yPLBEBa-3TG77zs4ak2zQLGul4eexxCueyI
+    short-id: f087eb07da743e94
+  servername: github.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 16
+  server: 37.143.129.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
+    short-id: 48fd192dc4e46bc0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -148,6 +213,11 @@ proxy-groups:
   - 🇫🇮 芬兰 09
   - 🇫🇮 芬兰 10
   - 🇫🇮 芬兰 11
+  - 🇫🇮 芬兰 12
+  - 🇫🇮 芬兰 13
+  - 🇫🇮 芬兰 14
+  - 🇫🇮 芬兰 15
+  - 🇫🇮 芬兰 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,5 +234,10 @@ proxy-groups:
   - 🇫🇮 芬兰 09
   - 🇫🇮 芬兰 10
   - 🇫🇮 芬兰 11
+  - 🇫🇮 芬兰 12
+  - 🇫🇮 芬兰 13
+  - 🇫🇮 芬兰 14
+  - 🇫🇮 芬兰 15
+  - 🇫🇮 芬兰 16
 rules:
 - MATCH,PROXIES
