@@ -6,62 +6,69 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 01
   server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 02
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 03
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 04
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 05
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 06
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 07
-  server: 195.238.126.20
   port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 08
+- name: 🇱🇹 立陶宛 02
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 03
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 04
+  server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 05
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 06
+  server: 195.238.126.20
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇱🇹 立陶宛 07
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 08
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 09
-  server: 84.32.215.94
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 10
+  server: 84.32.215.5
   port: 443
   udp: true
   type: vless
@@ -72,14 +79,7 @@ proxies:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
     short-id: 4fa44664f6a566d3
   servername: lt.aether-runet.top
-  client-fingerprint: random
-- name: 🇱🇹 立陶宛 10
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

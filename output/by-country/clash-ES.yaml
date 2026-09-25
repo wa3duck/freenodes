@@ -42,8 +42,16 @@ proxies:
     public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇪🇸 西班牙 05
+  server: 66.163.118.73
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 06
   server: esbe.vihodest.net
   port: 443
   udp: true
@@ -56,27 +64,19 @@ proxies:
     short-id: e93196a756abca09
   servername: esbe.vihodest.net
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 06
-  server: 87.76.179.117
-  port: 7443
+- name: 🇪🇸 西班牙 07
+  server: 83.147.18.3
+  port: 443
   udp: true
   type: vless
-  uuid: cb15d1b0-e48b-4c4c-b98a-fa1103aa3723
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 07
-  server: 66.163.118.73
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

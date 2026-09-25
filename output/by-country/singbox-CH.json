@@ -4,28 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 01",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 02",
-      "server": "82.38.64.229",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 03",
+      "tag": "🇨🇭 瑞士 02",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -37,7 +38,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 04",
+      "tag": "🇨🇭 瑞士 03",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -45,51 +46,41 @@
         "enabled": true,
         "server_name": "cf9.rumedia-cdn.com",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/cdn/v3/live"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 05",
-      "server": "45.90.59.15",
-      "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 06",
-      "server": "152.67.75.161",
-      "server_port": 443,
-      "password": "3a702d4d1de4949005d8431220e040fb",
+      "tag": "🇨🇭 瑞士 04",
+      "server": "82.38.64.229",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 05",
+      "server": "77.110.104.238",
+      "server_port": 443,
+      "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch2-hy2.veilvpn.life",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c13f29db6a638ad2b211b9ce2669ef27"
       }
     },
     {
@@ -101,8 +92,7 @@
         "🇨🇭 瑞士 02",
         "🇨🇭 瑞士 03",
         "🇨🇭 瑞士 04",
-        "🇨🇭 瑞士 05",
-        "🇨🇭 瑞士 06"
+        "🇨🇭 瑞士 05"
       ]
     },
     {
@@ -113,8 +103,7 @@
         "🇨🇭 瑞士 02",
         "🇨🇭 瑞士 03",
         "🇨🇭 瑞士 04",
-        "🇨🇭 瑞士 05",
-        "🇨🇭 瑞士 06"
+        "🇨🇭 瑞士 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

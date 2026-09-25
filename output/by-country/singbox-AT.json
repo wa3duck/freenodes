@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 01",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 02",
       "server": "152.53.1.40",
       "server_port": 443,
       "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
@@ -15,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -23,14 +31,6 @@
           "short_id": "43dcff53849b81e6"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 02",
-      "server": "82.110.60.9",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "hysteria2",
@@ -41,20 +41,28 @@
       "tls": {
         "enabled": true,
         "server_name": "filesconvert.org",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 04",
-      "server": "at-at-at-new.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "server": "zcsagftt.selqora.ir",
+      "server_port": 51595,
+      "uuid": "82f2dfe6-4ef5-484f-8b7d-94f682a88b00",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "at-at-at-new.failspace.top",
-        "insecure": false
+        "server_name": "play.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SAEWzHGGBsp8haTh34RoN5NwoxiCgZzzJo7jWi-DJXw",
+          "short_id": "913175efbe9ddb1d"
+        }
       }
     },
     {

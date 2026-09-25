@@ -7,37 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 01",
       "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 02",
+      "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
       "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 02",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 03",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 04",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 05",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -45,7 +37,23 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 05",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 06",
+      "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 07",
       "server": "195.238.126.20",
       "server_port": 9011,
       "method": "aes-256-cfb",
@@ -53,24 +61,24 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 07",
+      "tag": "🇱🇹 立陶宛 08",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 08",
+      "tag": "🇱🇹 立陶宛 09",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 09",
-      "server": "84.32.215.94",
+      "tag": "🇱🇹 立陶宛 10",
+      "server": "84.32.215.5",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -79,7 +87,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -87,14 +95,6 @@
           "short_id": "4fa44664f6a566d3"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 10",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "selector",

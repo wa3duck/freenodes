@@ -13,28 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 02
-  server: 51.161.204.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 03
-  server: 172.105.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 04
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -47,6 +25,19 @@ proxies:
     short-id: e6a5a4a9115456de
   servername: www.yahoo.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 03
+  server: 51.161.204.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +46,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
-  - 🇦🇺 澳大利亚 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +54,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
-  - 🇦🇺 澳大利亚 04
 rules:
 - MATCH,PROXIES

@@ -5,31 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 01
-  server: 172.67.153.156
+  server: 8.47.69.0
   port: 443
   udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pai50288
-    headers:
-      Host: ccs2g.pai50288.uk
+    path: /assignment
+- name: 🌐 其他地区 02
+  server: 8.47.69.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🌐 其他地区 03
+  server: 8.47.69.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🌐 其他地区 04
+  server: 8.47.69.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 05
+  server: 8.47.69.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 01
+  - 🌐 其他地区 02
+  - 🌐 其他地区 03
+  - 🌐 其他地区 04
+  - 🌐 其他地区 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 01
+  - 🌐 其他地区 02
+  - 🌐 其他地区 03
+  - 🌐 其他地区 04
+  - 🌐 其他地区 05
 rules:
 - MATCH,PROXIES

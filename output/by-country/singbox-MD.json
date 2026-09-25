@@ -15,46 +15,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 02",
-      "server": "md-new.failspace.top",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "md-new.failspace.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 03",
-      "server": "143.246.216.64",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇲🇩 摩尔多瓦 03"
+        "🇲🇩 摩尔多瓦 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 01",
-        "🇲🇩 摩尔多瓦 02",
-        "🇲🇩 摩尔多瓦 03"
+        "🇲🇩 摩尔多瓦 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

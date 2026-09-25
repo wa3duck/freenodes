@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇲🇾 马来西亚 01",
-      "server": "47.250.135.244",
-      "server_port": 10000,
-      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+      "tag": "🇧🇷 巴西 01",
+      "server": "172.233.14.17",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto"
     },
     {
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 01"
+        "🇧🇷 巴西 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 01"
+        "🇧🇷 巴西 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,25 +4,95 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🌐 其他地区 01",
-      "server": "172.67.153.156",
+      "server": "8.47.69.0",
       "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
+        "server_name": "www.pleadcourt.org",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/pai50288",
+        "path": "/assignment",
         "headers": {
-          "Host": "ccs2g.pai50288.uk"
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 02",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 03",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 04",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 05",
+      "server": "8.47.69.0",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -31,14 +101,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 01"
+        "🌐 其他地区 01",
+        "🌐 其他地区 02",
+        "🌐 其他地区 03",
+        "🌐 其他地区 04",
+        "🌐 其他地区 05"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 01"
+        "🌐 其他地区 01",
+        "🌐 其他地区 02",
+        "🌐 其他地区 03",
+        "🌐 其他地区 04",
+        "🌐 其他地区 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
