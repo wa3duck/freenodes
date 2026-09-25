@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 01",
-      "server": "162.159.43.187",
-      "server_port": 8880,
+      "server": "172.64.32.103",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -18,67 +18,37 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 02",
+      "server": "162.159.38.127",
+      "server_port": 8880,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls ",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 02",
+      "tag": "🇹🇼 中国台湾 03",
       "server": "36.224.141.124",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 03",
-      "server": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇹🇷 土耳其 04",
-      "server": "test.keoplentuio.xyz",
+      "server": "82.47.63.156",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 05",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 06",
-      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
-        "insecure": false
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇷 土耳其 07",
+      "tag": "🇹🇷 土耳其 05",
       "server": "206.1.98.72",
       "server_port": 21811,
       "uuid": "Nitro_Skybot@",
@@ -89,17 +59,62 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 06",
+      "server": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 07",
+      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
+      "server_port": 443,
+      "password": "9sK2mP8xQ7vL3nZ6",
+      "tls": {
+        "enabled": true,
+        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 08",
+      "server": "118.167.230.191",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 01",
-        "🇹🇼 中国台湾 02",
-        "🇭🇰 中国香港 03",
+        "🇺🇸 美国 02",
+        "🇹🇼 中国台湾 03",
         "🇹🇷 土耳其 04",
-        "🇹🇼 中国台湾 05",
+        "🇹🇷 土耳其 05",
         "🇭🇰 中国香港 06",
-        "🇹🇷 土耳其 07"
+        "🇭🇰 中国香港 07",
+        "🇹🇼 中国台湾 08"
       ]
     },
     {
@@ -107,12 +122,13 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 01",
-        "🇹🇼 中国台湾 02",
-        "🇭🇰 中国香港 03",
+        "🇺🇸 美国 02",
+        "🇹🇼 中国台湾 03",
         "🇹🇷 土耳其 04",
-        "🇹🇼 中国台湾 05",
+        "🇹🇷 土耳其 05",
         "🇭🇰 中国香港 06",
-        "🇹🇷 土耳其 07"
+        "🇭🇰 中国香港 07",
+        "🇹🇼 中国台湾 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

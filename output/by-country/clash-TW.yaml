@@ -13,6 +13,14 @@ proxies:
   sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 02
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 03
   server: 35.194.157.16
   port: 43450
   udp: true
@@ -25,7 +33,7 @@ proxies:
     short-id: e65d010354bdad73
   servername: www.amd.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 03
+- name: 🇹🇼 中国台湾 04
   server: 104.199.134.231
   port: 28364
   udp: true
@@ -37,7 +45,33 @@ proxies:
     public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
     short-id: 7241c359c2dfab
   servername: www.sony.com
-  client-fingerprint: random
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 05
+  server: 35.201.163.218
+  port: 30837
+  udp: true
+  type: vless
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  servername: www.sony.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 06
+  server: 35.221.158.209
+  port: 32981
+  udp: true
+  type: vless
+  uuid: 41b96ee9-ee5e-455f-9753-187a9dead97a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E
+    short-id: 70f4b7a4c40636
+  servername: www.sony.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +80,9 @@ proxy-groups:
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
   - 🇹🇼 中国台湾 03
+  - 🇹🇼 中国台湾 04
+  - 🇹🇼 中国台湾 05
+  - 🇹🇼 中国台湾 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +91,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
   - 🇹🇼 中国台湾 03
+  - 🇹🇼 中国台湾 04
+  - 🇹🇼 中国台湾 05
+  - 🇹🇼 中国台湾 06
 rules:
 - MATCH,PROXIES

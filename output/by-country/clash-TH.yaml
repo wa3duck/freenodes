@@ -21,10 +21,8 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: ais.speedtest.net
 - name: 🇹🇭 泰国 03
-  server: 104.16.10.185
+  server: 162.159.192.125
   port: 443
   udp: true
   type: vless

@@ -6,32 +6,30 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 01",
-      "server": "platform108.golnamakcert.top",
+      "server": "64.176.21.237",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform108"
+        "path": "/platform108",
+        "headers": {
+          "Host": "platform108.halalkhor.info"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 02",
-      "server": "platform109.golnamakcert.top",
+      "server": "64.176.4.15",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform109"
+        "path": "/platform109",
+        "headers": {
+          "Host": "platform109.halalkhor.info"
+        }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇱 智利 03",
-      "server": "64.176.2.21",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "xBStBEVqvGwHPocc"
     },
     {
       "type": "selector",
@@ -39,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇨🇱 智利 01",
-        "🇨🇱 智利 02",
-        "🇨🇱 智利 03"
+        "🇨🇱 智利 02"
       ]
     },
     {
@@ -48,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇱 智利 01",
-        "🇨🇱 智利 02",
-        "🇨🇱 智利 03"
+        "🇨🇱 智利 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -19,16 +19,13 @@
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "ais.speedtest.net"
-        }
+        "path": "/ws"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 03",
-      "server": "104.16.10.185",
+      "server": "162.159.192.125",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {

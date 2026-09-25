@@ -7,33 +7,33 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 01",
       "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 02",
-      "server": "185.135.86.175",
       "server_port": 9007,
       "method": "aes-256-cfb",
       "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 02",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 03",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 04",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -47,9 +47,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 06",
       "server": "185.135.86.175",
-      "server_port": 9068,
+      "server_port": 9036,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "vless",
@@ -63,7 +63,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -71,6 +71,14 @@
           "short_id": "33acba1b"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 08",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "selector",
@@ -83,7 +91,8 @@
         "🇱🇻 拉脱维亚 04",
         "🇱🇻 拉脱维亚 05",
         "🇱🇻 拉脱维亚 06",
-        "🇱🇻 拉脱维亚 07"
+        "🇱🇻 拉脱维亚 07",
+        "🇱🇻 拉脱维亚 08"
       ]
     },
     {
@@ -96,7 +105,8 @@
         "🇱🇻 拉脱维亚 04",
         "🇱🇻 拉脱维亚 05",
         "🇱🇻 拉脱维亚 06",
-        "🇱🇻 拉脱维亚 07"
+        "🇱🇻 拉脱维亚 07",
+        "🇱🇻 拉脱维亚 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

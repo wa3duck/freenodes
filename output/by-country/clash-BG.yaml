@@ -6,60 +6,60 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 01
   server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 02
-  server: 213.183.63.60
   port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 02
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 03
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 04
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 05
-  server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 06
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 07
+- name: 🇧🇬 保加利亚 04
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 05
   server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 08
+- name: 🇧🇬 保加利亚 06
   server: 213.183.63.60
-  port: 9029
+  port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 07
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 08
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 09
   server: 193.148.59.178
   port: 443
@@ -72,27 +72,23 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇧🇬 保加利亚 10
   server: 213.183.63.60
-  port: 9064
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 11
-  server: 136.175.82.85
-  port: 18775
+  server: 131.123.41.31
+  port: 8081
   udp: true
   type: vless
-  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
-  client-fingerprint: qq
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇧🇬 保加利亚 12
   server: 131.123.37.199
   port: 8081
@@ -112,14 +108,18 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 14
-  server: 131.123.41.31
-  port: 8081
+  server: 136.175.82.85
+  port: 18775
   udp: true
   type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
+  client-fingerprint: safari
 - name: 🇧🇬 保加利亚 15
   server: p.jigilibaw.ir
   port: 10071

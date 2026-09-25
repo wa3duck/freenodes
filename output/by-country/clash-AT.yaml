@@ -32,19 +32,6 @@ proxies:
   password: 0e1506b1-22a4-4b4f-8082-9ddd2efcd28e
   sni: filesconvert.org
   skip-cert-verify: true
-- name: 🇦🇹 奥地利 04
-  server: zcsagftt.selqora.ir
-  port: 51595
-  udp: true
-  type: vless
-  uuid: 82f2dfe6-4ef5-484f-8b7d-94f682a88b00
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SAEWzHGGBsp8haTh34RoN5NwoxiCgZzzJo7jWi-DJXw
-    short-id: 913175efbe9ddb1d
-  servername: play.google.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +40,6 @@ proxy-groups:
   - 🇦🇹 奥地利 01
   - 🇦🇹 奥地利 02
   - 🇦🇹 奥地利 03
-  - 🇦🇹 奥地利 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +48,5 @@ proxy-groups:
   - 🇦🇹 奥地利 01
   - 🇦🇹 奥地利 02
   - 🇦🇹 奥地利 03
-  - 🇦🇹 奥地利 04
 rules:
 - MATCH,PROXIES
