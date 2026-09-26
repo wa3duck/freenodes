@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 01
-  server: 82.198.246.9
+  server: 82.198.246.233
   port: 180
   udp: true
   type: vmess
@@ -25,15 +25,6 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 03
-  server: 172.105.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
-  - 🇦🇺 澳大利亚 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
-  - 🇦🇺 澳大利亚 03
 rules:
 - MATCH,PROXIES

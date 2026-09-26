@@ -46,8 +46,57 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇱 以色列 03",
+      "server": "31.57.185.82",
+      "server_port": 41770,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "upFH0BmL9pV55mch4LvbPLe+Mf7vgG0YHGaTOT9gMG0=:t1hZF7WQEYGf0ycfk4son7eeAaVkfOxscBpbk5H/Zyo="
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 04",
+      "server": "193.202.10.248",
+      "server_port": 40443,
+      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+          "short_id": "db46e2946fc466fd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 05",
+      "server": "72.4.65.116",
+      "server_port": 443,
+      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-de2.pleiades.codes",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 06",
       "server": "de2.dzvn.space",
       "server_port": 2291,
       "uuid": "25284368-40d5-4abe-9f56-54a07e88a7af",
@@ -67,27 +116,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 04",
-      "server": "193.202.10.248",
-      "server_port": 40443,
-      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-          "short_id": "db46e2946fc466fd"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -95,7 +123,9 @@
         "🇮🇱 以色列 01",
         "🇮🇱 以色列 02",
         "🇮🇱 以色列 03",
-        "🇮🇱 以色列 04"
+        "🇮🇱 以色列 04",
+        "🇮🇱 以色列 05",
+        "🇮🇱 以色列 06"
       ]
     },
     {
@@ -105,7 +135,9 @@
         "🇮🇱 以色列 01",
         "🇮🇱 以色列 02",
         "🇮🇱 以色列 03",
-        "🇮🇱 以色列 04"
+        "🇮🇱 以色列 04",
+        "🇮🇱 以色列 05",
+        "🇮🇱 以色列 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

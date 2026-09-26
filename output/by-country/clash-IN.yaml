@@ -27,6 +27,26 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇮🇳 印度 03
+  server: 148.113.5.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
+    short-id: 221873918e0bb74d
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 04
+  server: 139.84.166.47
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: GEdoeeqLZtkJRgSa
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
+  - 🇮🇳 印度 03
+  - 🇮🇳 印度 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
+  - 🇮🇳 印度 03
+  - 🇮🇳 印度 04
 rules:
 - MATCH,PROXIES

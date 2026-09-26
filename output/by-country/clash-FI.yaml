@@ -5,42 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 31.77.17.199
-  port: 443
-  udp: true
-  type: vless
-  uuid: deea5046-3543-4b1b-a17f-3d08a65db91d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fkZTYNydTBVO-1LSiTvDcyBMx-zBP5Am780jECmUgg0
-  servername: fi03.mcloud.mov
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 02
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 03
-  server: 83.219.97.26
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 04
   server: 45.149.147.97
   port: 443
   udp: true
@@ -53,7 +17,7 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: safari
-- name: 🇫🇮 芬兰 05
+- name: 🇫🇮 芬兰 02
   server: 185.79.138.71
   port: 448
   udp: true
@@ -64,7 +28,43 @@ proxies:
     public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
-  client-fingerprint: qq
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 03
+  server: 37.143.129.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 04
+  server: 83.219.97.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 05
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 06
   server: 31.77.199.147
   port: 4443
@@ -77,8 +77,33 @@ proxies:
     public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 07
+  server: 144.31.27.215
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
+    short-id: 568d87a47271344e
+  servername: 144.31.27.215
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 08
+  server: 212.193.18.183
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  tls: true
+  reality-opts:
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+    short-id: a1b2c3d4e5f6
+  servername: maps.apple.com
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 09
   server: 212.193.18.183
   port: 8446
   udp: true
@@ -93,78 +118,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: snob-grpc
-- name: 🇫🇮 芬兰 08
-  server: 37.143.129.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0e6de971-69e8-4536-b06d-8b6eae57021b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY
-    short-id: 48fd192dc4e46bc0
-  servername: gateway.icloud.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 09
-  server: 144.31.27.215
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 10
-  server: mstfl.banibus.ir
-  port: 8118
-  udp: true
-  type: vless
-  uuid: eea1c59d-70fd-4829-8ed7-21ddfe55a0da
-  tls: true
-  reality-opts:
-    public-key: LjAkLizwkZf35ObrUMFZ22UHXTEJzpgcTvHk9AuzcUM
-  servername: play.googleapis.com
-  client-fingerprint: ios
-- name: 🇫🇮 芬兰 11
-  server: 212.193.18.183
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  tls: true
-  reality-opts:
-    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
-    short-id: a1b2c3d4e5f6
-  servername: maps.apple.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 12
-  server: me2.movieseryalirani.ir
+  server: 31.77.17.176
   port: 443
   udp: true
   type: vless
-  uuid: 63aaea7f-2847-4f41-afab-0836b1cf79d9
+  uuid: 85261643-2fd5-4889-8da9-43abc3c08405
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: CxRZ7oJWwR7okmOoqEEbVYCSfTaBlNA6ycf_UniyeEk
-    short-id: 8d814a
-  servername: matrix-client.matrix.org
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 13
-  server: me3.movieseryalirani.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: 63aaea7f-2847-4f41-afab-0836b1cf79d9
-  tls: true
-  reality-opts:
-    public-key: CxRZ7oJWwR7okmOoqEEbVYCSfTaBlNA6ycf_UniyeEk
-    short-id: 8d814a
-  servername: matrix-client.matrix.org
+    public-key: ssz8kvl1tH0TUaFREVSV_X-ED0AR-eeaWpKg2jQM8D8
+  servername: gag.fl.iki-servers.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -181,9 +145,6 @@ proxy-groups:
   - 🇫🇮 芬兰 08
   - 🇫🇮 芬兰 09
   - 🇫🇮 芬兰 10
-  - 🇫🇮 芬兰 11
-  - 🇫🇮 芬兰 12
-  - 🇫🇮 芬兰 13
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -199,8 +160,5 @@ proxy-groups:
   - 🇫🇮 芬兰 08
   - 🇫🇮 芬兰 09
   - 🇫🇮 芬兰 10
-  - 🇫🇮 芬兰 11
-  - 🇫🇮 芬兰 12
-  - 🇫🇮 芬兰 13
 rules:
 - MATCH,PROXIES

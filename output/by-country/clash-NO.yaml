@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 挪威 01
+  server: 139.100.236.74
+  port: 1
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WxYpOK1iPSJySbVNMMJDtw
+- name: 🇳🇴 挪威 02
   server: 46.29.238.88
   port: 40443
   udp: true
@@ -22,11 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇳🇴 挪威 01
+  - 🇳🇴 挪威 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇳🇴 挪威 01
+  - 🇳🇴 挪威 02
 rules:
 - MATCH,PROXIES
