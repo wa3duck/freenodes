@@ -6,46 +6,39 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 01",
-      "server": "104.21.78.9",
+      "server": "188.114.97.6",
       "server_port": 443,
-      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b",
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
-        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/ws",
         "headers": {
-          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+          "Host": "v2ray.simspeedup.com"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🌐 其他地区 02",
-      "server": "104.21.78.9",
-      "server_port": 443,
-      "uuid": "a8890c1b-3622-3106-c4be-d8671be32d2b",
+      "server": "chatgpt.com",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "summer-meadow-af5b.woowoorrrkk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/lMnsZUN4/",
         "headers": {
-          "Host": "summer-meadow-af5b.woowoorrrkk.workers.dev"
+          "Host": "v2ray1.dozapp.xyz"
         }
       }
     },

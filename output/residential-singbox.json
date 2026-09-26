@@ -4,88 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 01",
-      "server": "108.162.198.178",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 02",
-      "server": "namrcg001640lrm.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 03",
-      "server": "82.47.63.156",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 04",
-      "server": "185.125.103.62",
-      "server_port": 8082,
-      "uuid": "7d170265-b2c5-47cd-8a53-dcc5207ef744",
-      "tls": {
-        "enabled": true,
-        "server_name": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 05",
+      "tag": "🇹🇼 中国台湾 01",
       "server": "36.224.141.124",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 06",
-      "server": "210.152.85.154",
-      "server_port": 19364,
-      "uuid": "c16f8911-d921-4c34-95da-742dd3e1def5",
-      "tls": {
-        "enabled": true,
-        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 02",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 07",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 中国台湾 03",
+      "server": "118.167.230.191",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -93,7 +30,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -103,8 +40,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 04",
+      "server": "namrcg001640lrm.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
+    },
+    {
       "type": "anytls",
-      "tag": "🇭🇰 中国香港 08",
+      "tag": "🇭🇰 中国香港 05",
       "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
       "server_port": 443,
       "password": "9sK2mP8xQ7vL3nZ6",
@@ -119,28 +64,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01",
-        "🇹🇼 中国台湾 02",
-        "🇹🇷 土耳其 03",
-        "🇯🇵 日本 04",
-        "🇹🇼 中国台湾 05",
-        "🇯🇵 日本 06",
-        "🇹🇼 中国台湾 07",
-        "🇭🇰 中国香港 08"
+        "🇹🇼 中国台湾 01",
+        "🇭🇰 中国香港 02",
+        "🇹🇼 中国台湾 03",
+        "🇹🇼 中国台湾 04",
+        "🇭🇰 中国香港 05"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 01",
-        "🇹🇼 中国台湾 02",
-        "🇹🇷 土耳其 03",
-        "🇯🇵 日本 04",
-        "🇹🇼 中国台湾 05",
-        "🇯🇵 日本 06",
-        "🇹🇼 中国台湾 07",
-        "🇭🇰 中国香港 08"
+        "🇹🇼 中国台湾 01",
+        "🇭🇰 中国香港 02",
+        "🇹🇼 中国台湾 03",
+        "🇹🇼 中国台湾 04",
+        "🇭🇰 中国香港 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

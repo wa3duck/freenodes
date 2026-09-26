@@ -4,23 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 01
-  server: 82.47.63.156
-  port: 2053
+- name: 🇲🇾 马来西亚 01
+  server: mlxy2.mangshe.xyz
+  port: 2060
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mlxy2.mangshe.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 01
+  - 🇲🇾 马来西亚 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 01
+  - 🇲🇾 马来西亚 01
 rules:
 - MATCH,PROXIES

@@ -5,26 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 01
-  server: 188.114.97.7
-  port: 443
+  server: 153.76.185.104
+  port: 3090
   udp: true
   type: vless
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  tls: true
-  servername: o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /7J5lLqtBnJg9WjVT?ed
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇨🇿 捷克 02
-  server: 194.87.59.26
-  port: 2085
-  udp: true
-  type: vless
-  uuid: 720814fb-e38e-4570-97a7-c5df60352d37
+  uuid: 6bd9b04b-17de-4f05-b8b8-e5f2a0a649c1
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -34,13 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 01
-  - 🇨🇿 捷克 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 01
-  - 🇨🇿 捷克 02
 rules:
 - MATCH,PROXIES

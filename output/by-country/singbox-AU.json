@@ -4,30 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 01",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "uuid": "6faeb6a0-5055-4e4b-8fb1-ffd77e57aefa",
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "somersby.pt.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 02",
-      "server": "82.198.246.233",
+      "tag": "🇦🇺 澳大利亚 01",
+      "server": "82.198.246.37",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 03",
+      "tag": "🇦🇺 澳大利亚 02",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -37,7 +23,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -47,13 +33,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 03",
+      "server": "172.105.169.70",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "tls": {
+        "enabled": true,
+        "server_name": "172.105.169.70",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 04",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03"
+        "🇦🇺 澳大利亚 03",
+        "🇦🇺 澳大利亚 04"
       ]
     },
     {
@@ -62,7 +73,8 @@
       "outbounds": [
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03"
+        "🇦🇺 澳大利亚 03",
+        "🇦🇺 澳大利亚 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

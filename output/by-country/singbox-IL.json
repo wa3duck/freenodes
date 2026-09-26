@@ -46,43 +46,12 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 03",
-      "server": "31.57.185.82",
-      "server_port": 58212,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "feMXjpw5CFoxqX7VFCJdBYYAAYW5Sim9mBIe9/4G8vI=:0ZoLngUwAUCuVkNuCJgY8xImum67ESzti6TP0fUx7/4="
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 04",
-      "server": "arcturus.yokkastars.com",
-      "server_port": 40443,
-      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
-          "short_id": "db46e2946fc466fd"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 01",
-        "🇮🇱 以色列 02",
-        "🇮🇱 以色列 03",
-        "🇮🇱 以色列 04"
+        "🇮🇱 以色列 02"
       ]
     },
     {
@@ -90,9 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇱 以色列 01",
-        "🇮🇱 以色列 02",
-        "🇮🇱 以色列 03",
-        "🇮🇱 以色列 04"
+        "🇮🇱 以色列 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
