@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 01",
+      "server": "206.1.98.72",
+      "server_port": 21811,
+      "uuid": "Nitro_Skybot@",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 02",
+      "server": "93.114.98.221",
+      "server_port": 443,
+      "uuid": "552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14",
+      "tls": {
+        "enabled": true,
+        "server_name": "00iwuafi1019.dopgangster.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 03",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -15,7 +39,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 02",
+      "tag": "🇹🇷 土耳其 04",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -35,7 +59,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -45,12 +69,23 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 05",
+      "server": "103.215.218.158",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 01",
-        "🇹🇷 土耳其 02"
+        "🇹🇷 土耳其 02",
+        "🇹🇷 土耳其 03",
+        "🇹🇷 土耳其 04",
+        "🇹🇷 土耳其 05"
       ]
     },
     {
@@ -58,7 +93,10 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 01",
-        "🇹🇷 土耳其 02"
+        "🇹🇷 土耳其 02",
+        "🇹🇷 土耳其 03",
+        "🇹🇷 土耳其 04",
+        "🇹🇷 土耳其 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

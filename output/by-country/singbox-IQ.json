@@ -6,28 +6,40 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01",
-      "server": "193.56.135.137",
-      "server_port": 9543,
-      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "storage.yandexcloud.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
-          "short_id": "123abcde"
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "courses.mftplus.qzz.io"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 02",
-      "server": "193.56.135.212",
+      "server": "172.67.160.14",
+      "server_port": 443,
+      "uuid": "0b41f339-5809-46ef-8351-b03fdc441539",
+      "tls": {
+        "enabled": true,
+        "server_name": "fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/EO6oVRcY1Uc9ohurasfENusjULL248yt?ed=2560",
+        "headers": {
+          "Host": "fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 03",
+      "server": "193.56.135.233",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
       "flow": "xtls-rprx-vision",
@@ -36,7 +48,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -51,7 +63,8 @@
       "outbounds": [
         "auto",
         "🇮🇶 IQ 01",
-        "🇮🇶 IQ 02"
+        "🇮🇶 IQ 02",
+        "🇮🇶 IQ 03"
       ]
     },
     {
@@ -59,7 +72,8 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇶 IQ 01",
-        "🇮🇶 IQ 02"
+        "🇮🇶 IQ 02",
+        "🇮🇶 IQ 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

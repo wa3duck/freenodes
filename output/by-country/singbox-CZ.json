@@ -6,22 +6,35 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 01",
-      "server": "13.143.181.220",
+      "server": "188.114.97.7",
       "server_port": 443,
-      "uuid": "7a8d2c3f-d6dd-0004-81d8-cff23d8364ee",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ba49d874-fe02-465d-82d3-ed981dc7694f",
       "tls": {
         "enabled": true,
-        "server_name": "msk1.maxtelemost.com",
+        "server_name": "o94Yv7LIF0-aNXISd9eFehvvS7mxn6bH.Z-ULe-iKa-d-e-ne-K-e.wORkeRs.Dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38",
-          "short_id": ""
+          "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/7J5lLqtBnJg9WjVT?ed",
+        "headers": {
+          "Host": "o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 02",
+      "server": "194.87.59.26",
+      "server_port": 2085,
+      "uuid": "720814fb-e38e-4570-97a7-c5df60352d37",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -29,14 +42,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 01"
+        "🇨🇿 捷克 01",
+        "🇨🇿 捷克 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 01"
+        "🇨🇿 捷克 01",
+        "🇨🇿 捷克 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

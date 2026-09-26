@@ -18,16 +18,20 @@ proxies:
   servername: kazartip.thewalkingded.life
   client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 02
-  server: 38.107.234.57
-  port: 80
+  server: 176.109.104.195
+  port: 9882
   udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabbccdd
+  servername: dl.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 - name: 🇰🇿 哈萨克斯坦 03
   server: 83.222.23.81
   port: 38065
@@ -53,17 +57,16 @@ proxies:
   servername: yahoo.com
   client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 05
-  server: 77.73.232.61
-  port: 19747
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
   udp: true
-  type: vless
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  tls: true
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-    short-id: '2001'
-  servername: yahoo.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
 - name: 🇰🇿 哈萨克斯坦 06
   server: 178.236.16.98
   port: 35728
@@ -75,22 +78,19 @@ proxies:
     public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
     short-id: 69a2
   servername: yahoo.com
-  client-fingerprint: random
+  client-fingerprint: qq
 - name: 🇰🇿 哈萨克斯坦 07
-  server: 176.109.104.195
-  port: 9882
+  server: 77.73.232.61
+  port: 19747
   udp: true
   type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
   tls: true
   reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aa
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
+    short-id: '2001'
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

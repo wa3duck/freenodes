@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 01",
-      "server": "64.176.21.237",
+      "server": "platform108.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -20,7 +20,102 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 02",
-      "server": "64.176.4.15",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 03",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103",
+        "headers": {
+          "Host": "platform103.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 04",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 05",
+      "server": "platform117.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 06",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "['platform113.halalkhor.info']"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 07",
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 08",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 09",
+      "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -32,12 +127,28 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇱 智利 10",
+      "server": "64.176.2.21",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "xBStBEVqvGwHPocc"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇱 智利 01",
-        "🇨🇱 智利 02"
+        "🇨🇱 智利 02",
+        "🇨🇱 智利 03",
+        "🇨🇱 智利 04",
+        "🇨🇱 智利 05",
+        "🇨🇱 智利 06",
+        "🇨🇱 智利 07",
+        "🇨🇱 智利 08",
+        "🇨🇱 智利 09",
+        "🇨🇱 智利 10"
       ]
     },
     {
@@ -45,7 +156,15 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇱 智利 01",
-        "🇨🇱 智利 02"
+        "🇨🇱 智利 02",
+        "🇨🇱 智利 03",
+        "🇨🇱 智利 04",
+        "🇨🇱 智利 05",
+        "🇨🇱 智利 06",
+        "🇨🇱 智利 07",
+        "🇨🇱 智利 08",
+        "🇨🇱 智利 09",
+        "🇨🇱 智利 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

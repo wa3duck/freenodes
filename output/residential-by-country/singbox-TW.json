@@ -6,6 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 01",
+      "server": "namrcg001640lrm.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 02",
       "server": "36.224.141.124",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
@@ -13,8 +21,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 02",
-      "server": "118.167.230.191",
+      "tag": "🇹🇼 中国台湾 03",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -22,7 +30,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -37,7 +45,8 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02"
+        "🇹🇼 中国台湾 02",
+        "🇹🇼 中国台湾 03"
       ]
     },
     {
@@ -45,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02"
+        "🇹🇼 中国台湾 02",
+        "🇹🇼 中国台湾 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

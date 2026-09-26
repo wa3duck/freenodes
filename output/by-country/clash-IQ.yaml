@@ -5,20 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01
-  server: 193.56.135.137
-  port: 9543
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
-  client-fingerprint: safari
+  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: courses.mftplus.qzz.io
 - name: 🇮🇶 IQ 02
-  server: 193.56.135.212
+  server: 172.67.160.14
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
+  tls: true
+  servername: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vl/EO6oVRcY1Uc9ohurasfENusjULL248yt?ed=2560
+    headers:
+      Host: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
+- name: 🇮🇶 IQ 03
+  server: 193.56.135.233
   port: 9543
   udp: true
   type: vless
@@ -29,7 +41,7 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇮🇶 IQ 01
   - 🇮🇶 IQ 02
+  - 🇮🇶 IQ 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇮🇶 IQ 01
   - 🇮🇶 IQ 02
+  - 🇮🇶 IQ 03
 rules:
 - MATCH,PROXIES

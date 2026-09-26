@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 01
-  server: 64.176.21.237
+  server: platform108.golnamakcert.top
   port: 80
   udp: true
   type: vless
@@ -16,7 +16,82 @@ proxies:
     headers:
       Host: platform108.halalkhor.info
 - name: 🇨🇱 智利 02
-  server: 64.176.4.15
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇨🇱 智利 03
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇨🇱 智利 04
+  server: platform101.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇨🇱 智利 05
+  server: platform117.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇨🇱 智利 06
+  server: platform113.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: '[''platform113.halalkhor.info'']'
+- name: 🇨🇱 智利 07
+  server: platform102.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇨🇱 智利 08
+  server: platform115.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform115
+- name: 🇨🇱 智利 09
+  server: platform109.golnamakcert.top
   port: 80
   udp: true
   type: vless
@@ -26,6 +101,13 @@ proxies:
     path: /platform109
     headers:
       Host: platform109.halalkhor.info
+- name: 🇨🇱 智利 10
+  server: 64.176.2.21
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: xBStBEVqvGwHPocc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +115,14 @@ proxy-groups:
   - AUTO
   - 🇨🇱 智利 01
   - 🇨🇱 智利 02
+  - 🇨🇱 智利 03
+  - 🇨🇱 智利 04
+  - 🇨🇱 智利 05
+  - 🇨🇱 智利 06
+  - 🇨🇱 智利 07
+  - 🇨🇱 智利 08
+  - 🇨🇱 智利 09
+  - 🇨🇱 智利 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +130,13 @@ proxy-groups:
   proxies:
   - 🇨🇱 智利 01
   - 🇨🇱 智利 02
+  - 🇨🇱 智利 03
+  - 🇨🇱 智利 04
+  - 🇨🇱 智利 05
+  - 🇨🇱 智利 06
+  - 🇨🇱 智利 07
+  - 🇨🇱 智利 08
+  - 🇨🇱 智利 09
+  - 🇨🇱 智利 10
 rules:
 - MATCH,PROXIES

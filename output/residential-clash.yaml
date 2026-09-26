@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 01
-  server: 172.64.32.103
-  port: 2082
+  server: 108.162.198.178
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,59 +15,57 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 02
-  server: 162.159.38.127
-  port: 8880
+- name: 🇹🇼 中国台湾 02
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+- name: 🇹🇷 土耳其 03
+  server: 82.47.63.156
+  port: 2053
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇯🇵 日本 04
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 7d170265-b2c5-47cd-8a53-dcc5207ef744
+  tls: true
+  servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /@Marisa_kristi
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 03
+      Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+- name: 🇹🇼 中国台湾 05
   server: 36.224.141.124
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇷 土耳其 04
-  server: 82.47.63.156
-  port: 2053
+- name: 🇯🇵 日本 06
+  server: 210.152.85.154
+  port: 19364
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 05
-  server: 206.1.98.72
-  port: 21811
-  udp: true
-  type: vmess
-  uuid: Nitro_Skybot@
-  alterId: 0
-  cipher: auto
+  uuid: c16f8911-d921-4c34-95da-742dd3e1def5
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-- name: 🇭🇰 中国香港 06
-  server: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  sni: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 07
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: false
-- name: 🇹🇼 中国台湾 08
-  server: 118.167.230.191
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇹🇼 中国台湾 07
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -76,32 +74,40 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: edge
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 08
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
+  udp: true
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 01
-  - 🇺🇸 美国 02
-  - 🇹🇼 中国台湾 03
-  - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
-  - 🇭🇰 中国香港 06
-  - 🇭🇰 中国香港 07
-  - 🇹🇼 中国台湾 08
+  - 🇹🇼 中国台湾 02
+  - 🇹🇷 土耳其 03
+  - 🇯🇵 日本 04
+  - 🇹🇼 中国台湾 05
+  - 🇯🇵 日本 06
+  - 🇹🇼 中国台湾 07
+  - 🇭🇰 中国香港 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 01
-  - 🇺🇸 美国 02
-  - 🇹🇼 中国台湾 03
-  - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
-  - 🇭🇰 中国香港 06
-  - 🇭🇰 中国香港 07
-  - 🇹🇼 中国台湾 08
+  - 🇹🇼 中国台湾 02
+  - 🇹🇷 土耳其 03
+  - 🇯🇵 日本 04
+  - 🇹🇼 中国台湾 05
+  - 🇯🇵 日本 06
+  - 🇹🇼 中国台湾 07
+  - 🇭🇰 中国香港 08
 rules:
 - MATCH,PROXIES
