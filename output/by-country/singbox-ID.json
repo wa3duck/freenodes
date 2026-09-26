@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 01",
-      "server": "153.76.185.104",
-      "server_port": 3090,
-      "uuid": "6bd9b04b-17de-4f05-b8b8-e5f2a0a649c1",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 01",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16298,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 01"
+        "🇮🇩 印尼 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 01"
+        "🇮🇩 印尼 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

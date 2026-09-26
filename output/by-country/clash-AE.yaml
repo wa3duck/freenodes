@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 01
-  server: 89.125.147.214
-  port: 443
-  udp: true
-  type: vless
-  uuid: c21fc85c-0568-4684-8a6e-2725393dfecf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zVEDSKwQEIM6xRD7YEhJakteNI2xPK3xhhKulDo_vWg
-    short-id: b664d93e9d7a04f1
-  servername: nl3.freekeysh110.online
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 02
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 03
   server: 78.40.195.140
   port: 443
   udp: true
@@ -39,8 +16,18 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 04
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 02
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 03
   server: 151.242.160.153
   port: 10443
   udp: true
@@ -53,6 +40,18 @@ proxies:
     short-id: b1
   servername: www.bmw.com
   client-fingerprint: safari
+- name: 🇦🇪 阿联酋 04
+  server: 151.241.138.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: condropolo.ggisopi.su
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 05
   server: 94.183.224.45
   port: 443
@@ -67,7 +66,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 06
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -78,14 +77,6 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 07
-  server: 85.204.107.181
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 08
   server: 146.70.102.82
   port: 443
   udp: true
@@ -98,19 +89,14 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 09
-  server: 139.185.44.42
-  port: 8443
+- name: 🇦🇪 阿联酋 08
+  server: 85.204.107.183
+  port: 8080
   udp: true
-  type: vless
-  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
-    short-id: 855834d3b002ad21
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -124,7 +110,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
   - 🇦🇪 阿联酋 08
-  - 🇦🇪 阿联酋 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -138,6 +123,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
   - 🇦🇪 阿联酋 08
-  - 🇦🇪 阿联酋 09
 rules:
 - MATCH,PROXIES

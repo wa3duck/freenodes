@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 01",
-      "server": "82.198.246.37",
+      "server": "82.198.246.9",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -45,26 +45,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 04",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03",
-        "🇦🇺 澳大利亚 04"
+        "🇦🇺 澳大利亚 03"
       ]
     },
     {
@@ -73,8 +60,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03",
-        "🇦🇺 澳大利亚 04"
+        "🇦🇺 澳大利亚 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

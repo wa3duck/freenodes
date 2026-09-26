@@ -4,26 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 01
-  server: 153.76.185.104
-  port: 3090
+- name: 🇮🇩 印尼 01
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16298
   udp: true
-  type: vless
-  uuid: 6bd9b04b-17de-4f05-b8b8-e5f2a0a649c1
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 01
+  - 🇮🇩 印尼 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 01
+  - 🇮🇩 印尼 01
 rules:
 - MATCH,PROXIES

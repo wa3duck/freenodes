@@ -5,35 +5,101 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 01
-  server: 188.114.97.6
+  server: 172.64.150.28
   port: 443
   udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
+    path: /assignment
 - name: 🌐 其他地区 02
-  server: chatgpt.com
-  port: 8443
+  server: 172.64.150.28
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
+    path: /
+- name: 🌐 其他地区 03
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 04
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🌐 其他地区 05
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: //assignment
+- name: 🌐 其他地区 06
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: 104.19.229.21
+  skip-cert-verify: false
+- name: 🌐 其他地区 07
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🌐 其他地区 08
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.ignitelimit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: assignment
+- name: 🌐 其他地区 09
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: //assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +107,13 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 01
   - 🌐 其他地区 02
+  - 🌐 其他地区 03
+  - 🌐 其他地区 04
+  - 🌐 其他地区 05
+  - 🌐 其他地区 06
+  - 🌐 其他地区 07
+  - 🌐 其他地区 08
+  - 🌐 其他地区 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,5 +121,12 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 01
   - 🌐 其他地区 02
+  - 🌐 其他地区 03
+  - 🌐 其他地区 04
+  - 🌐 其他地区 05
+  - 🌐 其他地区 06
+  - 🌐 其他地区 07
+  - 🌐 其他地区 08
+  - 🌐 其他地区 09
 rules:
 - MATCH,PROXIES

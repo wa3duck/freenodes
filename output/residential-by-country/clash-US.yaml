@@ -26,22 +26,7 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 03
-  server: 36.224.141.124
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇭🇰 中国香港 04
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 05
+- name: 🇺🇸 美国 03
   server: 155.117.19.17
   port: 443
   udp: true
@@ -51,17 +36,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 中国台湾 06
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,10 +43,7 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 01
   - 🇺🇸 美国 02
-  - 🇹🇼 中国台湾 03
-  - 🇭🇰 中国香港 04
-  - 🇺🇸 美国 05
-  - 🇹🇼 中国台湾 06
+  - 🇺🇸 美国 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,9 +51,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 01
   - 🇺🇸 美国 02
-  - 🇹🇼 中国台湾 03
-  - 🇭🇰 中国香港 04
-  - 🇺🇸 美国 05
-  - 🇹🇼 中国台湾 06
+  - 🇺🇸 美国 03
 rules:
 - MATCH,PROXIES

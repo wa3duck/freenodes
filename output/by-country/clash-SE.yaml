@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
-  server: 13.60.213.145
-  port: 443
+  server: 70.34.212.124
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 02
-  server: 51.20.86.152
-  port: 443
+  server: 172.238.244.13
+  port: 17000
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇸🇪 瑞典 03
   server: 13.48.104.64
   port: 443
@@ -26,83 +26,105 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 04
-  server: 16.171.55.2
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 05
-  server: 13.49.64.122
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 06
-  server: 13.51.242.39
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 07
-  server: 51.20.96.231
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 08
-  server: 16.170.214.108
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 09
-  server: 51.20.72.15
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 10
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 11
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 12
   server: 13.61.0.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 05
+  server: 51.20.96.231
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 06
+  server: 51.20.86.152
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 07
+  server: 13.49.64.122
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 08
+  server: 51.20.143.248
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 09
+  server: 16.170.214.108
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 10
+  server: 13.51.242.39
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 11
+  server: 13.60.213.145
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 12
+  server: 191.44.114.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 718b9643-20e3-4f9e-9f8d-87ce6801d55e
+  tls: true
+  reality-opts:
+    public-key: uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g
+    short-id: 53499a662395
+  servername: ai.android
+  client-fingerprint: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 - name: 🇸🇪 瑞典 13
-  server: 16.170.221.224
+  server: 16.170.163.124
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 14
-  server: se1.auronvpn.site
-  port: 1443
+  server: 79.141.174.147
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 15
+  server: 16.170.221.224
+  port: 443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: N2YzM
-- name: 🇸🇪 瑞典 15
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 16
   server: 5.157.10.148
   port: 443
   udp: true
@@ -114,20 +136,23 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 16
-  server: 143.246.193.215
-  port: 443
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 17
+  server: se5-node.rumedia-cdn.com
+  port: 2096
   udp: true
   type: vless
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
-  flow: xtls-rprx-vision
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
   tls: true
-  reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  servername: www.blocket.se
-  client-fingerprint: ''
-- name: 🇸🇪 瑞典 17
+  servername: stf7697.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: stf7697.rumedia-cdn.com
+- name: 🇸🇪 瑞典 18
   server: 143.246.195.98
   port: 8081
   udp: true
@@ -136,7 +161,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 18
+- name: 🇸🇪 瑞典 19
   server: 143.246.195.138
   port: 8081
   udp: true
@@ -145,7 +170,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 19
+- name: 🇸🇪 瑞典 20
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -155,19 +180,10 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 20
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
 - name: 🇸🇪 瑞典 21
   server: 143.246.196.152
   port: 8081
@@ -178,38 +194,21 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 22
-  server: 79.141.174.147
-  port: 33743
+  server: 143.246.194.60
+  port: 8081
   udp: true
   type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇸🇪 瑞典 23
-  server: 51.20.143.248
+  server: 13.49.76.55
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 24
-  server: 13.140.8.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: condrve.ggisopi.su
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -238,7 +237,6 @@ proxy-groups:
   - 🇸🇪 瑞典 21
   - 🇸🇪 瑞典 22
   - 🇸🇪 瑞典 23
-  - 🇸🇪 瑞典 24
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -267,6 +265,5 @@ proxy-groups:
   - 🇸🇪 瑞典 21
   - 🇸🇪 瑞典 22
   - 🇸🇪 瑞典 23
-  - 🇸🇪 瑞典 24
 rules:
 - MATCH,PROXIES

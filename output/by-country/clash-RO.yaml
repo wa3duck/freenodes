@@ -13,22 +13,14 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 02
-  server: 162.249.127.130
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 03
-  server: 85.204.107.178
+  server: 85.204.107.185
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 04
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 03
   server: 162.249.125.133
   port: 443
   udp: true
@@ -38,38 +30,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 05
-  server: hy2.aspidnet.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇷🇴 罗马尼亚 06
-  server: 46.28.67.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 07
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 08
+- name: 🇷🇴 罗马尼亚 04
   server: 146.70.124.85
   port: 443
   udp: true
@@ -81,9 +42,30 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
-  client-fingerprint: edge
-- name: 🇷🇴 罗马尼亚 09
-  server: bl3fk52.sysopnova.art
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 05
+  server: 46.28.67.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇷🇴 罗马尼亚 06
+  server: 162.249.127.130
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 07
+  server: 193.163.203.253
   port: 443
   udp: true
   type: vless
@@ -94,14 +76,22 @@ proxies:
     public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 10
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 08
   server: 154.46.31.106
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 09
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: whatsapp.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -116,7 +106,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 07
   - 🇷🇴 罗马尼亚 08
   - 🇷🇴 罗马尼亚 09
-  - 🇷🇴 罗马尼亚 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -131,6 +120,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 07
   - 🇷🇴 罗马尼亚 08
   - 🇷🇴 罗马尼亚 09
-  - 🇷🇴 罗马尼亚 10
 rules:
 - MATCH,PROXIES

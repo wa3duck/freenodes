@@ -14,7 +14,7 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 02",
-      "server": "118.167.230.191",
+      "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -32,21 +32,12 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 03",
-      "server": "namrcg001640lrm.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "a9a0d092-6f0e-4701-81ee-454643d6d506"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02",
-        "🇹🇼 中国台湾 03"
+        "🇹🇼 中国台湾 02"
       ]
     },
     {
@@ -54,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02",
-        "🇹🇼 中国台湾 03"
+        "🇹🇼 中国台湾 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

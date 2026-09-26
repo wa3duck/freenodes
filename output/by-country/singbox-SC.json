@@ -6,7 +6,28 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 01",
-      "server": "prep.wwwinternetvideo.click",
+      "server": "45.95.96.182",
+      "server_port": 443,
+      "uuid": "0a975d79-6930-4861-a105-dc50793456de",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ai.yump.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U4LYpnbhLS3eLCcInqW-k6gSn_Qf1k-5LWAU6Cm_JTc",
+          "short_id": "3d602f6729b33b59"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 02",
+      "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
       "flow": "xtls-rprx-vision",
@@ -25,18 +46,110 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 03",
+      "server": "45.205.0.6",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 04",
+      "server": "45.205.0.6",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 05",
+      "server": "45.205.0.6",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇨 塞舌尔 06",
+      "server": "45.205.0.6",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 01"
+        "🇸🇨 塞舌尔 01",
+        "🇸🇨 塞舌尔 02",
+        "🇸🇨 塞舌尔 03",
+        "🇸🇨 塞舌尔 04",
+        "🇸🇨 塞舌尔 05",
+        "🇸🇨 塞舌尔 06"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 01"
+        "🇸🇨 塞舌尔 01",
+        "🇸🇨 塞舌尔 02",
+        "🇸🇨 塞舌尔 03",
+        "🇸🇨 塞舌尔 04",
+        "🇸🇨 塞舌尔 05",
+        "🇸🇨 塞舌尔 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

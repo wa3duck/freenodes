@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 01
-  server: 82.198.246.37
+  server: 82.198.246.9
   port: 180
   udp: true
   type: vmess
@@ -34,14 +34,6 @@ proxies:
   tls: true
   servername: 172.105.169.70
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 04
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +42,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
-  - 🇦🇺 澳大利亚 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +50,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
-  - 🇦🇺 澳大利亚 04
 rules:
 - MATCH,PROXIES
