@@ -6,6 +6,18 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 01",
+      "server": "172.105.169.70",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "tls": {
+        "enabled": true,
+        "server_name": "172.105.169.70",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 02",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -29,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 01"
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 01"
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

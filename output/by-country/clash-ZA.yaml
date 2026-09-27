@@ -19,36 +19,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
 - name: 🇿🇦 南非 03
-  server: platform106.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform106
-    headers:
-      Host: platform106.halalkhor.info
-- name: 🇿🇦 南非 04
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-- name: 🇿🇦 南非 05
-  server: platform113.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform113
-- name: 🇿🇦 南非 06
-  server: platform103.golnamakcert.top
+  server: 139.84.246.240
   port: 80
   udp: true
   type: vless
@@ -56,8 +27,43 @@ proxies:
   network: ws
   ws-opts:
     path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇿🇦 南非 04
+  server: 139.84.228.106
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
+- name: 🇿🇦 南非 05
+  server: 139.84.243.189
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇿🇦 南非 06
+  server: 139.84.246.73
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
 - name: 🇿🇦 南非 07
-  server: platform102.golnamakcert.top
+  server: 139.84.249.25
   port: 80
   udp: true
   type: vless
@@ -68,45 +74,29 @@ proxies:
     headers:
       Host: platform102.halalkhor.info
 - name: 🇿🇦 南非 08
-  server: platform101.golnamakcert.top
+  server: 139.84.245.154
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform108
     headers:
-      Host: platform101.halalkhor.info
+      Host: platform108.halalkhor.info
 - name: 🇿🇦 南非 09
-  server: platform117.golnamakcert.top
+  server: 139.84.250.125
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform106
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform106.halalkhor.info
 - name: 🇿🇦 南非 10
-  server: 102.133.165.160
-  port: 16233
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: 🇿🇦 南非 11
-  server: platform109.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform109
-- name: 🇿🇦 南非 12
-  server: platform118.golnamakcert.top
+  server: 139.84.234.100
   port: 80
   udp: true
   type: vless
@@ -116,17 +106,8 @@ proxies:
     path: /platform118
     headers:
       Host: platform118.halalkhor.info
-- name: 🇿🇦 南非 13
-  server: platform108.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform108
-- name: 🇿🇦 南非 14
-  server: platform107.golnamakcert.top
+- name: 🇿🇦 南非 11
+  server: 139.84.245.78
   port: 80
   udp: true
   type: vless
@@ -136,6 +117,35 @@ proxies:
     path: /platform107
     headers:
       Host: platform107.halalkhor.info
+- name: 🇿🇦 南非 12
+  server: 139.84.250.128
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇿🇦 南非 13
+  server: 139.84.247.122
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇿🇦 南非 14
+  server: 102.133.165.160
+  port: 16233
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
 proxy-groups:
 - name: PROXIES
   type: select

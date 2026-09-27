@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 01
-  server: 104.18.46.46
-  port: 2052
+  server: 104.18.47.113
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 02
@@ -22,17 +22,17 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇷 土耳其 03
-  server: 151.101.65.57
-  port: 80
+- name: 🇹🇼 中国台湾 03
+  server: 118.167.230.191
+  port: 24215
   udp: true
   type: vless
-  uuid: 66fc196d-3623-4ba5-92ae-101a069af5b1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: simorghtrr.global.ssl.fastly.net
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 04
   server: test.keoplentuio.xyz
   port: 2053
@@ -46,7 +46,7 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 01
   - 🇹🇼 中国台湾 02
-  - 🇹🇷 土耳其 03
+  - 🇹🇼 中国台湾 03
   - 🇹🇷 土耳其 04
 - name: AUTO
   type: url-test
@@ -55,7 +55,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 01
   - 🇹🇼 中国台湾 02
-  - 🇹🇷 土耳其 03
+  - 🇹🇼 中国台湾 03
   - 🇹🇷 土耳其 04
 rules:
 - MATCH,PROXIES

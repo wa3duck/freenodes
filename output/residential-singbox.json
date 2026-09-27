@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 01",
-      "server": "104.18.46.46",
-      "server_port": 2052,
+      "server": "104.18.47.113",
+      "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls ",
+        "path": "/",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -27,15 +27,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 03",
-      "server": "151.101.65.57",
-      "server_port": 80,
-      "uuid": "66fc196d-3623-4ba5-92ae-101a069af5b1",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "simorghtrr.global.ssl.fastly.net"
+      "tag": "🇹🇼 中国台湾 03",
+      "server": "118.167.230.191",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -53,7 +59,7 @@
         "auto",
         "🇺🇸 美国 01",
         "🇹🇼 中国台湾 02",
-        "🇹🇷 土耳其 03",
+        "🇹🇼 中国台湾 03",
         "🇹🇷 土耳其 04"
       ]
     },
@@ -63,7 +69,7 @@
       "outbounds": [
         "🇺🇸 美国 01",
         "🇹🇼 中国台湾 02",
-        "🇹🇷 土耳其 03",
+        "🇹🇼 中国台湾 03",
         "🇹🇷 土耳其 04"
       ],
       "url": "https://www.gstatic.com/generate_204"

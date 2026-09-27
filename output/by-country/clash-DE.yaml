@@ -5,67 +5,63 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 01
-  server: 104.18.216.180
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 845bd981-8725-4f9e-9ae8-6f500ec84001
-  tls: true
-  servername: w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /vl/n4iEhIlCgZ2KerLvX8CLDGWraBrBwAq?ed=2560
-    headers:
-      Host: w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev
-- name: 🇩🇪 德国 02
-  server: 151.101.56.7
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 03
-  server: 130.61.232.1
+  server: 130.61.115.220
   port: 59924
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
-  password: UoUzY5YlcUBJpgXi/Z3PEaf58E+++FJ+3AKry5V7J9Y=
-- name: 🇩🇪 德国 04
-  server: 2.58.81.221
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 05
+  password: UaV3sT+/9oXDk6nX3czZggBqrMDpCbRoY4HdwqFH1qs=
+- name: 🇩🇪 德国 02
   server: 130.61.227.119
   port: 59924
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: QQyhsWE4kraFnuIyxSx/tfdFnd1+IUu3YrQM92BGVrQ=
+- name: 🇩🇪 德国 03
+  server: 8.209.74.72
+  port: 20001
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: PWpjPo3tqhPN4yRZ
+- name: 🇩🇪 德国 04
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 05
+  server: 216.106.187.60
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 06
-  server: 130.61.178.43
-  port: 59924
+  server: 206.189.52.4
+  port: 17000
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: SgyJkGCcYNgfF87vVJTcRI9Vd9Xa/GISuFw17bdtB6c=
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇩🇪 德国 07
-  server: 130.61.237.178
-  port: 59924
+  server: 213.202.208.199
+  port: 7001
   udp: true
   type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +Md6uvx0q4r8xi+D4f0ohkfMPiaCVx5nHy7ScOhNlLM=
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 - name: 🇩🇪 德国 08
+  server: 209.46.102.22
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
+- name: 🇩🇪 德国 09
   server: 31.77.161.15
   port: 443
   udp: true
@@ -78,7 +74,16 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 09
+- name: 🇩🇪 德国 10
+  server: 45.77.143.204
+  port: 80
+  udp: true
+  type: vless
+  uuid: 8ccc4581-eba9-4226-abbc-64e7d8fb415e
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 11
   server: 192.248.179.81
   port: 80
   udp: true
@@ -87,15 +92,41 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 10
-  server: 95.85.252.78
-  port: 9443
+- name: 🇩🇪 德国 12
+  server: 8.211.15.144
+  port: 8443
   udp: true
   type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: 95.85.252.78
+  password: fc04RSUu3TfONQnlbKTwvA
+  sni: www.cloudflare.com
   skip-cert-verify: true
-- name: 🇩🇪 德国 11
+- name: 🇩🇪 德国 13
+  server: 144.31.125.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 14
+  server: 167.233.191.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6289ae55-053b-470c-a2f8-e0841a567b48
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qI8F1K9Ev5BUzjsuzUCQSBiq7B-6C503e5LIQez3ZjU
+    short-id: dd878b254cfa
+  servername: www.sony.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 15
   server: 162.55.242.208
   port: 2053
   udp: true
@@ -107,27 +138,14 @@ proxies:
     short-id: 4d14da19b19cfc8c
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇩🇪 德国 12
-  server: 82.118.19.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇩🇪 德国 13
+- name: 🇩🇪 德国 16
   server: 169.150.210.233
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 14
+- name: 🇩🇪 德国 17
   server: 159.69.103.251
   port: 80
   udp: true
@@ -140,53 +158,137 @@ proxies:
     short-id: 253126232f9bb9be
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 15
-  server: 35.246.185.109
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: dggg.wsone.icu
-  skip-cert-verify: false
-- name: 🇩🇪 德国 16
-  server: 95.85.252.59
-  port: 9443
-  udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 17
-  server: 45.77.143.204
+- name: 🇩🇪 德国 18
+  server: 188.34.184.151
   port: 80
   udp: true
   type: vless
-  uuid: 8ccc4581-eba9-4226-abbc-64e7d8fb415e
+  uuid: dc31fe25-d91d-4691-94cb-1085d31ab4f8
   network: ws
   ws-opts:
     path: /
-- name: 🇩🇪 德国 18
+- name: 🇩🇪 德国 19
+  server: 2.26.51.75
+  port: 443
+  udp: true
+  type: vless
+  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
+    short-id: d4f6a8c1b2e3f9aa
+  servername: 4pda.to
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 20
   server: 51.195.126.38
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 19
-  server: 209.46.102.22
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1hhrqrokj3ag
-- name: 🇩🇪 德国 20
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
 - name: 🇩🇪 德国 21
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇩🇪 德国 22
+  server: 57.129.96.67
+  port: 443
+  udp: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-571299667-direct.mbghalibaf.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 23
+  server: 185.249.153.108
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4cf9c712-11c4-47d8-aa31-a1693a1aa4e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xOJ3INBNzRKOKYGQZmSYczgTjTKwdYQ4BFfc75wVazw
+    short-id: 73c9e31ccafda20e
+  servername: www.nordivablog.ru
+  client-fingerprint: ios
+- name: 🇩🇪 德国 24
+  server: 104.194.159.237
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: L5cKU_oSpJsGd3ffemej3Wy7V6KzqjIUC2T5jaCyPys
+    short-id: 1aec480577a542ee
+  servername: github.com
+  client-fingerprint: qq
+- name: 🇩🇪 德国 25
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 26
+  server: nasnet-571296497-direct.mbghalibaf.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: nasnet
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-571296497-direct.mbghalibaf.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 27
+  server: covers.pantera-radio.ru
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
+  sni: covers.pantera-radio.ru
+  skip-cert-verify: true
+- name: 🇩🇪 德国 28
+  server: 193.24.210.211
+  port: 25040
+  udp: true
+  type: trojan
+  password: Km/pIG4AGCjCOiGWj5FsWA==
+  sni: /gay-anal
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 29
+  server: 31.76.100.41
+  port: 443
+  udp: true
+  type: vless
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 30
   server: 193.108.117.54
   port: 443
   udp: true
@@ -200,99 +302,8 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇩🇪 德国 22
-  server: 206.189.52.4
-  port: 17000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇩🇪 德国 23
-  server: 216.106.187.60
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: kentspark.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇩🇪 德国 24
-  server: covers.pantera-radio.ru
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
-  sni: covers.pantera-radio.ru
-  skip-cert-verify: false
-- name: 🇩🇪 德国 25
-  server: de18.bexait.ir
-  port: 2434
-  udp: true
-  type: vless
-  uuid: 8dfc237e-0376-48b4-9822-5f4e627d41f1
-  tls: true
-  reality-opts:
-    public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
-    short-id: 9de041877612a718
-  servername: icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 26
-  server: 2.26.51.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
-    short-id: d4f6a8c1b2e3f9aa
-  servername: 4pda.to
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 27
-  server: 2.58.81.221
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 28
-  server: node8.quaxly.com
-  port: 25040
-  udp: true
-  type: trojan
-  password: Km/pIG4AGCjCOiGWj5FsWA==
-  sni: /gay-anal
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 29
-  server: iranivib.kashimo.top
-  port: 57007
-  udp: true
-  type: vless
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xJrOVncq9U06-mrcoQMJRVT0ZI3pKiL870j_FYHnswg
-    short-id: 86652c20afc7a2bc
-  servername: scone-pa.clients6.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 30
-  server: 91.107.191.154
-  port: 8080
-  udp: true
-  type: vmess
-  uuid: a6fae451-7d8d-4452-991f-2245e0d4ff0e
-  alterId: 0
-  cipher: auto
+    headers:
+      Host: aidrivercat.org
 - name: 🇩🇪 德国 31
   server: 2.26.125.147
   port: 2096
@@ -305,50 +316,7 @@ proxies:
   network: ws
   ws-opts:
     path: /cdn/v3/live
-    headers:
-      Host: stf94fd.rumedia-cdn.com
 - name: 🇩🇪 德国 32
-  server: 8.209.74.72
-  port: 20001
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 33
-  server: 89.169.53.176
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 34
-  server: 82.39.171.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 35
-  server: de1.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  sni: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇩🇪 德国 36
   server: 82.39.171.12
   port: 443
   udp: true
@@ -360,8 +328,104 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 33
+  server: 2.26.125.224
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  tls: true
+  servername: stf4f33.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: stf4f33.rumedia-cdn.com
+- name: 🇩🇪 德国 34
+  server: 80.97.27.106
+  port: 116
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
+- name: 🇩🇪 德国 35
+  server: 82.39.171.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 36
+  server: 89.169.53.176
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
   client-fingerprint: chrome
 - name: 🇩🇪 德国 37
+  server: 64.118.158.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  servername: buckeye-retail-website.amazon.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 38
+  server: p1tun2.greewebservices.ir
+  port: 2060
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3Q1UUZhdMJ1Xi4V_348v2g
+- name: 🇩🇪 德国 39
+  server: rubifen.adaspoloandco.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /GOrbEh
+- name: 🇩🇪 德国 40
+  server: 176.108.247.104
+  port: 9881
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
+    short-id: aabb
+  servername: dl.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+- name: 🇩🇪 德国 41
   server: 77.110.104.238
   port: 443
   udp: true
@@ -376,21 +440,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ru217125de65grpc
-- name: 🇩🇪 德国 38
-  server: 64.118.158.56
-  port: 443
+- name: 🇩🇪 德国 42
+  server: 82.24.203.20
+  port: 2087
   udp: true
   type: vless
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: 5c6481cdd4
-  servername: buckeye-retail-website.amazon.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 39
-  server: freesocks.work
+  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  network: ws
+  ws-opts:
+    path: /fd5ba98a3970
+- name: 🇩🇪 德国 43
+  server: 104.21.93.52
   port: 2052
   udp: true
   type: vless
@@ -400,52 +460,103 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 40
-  server: 213.202.208.199
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇩🇪 德国 41
-  server: freeman.curtvip.ir
+- name: 🇩🇪 德国 44
+  server: 109.94.164.85
   port: 20410
   udp: true
   type: vless
-  uuid: 442581ff-646e-4e99-af3e-a9d9a636a44b
+  uuid: c5cfb08f-e42d-4a08-94e1-4f591a2f7a6f
   tls: true
   reality-opts:
     public-key: BErODvy5h6Cjw5zWfX_CZ5ODH9p1XbZwU-ZEHyVXEGI
     short-id: e2ce3e050232978c
   servername: secureconnect-pa.mtls.clients6.google.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 42
-  server: 104.27.88.172
+- name: 🇩🇪 德国 45
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 46
+  server: 130.61.178.43
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: SgyJkGCcYNgfF87vVJTcRI9Vd9Xa/GISuFw17bdtB6c=
+- name: 🇩🇪 德国 47
+  server: 216.106.187.60
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: kentspark.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: kentspark.org
+- name: 🇩🇪 德国 48
+  server: 178.105.120.168
   port: 80
   udp: true
   type: vless
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
+  uuid: 1d9cbbf4-bb99-4b09-8750-1cc22d510018
   network: ws
   ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
-- name: 🇩🇪 德国 43
-  server: 2.26.125.224
-  port: 2096
+    path: /
+- name: 🇩🇪 德国 49
+  server: p1tun1.greewebservices.ir
+  port: 2050
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3Q1UUZhdMJ1Xi4V_348v2g
+- name: 🇩🇪 德国 50
+  server: 91.107.191.154
+  port: 8080
+  udp: true
+  type: vmess
+  uuid: a6fae451-7d8d-4452-991f-2245e0d4ff0e
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 51
+  server: 104.27.122.195
+  port: 443
   udp: true
   type: vless
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  uuid: 50414e45-4c5f-5a45-5553-6f00f7d92039
   tls: true
-  servername: stf4f33.rumedia-cdn.com
+  servername: zeus-panel-0mvqo2.zeus-y14qx2.workers.dev
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /stream/PANEL_ZEUS/6f00f7d92039/loc-0
     headers:
-      Host: stf4f33.rumedia-cdn.com
-- name: 🇩🇪 德国 44
+      Host: zeus-panel-0mvqo2.zeus-y14qx2.workers.dev
+- name: 🇩🇪 德国 52
+  server: 130.61.237.178
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: +Md6uvx0q4r8xi+D4f0ohkfMPiaCVx5nHy7ScOhNlLM=
+- name: 🇩🇪 德国 53
+  server: 130.61.146.229
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: MKHwqx5R2L0MzLTo/BQ7xr5Ve6nfPBPfo0HERkDcG9s=
+- name: 🇩🇪 德国 54
   server: cctvhikvision.center
   port: 2053
   udp: true
@@ -459,117 +570,18 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 45
-  server: 167.233.191.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6289ae55-053b-470c-a2f8-e0841a567b48
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qI8F1K9Ev5BUzjsuzUCQSBiq7B-6C503e5LIQez3ZjU
-    short-id: dd878b254cfa
-  servername: www.sony.com
-  client-fingerprint: edge
-- name: 🇩🇪 德国 46
-  server: 104.27.122.195
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-6f00f7d92039
-  tls: true
-  servername: zeus-panel-0mvqo2.zeus-y14qx2.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/6f00f7d92039/loc-0
-    headers:
-      Host: zeus-panel-0mvqo2.zeus-y14qx2.workers.dev
-- name: 🇩🇪 德国 47
-  server: 82.24.203.20
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
-  network: ws
-  ws-opts:
-    path: /fd5ba98a3970
-- name: 🇩🇪 德国 48
-  server: 178.105.120.168
-  port: 80
-  udp: true
-  type: vless
-  uuid: 1d9cbbf4-bb99-4b09-8750-1cc22d510018
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 49
-  server: 163.8.195.241
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
-- name: 🇩🇪 德国 50
-  server: 216.106.187.60
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 51
-  server: 94.249.187.46
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇩🇪 德国 52
-  server: 144.31.125.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
-    short-id: 85c86a9863
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 53
-  server: rubifen.adaspoloandco.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
-  tls: true
-  servername: rubifen.adaspoloandco.com
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /GOrbEh
-- name: 🇩🇪 德国 54
-  server: 188.34.184.151
-  port: 80
-  udp: true
-  type: vless
-  uuid: dc31fe25-d91d-4691-94cb-1085d31ab4f8
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇩🇪 德国 55
-  server: 130.61.146.229
-  port: 59924
+  server: dl2.musicworldtg.com
+  port: 2018
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: MKHwqx5R2L0MzLTo/BQ7xr5Ve6nfPBPfo0HERkDcG9s=
+  type: vless
+  uuid: 834e5553-d80e-4078-8d7e-482fafe9bbaf
+  tls: true
+  reality-opts:
+    public-key: Sn8z3wbt2Zpoo3mO3HLW6TZTjN8231Ylka7apFNb2X0
+    short-id: cd5f260bcdd9c92d
+  servername: gemini.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
