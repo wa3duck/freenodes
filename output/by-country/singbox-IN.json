@@ -6,6 +6,43 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 01",
+      "server": "135.84.72.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime06.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 02",
+      "server": "172.67.208.1",
+      "server_port": 443,
+      "uuid": "1443b7a1-7ba9-4ec9-b904-2e867367b5d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "odd-violet-5440.asdgrweeee13.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "odd-violet-5440.asdgrweeee13.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 03",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -14,7 +51,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -24,20 +61,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 02",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 03",
+      "tag": "🇮🇳 印度 04",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -47,7 +72,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -58,11 +83,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇳 印度 04",
-      "server": "139.84.166.47",
-      "server_port": 8388,
+      "tag": "🇮🇳 印度 05",
+      "server": "172.105.39.124",
+      "server_port": 7002,
       "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -72,7 +97,8 @@
         "🇮🇳 印度 01",
         "🇮🇳 印度 02",
         "🇮🇳 印度 03",
-        "🇮🇳 印度 04"
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05"
       ]
     },
     {
@@ -82,7 +108,8 @@
         "🇮🇳 印度 01",
         "🇮🇳 印度 02",
         "🇮🇳 印度 03",
-        "🇮🇳 印度 04"
+        "🇮🇳 印度 04",
+        "🇮🇳 印度 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

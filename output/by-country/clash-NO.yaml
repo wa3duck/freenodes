@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇳🇴 挪威 01
-  server: 139.100.236.74
-  port: 1
+  server: 185.213.23.63
+  port: 990
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: WxYpOK1iPSJySbVNMMJDtw
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇳🇴 挪威 02
   server: 46.29.238.88
   port: 40443

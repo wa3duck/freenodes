@@ -29,15 +29,8 @@ proxies:
     public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
     short-id: a1b2c3d4
   servername: store.steampowered.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 03
-  server: 31.57.185.82
-  port: 41770
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: upFH0BmL9pV55mch4LvbPLe+Mf7vgG0YHGaTOT9gMG0=:t1hZF7WQEYGf0ycfk4son7eeAaVkfOxscBpbk5H/Zyo=
-- name: 🇮🇱 以色列 04
   server: 193.202.10.248
   port: 40443
   udp: true
@@ -50,20 +43,7 @@ proxies:
     short-id: db46e2946fc466fd
   servername: deepl.com
   client-fingerprint: random
-- name: 🇮🇱 以色列 05
-  server: 72.4.65.116
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-de2.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇮🇱 以色列 06
+- name: 🇮🇱 以色列 04
   server: de2.dzvn.space
   port: 2291
   udp: true
@@ -85,8 +65,6 @@ proxy-groups:
   - 🇮🇱 以色列 02
   - 🇮🇱 以色列 03
   - 🇮🇱 以色列 04
-  - 🇮🇱 以色列 05
-  - 🇮🇱 以色列 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,7 +74,5 @@ proxy-groups:
   - 🇮🇱 以色列 02
   - 🇮🇱 以色列 03
   - 🇮🇱 以色列 04
-  - 🇮🇱 以色列 05
-  - 🇮🇱 以色列 06
 rules:
 - MATCH,PROXIES
