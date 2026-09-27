@@ -5,38 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 01
-  server: 139.84.247.164
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tfAcRikawhNoZAhu
-- name: 🇿🇦 南非 02
-  server: 102.133.165.160
-  port: 16233
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-- name: 🇿🇦 南非 03
   server: 102.37.156.224
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 04
-  server: platform118.golnamakcert.top
+- name: 🇿🇦 南非 02
+  server: 139.84.247.164
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tfAcRikawhNoZAhu
+- name: 🇿🇦 南非 03
+  server: platform106.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform118
+    path: /platform106
     headers:
-      Host: platform118.halalkhor.info
+      Host: platform106.halalkhor.info
+- name: 🇿🇦 南非 04
+  server: platform115.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform115
 - name: 🇿🇦 南非 05
+  server: platform113.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform113
+- name: 🇿🇦 南非 06
   server: platform103.golnamakcert.top
   port: 80
   udp: true
@@ -45,19 +56,6 @@ proxies:
   network: ws
   ws-opts:
     path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
-- name: 🇿🇦 南非 06
-  server: platform108.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform108
-    headers:
-      Host: platform108.halalkhor.info
 - name: 🇿🇦 南非 07
   server: platform102.golnamakcert.top
   port: 80
@@ -70,28 +68,6 @@ proxies:
     headers:
       Host: platform102.halalkhor.info
 - name: 🇿🇦 南非 08
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-    headers:
-      Host: platform115.halalkhor.info
-- name: 🇿🇦 南非 09
-  server: platform107.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.halalkhor.info
-- name: 🇿🇦 南非 10
   server: platform101.golnamakcert.top
   port: 80
   udp: true
@@ -102,16 +78,7 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
-- name: 🇿🇦 南非 11
-  server: platform113.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform113
-- name: 🇿🇦 南非 12
+- name: 🇿🇦 南非 09
   server: platform117.golnamakcert.top
   port: 80
   udp: true
@@ -122,15 +89,53 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇿🇦 南非 13
-  server: platform106.golnamakcert.top
+- name: 🇿🇦 南非 10
+  server: 102.133.165.160
+  port: 16233
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: 🇿🇦 南非 11
+  server: platform109.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform109
+- name: 🇿🇦 南非 12
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇿🇦 南非 13
+  server: platform108.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform108
+- name: 🇿🇦 南非 14
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,6 +154,7 @@ proxy-groups:
   - 🇿🇦 南非 11
   - 🇿🇦 南非 12
   - 🇿🇦 南非 13
+  - 🇿🇦 南非 14
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -167,5 +173,6 @@ proxy-groups:
   - 🇿🇦 南非 11
   - 🇿🇦 南非 12
   - 🇿🇦 南非 13
+  - 🇿🇦 南非 14
 rules:
 - MATCH,PROXIES

@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 01
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 02
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -27,26 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 03
-  server: 94.183.170.65
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e60bc99b-6630-4799-af84-f90ebdc643b6
-  sni: hys2.arkonsoft.top
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 04
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 94.183.170.135
-- name: 🇪🇪 爱沙尼亚 05
+- name: 🇪🇪 爱沙尼亚 02
   server: 77.239.126.219
   port: 9443
   udp: true
@@ -54,7 +27,17 @@ proxies:
   password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
   sni: onecloudstream.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 06
+- name: 🇪🇪 爱沙尼亚 03
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+- name: 🇪🇪 爱沙尼亚 04
   server: 94.183.170.65
   port: 8081
   udp: true
@@ -65,16 +48,33 @@ proxies:
     path: /ws/generate
     headers:
       Host: hys2.arkonsoft.top
-- name: 🇪🇪 爱沙尼亚 07
+- name: 🇪🇪 爱沙尼亚 05
+  server: 94.183.170.65
+  port: 443
+  udp: true
+  type: hysteria2
+  password: e60bc99b-6630-4799-af84-f90ebdc643b6
+  sni: hys2.arkonsoft.top
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 06
   server: 94.183.170.135
-  port: 8443
+  port: 443
   udp: true
   type: vless
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
+- name: 🇪🇪 爱沙尼亚 07
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 08
   server: 93.89.220.7
   port: 8443
@@ -99,7 +99,7 @@ proxies:
     public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
     short-id: 38018dde3e27335e
   servername: bababoy.karp1pdd.life
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

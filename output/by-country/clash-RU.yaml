@@ -5,57 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 01
-  server: 104.18.46.46
-  port: 2052
+  server: 94.249.186.68
+  port: 8443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  uuid: b21bfee6-dbd3-4e0b-840f-d66f07bf3186
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OAKZv1BA4SuH3tEQGf24i9ZJiKbYQoWoVZwrUdARQwU
+    short-id: 77c5f417fe413756
+  servername: deepl.com
+  client-fingerprint: safari
 - name: 🇷🇺 俄罗斯 02
-  server: 172.64.158.146
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 03
-  server: 104.18.47.113
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 04
-  server: 162.159.24.131
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 05
   server: 176.32.35.2
   port: 10090
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 06
+- name: 🇷🇺 俄罗斯 03
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+- name: 🇷🇺 俄罗斯 04
   server: 201.51.4.39
   port: 443
   udp: true
@@ -66,7 +42,7 @@ proxies:
   servername: freevk.cryposikel.ru
   skip-cert-verify: false
   client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 07
+- name: 🇷🇺 俄罗斯 05
   server: 91.240.86.70
   port: 22443
   udp: true
@@ -74,35 +50,7 @@ proxies:
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: 91.240.86.70
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 08
-  server: du-rov.secureservice.top
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 09
-  server: fbsv6.guardora.pro
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 10
+- name: 🇷🇺 俄罗斯 06
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -114,6 +62,19 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 07
+  server: 130.49.190.43
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 25284368-40d5-4abe-9f56-54a07e88a7af
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wJgBZNx487TIQivnqGuyDyyN6iKcFTy64khGSOFbeyo
+    short-id: 4d123bebfae16562
+  servername: yandex.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,9 +87,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 05
   - 🇷🇺 俄罗斯 06
   - 🇷🇺 俄罗斯 07
-  - 🇷🇺 俄罗斯 08
-  - 🇷🇺 俄罗斯 09
-  - 🇷🇺 俄罗斯 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -141,8 +99,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 05
   - 🇷🇺 俄罗斯 06
   - 🇷🇺 俄罗斯 07
-  - 🇷🇺 俄罗斯 08
-  - 🇷🇺 俄罗斯 09
-  - 🇷🇺 俄罗斯 10
 rules:
 - MATCH,PROXIES

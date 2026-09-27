@@ -5,31 +5,40 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 01",
-      "server": "support.zoom.us",
+      "tag": "🇹🇷 土耳其 01",
+      "server": "151.101.65.57",
       "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "uuid": "66fc196d-3623-4ba5-92ae-101a069af5b1",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "free.sahanwickramasinghe.me"
+          "Host": "simorghtrr.global.ssl.fastly.net"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 02",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 01"
+        "🇹🇷 土耳其 01",
+        "🇹🇷 土耳其 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 01"
+        "🇹🇷 土耳其 01",
+        "🇹🇷 土耳其 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

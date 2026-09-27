@@ -5,32 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 01
-  server: hikvision-plus.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: b1a8d1eb-dfb2-4dd3-afe6-cd0fff8177df
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 02
-  server: www.nextkyc.com
-  port: 8443
+  server: nomino.11hi8itbaf.workers.dev
+  port: 443
   udp: true
   type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: nomino.11hi8itbaf.workers.dev
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
+- name: 🌐 其他地区 02
+  server: 104.18.15.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  tls: true
+  servername: server9.9966338.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /imnotarealherox
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
