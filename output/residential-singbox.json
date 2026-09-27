@@ -12,8 +12,20 @@
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 02",
+      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
+      "server_port": 443,
+      "password": "9sK2mP8xQ7vL3nZ6",
+      "tls": {
+        "enabled": true,
+        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 02",
+      "tag": "🇹🇼 中国台湾 03",
       "server": "118.167.230.191",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -22,7 +34,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -32,32 +44,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 03",
-      "server": "57.129.130.57",
-      "server_port": 52014,
-      "uuid": "c6b947a2-d603-4d5c-ab9e-c942b034ea2a",
-      "tls": {
-        "enabled": true,
-        "server_name": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02",
-        "🇯🇵 日本 03"
+        "🇭🇰 中国香港 02",
+        "🇹🇼 中国台湾 03"
       ]
     },
     {
@@ -65,8 +58,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02",
-        "🇯🇵 日本 03"
+        "🇭🇰 中国香港 02",
+        "🇹🇼 中国台湾 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
