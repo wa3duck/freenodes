@@ -6,6 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 01",
+      "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 02",
       "server": "195.238.126.84",
       "server_port": 9039,
       "method": "aes-256-cfb",
@@ -13,7 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 02",
+      "tag": "🇱🇹 立陶宛 03",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -21,19 +29,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 03",
+      "tag": "🇱🇹 立陶宛 04",
       "server": "195.238.126.20",
       "server_port": 9001,
       "method": "aes-256-cfb",
       "password": "UkXRsXvR6buDMG2Y"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 04",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
@@ -55,25 +55,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 07",
       "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 08",
+      "server": "195.238.126.20",
       "server_port": 9068,
       "method": "aes-256-cfb",
       "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 08",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 09",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
@@ -86,27 +86,6 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 11",
-      "server": "62.77.158.1",
-      "server_port": 443,
-      "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "online.1c.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs",
-          "short_id": "6a"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 12",
       "server": "94.176.234.161",
       "server_port": 443,
       "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
@@ -140,8 +119,7 @@
         "🇱🇹 立陶宛 08",
         "🇱🇹 立陶宛 09",
         "🇱🇹 立陶宛 10",
-        "🇱🇹 立陶宛 11",
-        "🇱🇹 立陶宛 12"
+        "🇱🇹 立陶宛 11"
       ]
     },
     {
@@ -158,8 +136,7 @@
         "🇱🇹 立陶宛 08",
         "🇱🇹 立陶宛 09",
         "🇱🇹 立陶宛 10",
-        "🇱🇹 立陶宛 11",
-        "🇱🇹 立陶宛 12"
+        "🇱🇹 立陶宛 11"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

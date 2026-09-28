@@ -6,15 +6,6 @@ log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 01
   server: free.sahanwickramasinghe.me
-  port: 80
-  udp: true
-  type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇰 斯里兰卡 02
-  server: free.sahanwickramasinghe.me
   port: 443
   udp: true
   type: vless
@@ -23,6 +14,17 @@ proxies:
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇱🇰 斯里兰卡 02
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
