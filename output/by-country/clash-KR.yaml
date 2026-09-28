@@ -5,13 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 01
-  server: 211.178.105.134
-  port: 6123
+  server: 132.226.226.189
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 02
+  server: 131.186.19.174
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 7302ad33229de166d393cd56143a1e4c
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 03
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -19,19 +28,6 @@ proxies:
   password: maintell
   sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 03
-  server: 132.145.80.230
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
 - name: 🇰🇷 韩国 04
   server: 3.39.4.109
   port: 18967
@@ -46,6 +42,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇰🇷 韩国 05
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 06
   server: kr2-r.link-t7.com
   port: 10047
   udp: true
@@ -60,14 +69,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: update
-- name: 🇰🇷 韩国 06
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: 🇰🇷 韩国 07
   server: vpn-kr-002.fastervpn.world
   port: 443
@@ -77,42 +78,47 @@ proxies:
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇰🇷 韩国 08
-  server: 131.186.19.174
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 7302ad33229de166d393cd56143a1e4c
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 09
-  server: 3.39.4.109
-  port: 13672
+  server: 47.80.14.8
+  port: 443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 581cb8c3-dadb-4e10-a18b-5e79bfe7bd93
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 10
+    public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
+    short-id: 71110d3f7ef57760
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 09
   server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
+  sni: css.rbxcdn.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 11
-  server: 152.69.231.175
-  port: 50160
+- name: 🇰🇷 韩国 10
+  server: 43.108.18.193
+  port: 443
   udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
+  type: vless
+  uuid: 809f043c-86cd-466d-9340-3769bc949e66
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VfrYrzfyQqgaVeMozagueBL7lvbbU1JB6RHfGJk4enU
+    short-id: 281c396bb44c48da
+  servername: learn.microsoft.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 11
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 12
   server: 151.245.106.49
   port: 2053
@@ -126,22 +132,48 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 13
+  server: 43.108.9.116
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5c9884a1-b641-4299-82ac-fc62da2327a7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vHl4olGSvL-LqhD2-yclHQWTupy6w02lSp3q8WVUUAU
+    short-id: cd6caa470bec865e
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 14
+  server: 211.178.105.134
+  port: 6123
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 15
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
   type: hysteria2
   password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 127.0.0.1
+  sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: true
-- name: 🇰🇷 韩国 14
-  server: 154.90.62.70
-  port: 56127
+- name: 🇰🇷 韩国 16
+  server: 141.164.45.187
+  port: 8000
   udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 15
+  type: ss
+  cipher: aes-256-gcm
+  password: KixLvKzwjekG00rm
+- name: 🇰🇷 韩国 17
+  server: 141.164.45.187
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇰🇷 韩国 18
   server: 140.238.2.250
   port: 443
   udp: true
@@ -169,6 +201,9 @@ proxy-groups:
   - 🇰🇷 韩国 13
   - 🇰🇷 韩国 14
   - 🇰🇷 韩国 15
+  - 🇰🇷 韩国 16
+  - 🇰🇷 韩国 17
+  - 🇰🇷 韩国 18
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -189,5 +224,8 @@ proxy-groups:
   - 🇰🇷 韩国 13
   - 🇰🇷 韩国 14
   - 🇰🇷 韩国 15
+  - 🇰🇷 韩国 16
+  - 🇰🇷 韩国 17
+  - 🇰🇷 韩国 18
 rules:
 - MATCH,PROXIES

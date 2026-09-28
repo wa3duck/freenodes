@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇱 以色列 02
   server: 185.95.231.233
   port: 443
@@ -38,14 +38,7 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: upFH0BmL9pV55mch4LvbPLe+Mf7vgG0YHGaTOT9gMG0=
 - name: 🇮🇱 以色列 04
-  server: 31.57.185.82
-  port: 36969
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: 7gbVIgGp+4jQWFQEiTDQ2TPmsDdtUZbEyWOXlM0tPVA=:RKkkOvhasx28UL62ar1lXWNcY9TV4vMRer0iDy/4Rlk=
-- name: 🇮🇱 以色列 05
-  server: 193.202.10.137
+  server: de2.dzvn.space
   port: 2291
   udp: true
   type: vless
@@ -57,19 +50,14 @@ proxies:
     short-id: 50ace5ab34f6df9b
   servername: de2.dzvn.space
   client-fingerprint: firefox
-- name: 🇮🇱 以色列 06
-  server: 193.202.10.248
-  port: 40443
+- name: 🇮🇱 以色列 05
+  server: 129.159.156.109
+  port: 50160
   udp: true
-  type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
-  servername: deepl.com
-  client-fingerprint: safari
+  type: hysteria2
+  password: f25f19f29ce3fb53a35bf1b35b452a43
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,7 +68,6 @@ proxy-groups:
   - 🇮🇱 以色列 03
   - 🇮🇱 以色列 04
   - 🇮🇱 以色列 05
-  - 🇮🇱 以色列 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +78,5 @@ proxy-groups:
   - 🇮🇱 以色列 03
   - 🇮🇱 以色列 04
   - 🇮🇱 以色列 05
-  - 🇮🇱 以色列 06
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,55 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 01",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "transport": {
+        "type": "ws",
+        "path": "/j100sy9wn073cxbvir",
+        "headers": {
+          "Host": "index.harmonica02.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 02",
+      "server": "188.114.98.16",
+      "server_port": 2082,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "index.harmonica02.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 03",
+      "server": "104.21.70.21",
+      "server_port": 443,
+      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "tls": {
+        "enabled": true,
+        "server_name": "index.harmonica01.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "index.harmonica01.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 04",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -15,7 +64,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +75,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 02",
+      "tag": "🇹🇷 土耳其 05",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -45,29 +94,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 03",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 01",
         "🇹🇷 土耳其 02",
-        "🇹🇷 土耳其 03"
+        "🇹🇷 土耳其 03",
+        "🇹🇷 土耳其 04",
+        "🇹🇷 土耳其 05"
       ]
     },
     {
@@ -76,7 +111,9 @@
       "outbounds": [
         "🇹🇷 土耳其 01",
         "🇹🇷 土耳其 02",
-        "🇹🇷 土耳其 03"
+        "🇹🇷 土耳其 03",
+        "🇹🇷 土耳其 04",
+        "🇹🇷 土耳其 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

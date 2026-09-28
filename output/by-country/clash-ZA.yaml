@@ -5,53 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇿🇦 南非 01
-  server: 102.37.156.224
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 02
   server: 139.84.247.164
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: tfAcRikawhNoZAhu
+- name: 🇿🇦 南非 02
+  server: 102.37.156.224
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: aduB9HGxQHjA2SBMRjkHX6
 - name: 🇿🇦 南非 03
-  server: 139.84.246.240
-  port: 80
+  server: 102.133.165.160
+  port: 16233
   udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform103
-    headers:
-      Host: platform103.halalkhor.info
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
 - name: 🇿🇦 南非 04
-  server: 139.84.228.106
+  server: 139.84.245.154
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform117
+    path: /platform108
     headers:
-      Host: platform117.halalkhor.info
+      Host: platform108.halalkhor.info
 - name: 🇿🇦 南非 05
-  server: 139.84.243.189
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇿🇦 南非 06
   server: 139.84.246.73
   port: 80
   udp: true
@@ -62,6 +47,17 @@ proxies:
     path: /platform113
     headers:
       Host: platform113.halalkhor.info
+- name: 🇿🇦 南非 06
+  server: 139.84.228.106
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 - name: 🇿🇦 南非 07
   server: 139.84.249.25
   port: 80
@@ -74,17 +70,6 @@ proxies:
     headers:
       Host: platform102.halalkhor.info
 - name: 🇿🇦 南非 08
-  server: 139.84.245.154
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform108
-    headers:
-      Host: platform108.halalkhor.info
-- name: 🇿🇦 南非 09
   server: 139.84.250.125
   port: 80
   udp: true
@@ -95,6 +80,17 @@ proxies:
     path: /platform106
     headers:
       Host: platform106.halalkhor.info
+- name: 🇿🇦 南非 09
+  server: 139.84.245.78
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
 - name: 🇿🇦 南非 10
   server: 139.84.234.100
   port: 80
@@ -107,27 +103,27 @@ proxies:
     headers:
       Host: platform118.halalkhor.info
 - name: 🇿🇦 南非 11
-  server: 139.84.245.78
+  server: 139.84.246.240
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform107
+    path: /platform103
     headers:
-      Host: platform107.halalkhor.info
+      Host: platform103.halalkhor.info
 - name: 🇿🇦 南非 12
-  server: 139.84.250.128
+  server: 139.84.243.189
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform101
     headers:
-      Host: platform109.halalkhor.info
+      Host: platform101.halalkhor.info
 - name: 🇿🇦 南非 13
   server: 139.84.247.122
   port: 80
@@ -140,12 +136,16 @@ proxies:
     headers:
       Host: platform115.halalkhor.info
 - name: 🇿🇦 南非 14
-  server: 102.133.165.160
-  port: 16233
+  server: 139.84.250.128
+  port: 80
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
