@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 01",
-      "server": "51.20.96.231",
+      "server": "13.60.213.145",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -14,23 +14,23 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 02",
-      "server": "13.62.228.76",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "172.238.244.13",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 03",
-      "server": "13.48.104.64",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 04",
-      "server": "51.20.72.15",
+      "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -38,7 +38,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 05",
-      "server": "51.20.143.248",
+      "server": "51.20.86.152",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -54,65 +54,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 07",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "51.20.96.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 08",
-      "server": "172.238.244.13",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 09",
-      "server": "2.26.101.148",
-      "server_port": 443,
-      "uuid": "68d89911-b92d-46fe-9007-3645c3b285f0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.chick-chirik.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8",
-          "short_id": "e9eb910e5af883e3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 10",
-      "server": "132.243.231.23",
-      "server_port": 443,
-      "uuid": "206234ff-0e18-4b95-923b-90f60d846d7d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nordic.global-cdn.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q",
-          "short_id": "2d6d073dc88f22a8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 11",
-      "server": "5.157.10.148",
+      "server": "surstreming.vvzzkontaktezzvv.garden",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
       "flow": "xtls-rprx-vision",
@@ -121,7 +71,7 @@
         "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -132,52 +82,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 12",
-      "server": "88.216.223.41",
-      "server_port": 443,
-      "uuid": "94877739-3af6-4fbb-85b6-ca6fe86c7696",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "app.goonars.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ze0irTcmNdt0iOioHey8zxm76PwVK9lIzVcTU5kIyx0",
-          "short_id": "95e51c18"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 13",
-      "server": "193.42.39.10",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 14",
+      "tag": "🇸🇪 瑞典 09",
       "server": "2.27.14.218",
       "server_port": 2096,
       "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
@@ -187,7 +92,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -199,8 +104,24 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 10",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 11",
+      "server": "13.62.228.76",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 15",
+      "tag": "🇸🇪 瑞典 12",
       "server": "91.193.17.156",
       "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -223,43 +144,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 16",
-      "server": "31.207.7.246",
-      "server_port": 443,
-      "uuid": "206234ff-0e18-4b95-923b-90f60d846d7d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nordic.global-cdn.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q",
-          "short_id": "2d6d073dc88f22a8"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 17",
-      "server": "51.20.122.188",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 18",
-      "server": "13.60.213.145",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -275,13 +159,7 @@
         "🇸🇪 瑞典 09",
         "🇸🇪 瑞典 10",
         "🇸🇪 瑞典 11",
-        "🇸🇪 瑞典 12",
-        "🇸🇪 瑞典 13",
-        "🇸🇪 瑞典 14",
-        "🇸🇪 瑞典 15",
-        "🇸🇪 瑞典 16",
-        "🇸🇪 瑞典 17",
-        "🇸🇪 瑞典 18"
+        "🇸🇪 瑞典 12"
       ]
     },
     {
@@ -299,13 +177,7 @@
         "🇸🇪 瑞典 09",
         "🇸🇪 瑞典 10",
         "🇸🇪 瑞典 11",
-        "🇸🇪 瑞典 12",
-        "🇸🇪 瑞典 13",
-        "🇸🇪 瑞典 14",
-        "🇸🇪 瑞典 15",
-        "🇸🇪 瑞典 16",
-        "🇸🇪 瑞典 17",
-        "🇸🇪 瑞典 18"
+        "🇸🇪 瑞典 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

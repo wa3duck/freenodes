@@ -14,7 +14,7 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 02",
-      "server": "103.86.49.57",
+      "server": "v2ray.simspeedup.com",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
@@ -28,21 +28,7 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 03",
-      "server": "v2ray.simspeedup.com",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 04",
-      "server": "104.18.26.90",
+      "server": "162.159.192.125",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
@@ -65,8 +51,7 @@
         "auto",
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04"
+        "🇹🇭 泰国 03"
       ]
     },
     {
@@ -75,8 +60,7 @@
       "outbounds": [
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04"
+        "🇹🇭 泰国 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

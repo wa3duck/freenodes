@@ -5,43 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
-  server: 188.114.97.6
-  port: 8080
+  server: 185.87.24.168
+  port: 2085
   udp: true
   type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /j100sy9wn073cxbvir
-    headers:
-      Host: index.harmonica02.workers.dev
+  uuid: ea53420b-e8ad-4e9d-ab21-ddd546231e92
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇹🇷 土耳其 02
-  server: 188.114.98.16
-  port: 2082
+  server: 93.190.8.22
+  port: 3090
   udp: true
   type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
+  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇹🇷 土耳其 03
-  server: 104.21.70.21
-  port: 443
+  server: 93.190.9.26
+  port: 3090
   udp: true
   type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  tls: true
-  servername: index.harmonica01.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica01.workers.dev
+  uuid: ea53420b-e8ad-4e9d-ab21-ddd546231e92
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 - name: 🇹🇷 土耳其 04
+  server: 93.190.9.3
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea53420b-e8ad-4e9d-ab21-ddd546231e92
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇹🇷 土耳其 05
   server: 78.135.73.47
   port: 443
   udp: true
@@ -54,7 +53,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 05
+- name: 🇹🇷 土耳其 06
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -65,7 +64,16 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 07
+  server: 93.190.9.131
+  port: 3090
+  udp: true
+  type: vless
+  uuid: dca830a2-3c69-4e1b-bc0b-a2ea22af53ba
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +84,8 @@ proxy-groups:
   - 🇹🇷 土耳其 03
   - 🇹🇷 土耳其 04
   - 🇹🇷 土耳其 05
+  - 🇹🇷 土耳其 06
+  - 🇹🇷 土耳其 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +96,7 @@ proxy-groups:
   - 🇹🇷 土耳其 03
   - 🇹🇷 土耳其 04
   - 🇹🇷 土耳其 05
+  - 🇹🇷 土耳其 06
+  - 🇹🇷 土耳其 07
 rules:
 - MATCH,PROXIES
