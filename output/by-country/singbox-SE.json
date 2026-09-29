@@ -6,22 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 01",
-      "server": "51.20.122.188",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 02",
-      "server": "13.60.213.145",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 03",
       "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -29,39 +13,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 04",
-      "server": "51.20.86.152",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 05",
-      "server": "51.20.96.231",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 06",
-      "server": "13.62.228.76",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 07",
-      "server": "172.238.244.13",
-      "server_port": 17000,
-      "method": "aes-256-gcm",
-      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 08",
+      "tag": "🇸🇪 瑞典 02",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -69,15 +21,39 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 09",
+      "tag": "🇸🇪 瑞典 03",
+      "server": "172.238.244.13",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 04",
+      "server": "13.60.213.145",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 05",
       "server": "13.49.76.55",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 06",
+      "server": "51.20.96.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 10",
+      "tag": "🇸🇪 瑞典 07",
       "server": "79.141.174.147",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -86,7 +62,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -101,7 +77,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 11",
+      "tag": "🇸🇪 瑞典 08",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -111,7 +87,7 @@
         "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -122,7 +98,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 12",
+      "tag": "🇸🇪 瑞典 09",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -145,19 +121,83 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 10",
+      "server": "13.62.228.76",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 11",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 12",
+      "server": "51.20.122.188",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 13",
+      "server": "84.252.100.204",
+      "server_port": 8227,
+      "password": "ODM2MzExOTcyMCwxNzkwNTMyNzE0ksak7YOGMD",
+      "tls": {
+        "enabled": true,
+        "server_name": "sw.lumenvpn.tech",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 14",
+      "server": "179.254.109.54",
+      "server_port": 443,
+      "uuid": "d0f0a880-0df1-0005-bdf1-5669fb9483ce",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cosw.ggisopi.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 15",
       "server": "2.27.14.218",
       "server_port": 2096,
       "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
       "tls": {
         "enabled": true,
         "server_name": "stf7697.rumedia-cdn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/cdn/v3/live"
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "stf7697.rumedia-cdn.com"
+        }
       }
     },
     {
@@ -177,7 +217,9 @@
         "🇸🇪 瑞典 10",
         "🇸🇪 瑞典 11",
         "🇸🇪 瑞典 12",
-        "🇸🇪 瑞典 13"
+        "🇸🇪 瑞典 13",
+        "🇸🇪 瑞典 14",
+        "🇸🇪 瑞典 15"
       ]
     },
     {
@@ -196,7 +238,9 @@
         "🇸🇪 瑞典 10",
         "🇸🇪 瑞典 11",
         "🇸🇪 瑞典 12",
-        "🇸🇪 瑞典 13"
+        "🇸🇪 瑞典 13",
+        "🇸🇪 瑞典 14",
+        "🇸🇪 瑞典 15"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

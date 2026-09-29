@@ -22,7 +22,7 @@ proxies:
     public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
     short-id: f7b2
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 - name: 🇳🇴 挪威 03
   server: 80.242.57.97
   port: 1

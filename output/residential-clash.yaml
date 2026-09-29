@@ -4,25 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 01
-  server: 104.18.47.113
-  port: 2082
+- name: 🇭🇰 中国香港 01
+  server: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: hysteria2
+  password: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  sni: b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 02
-  server: 36.224.178.15
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇹🇼 中国台湾 03
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -32,44 +22,20 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 04
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇺🇸 美国 05
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 01
+  - 🇭🇰 中国香港 01
   - 🇹🇼 中国台湾 02
-  - 🇹🇼 中国台湾 03
-  - 🇸🇬 新加坡 04
-  - 🇺🇸 美国 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 01
+  - 🇭🇰 中国香港 01
   - 🇹🇼 中国台湾 02
-  - 🇹🇼 中国台湾 03
-  - 🇸🇬 新加坡 04
-  - 🇺🇸 美国 05
 rules:
 - MATCH,PROXIES

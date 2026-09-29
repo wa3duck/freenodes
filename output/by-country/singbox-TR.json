@@ -6,24 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 01",
-      "server": "93.190.9.60",
-      "server_port": 3090,
-      "uuid": "cbbc93ef-6d35-463a-a856-64265c42e66d",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 02",
-      "server": "202.133.90.105",
-      "server_port": 57680,
-      "uuid": "9807575f-5b45-4c68-a39d-95fa381e05e1"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 03",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -44,14 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 04",
-      "server": "145.239.30.17",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 05",
+      "tag": "🇹🇷 土耳其 02",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -61,7 +36,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -72,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 06",
+      "tag": "🇹🇷 土耳其 03",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -91,6 +66,48 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 04",
+      "server": "myda06.api3-max.ru",
+      "server_port": 443,
+      "uuid": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "myda06.api3-max.ru",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 05",
+      "server": "myda08.api3-max.ru",
+      "server_port": 443,
+      "uuid": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "myda08.api3-max.ru",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -99,8 +116,7 @@
         "🇹🇷 土耳其 02",
         "🇹🇷 土耳其 03",
         "🇹🇷 土耳其 04",
-        "🇹🇷 土耳其 05",
-        "🇹🇷 土耳其 06"
+        "🇹🇷 土耳其 05"
       ]
     },
     {
@@ -111,8 +127,7 @@
         "🇹🇷 土耳其 02",
         "🇹🇷 土耳其 03",
         "🇹🇷 土耳其 04",
-        "🇹🇷 土耳其 05",
-        "🇹🇷 土耳其 06"
+        "🇹🇷 土耳其 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

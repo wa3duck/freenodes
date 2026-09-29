@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 01",
-      "server": "172.67.134.136",
+      "tag": "🇱🇺 卢森堡 01",
+      "server": "104.21.117.9",
       "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c300000003",
+      "uuid": "0926b50d-3a90-18dd-7c8e-0cf100000000",
       "tls": {
         "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
+        "server_name": "netlivpn4024.bgfjhd.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
         "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
+          "Host": "netlivpn4024.bgfjhd.workers.dev"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 01"
+        "🇱🇺 卢森堡 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 01"
+        "🇱🇺 卢森堡 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

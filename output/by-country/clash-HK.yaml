@@ -5,65 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 01
+  server: 185.22.154.239
+  port: 40101
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+- name: 🇭🇰 中国香港 02
   server: 46.29.163.78
   port: 40440
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 02
-  server: 191.223.214.11
-  port: 8444
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f58002e7-a822-4186-9a07-91de2ab3b311
 - name: 🇭🇰 中国香港 03
-  server: 212.192.12.11
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: WqE61ZpAXu2fU3zN
-- name: 🇭🇰 中国香港 04
-  server: 212.192.13.143
-  port: 10090
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-- name: 🇭🇰 中国香港 05
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 06
-  server: sth.free-outline.giize.com
-  port: 1081
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: fv5k24ox05vzkwt3
-- name: 🇭🇰 中国香港 07
-  server: xg1.mangshe.xyz
-  port: 2060
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xg1.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 08
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 09
   server: hk-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -76,31 +31,42 @@ proxies:
     short-id: d5b538acf8a93540
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 10
+- name: 🇭🇰 中国香港 04
+  server: xg1.mangshe.xyz
+  port: 2060
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: xg1.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 05
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 11
-  server: 8.218.184.4
+- name: 🇭🇰 中国香港 06
+  server: 202.146.222.89
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
-  skip-cert-verify: false
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 07
+  server: champion.xn--kivt58h.lol
+  port: 80
+  udp: true
+  type: vless
+  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
-- name: 🇭🇰 中国香港 12
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+- name: 🇭🇰 中国香港 08
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -112,35 +78,23 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
     short-id: af1bdd293097b664
   servername: tesla.com
-  client-fingerprint: edge
-- name: 🇭🇰 中国香港 13
-  server: mz.hkychina.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 09
+  server: 179.255.114.109
   port: 8443
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 14
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
   type: vless
-  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  skip-cert-verify: false
+  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /
+    path: /cdn/packages/runtime-core.tar.gz
     headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 15
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 16
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 10
   server: 45.82.244.40
   port: 443
   udp: true
@@ -155,7 +109,46 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 17
+- name: 🇭🇰 中国香港 11
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 12
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 13
+  server: 212.192.13.143
+  port: 10090
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+- name: 🇭🇰 中国香港 14
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 15
   server: nas.aizhzo.com
   port: 5010
   udp: true
@@ -165,14 +158,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 18
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -193,9 +178,6 @@ proxy-groups:
   - 🇭🇰 中国香港 13
   - 🇭🇰 中国香港 14
   - 🇭🇰 中国香港 15
-  - 🇭🇰 中国香港 16
-  - 🇭🇰 中国香港 17
-  - 🇭🇰 中国香港 18
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -216,8 +198,5 @@ proxy-groups:
   - 🇭🇰 中国香港 13
   - 🇭🇰 中国香港 14
   - 🇭🇰 中国香港 15
-  - 🇭🇰 中国香港 16
-  - 🇭🇰 中国香港 17
-  - 🇭🇰 中国香港 18
 rules:
 - MATCH,PROXIES
