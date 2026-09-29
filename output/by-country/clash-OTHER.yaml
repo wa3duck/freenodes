@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01
-  server: 62.60.152.1
-  port: 56328
+- name: 🌐 其他地区 01
+  server: 104.18.13.71
+  port: 443
   udp: true
   type: vless
-  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
-  flow: xtls-rprx-vision
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
   tls: true
-  reality-opts:
-    public-key: iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M
-    short-id: f3a9c21e8b6d4571
-  servername: table.vkroom-it-service.xyz
+  servername: server9.9966338.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /imnotarealherox
+    headers:
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01
+  - 🌐 其他地区 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01
+  - 🌐 其他地区 01
 rules:
 - MATCH,PROXIES

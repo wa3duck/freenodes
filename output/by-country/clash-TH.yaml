@@ -22,9 +22,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 03
-  server: 104.18.26.90
+  server: 104.16.10.185
   port: 443
   udp: true
   type: vless

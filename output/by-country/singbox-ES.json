@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 01",
+      "server": "85.90.217.42",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 02",
       "server": "83.147.18.3",
       "server_port": 443,
       "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
@@ -25,16 +33,49 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 02",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 03",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 04",
+      "server": "92.118.127.16",
+      "server_port": 443,
+      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "repo1.maven.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg",
+          "short_id": "908563a721d9bdcd"
+        }
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 03",
+      "tag": "🇪🇸 西班牙 05",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -42,7 +83,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 04",
+      "tag": "🇪🇸 西班牙 06",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -50,27 +91,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 05",
-      "server": "193.238.154.5",
-      "server_port": 443,
-      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-es.pleiades.codes",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 06",
+      "tag": "🇪🇸 西班牙 07",
       "server": "196.245.52.146",
       "server_port": 25535,
       "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
@@ -89,8 +110,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 08",
+      "server": "assets-es.pleiades.codes",
+      "server_port": 443,
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-es.pleiades.codes",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 09",
+      "server": "185.174.137.172",
+      "server_port": 8446,
+      "password": "e9dc02d400b67c727aca1620",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.174.137.172",
+        "insecure": true
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇪🇸 西班牙 07",
+      "tag": "🇪🇸 西班牙 10",
       "server": "66.163.118.73",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -110,7 +166,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 08",
+      "tag": "🇪🇸 西班牙 11",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -130,24 +186,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 09",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 12",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -162,7 +206,10 @@
         "🇪🇸 西班牙 06",
         "🇪🇸 西班牙 07",
         "🇪🇸 西班牙 08",
-        "🇪🇸 西班牙 09"
+        "🇪🇸 西班牙 09",
+        "🇪🇸 西班牙 10",
+        "🇪🇸 西班牙 11",
+        "🇪🇸 西班牙 12"
       ]
     },
     {
@@ -177,7 +224,10 @@
         "🇪🇸 西班牙 06",
         "🇪🇸 西班牙 07",
         "🇪🇸 西班牙 08",
-        "🇪🇸 西班牙 09"
+        "🇪🇸 西班牙 09",
+        "🇪🇸 西班牙 10",
+        "🇪🇸 西班牙 11",
+        "🇪🇸 西班牙 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

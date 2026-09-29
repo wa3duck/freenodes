@@ -18,50 +18,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 02",
-      "server": "94.183.170.147",
-      "server_port": 8443,
-      "uuid": "66ac188b-bd8d-4218-b9ba-0bad0e152cd0",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg",
-          "short_id": "72ccd4a7563c2953"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "9d30d49278"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 03",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 04",
       "server": "179.254.126.173",
       "server_port": 443,
       "uuid": "7013d889-14f4-4475-a5ff-a5ecd992b522",
@@ -82,37 +38,13 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 05",
+      "tag": "🇪🇪 爱沙尼亚 03",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "94.183.170.135"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 06",
-      "server": "212.113.120.174",
-      "server_port": 443,
-      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lk.x5.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gjdfyCCn9DXEzaAmN-geTg1sCvVj1WEwuhmgXIReR1E",
-          "short_id": "f932c14eee8ef133"
-        }
+        "path": "/"
       }
     },
     {
@@ -122,10 +54,7 @@
         "auto",
         "🇪🇪 爱沙尼亚 01",
         "🇪🇪 爱沙尼亚 02",
-        "🇪🇪 爱沙尼亚 03",
-        "🇪🇪 爱沙尼亚 04",
-        "🇪🇪 爱沙尼亚 05",
-        "🇪🇪 爱沙尼亚 06"
+        "🇪🇪 爱沙尼亚 03"
       ]
     },
     {
@@ -134,10 +63,7 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 01",
         "🇪🇪 爱沙尼亚 02",
-        "🇪🇪 爱沙尼亚 03",
-        "🇪🇪 爱沙尼亚 04",
-        "🇪🇪 爱沙尼亚 05",
-        "🇪🇪 爱沙尼亚 06"
+        "🇪🇪 爱沙尼亚 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
