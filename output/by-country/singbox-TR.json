@@ -36,7 +36,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -66,57 +66,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 04",
-      "server": "myda06.api3-max.ru",
-      "server_port": 443,
-      "uuid": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "myda06.api3-max.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 05",
-      "server": "myda08.api3-max.ru",
-      "server_port": 443,
-      "uuid": "cdd6bfce-781a-4454-b7d5-4778abb5c24f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "myda08.api3-max.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 01",
         "🇹🇷 土耳其 02",
-        "🇹🇷 土耳其 03",
-        "🇹🇷 土耳其 04",
-        "🇹🇷 土耳其 05"
+        "🇹🇷 土耳其 03"
       ]
     },
     {
@@ -125,9 +81,7 @@
       "outbounds": [
         "🇹🇷 土耳其 01",
         "🇹🇷 土耳其 02",
-        "🇹🇷 土耳其 03",
-        "🇹🇷 土耳其 04",
-        "🇹🇷 土耳其 05"
+        "🇹🇷 土耳其 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
