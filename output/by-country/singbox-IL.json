@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 01",
-      "server": "185.95.231.156",
-      "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 02",
       "server": "185.95.231.233",
       "server_port": 443,
       "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
@@ -46,6 +25,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 02",
+      "server": "185.95.231.156",
+      "server_port": 443,
+      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+          "short_id": "a3a578ab"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇮🇱 以色列 03",
       "server": "31.57.185.82",
@@ -54,35 +54,13 @@
       "password": "vS/2+E2vOG1C68QgmugNLDAxJqtGQeIJVI8lUu20n9Y="
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 04",
-      "server": "193.169.229.145",
-      "server_port": 443,
-      "uuid": "46b3a70b-b99f-4c6e-aa83-df6d842bb954",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "isr.vpnskyline.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2CwgJn1lc23uxQjAdGphQl4SSRmd1amunSpYXxgCgCM",
-          "short_id": "7e13fde9"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 01",
         "🇮🇱 以色列 02",
-        "🇮🇱 以色列 03",
-        "🇮🇱 以色列 04"
+        "🇮🇱 以色列 03"
       ]
     },
     {
@@ -91,8 +69,7 @@
       "outbounds": [
         "🇮🇱 以色列 01",
         "🇮🇱 以色列 02",
-        "🇮🇱 以色列 03",
-        "🇮🇱 以色列 04"
+        "🇮🇱 以色列 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

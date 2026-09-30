@@ -15,7 +15,7 @@
         "server_name": "mzone.hu.3cloudhost.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

@@ -5,26 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 01",
-      "server": "176.108.244.38",
-      "server_port": 9881,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tag": "🇦🇱 AL 01",
+      "server": "194.93.61.86",
+      "server_port": 443,
+      "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
+        "server_name": "cdnjs.com",
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "short_id": "aabb"
+          "public_key": "E1te_g9q6EWQVOCgjwI4PF-cml9qqW7OEAf33tYkUxQ",
+          "short_id": "17d334ad29b2ff40"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -32,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 01"
+        "🇦🇱 AL 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 01"
+        "🇦🇱 AL 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

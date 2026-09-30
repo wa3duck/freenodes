@@ -4,33 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 01
-  server: 169.40.32.73
-  port: 2053
+- name: 🇺🇸 美国 01
+  server: 188.114.97.6
+  port: 2095
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🇭🇰 中国香港 02
-  server: hk01.kfc-520.com
-  port: 60001
+  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
-  sni: hk01.kfc-520.com
-  skip-cert-verify: false
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 01
+  - 🇺🇸 美国 01
   - 🇭🇰 中国香港 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 01
+  - 🇺🇸 美国 01
   - 🇭🇰 中国香港 02
 rules:
 - MATCH,PROXIES

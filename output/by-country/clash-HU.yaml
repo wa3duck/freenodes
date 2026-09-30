@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
   servername: mzone.hu.3cloudhost.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

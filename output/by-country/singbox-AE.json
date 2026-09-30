@@ -15,7 +15,7 @@
         "server_name": "www.booking.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,24 +25,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 02",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 03",
+      "tag": "🇦🇪 阿联酋 02",
       "server": "94.183.224.45",
       "server_port": 443,
       "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
@@ -52,12 +36,33 @@
         "server_name": "dzen.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js",
           "short_id": "a1b2c3d4e5f67890"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 03",
+      "server": "151.241.166.181",
+      "server_port": 443,
+      "uuid": "e9844617-e393-4876-afa7-11859695f4ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.gazladder.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go",
+          "short_id": ""
         }
       }
     },
@@ -85,7 +90,7 @@
         "server_name": "www.nl.ozone.nl",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

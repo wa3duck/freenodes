@@ -4,23 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 01
-  server: 169.40.32.73
-  port: 2053
+- name: 🇺🇸 美国 01
+  server: 188.114.97.6
+  port: 2095
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 01
+  - 🇺🇸 美国 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 01
+  - 🇺🇸 美国 01
 rules:
 - MATCH,PROXIES

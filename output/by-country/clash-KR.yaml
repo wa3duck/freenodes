@@ -13,6 +13,31 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 02
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 03
+  server: 49.254.204.134
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 04
+  server: 132.145.80.230
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇰🇷 韩国 05
   server: 47.80.14.8
   port: 443
   udp: true
@@ -24,8 +49,15 @@ proxies:
     public-key: OBIHAXdhfYJ0PWsZjy3QYPRjTfMQlvjmBsTf1CT671w
     short-id: 71110d3f7ef57760
   servername: www.samsung.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 03
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 06
+  server: 141.164.45.187
+  port: 6679
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇰🇷 韩国 07
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -37,21 +69,24 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 04
-  server: icn-a-02.auuas.com
-  port: 1891
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 08
+  server: vpn-kr-002.fastervpn.world
+  port: 443
   udp: true
-  type: vless
-  uuid: 81c4547b-e5d8-4af8-baf0-91c5c0c05a9b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2olNWILpuviXx_Nr30JZc5tpt3MgtWda7jLGwAOxPxY
-    short-id: 8378f267
-  servername: www.npmjs.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 05
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 09
+  server: 132.226.226.189
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 10
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -59,14 +94,35 @@ proxies:
   password: maintell
   sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 06
-  server: 211.178.105.134
-  port: 6123
+- name: 🇰🇷 韩国 11
+  server: 152.67.200.82
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 07
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 12
+  server: 152.69.231.175
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 13
+  server: 151.245.106.49
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+  tls: true
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 14
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -79,54 +135,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 08
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 09
-  server: 132.145.80.230
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇰🇷 韩国 10
-  server: vpn-kr-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 11
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 12
-  server: 151.245.106.49
-  port: 2053
-  udp: true
-  type: vless
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-  tls: true
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 13
+- name: 🇰🇷 韩国 15
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -134,24 +143,24 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 14
-  server: 152.67.200.82
+- name: 🇰🇷 韩国 16
+  server: 131.186.19.174
   port: 50160
   udp: true
   type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
+  password: 7302ad33229de166d393cd56143a1e4c
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇰🇷 韩国 15
+- name: 🇰🇷 韩国 17
   server: 141.164.45.187
-  port: 7001
+  port: 2376
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇰🇷 韩国 16
+  password: faBAoD54k87UJG7
+- name: 🇰🇷 韩国 18
   server: 141.164.45.187
-  port: 5001
+  port: 9090
   udp: true
   type: ss
   cipher: aes-256-gcm
@@ -177,6 +186,8 @@ proxy-groups:
   - 🇰🇷 韩国 14
   - 🇰🇷 韩国 15
   - 🇰🇷 韩国 16
+  - 🇰🇷 韩国 17
+  - 🇰🇷 韩国 18
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -198,5 +209,7 @@ proxy-groups:
   - 🇰🇷 韩国 14
   - 🇰🇷 韩国 15
   - 🇰🇷 韩国 16
+  - 🇰🇷 韩国 17
+  - 🇰🇷 韩国 18
 rules:
 - MATCH,PROXIES

@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
-  server: 70.34.212.124
-  port: 8388
+  server: 51.20.96.231
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 02
   server: 13.49.76.55
   port: 443
@@ -19,27 +19,20 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 03
-  server: 13.62.228.76
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 04
-  server: 51.20.86.152
+  server: 51.20.143.248
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 05
-  server: 13.60.213.145
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 06
   server: 5.157.10.148
   port: 443
   udp: true
@@ -52,14 +45,7 @@ proxies:
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: chrome
-- name: 🇸🇪 瑞典 07
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 08
+- name: 🇸🇪 瑞典 06
   server: 193.42.39.10
   port: 33743
   udp: true
@@ -69,11 +55,11 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 09
+- name: 🇸🇪 瑞典 07
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -88,6 +74,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 08
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 09
+  server: 51.20.86.152
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 10
   server: sw-01.vacvps.com
   port: 443

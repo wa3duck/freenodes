@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 01",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "51.20.96.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
@@ -22,7 +22,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 03",
-      "server": "13.62.228.76",
+      "server": "13.48.104.64",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -30,22 +30,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 04",
-      "server": "51.20.86.152",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 05",
-      "server": "13.60.213.145",
+      "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 06",
+      "tag": "🇸🇪 瑞典 05",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -65,16 +57,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 07",
-      "server": "51.20.122.188",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 08",
+      "tag": "🇸🇪 瑞典 06",
       "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -83,7 +67,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -98,7 +82,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 09",
+      "tag": "🇸🇪 瑞典 07",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -119,6 +103,22 @@
         "type": "grpc",
         "service_name": "grpce5bb9e71"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 08",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 09",
+      "server": "51.20.86.152",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "vless",

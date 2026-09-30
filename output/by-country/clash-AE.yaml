@@ -16,18 +16,8 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 02
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 03
   server: 94.183.224.45
   port: 443
   udp: true
@@ -39,6 +29,18 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 03
+  server: 151.241.166.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: e9844617-e393-4876-afa7-11859695f4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
+  servername: pl.gazladder.work
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 04
   server: 85.204.107.181
@@ -60,7 +62,7 @@ proxies:
     public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
     short-id: c2798cd4032a02b8
   servername: www.nl.ozone.nl
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 06
   server: 84.235.244.108
   port: 22573

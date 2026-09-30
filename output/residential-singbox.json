@@ -5,21 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 01",
-      "server": "169.40.32.73",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "tag": "🇺🇸 美国 01",
+      "server": "188.114.97.6",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 02",
-      "server": "hk01.kfc-520.com",
-      "server_port": 60001,
-      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
+      "server": "f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "hk01.kfc-520.com",
-        "insecure": false
+        "server_name": "f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -27,7 +34,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 01",
+        "🇺🇸 美国 01",
         "🇭🇰 中国香港 02"
       ]
     },
@@ -35,7 +42,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 01",
+        "🇺🇸 美国 01",
         "🇭🇰 中国香港 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
