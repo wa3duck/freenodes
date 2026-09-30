@@ -5,28 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇺 匈牙利 01
-  server: 45.9.168.211
+  server: 185.225.68.232
   port: 443
   udp: true
-  type: vless
-  uuid: 7de5e70d-b95e-4019-affb-636151647b52
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
-  servername: mzone.hu.3cloudhost.com
-  client-fingerprint: chrome
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇭🇺 匈牙利 02
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇭🇺 匈牙利 03
+  server: 185.225.68.232
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇺 匈牙利 01
+  - 🇭🇺 匈牙利 02
+  - 🇭🇺 匈牙利 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇺 匈牙利 01
+  - 🇭🇺 匈牙利 02
+  - 🇭🇺 匈牙利 03
 rules:
 - MATCH,PROXIES

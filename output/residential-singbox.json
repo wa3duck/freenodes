@@ -6,28 +6,31 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 01",
-      "server": "188.114.97.6",
-      "server_port": 2095,
+      "server": "104.18.34.14",
+      "server_port": 2086,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 02",
-      "server": "f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 02",
+      "server": "178.83.46.216",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 03",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -35,7 +38,8 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 01",
-        "🇭🇰 中国香港 02"
+        "🇹🇷 土耳其 02",
+        "🇭🇰 中国香港 03"
       ]
     },
     {
@@ -43,7 +47,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 01",
-        "🇭🇰 中国香港 02"
+        "🇹🇷 土耳其 02",
+        "🇭🇰 中国香港 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
