@@ -5,43 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 45.149.147.97
-  port: 443
+  server: 77.42.20.51
+  port: 1085
   udp: true
   type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: random
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
 - name: 🇫🇮 芬兰 02
-  server: 185.79.138.71
-  port: 448
+  server: 204.168.147.195
+  port: 1085
   udp: true
   type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: firefox
+  uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
 - name: 🇫🇮 芬兰 03
-  server: 65.109.28.164
-  port: 443
+  server: 37.143.129.161
+  port: 8443
   udp: true
   type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
+  uuid: e3e9805a-6c8b-4edd-8ee8-621df79806eb
   tls: true
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: random
+    public-key: B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI
+    short-id: 4a5f04a5ea205fc3
+  servername: fi.aksay.pro
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 - name: 🇫🇮 芬兰 04
   server: 95.216.27.15
   port: 2053
@@ -53,19 +42,19 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 05
-  server: 65.109.199.174
+  server: 45.149.147.97
   port: 443
   udp: true
   type: vless
-  uuid: 3ba22938-7323-48ef-a981-7092171dc60e
+  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
-    short-id: 7a0300af51a1c4cf
-  servername: Miro.com
+    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
+    short-id: d345ad4657adeef9
+  servername: google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 06
   server: 144.31.212.253
@@ -76,18 +65,18 @@ proxies:
   sni: vps155-edge.kermemehori.ru
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 07
-  server: 31.77.199.147
-  port: 4443
+  server: 65.109.28.164
+  port: 443
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: random
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 08
   server: 144.31.27.215
   port: 43000
@@ -100,19 +89,46 @@ proxies:
     public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
     short-id: 568d87a47271344e
   servername: 144.31.27.215
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇫🇮 芬兰 09
-  server: 2.27.13.61
-  port: 2096
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
   tls: true
-  servername: st6dbbc.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 10
+  server: finland-sgood.wopd.butnorwa.butter.melon.shoes.bye.bye.whooisthebest.ir
+  port: 8000
+  udp: true
+  type: vless
+  uuid: ea8932f2-e630-4bd6-8cdd-57e55d77089c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Du5pk4KuMNA1sRcSpmuoLuC0HmxDBmFljFNfUzqxKiM
+    short-id: cd0a1986719e44c8
+  servername: storage-p2.googleapis.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 11
+  server: 2.29.17.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2412bd96-925b-43f2-81d1-0ed4f0793699
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LxjrhsP2bIHZrxC6Dfvgunfxi68-9L2xSk9dtag5F2M
+    short-id: 8b8b2dbc7c6e5d37
+  servername: dlcdn.apache.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -127,6 +143,8 @@ proxy-groups:
   - 🇫🇮 芬兰 07
   - 🇫🇮 芬兰 08
   - 🇫🇮 芬兰 09
+  - 🇫🇮 芬兰 10
+  - 🇫🇮 芬兰 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -141,5 +159,7 @@ proxy-groups:
   - 🇫🇮 芬兰 07
   - 🇫🇮 芬兰 08
   - 🇫🇮 芬兰 09
+  - 🇫🇮 芬兰 10
+  - 🇫🇮 芬兰 11
 rules:
 - MATCH,PROXIES

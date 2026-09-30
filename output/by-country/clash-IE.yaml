@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 01
-  server: 193.24.234.125
+  server: ie.tronsg.com
   port: 443
   udp: true
-  type: vless
-  uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y0OENG_faNE37KNgR5p6fnuIXmoES6sVuCFnWsbUzUw
-    short-id: d1d479faa1c1d92f
-  servername: web.code-sandbox.blog
-  client-fingerprint: firefox
+  type: trojan
+  password: Trojan@82164024
+  sni: ie.tronsg.com
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 02
   server: 3.9.135.156
   port: 51847

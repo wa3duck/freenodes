@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 01",
-      "server": "51.20.96.231",
+      "server": "51.20.86.152",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 02",
-      "server": "51.20.143.248",
+      "server": "51.20.122.188",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -22,15 +22,15 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 03",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "server": "13.62.228.76",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 04",
-      "server": "13.48.104.64",
+      "server": "51.20.143.248",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -38,7 +38,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 05",
-      "server": "13.49.76.55",
+      "server": "51.20.96.231",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -46,7 +46,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 06",
-      "server": "13.60.213.145",
+      "server": "13.48.104.64",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -63,7 +63,7 @@
         "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -73,8 +73,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 08",
+      "server": "13.49.76.55",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 09",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 10",
       "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -83,7 +99,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -98,23 +114,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 09",
-      "server": "2.27.14.218",
-      "server_port": 2096,
-      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
-      "tls": {
-        "enabled": true,
-        "server_name": "stf7697.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 10",
+      "tag": "🇸🇪 瑞典 11",
       "server": "62.60.159.81",
       "server_port": 2053,
       "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
@@ -137,12 +137,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 11",
-      "server": "13.62.228.76",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 12",
+      "server": "34.51.240.236",
       "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
+      "uuid": "788950f8-dbd9-4234-a42c-a7204665ce9f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE",
+          "short_id": "b4a6faed784ff461"
+        }
+      }
     },
     {
       "type": "selector",
@@ -159,7 +171,8 @@
         "🇸🇪 瑞典 08",
         "🇸🇪 瑞典 09",
         "🇸🇪 瑞典 10",
-        "🇸🇪 瑞典 11"
+        "🇸🇪 瑞典 11",
+        "🇸🇪 瑞典 12"
       ]
     },
     {
@@ -176,7 +189,8 @@
         "🇸🇪 瑞典 08",
         "🇸🇪 瑞典 09",
         "🇸🇪 瑞典 10",
-        "🇸🇪 瑞典 11"
+        "🇸🇪 瑞典 11",
+        "🇸🇪 瑞典 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
