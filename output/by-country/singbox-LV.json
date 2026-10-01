@@ -4,29 +4,156 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 01",
-      "server": "104.252.19.114",
-      "server_port": 8443,
-      "uuid": "40cba749-bca9-4089-9c02-84a357244ce0",
-      "flow": "xtls-rprx-vision",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 02",
+      "server": "185.135.86.175",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 03",
+      "server": "185.135.86.175",
+      "server_port": 9017,
+      "method": "aes-256-cfb",
+      "password": "HAVAdE3nXhqA5nHp"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 04",
+      "server": "104.165.205.44",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
         "enabled": true,
-        "server_name": "omvpn.info",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI",
-          "short_id": ""
-        }
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 05",
+      "server": "104.165.205.250",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 06",
+      "server": "104.165.205.43",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 07",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 08",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 09",
+      "server": "104.165.205.46",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 10",
+      "server": "104.165.205.23",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 11",
+      "server": "104.165.205.81",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 12",
+      "server": "104.165.205.142",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 13",
+      "server": "31.76.104.152",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 14",
+      "server": "104.165.205.219",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 02",
+      "tag": "🇱🇻 拉脱维亚 15",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -36,7 +163,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,12 +173,60 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 16",
+      "server": "104.252.19.114",
+      "server_port": 8443,
+      "uuid": "40cba749-bca9-4089-9c02-84a357244ce0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "omvpn.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 17",
+      "server": "91.240.86.70",
+      "server_port": 24443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 01",
-        "🇱🇻 拉脱维亚 02"
+        "🇱🇻 拉脱维亚 02",
+        "🇱🇻 拉脱维亚 03",
+        "🇱🇻 拉脱维亚 04",
+        "🇱🇻 拉脱维亚 05",
+        "🇱🇻 拉脱维亚 06",
+        "🇱🇻 拉脱维亚 07",
+        "🇱🇻 拉脱维亚 08",
+        "🇱🇻 拉脱维亚 09",
+        "🇱🇻 拉脱维亚 10",
+        "🇱🇻 拉脱维亚 11",
+        "🇱🇻 拉脱维亚 12",
+        "🇱🇻 拉脱维亚 13",
+        "🇱🇻 拉脱维亚 14",
+        "🇱🇻 拉脱维亚 15",
+        "🇱🇻 拉脱维亚 16",
+        "🇱🇻 拉脱维亚 17"
       ]
     },
     {
@@ -59,7 +234,22 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 01",
-        "🇱🇻 拉脱维亚 02"
+        "🇱🇻 拉脱维亚 02",
+        "🇱🇻 拉脱维亚 03",
+        "🇱🇻 拉脱维亚 04",
+        "🇱🇻 拉脱维亚 05",
+        "🇱🇻 拉脱维亚 06",
+        "🇱🇻 拉脱维亚 07",
+        "🇱🇻 拉脱维亚 08",
+        "🇱🇻 拉脱维亚 09",
+        "🇱🇻 拉脱维亚 10",
+        "🇱🇻 拉脱维亚 11",
+        "🇱🇻 拉脱维亚 12",
+        "🇱🇻 拉脱维亚 13",
+        "🇱🇻 拉脱维亚 14",
+        "🇱🇻 拉脱维亚 15",
+        "🇱🇻 拉脱维亚 16",
+        "🇱🇻 拉脱维亚 17"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,22 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 01
-  server: 155.117.19.17
+- name: 🇭🇰 中国香港 01
+  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇷 土耳其 02
-  server: 169.40.32.73
-  port: 2053
+- name: 🇭🇰 中国香港 02
+  server: 8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  type: hysteria2
+  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  sni: 8f3c6c53-tmkao0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 03
   server: s3.huhiuh.space
   port: 18642
@@ -28,34 +28,21 @@ proxies:
   password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 04
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 01
-  - 🇹🇷 土耳其 02
+  - 🇭🇰 中国香港 01
+  - 🇭🇰 中国香港 02
   - 🇸🇬 新加坡 03
-  - 🇹🇼 中国台湾 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 01
-  - 🇹🇷 土耳其 02
+  - 🇭🇰 中国香港 01
+  - 🇭🇰 中国香港 02
   - 🇸🇬 新加坡 03
-  - 🇹🇼 中国台湾 04
 rules:
 - MATCH,PROXIES

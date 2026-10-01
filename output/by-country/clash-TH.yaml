@@ -13,22 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 02
-  server: 36.133.78.37
-  port: 50017
-  udp: true
-  type: vmess
-  uuid: 1b30f413-2865-4d40-9146-4207778718cd
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 03
-  server: th1.zestapp778.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: th1.zestapp778.com
-  skip-cert-verify: true
-- name: 🇹🇭 泰国 04
   server: 103.86.49.57
   port: 80
   udp: true
@@ -37,10 +21,8 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: ais.speedtest.net
-- name: 🇹🇭 泰国 05
-  server: 104.16.10.185
+- name: 🇹🇭 泰国 03
+  server: 104.18.26.90
   port: 443
   udp: true
   type: vless
@@ -48,7 +30,6 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
@@ -62,8 +43,6 @@ proxy-groups:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
-  - 🇹🇭 泰国 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +51,5 @@ proxy-groups:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
-  - 🇹🇭 泰国 05
 rules:
 - MATCH,PROXIES

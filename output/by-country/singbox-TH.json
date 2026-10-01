@@ -12,53 +12,26 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 02",
-      "server": "36.133.78.37",
-      "server_port": 50017,
-      "uuid": "1b30f413-2865-4d40-9146-4207778718cd",
-      "security": "auto"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇭 泰国 03",
-      "server": "th1.zestapp778.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "th1.zestapp778.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 04",
+      "tag": "🇹🇭 泰国 02",
       "server": "103.86.49.57",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "ais.speedtest.net"
-        }
+        "path": "/ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 05",
-      "server": "104.16.10.185",
+      "tag": "🇹🇭 泰国 03",
+      "server": "104.18.26.90",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -75,9 +48,7 @@
         "auto",
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04",
-        "🇹🇭 泰国 05"
+        "🇹🇭 泰国 03"
       ]
     },
     {
@@ -86,9 +57,7 @@
       "outbounds": [
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04",
-        "🇹🇭 泰国 05"
+        "🇹🇭 泰国 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
