@@ -13,17 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 02
-  server: 103.86.49.57
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 03
   server: 104.18.26.90
   port: 443
   udp: true
@@ -32,19 +21,12 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 04
-  server: silversbgfgov.vip43.wogbcnmnagfwgov.com
-  port: 11243
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,8 +34,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
-  - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,7 +41,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
-  - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
 rules:
 - MATCH,PROXIES

@@ -5,16 +5,90 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 01
+  server: 104.21.67.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 02
+  server: 94.183.193.212
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38fdb074-9b55-44eb-87fd-b01bcc0f7f2b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 03
+  server: 94.183.193.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38fdb074-9b55-44eb-87fd-b01bcc0f7f2b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 04
+  server: 31.59.150.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: cc4d63e2-3a86-49b3-9598-328bbe93e56c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw
+  servername: google.com
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 05
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 02
+- name: 🇦🇪 阿联酋 06
+  server: 94.183.193.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38fdb074-9b55-44eb-87fd-b01bcc0f7f2b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 07
+  server: 94.183.193.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38fdb074-9b55-44eb-87fd-b01bcc0f7f2b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 08
   server: 78.40.195.140
   port: 443
   udp: true
@@ -26,16 +100,8 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 03
-  server: 45.192.12.93
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 04
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 09
   server: 217.60.33.215
   port: 443
   udp: true
@@ -43,20 +109,16 @@ proxies:
   password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
   sni: streambox.wwwinternetvideo.click
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 05
-  server: 31.59.150.11
+- name: 🇦🇪 阿联酋 10
+  server: 45.192.12.93
   port: 443
   udp: true
-  type: vless
-  uuid: cc4d63e2-3a86-49b3-9598-328bbe93e56c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw
-  servername: google.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 06
-  server: uae.unixzone.us
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇦🇪 阿联酋 11
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -66,7 +128,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 07
+- name: 🇦🇪 阿联酋 12
   server: 146.70.102.82
   port: 443
   udp: true
@@ -78,7 +140,7 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,6 +153,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
+  - 🇦🇪 阿联酋 08
+  - 🇦🇪 阿联酋 09
+  - 🇦🇪 阿联酋 10
+  - 🇦🇪 阿联酋 11
+  - 🇦🇪 阿联酋 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,5 +170,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 05
   - 🇦🇪 阿联酋 06
   - 🇦🇪 阿联酋 07
+  - 🇦🇪 阿联酋 08
+  - 🇦🇪 阿联酋 09
+  - 🇦🇪 阿联酋 10
+  - 🇦🇪 阿联酋 11
+  - 🇦🇪 阿联酋 12
 rules:
 - MATCH,PROXIES
