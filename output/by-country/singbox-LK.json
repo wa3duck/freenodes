@@ -6,38 +6,7 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 01",
-      "server": "140.245.120.16",
-      "server_port": 443,
-      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
-      "tls": {
-        "enabled": true,
-        "server_name": "trackydev.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 02",
-      "server": "51.75.67.209",
-      "server_port": 443,
-      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 03",
-      "server": "support.zoom.us",
+      "server": "free.sahanwickramasinghe.me",
       "server_port": 80,
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
@@ -49,13 +18,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 02",
+      "server": "trackydev.site",
+      "server_port": 443,
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
+      "tls": {
+        "enabled": true,
+        "server_name": "trackydev.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇰 斯里兰卡 01",
-        "🇱🇰 斯里兰卡 02",
-        "🇱🇰 斯里兰卡 03"
+        "🇱🇰 斯里兰卡 02"
       ]
     },
     {
@@ -63,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇰 斯里兰卡 01",
-        "🇱🇰 斯里兰卡 02",
-        "🇱🇰 斯里兰卡 03"
+        "🇱🇰 斯里兰卡 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

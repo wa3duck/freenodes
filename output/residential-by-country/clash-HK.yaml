@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 01
+  server: 653c15ac-tmm5c0-tonrmx-8n27.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  sni: 653c15ac-tmm5c0-tonrmx-8n27.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 02
+  server: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  sni: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 03
   server: 218.250.216.236
   port: 443
   udp: true
@@ -21,11 +37,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 01
+  - 🇭🇰 中国香港 02
+  - 🇭🇰 中国香港 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 01
+  - 🇭🇰 中国香港 02
+  - 🇭🇰 中国香港 03
 rules:
 - MATCH,PROXIES

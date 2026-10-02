@@ -13,41 +13,20 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇼 中国台湾 02
-  server: 45.207.158.76
-  port: 9443
+  server: 103.115.109.49
+  port: 443
   udp: true
-  type: vless
-  uuid: 3969ccbc-7bb3-4def-a9b4-26e2c84b66f8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 03
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 04
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇹🇼 中国台湾 05
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  sni: 127.0.0.1
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -57,8 +36,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
   - 🇹🇼 中国台湾 03
-  - 🇹🇼 中国台湾 04
-  - 🇹🇼 中国台湾 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,7 +44,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 01
   - 🇹🇼 中国台湾 02
   - 🇹🇼 中国台湾 03
-  - 🇹🇼 中国台湾 04
-  - 🇹🇼 中国台湾 05
 rules:
 - MATCH,PROXIES

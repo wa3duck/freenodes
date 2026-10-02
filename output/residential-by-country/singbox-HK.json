@@ -4,8 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 01",
+      "server": "653c15ac-tmm5c0-tonrmx-8n27.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "5dc6fa05-a601-aba6-7761-ecde22d2b0fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "653c15ac-tmm5c0-tonrmx-8n27.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 02",
+      "server": "964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "25b2699a-e18e-11ec-8e69-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 03",
       "server": "218.250.216.236",
       "server_port": 443,
       "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
@@ -28,14 +52,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 01"
+        "🇭🇰 中国香港 01",
+        "🇭🇰 中国香港 02",
+        "🇭🇰 中国香港 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 01"
+        "🇭🇰 中国香港 01",
+        "🇭🇰 中国香港 02",
+        "🇭🇰 中国香港 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

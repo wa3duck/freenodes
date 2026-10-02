@@ -4,26 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇹 葡萄牙 01",
-      "server": "185.231.233.91",
-      "server_port": 17167,
-      "method": "aes-128-gcm",
-      "password": "ca438054771821250089399a2f33275e"
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 01",
+      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
+      "server_port": 11223,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 葡萄牙 01"
+        "🇹🇼 中国台湾 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 葡萄牙 01"
+        "🇹🇼 中国台湾 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

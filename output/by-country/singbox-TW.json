@@ -12,24 +12,15 @@
       "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 02",
-      "server": "45.207.158.76",
-      "server_port": 9443,
-      "uuid": "3969ccbc-7bb3-4def-a9b4-26e2c84b66f8",
-      "flow": "xtls-rprx-vision",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
-          "short_id": "b390142456517acc"
-        }
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
       }
     },
     {
@@ -40,28 +31,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 04",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 05",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
@@ -72,9 +42,7 @@
         "auto",
         "🇹🇼 中国台湾 01",
         "🇹🇼 中国台湾 02",
-        "🇹🇼 中国台湾 03",
-        "🇹🇼 中国台湾 04",
-        "🇹🇼 中国台湾 05"
+        "🇹🇼 中国台湾 03"
       ]
     },
     {
@@ -83,9 +51,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 01",
         "🇹🇼 中国台湾 02",
-        "🇹🇼 中国台湾 03",
-        "🇹🇼 中国台湾 04",
-        "🇹🇼 中国台湾 05"
+        "🇹🇼 中国台湾 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

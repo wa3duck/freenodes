@@ -5,29 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 01
-  server: 140.245.120.16
-  port: 443
-  udp: true
-  type: vless
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  tls: true
-  servername: trackydev.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇰 斯里兰卡 02
-  server: 51.75.67.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-- name: 🇱🇰 斯里兰卡 03
-  server: support.zoom.us
+  server: free.sahanwickramasinghe.me
   port: 80
   udp: true
   type: vless
@@ -37,6 +15,19 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 02
+  server: trackydev.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  tls: true
+  servername: trackydev.site
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇱🇰 斯里兰卡 01
   - 🇱🇰 斯里兰卡 02
-  - 🇱🇰 斯里兰卡 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇱🇰 斯里兰卡 01
   - 🇱🇰 斯里兰卡 02
-  - 🇱🇰 斯里兰卡 03
 rules:
 - MATCH,PROXIES

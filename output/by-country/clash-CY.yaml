@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 01
+  server: 45.149.114.171
+  port: 777
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+- name: 🇨🇾 塞浦路斯 02
   server: 194.76.154.31
   port: 40443
   udp: true
@@ -15,32 +22,19 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 02
-  server: 5.253.42.159
+  client-fingerprint: random
+- name: 🇨🇾 塞浦路斯 03
+  server: india.letsconnectpoint.com
   port: 443
   udp: true
   type: vless
-  uuid: 914f3806-07a1-4158-9624-e183de065a38
+  uuid: a368752a-32fc-42f3-980a-6b049218b23f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: erUEmyU1QK8y2corQh9bOjk0oHl2Mo6Z9WgoyKg_rC0
     short-id: c1e3d5d4
   servername: india.letsconnectpoint.com
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 03
-  server: 5.253.42.164
-  port: 40443
-  udp: true
-  type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 04
   server: 5.253.28.240
@@ -55,21 +49,6 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 05
-  server: hydra.yokkastars.com
-  port: 2443
-  udp: true
-  type: vless
-  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
-  tls: true
-  reality-opts:
-    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-    short-id: 92c32de179e5d908
-  servername: deepl.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: rex-eb0bf76b710ce763
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +58,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 02
   - 🇨🇾 塞浦路斯 03
   - 🇨🇾 塞浦路斯 04
-  - 🇨🇾 塞浦路斯 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,6 +67,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 02
   - 🇨🇾 塞浦路斯 03
   - 🇨🇾 塞浦路斯 04
-  - 🇨🇾 塞浦路斯 05
 rules:
 - MATCH,PROXIES

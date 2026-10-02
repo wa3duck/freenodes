@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇪 比利时 01
-  server: 172.67.209.13
-  port: 443
-  udp: true
-  type: vless
-  uuid: fa45096d-bed0-ad80-c773-23c30000001b
-  tls: true
-  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-- name: 🇧🇪 比利时 02
   server: 34.38.82.200
   port: 443
   udp: true
@@ -31,18 +16,7 @@ proxies:
     short-id: 31f187650d9530bb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇪 比利时 03
-  server: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 73796e63-0000-4000-8000-000000000008
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: 🇧🇪 比利时 04
+- name: 🇧🇪 比利时 02
   server: 34.156.242.126
   port: 443
   udp: true
@@ -54,18 +28,6 @@ proxies:
     short-id: b4f2c0e3d8668c2f
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇪 比利时 05
-  server: 35.195.122.169
-  port: 443
-  udp: true
-  type: vless
-  uuid: e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254
-  tls: true
-  reality-opts:
-    public-key: i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs
-    short-id: 68e97022627fa882
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,9 +35,6 @@ proxy-groups:
   - AUTO
   - 🇧🇪 比利时 01
   - 🇧🇪 比利时 02
-  - 🇧🇪 比利时 03
-  - 🇧🇪 比利时 04
-  - 🇧🇪 比利时 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,8 +42,5 @@ proxy-groups:
   proxies:
   - 🇧🇪 比利时 01
   - 🇧🇪 比利时 02
-  - 🇧🇪 比利时 03
-  - 🇧🇪 比利时 04
-  - 🇧🇪 比利时 05
 rules:
 - MATCH,PROXIES
