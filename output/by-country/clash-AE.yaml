@@ -17,6 +17,14 @@ proxies:
   servername: google.com
   client-fingerprint: random
 - name: 🇦🇪 阿联酋 02
+  server: 217.60.33.215
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 03
   server: 78.40.195.140
   port: 443
   udp: true
@@ -28,15 +36,7 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 03
-  server: 217.60.33.215
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
-  skip-cert-verify: false
+  client-fingerprint: qq
 - name: 🇦🇪 阿联酋 04
   server: 45.192.12.93
   port: 443
@@ -46,15 +46,16 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 05
-  server: 130.49.161.70
-  port: 443
+  server: 84.235.244.108
+  port: 22573
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 06
   server: 146.70.102.82
   port: 443

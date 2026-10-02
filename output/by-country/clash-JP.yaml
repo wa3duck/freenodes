@@ -5,33 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 01
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 02
-  server: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
-  port: 443
-  udp: true
-  type: tuic
-  uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  password: cd1b0ae0-4010-11ee-953a-f23c9164ca5d
-  sni: de0bc027-teisg0-thtg7i-1lkt0.jp5.hyhuawei.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇯🇵 日本 03
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 04
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -39,70 +12,58 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 05
+- name: 🇯🇵 日本 02
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 03
   server: 137.220.221.179
   port: 443
   udp: true
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 06
-  server: x4fypqm-g05.jp05-h6-vm0.entry.fr0528.art
-  port: 46486
+- name: 🇯🇵 日本 04
+  server: 149.22.87.241
+  port: 443
   udp: true
-  type: vmess
-  uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
-  alterId: 1
-  cipher: auto
-- name: 🇯🇵 日本 07
-  server: 154.31.114.248
-  port: 50159
-  udp: true
-  type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 08
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 05
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 09
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 10
-  server: 38.207.130.15
-  port: 443
+- name: 🇯🇵 日本 06
+  server: 103.75.118.228
+  port: 11452
   udp: true
   type: vless
-  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
-    short-id: 6d962e8d8a0dce
-  servername: amazon.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 11
-  server: open.w2m.ink
-  port: 443
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 07
+  server: 172.111.146.64
+  port: 80
   udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: false
-- name: 🇯🇵 日本 12
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇯🇵 日本 08
   server: 168.138.43.75
   port: 80
   udp: true
@@ -113,22 +74,60 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇯🇵 日本 13
-  server: 3.114.220.22
-  port: 19645
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 09
+  server: jumpernode.online
+  port: 443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
+    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+    short-id: 6d962e8d8a0dce
+  servername: amazon.com
   client-fingerprint: chrome
+- name: 🇯🇵 日本 10
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 11
+  server: open.2ml.cc.cd
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇯🇵 日本 12
+  server: open.w2m.ink
+  port: 443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: true
+- name: 🇯🇵 日本 13
+  server: 18.183.215.124
+  port: 28573
+  udp: true
+  type: vless
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
+  client-fingerprint: qq
 - name: 🇯🇵 日本 14
-  server: 3.114.220.22
-  port: 10583
+  server: 103.75.118.228
+  port: 12683
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -140,21 +139,25 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇯🇵 日本 15
-  server: vp3.yysyy.online
-  port: 443
+  server: 3.114.220.22
+  port: 10583
   udp: true
-  type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇯🇵 日本 16
-  server: open.2ml.bid
-  port: 5443
+  server: 84.247.155.196
+  port: 80
   udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 17
   server: 43.133.11.187
   port: 443
@@ -169,28 +172,39 @@ proxies:
   servername: cloudflare.com
   client-fingerprint: firefox
 - name: 🇯🇵 日本 18
-  server: mi7v34u-g06.jp05-h6-vm0.entry.fr0528.art
-  port: 46487
-  udp: true
-  type: vmess
-  uuid: 2375151e-88f8-3a69-bf57-c462ff20c6d8
-  alterId: 1
-  cipher: auto
-- name: 🇯🇵 日本 19
-  server: 84.247.155.196
+  server: jp.tronsg.com
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 20
-  server: open.w2m.ink
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
+  type: trojan
+  password: Trojan@82164024
+  sni: jp.tronsg.com
   skip-cert-verify: true
+- name: 🇯🇵 日本 19
+  server: t9.qifei.app
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 20
+  server: 154.31.114.248
+  port: 50159
+  udp: true
+  type: vless
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇯🇵 日本 21
   server: 3.114.220.22
   port: 18007
@@ -203,16 +217,68 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 22
-  server: open.2ml.cc.cd
-  port: 5443
+  server: 13.231.19.51
+  port: 11690
+  udp: true
+  type: vless
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  servername: www.tesla.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 23
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 24
+  server: 45.159.50.233
+  port: 49152
+  udp: true
+  type: vless
+  uuid: 71b460a1-8f78-45c5-fb3c-ab26a2a1f7b9
+  tls: true
+  servername: qp.lichao0223.cn
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇯🇵 日本 25
+  server: open.2ml.bid
+  port: 443
   udp: true
   type: hysteria2
   password: my_super_password_123
-  sni: open.2ml.cc.cd
-  skip-cert-verify: true
-- name: 🇯🇵 日本 23
+  sni: open.2ml.bid
+  skip-cert-verify: false
+- name: 🇯🇵 日本 26
+  server: t14.qifei.app
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: www.amazon.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 27
   server: 104.238.161.103
   port: 443
   udp: true
@@ -227,118 +293,44 @@ proxies:
     path: /v2
     headers:
       Host: api.w2m.ink
-- name: 🇯🇵 日本 24
-  server: zfd-jpv2.kunlun01dns.com
-  port: 16120
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇯🇵 日本 25
-  server: 43.165.191.60
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: ju88t.ce8d.q6g.hh.ov0.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: ju88t.ce8d.q6g.hh.ov0.kdns.fr
-- name: 🇯🇵 日本 26
-  server: 84.247.155.196
+- name: 🇯🇵 日本 28
+  server: 172.111.146.64
   port: 80
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 27
-  server: 45.159.50.233
-  port: 49152
-  udp: true
   type: vless
-  uuid: 71b460a1-8f78-45c5-fb3c-ab26a2a1f7b9
-  tls: true
-  servername: qp.lichao0223.cn
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: qp.lichao0223.cn
-- name: 🇯🇵 日本 28
-  server: rb.mangshe.xyz
-  port: 2060
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: 127.0.0.1
-  skip-cert-verify: true
+      Host: join
 - name: 🇯🇵 日本 29
-  server: sbgfgov.vip7.wogacnmnagfwgov.com
-  port: 11207
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇯🇵 日本 30
-  server: sbgfgov.vip18.wogacnmnagfwgov.com
-  port: 11218
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇯🇵 日本 31
-  server: 152.69.195.67
-  port: 47878
+  server: 172.111.146.64
+  port: 80
   udp: true
   type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- name: 🇯🇵 日本 32
-  server: silversbgfgov.vip30.wogbcnmnagfwgov.com
-  port: 11230
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
-- name: 🇯🇵 日本 33
-  server: 101.33.80.58
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 8344360f-0349-4784-a19f-33fd92e89389
-  tls: true
-  servername: api.w2m.ink
-  skip-cert-verify: false
-  client-fingerprint: random
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
   network: ws
   ws-opts:
-    path: /v2
-    headers:
-      Host: api.w2m.ink
-- name: 🇯🇵 日本 34
-  server: 153.121.36.102
+    path: /vless/
+- name: 🇯🇵 日本 30
+  server: vp3.yysyy.online
   port: 443
   udp: true
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: www.amazon.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 35
-  server: cdn.sfacg.uk
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: false
+- name: 🇯🇵 日本 31
+  server: open.2ml.bid
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.bid
+  skip-cert-verify: false
+- name: 🇯🇵 日本 32
+  server: 162.159.130.234
   port: 2083
   udp: true
   type: vmess
@@ -353,6 +345,99 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
+- name: 🇯🇵 日本 33
+  server: qo6a10b-g06.jp01-nn-vm0.entry.fr0528.art
+  port: 21586
+  udp: true
+  type: vmess
+  uuid: a3b5a6fc-0b92-3b66-beda-eb2a49361a21
+  alterId: 1
+  cipher: auto
+  tls: true
+  servername: qo6a10b-g06.jp01-nn-vm0.entry.fr0528.art
+  skip-cert-verify: false
+- name: 🇯🇵 日本 34
+  server: 142.91.106.31
+  port: 43000
+  udp: true
+  type: vless
+  uuid: f8681dba-d368-4bab-a3c2-a8dc712ba368
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4
+    short-id: 8d66106f
+  servername: 142.91.106.31
+  client-fingerprint: random
+- name: 🇯🇵 日本 35
+  server: goldcnmltyljgfwgov.vip57.wogcnmnnagfwgov.com
+  port: 11257
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 36
+  server: sbgfgov.vip7.wogacnmnagfwgov.com
+  port: 11207
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 37
+  server: 172.67.217.240
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: android
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 38
+  server: sbgfgov.vip18.wogacnmnagfwgov.com
+  port: 11218
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 39
+  server: silversbgfgov.vip30.wogbcnmnagfwgov.com
+  port: 11230
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 40
+  server: goldcnmltyljgfwgov.vip60.wogcnmnnagfwgov.com
+  port: 11260
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 41
+  server: sbgfgov.vip5.wogacnmnagfwgov.com
+  port: 11205
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 42
+  server: 152.69.195.67
+  port: 47878
+  udp: true
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
 proxy-groups:
 - name: PROXIES
   type: select
@@ -393,6 +478,13 @@ proxy-groups:
   - 🇯🇵 日本 33
   - 🇯🇵 日本 34
   - 🇯🇵 日本 35
+  - 🇯🇵 日本 36
+  - 🇯🇵 日本 37
+  - 🇯🇵 日本 38
+  - 🇯🇵 日本 39
+  - 🇯🇵 日本 40
+  - 🇯🇵 日本 41
+  - 🇯🇵 日本 42
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -433,5 +525,12 @@ proxy-groups:
   - 🇯🇵 日本 33
   - 🇯🇵 日本 34
   - 🇯🇵 日本 35
+  - 🇯🇵 日本 36
+  - 🇯🇵 日本 37
+  - 🇯🇵 日本 38
+  - 🇯🇵 日本 39
+  - 🇯🇵 日本 40
+  - 🇯🇵 日本 41
+  - 🇯🇵 日本 42
 rules:
 - MATCH,PROXIES

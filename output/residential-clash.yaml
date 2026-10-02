@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 01
-  server: 162.159.38.127
-  port: 2086
+  server: 172.64.52.6
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,63 +15,60 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇳🇱 荷兰 02
-  server: aken.nightfall.best
-  port: 443
-  udp: true
-  type: vless
-  uuid: af2bf319-ba88-4fec-8317-2b6a8cee96d1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Zli2oz4Y11pvkrGK71XDcbp1OWIPzK2FYhUXQvl1yiI
-  servername: aken.nightfall.best
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 03
-  server: 653c15ac-tmm5c0-tonrmx-8n27.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 02
+  server: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
-  sni: 653c15ac-tmm5c0-tonrmx-8n27.hk3.hyhuawei.com
+  password: 3be8cba8-b721-11ec-8b04-f23c91cfbbc9
+  sni: 9969bb96-tmm5c0-twuk0i-1hzyr.hk3.hyhuawei.com
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 03
+  server: hinet1.2yly.com
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: edge
 - name: 🇭🇰 中国香港 04
-  server: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
+  server: 818667a4-tmm5c0-tpsg94-1jbj0.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
-  sni: 964114bc-tmm5c0-tntd4s-yjq0.nw4.hyhuawei.com
+  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
+  sni: 818667a4-tmm5c0-tpsg94-1jbj0.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 05
-  server: 218.250.216.236
-  port: 443
+- name: 🇹🇷 土耳其 05
+  server: 178.83.46.216
+  port: 2053
   udp: true
   type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: firefox
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇼 中国台湾 06
-  server: sbgfgov.vip23.wogacnmnagfwgov.com
-  port: 11223
+  server: ttww11.bpca2026.top
+  port: 443
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: trojan
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  sni: ttww11.bpca2026.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /images
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 01
-  - 🇳🇱 荷兰 02
-  - 🇭🇰 中国香港 03
+  - 🇭🇰 中国香港 02
+  - 🇹🇼 中国台湾 03
   - 🇭🇰 中国香港 04
-  - 🇭🇰 中国香港 05
+  - 🇹🇷 土耳其 05
   - 🇹🇼 中国台湾 06
 - name: AUTO
   type: url-test
@@ -79,10 +76,10 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 01
-  - 🇳🇱 荷兰 02
-  - 🇭🇰 中国香港 03
+  - 🇭🇰 中国香港 02
+  - 🇹🇼 中国台湾 03
   - 🇭🇰 中国香港 04
-  - 🇭🇰 中国香港 05
+  - 🇹🇷 土耳其 05
   - 🇹🇼 中国台湾 06
 rules:
 - MATCH,PROXIES

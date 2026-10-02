@@ -14,6 +14,39 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 02",
+      "server": "179.237.103.152",
+      "server_port": 443,
+      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
+          "short_id": "9de8ae53dabf1dc2"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 03",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 04",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -33,7 +66,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 03",
+      "tag": "🇨🇭 瑞士 05",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -54,8 +87,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 04",
-      "server": "82.38.64.235",
+      "tag": "🇨🇭 瑞士 06",
+      "server": "82.38.64.239",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
@@ -65,93 +98,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 05",
-      "server": "179.237.103.152",
-      "server_port": 443,
-      "uuid": "e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4",
-          "short_id": "9de8ae53dabf1dc2"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 06",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 07",
-      "server": "104.165.205.67",
-      "server_port": 8443,
-      "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 08",
-      "server": "104.165.205.42",
-      "server_port": 8443,
-      "password": "52e3dd44-ed23-4030-b0cc-5b5a953f2d4d",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 09",
       "server": "104.165.205.41",
       "server_port": 8443,
       "password": "3a92b39a-5f02-415e-a908-783ec320e83f",
       "tls": {
         "enabled": true,
         "server_name": "speedtestmark.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 10",
-      "server": "152.67.75.161",
-      "server_port": 443,
-      "password": "3a702d4d1de4949005d8431220e040fb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c13f29db6a638ad2b211b9ce2669ef27"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 11",
+      "tag": "🇨🇭 瑞士 08",
       "server": "176.65.144.84",
       "server_port": 443,
       "uuid": "0f4081e7-612b-425f-8def-eebf144aedba",
@@ -171,6 +131,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 09",
+      "server": "45.132.176.161",
+      "server_port": 9882,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
+          "short_id": "aa"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -183,9 +167,7 @@
         "🇨🇭 瑞士 06",
         "🇨🇭 瑞士 07",
         "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09",
-        "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11"
+        "🇨🇭 瑞士 09"
       ]
     },
     {
@@ -200,9 +182,7 @@
         "🇨🇭 瑞士 06",
         "🇨🇭 瑞士 07",
         "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09",
-        "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11"
+        "🇨🇭 瑞士 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
