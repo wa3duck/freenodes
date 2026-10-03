@@ -5,22 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 01
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 02
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: 160.187.100.109
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 02
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 03
+  server: tw6.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw6.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇼 中国台湾 04
   server: sbgfgov.vip23.wogacnmnagfwgov.com
   port: 11223
   udp: true
@@ -28,7 +41,15 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
-- name: 🇹🇼 中国台湾 04
+- name: 🇹🇼 中国台湾 05
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇹🇼 中国台湾 06
   server: 60.248.219.78
   port: 443
   udp: true
@@ -51,6 +72,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 02
   - 🇹🇼 中国台湾 03
   - 🇹🇼 中国台湾 04
+  - 🇹🇼 中国台湾 05
+  - 🇹🇼 中国台湾 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +83,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 02
   - 🇹🇼 中国台湾 03
   - 🇹🇼 中国台湾 04
+  - 🇹🇼 中国台湾 05
+  - 🇹🇼 中国台湾 06
 rules:
 - MATCH,PROXIES

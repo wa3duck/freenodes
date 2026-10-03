@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 01
-  server: trackydev.site
-  port: 443
+  server: cdn.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
-  tls: true
-  servername: trackydev.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: cloud.ghostdev.lk
 - name: 🇱🇰 斯里兰卡 02
   server: free.sahanwickramasinghe.me
   port: 80
@@ -26,6 +24,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select

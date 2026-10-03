@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 01
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16298
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇮🇩 印尼 02
   server: 103.172.197.2
   port: 29172
   udp: true
@@ -23,8 +15,8 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: chrome
-- name: 🇮🇩 印尼 03
+  client-fingerprint: edge
+- name: 🇮🇩 印尼 02
   server: 103.172.197.3
   port: 16006
   udp: true
@@ -35,18 +27,23 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇩 印尼 04
-  server: 188.114.97.6
+  client-fingerprint: qq
+- name: 🇮🇩 印尼 03
+  server: 3dTmMsfpAlaqHI7b.v.3dns.vip
   port: 443
   udp: true
-  type: trojan
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  sni: id1.nathaya.web.id
+  type: vmess
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 3dTmMsfpAlaqHI7b.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /trojan
+    path: /ws-vmess
+    headers:
+      Host: 3dTmMsfpAlaqHI7b.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,7 +52,6 @@ proxy-groups:
   - 🇮🇩 印尼 01
   - 🇮🇩 印尼 02
   - 🇮🇩 印尼 03
-  - 🇮🇩 印尼 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,6 +60,5 @@ proxy-groups:
   - 🇮🇩 印尼 01
   - 🇮🇩 印尼 02
   - 🇮🇩 印尼 03
-  - 🇮🇩 印尼 04
 rules:
 - MATCH,PROXIES

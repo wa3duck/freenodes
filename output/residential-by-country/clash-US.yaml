@@ -4,32 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇾 白俄罗斯 01
-  server: 89.125.96.80
-  port: 2053
+- name: 🇺🇸 美国 01
+  server: 172.64.52.6
+  port: 80
   udp: true
   type: vless
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  tls: true
-  servername: wss.zazazuza.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /?ed=2560security=tls
     headers:
-      Host: wss.zazazuza.ru
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇾 白俄罗斯 01
+  - 🇺🇸 美国 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇾 白俄罗斯 01
+  - 🇺🇸 美国 01
 rules:
 - MATCH,PROXIES

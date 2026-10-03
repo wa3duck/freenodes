@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 01
-  server: 147.45.116.19
-  port: 443
-  udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: br.monkora.org
-  client-fingerprint: chrome
-- name: 🇧🇷 巴西 02
   server: 89.39.161.157
   port: 443
   udp: true
@@ -29,6 +18,15 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇧🇷 巴西 02
+  server: 216.128.168.190
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: owVdNnQcdPgthSyX
 proxy-groups:
 - name: PROXIES
   type: select

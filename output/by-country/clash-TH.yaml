@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 01
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 02
   server: 103.86.49.57
   port: 80
   udp: true
@@ -21,7 +13,9 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-- name: 🇹🇭 泰国 03
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 泰国 02
   server: 104.16.10.9
   port: 443
   udp: true
@@ -35,7 +29,7 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 04
+- name: 🇹🇭 泰国 03
   server: silversbgfgov.vip43.wogbcnmnagfwgov.com
   port: 11243
   udp: true
@@ -51,7 +45,6 @@ proxy-groups:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +53,5 @@ proxy-groups:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
 rules:
 - MATCH,PROXIES

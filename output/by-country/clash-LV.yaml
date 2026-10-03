@@ -5,19 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 01
-  server: 138.124.180.137
-  port: 443
+  server: 185.135.86.175
+  port: 9033
   udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 02
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 03
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 04
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 05
   server: 185.28.47.28
   port: 443
   udp: true
@@ -30,38 +45,19 @@ proxies:
     short-id: 40fac5d64bc6a540
   servername: latinki.pumpkinpie.study
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 03
-  server: 195.123.213.28
+- name: 🇱🇻 拉脱维亚 06
+  server: 138.124.180.137
   port: 443
   udp: true
   type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇱🇻 拉脱维亚 04
-  server: 91.240.86.70
-  port: 24443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 05
-  server: 85.159.228.223
-  port: 443
-  udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: chrome
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +68,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 03
   - 🇱🇻 拉脱维亚 04
   - 🇱🇻 拉脱维亚 05
+  - 🇱🇻 拉脱维亚 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +79,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 03
   - 🇱🇻 拉脱维亚 04
   - 🇱🇻 拉脱维亚 05
+  - 🇱🇻 拉脱维亚 06
 rules:
 - MATCH,PROXIES
