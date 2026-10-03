@@ -15,28 +15,8 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 02
-  server: 45.149.114.171
-  port: 777
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-- name: 🇨🇾 塞浦路斯 03
-  server: cdn.bulkavpn.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
-    short-id: 94f32cfc
-  servername: cdn.bulkavpn.top
   client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 04
+- name: 🇨🇾 塞浦路斯 02
   server: 5.253.30.99
   port: 40443
   udp: true
@@ -49,7 +29,7 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇨🇾 塞浦路斯 05
+- name: 🇨🇾 塞浦路斯 03
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -72,8 +52,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
   - 🇨🇾 塞浦路斯 03
-  - 🇨🇾 塞浦路斯 04
-  - 🇨🇾 塞浦路斯 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,7 +60,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
   - 🇨🇾 塞浦路斯 03
-  - 🇨🇾 塞浦路斯 04
-  - 🇨🇾 塞浦路斯 05
 rules:
 - MATCH,PROXIES

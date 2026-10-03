@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 01",
-      "server": "206.1.103.221",
-      "server_port": 17721,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "YdXo5FtbFp8lnDRbIvewaOaXbDtf5eR1Bk/O594+x40=:iZdLC0QQ5kSj7Y1QqwR/t23h1gp/jHyiWkf2MJFjq5s="
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 02",
+      "tag": "🇹🇷 土耳其 01",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -23,12 +15,33 @@
         "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
           "short_id": "db04ce8bdb8900f1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 02",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
         }
       }
     },
@@ -55,54 +68,24 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 04",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
+      "server": "155.103.70.53",
+      "server_port": 30303,
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
       "tls": {
         "enabled": true,
-        "server_name": "www.datadoghq.com",
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 05",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 06",
-      "server": "nimm.mpd.cc.cd",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/0962"
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
+        }
       }
     },
     {
@@ -113,9 +96,7 @@
         "🇹🇷 土耳其 01",
         "🇹🇷 土耳其 02",
         "🇹🇷 土耳其 03",
-        "🇹🇷 土耳其 04",
-        "🇹🇷 土耳其 05",
-        "🇹🇷 土耳其 06"
+        "🇹🇷 土耳其 04"
       ]
     },
     {
@@ -125,9 +106,7 @@
         "🇹🇷 土耳其 01",
         "🇹🇷 土耳其 02",
         "🇹🇷 土耳其 03",
-        "🇹🇷 土耳其 04",
-        "🇹🇷 土耳其 05",
-        "🇹🇷 土耳其 06"
+        "🇹🇷 土耳其 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

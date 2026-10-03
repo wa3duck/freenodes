@@ -22,7 +22,7 @@ proxies:
   ws-opts:
     path: /ws
 - name: 🇹🇭 泰国 03
-  server: 104.16.10.2
+  server: 104.16.10.9
   port: 443
   udp: true
   type: vless

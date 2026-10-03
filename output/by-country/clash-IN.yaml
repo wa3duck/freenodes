@@ -11,20 +11,8 @@ proxies:
   type: trojan
   password: M7v%w11Se*
   sni: tttyder.wsone.icu
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇳 印度 02
-  server: 194.195.119.26
-  port: 443
-  udp: true
-  type: vless
-  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
-  servername: googleapis.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 03
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -35,18 +23,27 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 04
-  server: 152.67.8.205
-  port: 80
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 03
+  server: 34.131.228.210
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: trojan
+  password: M7v%w11Se*
+  sni: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+- name: 🇮🇳 印度 04
+  server: 139.84.177.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+  servername: googleapis.com
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 05
   server: 148.113.5.44
   port: 443
@@ -60,6 +57,24 @@ proxies:
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 06
+  server: 148.113.5.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 07
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,6 +85,8 @@ proxy-groups:
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
   - 🇮🇳 印度 05
+  - 🇮🇳 印度 06
+  - 🇮🇳 印度 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +97,7 @@ proxy-groups:
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
   - 🇮🇳 印度 05
+  - 🇮🇳 印度 06
+  - 🇮🇳 印度 07
 rules:
 - MATCH,PROXIES

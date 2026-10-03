@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 01
-  server: br.monkora.org
+  server: 147.45.116.19
   port: 443
   udp: true
   type: vless
@@ -29,8 +29,6 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-    headers:
-      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
