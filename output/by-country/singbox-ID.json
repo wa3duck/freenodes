@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇮🇩 印尼 01",
-      "server": "103.172.197.2",
-      "server_port": 29172,
-      "uuid": "3977434d-6a9b-4858-8ced-80326ba5e367",
+      "server": "43.255.156.57",
+      "server_port": 31094,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "aws.amazon.com",
+        "server_name": "www.lamer.com.sg",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ",
-          "short_id": ""
+          "public_key": "BTVKTYNHnuv3850vXEU15GVgfp5S0Dz20jueg-FSgAQ",
+          "short_id": "c761f990d786f2"
         }
       }
     },
@@ -36,7 +36,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -46,33 +46,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇩 印尼 03",
-      "server": "3dTmMsfpAlaqHI7b.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "9b31490d-190e-4ef1-af0a-7ccab3e7c3b5",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "3dTmMsfpAlaqHI7b.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "3dTmMsfpAlaqHI7b.v.3dns.vip"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇩 印尼 01",
-        "🇮🇩 印尼 02",
-        "🇮🇩 印尼 03"
+        "🇮🇩 印尼 02"
       ]
     },
     {
@@ -80,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇩 印尼 01",
-        "🇮🇩 印尼 02",
-        "🇮🇩 印尼 03"
+        "🇮🇩 印尼 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

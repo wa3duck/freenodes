@@ -5,18 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇰 斯里兰卡 01
-  server: cdn.zoom.us
-  port: 80
-  udp: true
-  type: vless
-  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cloud.ghostdev.lk
-- name: 🇱🇰 斯里兰卡 02
-  server: free.sahanwickramasinghe.me
+  server: 51.75.67.209
   port: 80
   udp: true
   type: vless
@@ -24,21 +13,17 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇰 斯里兰卡 01
-  - 🇱🇰 斯里兰卡 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇰 斯里兰卡 01
-  - 🇱🇰 斯里兰卡 02
 rules:
 - MATCH,PROXIES

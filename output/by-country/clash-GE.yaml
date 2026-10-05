@@ -4,29 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇶🇦 卡塔尔 01
-  server: 34.18.212.19
+- name: 🇬🇪 格鲁吉亚 01
+  server: 172.67.159.161
   port: 443
   udp: true
   type: vless
-  uuid: b6f775c2-70fd-4247-8d12-82cac46fdd50
+  uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
   tls: true
-  reality-opts:
-    public-key: tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ
-    short-id: c5426331173ca15c
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: geo.shkola112.site
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api-vless
+    headers:
+      Host: geo.shkola112.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇶🇦 卡塔尔 01
+  - 🇬🇪 格鲁吉亚 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇶🇦 卡塔尔 01
+  - 🇬🇪 格鲁吉亚 01
 rules:
 - MATCH,PROXIES

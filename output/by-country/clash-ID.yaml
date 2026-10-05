@@ -5,17 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 01
-  server: 103.172.197.2
-  port: 29172
+  server: 43.255.156.57
+  port: 31094
   udp: true
   type: vless
-  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
-  servername: aws.amazon.com
-  client-fingerprint: edge
+    public-key: BTVKTYNHnuv3850vXEU15GVgfp5S0Dz20jueg-FSgAQ
+    short-id: c761f990d786f2
+  servername: www.lamer.com.sg
+  client-fingerprint: firefox
 - name: 🇮🇩 印尼 02
   server: 103.172.197.3
   port: 16006
@@ -27,23 +28,7 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇮🇩 印尼 03
-  server: 3dTmMsfpAlaqHI7b.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 3dTmMsfpAlaqHI7b.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 3dTmMsfpAlaqHI7b.v.3dns.vip
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇮🇩 印尼 01
   - 🇮🇩 印尼 02
-  - 🇮🇩 印尼 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇮🇩 印尼 01
   - 🇮🇩 印尼 02
-  - 🇮🇩 印尼 03
 rules:
 - MATCH,PROXIES

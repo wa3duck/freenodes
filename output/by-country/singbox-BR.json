@@ -17,35 +17,22 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aksai.org"
-        }
+        "path": "/linkvws"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇷 巴西 02",
-      "server": "216.128.168.190",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "owVdNnQcdPgthSyX"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 01",
-        "🇧🇷 巴西 02"
+        "🇧🇷 巴西 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 01",
-        "🇧🇷 巴西 02"
+        "🇧🇷 巴西 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

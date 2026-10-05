@@ -6,29 +6,12 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 01",
-      "server": "cdn.zoom.us",
-      "server_port": 80,
-      "uuid": "1eaed465-d720-400b-9f9f-439600a2d093",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "cloud.ghostdev.lk"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 02",
-      "server": "free.sahanwickramasinghe.me",
+      "server": "51.75.67.209",
       "server_port": 80,
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
-        }
+        "path": "/"
       }
     },
     {
@@ -36,16 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 01",
-        "🇱🇰 斯里兰卡 02"
+        "🇱🇰 斯里兰卡 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 01",
-        "🇱🇰 斯里兰卡 02"
+        "🇱🇰 斯里兰卡 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

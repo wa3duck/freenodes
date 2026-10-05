@@ -4,23 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 01",
-      "server": "103.86.49.57",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
-        }
-      }
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 02",
-      "server": "104.16.10.9",
+      "server": "104.19.32.166",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
@@ -37,8 +31,22 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇭 泰国 03",
+      "server": "support.zoom.us.support.zoom.us.v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "support.zoom.us.support.zoom.us.v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 04",
       "server": "silversbgfgov.vip43.wogbcnmnagfwgov.com",
       "server_port": 11243,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -52,7 +60,8 @@
         "auto",
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03"
+        "🇹🇭 泰国 03",
+        "🇹🇭 泰国 04"
       ]
     },
     {
@@ -61,7 +70,8 @@
       "outbounds": [
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03"
+        "🇹🇭 泰国 03",
+        "🇹🇭 泰国 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

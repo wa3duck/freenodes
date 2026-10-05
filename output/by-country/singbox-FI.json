@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 01",
-      "server": "144.31.232.216",
-      "server_port": 443,
-      "password": "06e88dd6-e264-4981-8c26-d7ab17348ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi01.clgate.network",
-        "insecure": true
-      }
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
       "type": "vless",
@@ -26,7 +22,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -38,43 +34,96 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 03",
-      "server": "77.42.28.120",
-      "server_port": 1280,
-      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
-      "transport": {
-        "type": "ws"
+      "server": "177.3.214.52",
+      "server_port": 443,
+      "uuid": "27407f1d-fe61-469b-a5a9-0aef7ee7476d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "uehr.pashalloh.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6bQ-L8tEd3guits_RHgfkXXArmnkB2GxFx23BgWC63c",
+          "short_id": "da4d87fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 04",
+      "server": "151.241.137.132",
+      "server_port": 443,
+      "uuid": "5786d86f-7731-4174-b1a3-84297e54b015",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "finland.ali-bard.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 05",
+      "server": "144.31.27.215",
+      "server_port": 43000,
+      "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "144.31.27.215",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg",
+          "short_id": "568d87a47271344e"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 04",
+      "tag": "🇫🇮 芬兰 06",
       "server": "144.31.212.253",
       "server_port": 443,
       "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
       "tls": {
         "enabled": true,
         "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 05",
-      "server": "2.27.207.30",
+      "tag": "🇫🇮 芬兰 07",
+      "server": "131.123.13.93",
       "server_port": 443,
-      "uuid": "a5dd2dd9-0995-449e-be67-4a409890dc42",
+      "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "jdbdb.huinaduok.fans",
+        "server_name": "1mcfn.67resserv67.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "nG28Y1q-Ul2oBH-FegAkzGtvY6IRCIwras1k8CLwdGo",
-          "short_id": "da4d87fa"
+          "public_key": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA",
+          "short_id": "29455a3a790acbd0"
         }
       }
     },
@@ -87,7 +136,9 @@
         "🇫🇮 芬兰 02",
         "🇫🇮 芬兰 03",
         "🇫🇮 芬兰 04",
-        "🇫🇮 芬兰 05"
+        "🇫🇮 芬兰 05",
+        "🇫🇮 芬兰 06",
+        "🇫🇮 芬兰 07"
       ]
     },
     {
@@ -98,7 +149,9 @@
         "🇫🇮 芬兰 02",
         "🇫🇮 芬兰 03",
         "🇫🇮 芬兰 04",
-        "🇫🇮 芬兰 05"
+        "🇫🇮 芬兰 05",
+        "🇫🇮 芬兰 06",
+        "🇫🇮 芬兰 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

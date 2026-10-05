@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 01
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16256
+  server: 103.30.76.65
+  port: 44988
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
