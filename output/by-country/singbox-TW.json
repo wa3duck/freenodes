@@ -4,28 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 01",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 02",
-      "server": "103.115.109.49",
+      "tag": "🇹🇼 中国台湾 01",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 03",
+      "tag": "🇹🇼 中国台湾 02",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -43,26 +35,16 @@
       }
     },
     {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 04",
-      "server": "114.43.173.253",
-      "server_port": 8080,
-      "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
-      "password": "D7286728-678E-443B-B76B-B699654C66DD",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw6.dexlos.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 03",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 05",
+      "tag": "🇹🇼 中国台湾 04",
       "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
       "server_port": 11223,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
@@ -70,41 +52,15 @@
       "alter_id": 2
     },
     {
-      "type": "tuic",
-      "tag": "🇹🇼 中国台湾 06",
-      "server": "tw3.dexlos.com",
-      "server_port": 8080,
-      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
-      "congestion_control": "bbr",
-      "udp_relay_mode": "native",
-      "tls": {
-        "enabled": true,
-        "server_name": "tw3.dexlos.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 07",
-      "server": "130.211.240.128",
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 05",
+      "server": "103.115.109.49",
       "server_port": 443,
-      "uuid": "31a40f42-4ad6-4a32-a760-71102b459584",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg",
-          "short_id": "d74a6321deec9f31"
-        }
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "insecure": true
       }
     },
     {
@@ -116,9 +72,7 @@
         "🇹🇼 中国台湾 02",
         "🇹🇼 中国台湾 03",
         "🇹🇼 中国台湾 04",
-        "🇹🇼 中国台湾 05",
-        "🇹🇼 中国台湾 06",
-        "🇹🇼 中国台湾 07"
+        "🇹🇼 中国台湾 05"
       ]
     },
     {
@@ -129,9 +83,7 @@
         "🇹🇼 中国台湾 02",
         "🇹🇼 中国台湾 03",
         "🇹🇼 中国台湾 04",
-        "🇹🇼 中国台湾 05",
-        "🇹🇼 中国台湾 06",
-        "🇹🇼 中国台湾 07"
+        "🇹🇼 中国台湾 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

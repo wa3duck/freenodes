@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 01",
+      "server": "132.243.231.4",
+      "server_port": 443,
+      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d3-se1.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM",
+          "short_id": "5efa80b939612291"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 02",
       "server": "132.243.231.12",
       "server_port": 443,
       "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
@@ -26,39 +47,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 02",
-      "server": "132.243.231.4",
+      "tag": "🇸🇪 瑞典 03",
+      "server": "94.242.58.90",
       "server_port": 443,
-      "uuid": "87fd990d-ca93-440a-bbd4-e8281c4a0910",
+      "uuid": "04baafc3-0fea-4a8a-bfa8-22d759ed82ca",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "d3-se1.cloud-cdn.xyz",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM",
-          "short_id": "5efa80b939612291"
+          "public_key": "s-B3oTvLAgogG5hqGZ0tYZjxWSSZQFIA1e7i6DrWngA",
+          "short_id": "2b336c5c"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 03",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
       }
     },
     {
@@ -72,7 +77,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,

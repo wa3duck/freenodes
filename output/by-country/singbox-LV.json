@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 01",
       "server": "185.135.86.175",
-      "server_port": 9036,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 02",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9007,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
@@ -39,9 +39,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 05",
       "server": "185.135.86.175",
-      "server_port": 9007,
+      "server_port": 9036,
       "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "shadowsocks",
@@ -55,9 +55,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 07",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "shadowsocks",
@@ -71,13 +71,55 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 09",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 10",
+      "server": "216.173.71.43",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 11",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 12",
       "server": "195.123.213.28",
       "server_port": 443,
       "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
@@ -97,27 +139,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 11",
-      "server": "138.124.180.137",
-      "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -132,7 +153,8 @@
         "🇱🇻 拉脱维亚 08",
         "🇱🇻 拉脱维亚 09",
         "🇱🇻 拉脱维亚 10",
-        "🇱🇻 拉脱维亚 11"
+        "🇱🇻 拉脱维亚 11",
+        "🇱🇻 拉脱维亚 12"
       ]
     },
     {
@@ -149,7 +171,8 @@
         "🇱🇻 拉脱维亚 08",
         "🇱🇻 拉脱维亚 09",
         "🇱🇻 拉脱维亚 10",
-        "🇱🇻 拉脱维亚 11"
+        "🇱🇻 拉脱维亚 11",
+        "🇱🇻 拉脱维亚 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

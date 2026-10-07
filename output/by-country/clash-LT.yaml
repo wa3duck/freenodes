@@ -6,53 +6,53 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 01
   server: 195.238.126.20
-  port: 9008
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 02
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 03
   server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 04
+- name: 🇱🇹 立陶宛 03
   server: 195.238.126.20
   port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UkXRsXvR6buDMG2Y
-- name: 🇱🇹 立陶宛 05
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 06
+- name: 🇱🇹 立陶宛 04
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 07
+- name: 🇱🇹 立陶宛 05
   server: 195.238.126.20
-  port: 9011
+  port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 06
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 07
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
 - name: 🇱🇹 立陶宛 08
   server: 195.238.126.20
   port: 9078
@@ -61,13 +61,6 @@ proxies:
   cipher: aes-256-cfb
   password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 09
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 10
   server: 62.77.158.1
   port: 443
   udp: true
@@ -94,7 +87,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 07
   - 🇱🇹 立陶宛 08
   - 🇱🇹 立陶宛 09
-  - 🇱🇹 立陶宛 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,6 +101,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 07
   - 🇱🇹 立陶宛 08
   - 🇱🇹 立陶宛 09
-  - 🇱🇹 立陶宛 10
 rules:
 - MATCH,PROXIES

@@ -6,9 +6,10 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 01",
-      "server": "34.87.244.111",
+      "server": "51.161.204.242",
       "server_port": 443,
-      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
+      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -18,42 +19,14 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
-          "short_id": "d725f0dd8cce210f"
+          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
+          "short_id": "d15c17cef9b2e456"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 02",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 03",
-      "server": "vpn-au-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-au-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 04",
+      "tag": "🇦🇺 澳大利亚 02",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -63,7 +36,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -74,8 +47,8 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 05",
-      "server": "137.23.3.238",
+      "tag": "🇦🇺 澳大利亚 03",
+      "server": "159.13.42.167",
       "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -89,37 +62,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 06",
-      "server": "103.30.76.65",
-      "server_port": 39518,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DQDN2w0aoQnx-T3qF1fQnA2-stCUzVbBwmayI1smO0g",
-          "short_id": "4600771a0d0d50"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03",
-        "🇦🇺 澳大利亚 04",
-        "🇦🇺 澳大利亚 05",
-        "🇦🇺 澳大利亚 06"
+        "🇦🇺 澳大利亚 03"
       ]
     },
     {
@@ -128,10 +77,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03",
-        "🇦🇺 澳大利亚 04",
-        "🇦🇺 澳大利亚 05",
-        "🇦🇺 澳大利亚 06"
+        "🇦🇺 澳大利亚 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

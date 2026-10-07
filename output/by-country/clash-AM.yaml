@@ -4,27 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇹 奥地利 01
-  server: 31.77.227.6
-  port: 52006
+- name: 🇦🇲 亚美尼亚 01
+  server: us3.xiaoliyu.cyou
+  port: 18333
   udp: true
-  type: vless
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: bigdick.gamegrow.ru
-  skip-cert-verify: false
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: us3.xiaoliyu.cyou
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇹 奥地利 01
+  - 🇦🇲 亚美尼亚 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇹 奥地利 01
+  - 🇦🇲 亚美尼亚 01
 rules:
 - MATCH,PROXIES

@@ -5,20 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 01",
-      "server": "172.67.159.161",
-      "server_port": 443,
-      "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
+      "tag": "🇧🇾 白俄罗斯 01",
+      "server": "89.125.96.76",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "geo.shkola112.site",
-        "insecure": false
+        "server_name": "wss.zazazuza.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/api-vless",
+        "path": "/vpn-wss/fluxor/59011/",
         "headers": {
-          "Host": "geo.shkola112.site"
+          "Host": "wss.zazazuza.ru"
         }
       }
     },
@@ -27,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 01"
+        "🇧🇾 白俄罗斯 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 01"
+        "🇧🇾 白俄罗斯 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

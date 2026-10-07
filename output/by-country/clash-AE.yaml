@@ -5,6 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 01
+  server: 157.228.155.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇦🇪 阿联酋 02
+  server: 157.228.155.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
+    short-id: 5ea112e8
+  servername: addons.mozilla.org
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 03
+  server: eu86.vaultberry.cloud
+  port: 443
+  udp: true
+  type: vless
+  uuid: e8b7abeb-98d4-44b6-ba91-3adae6086108
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 04
   server: 130.49.161.70
   port: 443
   udp: true
@@ -14,16 +52,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 02
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 03
+- name: 🇦🇪 阿联酋 05
   server: 146.70.102.82
   port: 443
   udp: true
@@ -35,7 +64,46 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 06
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 07
+  server: 31.59.210.26
+  port: 2088
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
+  servername: www.yandex.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 08
+  server: 157.228.128.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +112,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 01
   - 🇦🇪 阿联酋 02
   - 🇦🇪 阿联酋 03
+  - 🇦🇪 阿联酋 04
+  - 🇦🇪 阿联酋 05
+  - 🇦🇪 阿联酋 06
+  - 🇦🇪 阿联酋 07
+  - 🇦🇪 阿联酋 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +125,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 01
   - 🇦🇪 阿联酋 02
   - 🇦🇪 阿联酋 03
+  - 🇦🇪 阿联酋 04
+  - 🇦🇪 阿联酋 05
+  - 🇦🇪 阿联酋 06
+  - 🇦🇪 阿联酋 07
+  - 🇦🇪 阿联酋 08
 rules:
 - MATCH,PROXIES

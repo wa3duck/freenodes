@@ -17,7 +17,7 @@ proxies:
   servername: deepl.com
   client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 02
-  server: cdn.bulkavpn.top
+  server: 185.166.154.111
   port: 443
   udp: true
   type: vless

@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 01
-  server: 119.46.51.45
-  port: 37515
-  udp: true
-  type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
-  cipher: auto
-- name: 🇹🇭 泰国 02
-  server: 104.19.32.166
+  server: 104.18.26.90
   port: 443
   udp: true
   type: vless
@@ -26,8 +18,8 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 03
-  server: support.zoom.us.support.zoom.us.v2ray.simspeedup.com
+- name: 🇹🇭 泰国 02
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -36,7 +28,15 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: support.zoom.us.support.zoom.us.v2ray.simspeedup.com
+      Host: ais.speedtest.net
+- name: 🇹🇭 泰国 03
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
 - name: 🇹🇭 泰国 04
   server: silversbgfgov.vip43.wogbcnmnagfwgov.com
   port: 11243
