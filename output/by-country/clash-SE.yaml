@@ -5,45 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
-  server: 132.243.231.4
-  port: 443
+  server: 31.76.22.195
+  port: 2083
   udp: true
   type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
+  uuid: cc4074d6-f450-4025-833a-a6e0100ceaff
   tls: true
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: firefox
+  servername: crt.molniya.sbs
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-ws
 - name: 🇸🇪 瑞典 02
-  server: 132.243.231.12
-  port: 443
+  server: 70.34.199.238
+  port: 80
   udp: true
   type: vless
-  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zWDvtTWK-cWWwHDMHMXcOpQy4k3EKp7yw-5e0wTZAUM
-    short-id: 5efa80b939612291
-  servername: d3-se1.cloud-cdn.xyz
-  client-fingerprint: ios
+  uuid: 98b76bb7-b2d1-47a8-8767-0d294c33e749
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇸🇪 瑞典 03
-  server: 94.242.58.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 04baafc3-0fea-4a8a-bfa8-22d759ed82ca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: s-B3oTvLAgogG5hqGZ0tYZjxWSSZQFIA1e7i6DrWngA
-    short-id: 2b336c5c
-  servername: www.tradingview.com
-  client-fingerprint: safari
-- name: 🇸🇪 瑞典 04
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -54,10 +37,19 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
+- name: 🇸🇪 瑞典 04
+  server: 70.34.197.239
+  port: 80
+  udp: true
+  type: vless
+  uuid: 98b76bb7-b2d1-47a8-8767-0d294c33e749
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

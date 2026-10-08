@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 01",
-      "server": "51.161.204.242",
-      "server_port": 443,
-      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
-          "short_id": "d15c17cef9b2e456"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 02",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -36,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -47,18 +26,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 03",
-      "server": "159.13.42.167",
-      "server_port": 20000,
-      "password": "b42d90fa667942aebc734d60",
+      "tag": "🇦🇺 澳大利亚 02",
+      "server": "vpn-au-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "rmgyvpn.rest",
+        "server_name": "127.0.0.1",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
       }
     },
     {
@@ -67,8 +42,7 @@
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 01",
-        "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03"
+        "🇦🇺 澳大利亚 02"
       ]
     },
     {
@@ -76,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 01",
-        "🇦🇺 澳大利亚 02",
-        "🇦🇺 澳大利亚 03"
+        "🇦🇺 澳大利亚 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

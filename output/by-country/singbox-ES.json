@@ -16,16 +16,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 02",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 03",
+      "tag": "🇪🇸 西班牙 02",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -34,7 +26,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -45,27 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 04",
-      "server": "193.238.154.5",
-      "server_port": 443,
-      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-es.pleiades.codes",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 05",
+      "tag": "🇪🇸 西班牙 03",
       "server": "138.124.62.158",
       "server_port": 443,
       "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
@@ -85,8 +57,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 04",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 06",
+      "tag": "🇪🇸 西班牙 05",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -96,7 +76,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -106,23 +86,26 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 07",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 08",
-      "server": "xby.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 06",
+      "server": "185.220.249.44",
+      "server_port": 2053,
+      "uuid": "6d1590ed-4c0f-4bbc-931d-2431737615dd",
       "tls": {
         "enabled": true,
-        "server_name": "xby.mangshe.xyz",
-        "insecure": true
+        "server_name": "185.220.249.44",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-cdn1-vless",
+        "headers": {
+          "Host": "es.fastmirror-labs.xyz"
+        }
       }
     },
     {
@@ -135,9 +118,7 @@
         "🇪🇸 西班牙 03",
         "🇪🇸 西班牙 04",
         "🇪🇸 西班牙 05",
-        "🇪🇸 西班牙 06",
-        "🇪🇸 西班牙 07",
-        "🇪🇸 西班牙 08"
+        "🇪🇸 西班牙 06"
       ]
     },
     {
@@ -149,9 +130,7 @@
         "🇪🇸 西班牙 03",
         "🇪🇸 西班牙 04",
         "🇪🇸 西班牙 05",
-        "🇪🇸 西班牙 06",
-        "🇪🇸 西班牙 07",
-        "🇪🇸 西班牙 08"
+        "🇪🇸 西班牙 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

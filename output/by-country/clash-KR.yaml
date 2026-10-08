@@ -5,60 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 01
-  server: 141.164.45.187
-  port: 6697
+  server: 49.254.204.134
+  port: 1774
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  cipher: aes-256-cfb
+  password: 1234!@#$
 - name: 🇰🇷 韩国 02
-  server: 141.164.45.187
-  port: 9101
+  server: 132.226.226.189
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
+  type: hysteria2
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: 132.226.226.189
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 03
-  server: 3.34.131.153
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 04
-  server: 3.35.207.188
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: main-fawn.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 05
-  server: noted-cougar.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 06
-  server: neutral-quail.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: neutral-quail.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 07
   server: optimum-snapper.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 08
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 04
   server: 132.145.80.230
   port: 80
   udp: true
@@ -70,32 +39,39 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 09
-  server: 131.186.19.174
-  port: 50160
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 05
+  server: kr2-r.link-t7.com
+  port: 10047
+  udp: true
+  type: vless
+  uuid: 58c828cd-3eba-46f9-b297-16003d7a6e68
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇰🇷 韩国 06
+  server: 3.34.95.215
+  port: 443
   udp: true
   type: hysteria2
-  password: 7302ad33229de166d393cd56143a1e4c
-  sni: t.me
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 10
-  server: delicate-buck.rooster465.autos
+- name: 🇰🇷 韩国 07
+  server: 3.38.115.120
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: delicate-buck.rooster465.autos
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 11
-  server: 3.39.225.215
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 12
+- name: 🇰🇷 韩国 08
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -103,29 +79,23 @@ proxies:
   password: maintell
   sni: 152.70.237.123
   skip-cert-verify: true
-- name: 🇰🇷 韩国 13
-  server: 141.164.45.187
-  port: 9090
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 14
-  server: vpn-kr-002.fastervpn.world
-  port: 443
+- name: 🇰🇷 韩国 09
+  server: 152.67.200.82
+  port: 50160
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 15
-  server: 141.164.45.187
-  port: 7002
+- name: 🇰🇷 韩国 10
+  server: 152.69.231.175
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇰🇷 韩国 16
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 11
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -138,7 +108,15 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 17
+- name: 🇰🇷 韩国 12
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 13
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -150,7 +128,23 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇰🇷 韩国 18
+- name: 🇰🇷 韩国 14
+  server: vpn-kr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 15
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 16
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -162,75 +156,104 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 19
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 20
-  server: 141.164.45.187
-  port: 8119
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇰🇷 韩国 21
-  server: 13.125.69.162
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 22
-  server: 141.164.45.187
-  port: 8888
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 23
-  server: amazing-peacock.rooster465.autos
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 17
+  server: 3.35.217.113
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: amazing-peacock.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 24
-  server: 140.238.2.250
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 18
+  server: 3.34.131.153
   port: 443
   udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 25
-  server: 152.67.200.82
-  port: 50160
+  type: trojan
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 19
+  server: 3.35.207.188
+  port: 443
   udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: whatsapp.com
+  type: trojan
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 20
+  server: 3.35.168.225
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: noted-cougar.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 26
+- name: 🇰🇷 韩国 21
+  server: 3.39.225.215
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 22
   server: 141.164.45.187
-  port: 8008
+  port: 7002
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇰🇷 韩国 27
+  password: RexnBgU7EV5ADxG
+- name: 🇰🇷 韩国 23
   server: 141.164.45.187
   port: 8091
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: PCnnH6SQSnfoS27
+- name: 🇰🇷 韩国 24
+  server: 141.164.45.187
+  port: 8888
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 25
+  server: kind-stork.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 26
+  server: 52.78.203.191
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 27
+  server: 141.164.45.187
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇰🇷 韩国 28
+  server: 47.80.19.173
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -263,6 +286,7 @@ proxy-groups:
   - 🇰🇷 韩国 25
   - 🇰🇷 韩国 26
   - 🇰🇷 韩国 27
+  - 🇰🇷 韩国 28
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -295,5 +319,6 @@ proxy-groups:
   - 🇰🇷 韩国 25
   - 🇰🇷 韩国 26
   - 🇰🇷 韩国 27
+  - 🇰🇷 韩国 28
 rules:
 - MATCH,PROXIES

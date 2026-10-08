@@ -6,26 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 01",
-      "server": "104.18.26.90",
-      "server_port": 443,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 02",
-      "server": "v2ray.simspeedup.com",
+      "server": "103.86.49.57",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
@@ -37,8 +18,51 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 02",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
       "type": "vmess",
       "tag": "🇹🇭 泰国 03",
+      "server": "silversbgfgov.vip43.wogbcnmnagfwgov.com",
+      "server_port": 11243,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇭 泰国 04",
+      "server": "pphfree2.mvpnpvpn.de5.net",
+      "server_port": 52351,
+      "method": "aes-256-gcm",
+      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 05",
       "server": "119.46.51.45",
       "server_port": 37515,
       "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
@@ -46,12 +70,11 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇭 泰国 04",
-      "server": "silversbgfgov.vip43.wogbcnmnagfwgov.com",
-      "server_port": 11243,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
+      "tag": "🇹🇭 泰国 06",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -61,7 +84,9 @@
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
         "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04"
+        "🇹🇭 泰国 04",
+        "🇹🇭 泰国 05",
+        "🇹🇭 泰国 06"
       ]
     },
     {
@@ -71,7 +96,9 @@
         "🇹🇭 泰国 01",
         "🇹🇭 泰国 02",
         "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04"
+        "🇹🇭 泰国 04",
+        "🇹🇭 泰国 05",
+        "🇹🇭 泰国 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

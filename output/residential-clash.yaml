@@ -11,13 +11,36 @@ proxies:
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇼 中国台湾 02
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
+  server: 61.230.162.88
+  port: 24215
   udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 03
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇭🇰 中国香港 04
+  server: 42.200.173.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: s3.ap-east-1.amazonaws.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +48,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 01
   - 🇹🇼 中国台湾 02
+  - 🇰🇷 韩国 03
+  - 🇭🇰 中国香港 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -32,5 +57,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 01
   - 🇹🇼 中国台湾 02
+  - 🇰🇷 韩国 03
+  - 🇭🇰 中国香港 04
 rules:
 - MATCH,PROXIES
