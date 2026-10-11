@@ -5,64 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 01
-  server: 43.161.230.103
-  port: 8443
+  server: 46.29.166.27
+  port: 20221
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 02
-  server: 45.207.157.24
-  port: 9443
-  udp: true
-  type: vless
-  uuid: cbe82d99-2927-49d2-8ea9-d0d0162a60ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 03
-  server: 202.146.222.174
+  server: 82.29.36.250
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 04
-  server: 38.180.188.178
-  port: 9443
-  udp: true
   type: vless
-  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: 09353d6dc5b789
+  servername: aws.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 05
+- name: 🇭🇰 中国香港 03
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 06
+- name: 🇭🇰 中国香港 04
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2�
+  sni: 202.146.222.29
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 07
+- name: 🇭🇰 中国香港 05
   server: jumpernode.site
   port: 443
   udp: true
@@ -75,34 +53,139 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 08
-  server: 185.244.208.69
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 09
-  server: 45.207.156.198
+- name: 🇭🇰 中国香港 06
+  server: 45.207.157.24
   port: 9443
   udp: true
   type: vless
-  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
     short-id: b390142456517acc
   servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 10
-  server: hk2.xiaoliyu.cyou
-  port: 4433
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 07
+  server: 202.146.222.174
+  port: 443
   udp: true
   type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 08
+  server: full-ox.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: full-ox.rooster465.autos
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 09
+  server: fsjp19.46852.top
+  port: 13443
+  udp: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dTq-YWrVvHlS96DKmXR0CBChFtBFn1_Ax9mJ_5uavyU
+    short-id: 25e9
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 10
+  server: fsjp19.46852.top
+  port: 13442
+  udp: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hjEWVcnJ5XxC2weWCPKWUQec4x_uhs-tQngGP72_EkQ
+    short-id: cce0d78eb4
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 11
+  server: fsjp19.46852.top
+  port: 13441
+  udp: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _jKwZDkzrS7AyUfYc4iyaiRdyU0m0XnsU8wRaqmoiWQ
+    short-id: 8f153b
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 12
+  server: fsjp19.46852.top
+  port: 13444
+  udp: true
+  type: vless
+  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: syblyh3jQvCZZroMAY32G0-N_PV2jJueLExT9fmMaQM
+    short-id: 91fe992dc6a4f6
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 13
+  server: 154.37.216.186
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 14
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: jmp1.907737.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
+    headers:
+      Host: jmp1.907737.xyz
+- name: 🇭🇰 中国香港 15
+  server: hk2.998998.best
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server15.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /asivewritten
+    headers:
+      Host: server15.9966338.xyz
+- name: 🇭🇰 中国香港 16
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -119,6 +202,12 @@ proxy-groups:
   - 🇭🇰 中国香港 08
   - 🇭🇰 中国香港 09
   - 🇭🇰 中国香港 10
+  - 🇭🇰 中国香港 11
+  - 🇭🇰 中国香港 12
+  - 🇭🇰 中国香港 13
+  - 🇭🇰 中国香港 14
+  - 🇭🇰 中国香港 15
+  - 🇭🇰 中国香港 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -134,5 +223,11 @@ proxy-groups:
   - 🇭🇰 中国香港 08
   - 🇭🇰 中国香港 09
   - 🇭🇰 中国香港 10
+  - 🇭🇰 中国香港 11
+  - 🇭🇰 中国香港 12
+  - 🇭🇰 中国香港 13
+  - 🇭🇰 中国香港 14
+  - 🇭🇰 中国香港 15
+  - 🇭🇰 中国香港 16
 rules:
 - MATCH,PROXIES

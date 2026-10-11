@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 01
-  server: hikvision-plus.com
-  port: 2052
+- name: 🇱🇰 斯里兰卡 01
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  uuid: 2d7a04af-3ac8-40e7-aff0-9f58b2be6405
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 01
+  - 🇱🇰 斯里兰卡 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 01
+  - 🇱🇰 斯里兰卡 01
 rules:
 - MATCH,PROXIES

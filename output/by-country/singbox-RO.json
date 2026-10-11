@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 01",
-      "server": "77.74.123.107",
+      "server": "77.74.123.98",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -16,8 +16,50 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 02",
+      "server": "77.74.123.110",
+      "server_port": 995,
+      "uuid": "d5eb7d7c-244c-46bd-87c9-ea1abfad915c",
+      "tls": {
+        "enabled": true,
+        "server_name": "italy-pay-october.yyuyy.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/api/v1",
+        "host": "italy-pay-october.yyuyy.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 03",
+      "server": "95.133.247.98",
+      "server_port": 995,
+      "uuid": "df275727-c25a-450b-99c3-29e4e6b0b6b9",
+      "tls": {
+        "enabled": true,
+        "server_name": "love-paris.roxa.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/api/v1",
+        "host": "love-paris.roxa.org"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 04",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -33,7 +75,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 03",
+      "tag": "🇷🇴 罗马尼亚 05",
+      "server": "103.126.51.58",
+      "server_port": 995,
+      "uuid": "1fc575d3-81bb-44d5-9efa-4131c7cc677a",
+      "tls": {
+        "enabled": true,
+        "server_name": "ocober-romania-new.yyuyy.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/api/v1",
+        "host": "ocober-romania-new.yyuyy.com"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 06",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -43,7 +106,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -53,8 +116,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 07",
+      "server": "194.68.44.42",
+      "server_port": 64546,
+      "method": "chacha20-ietf-poly1305",
+      "password": "U83u9OGpvSatIUW7LsWffr"
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 04",
+      "tag": "🇷🇴 罗马尼亚 08",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -74,32 +145,37 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 09",
+      "server": "82.152.132.120",
+      "server_port": 443,
+      "uuid": "3e0c1fbf-467a-49d7-abd2-3a158628f3d0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ro1.gigobingo.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ",
+          "short_id": "ef7c4e4302bd52d7"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 05",
+      "tag": "🇷🇴 罗马尼亚 10",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 06",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 07",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
@@ -112,7 +188,10 @@
         "🇷🇴 罗马尼亚 04",
         "🇷🇴 罗马尼亚 05",
         "🇷🇴 罗马尼亚 06",
-        "🇷🇴 罗马尼亚 07"
+        "🇷🇴 罗马尼亚 07",
+        "🇷🇴 罗马尼亚 08",
+        "🇷🇴 罗马尼亚 09",
+        "🇷🇴 罗马尼亚 10"
       ]
     },
     {
@@ -125,7 +204,10 @@
         "🇷🇴 罗马尼亚 04",
         "🇷🇴 罗马尼亚 05",
         "🇷🇴 罗马尼亚 06",
-        "🇷🇴 罗马尼亚 07"
+        "🇷🇴 罗马尼亚 07",
+        "🇷🇴 罗马尼亚 08",
+        "🇷🇴 罗马尼亚 09",
+        "🇷🇴 罗马尼亚 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
