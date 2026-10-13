@@ -8,7 +8,7 @@
       "tag": "🇱🇰 斯里兰卡 01",
       "server": "support.zoom.us",
       "server_port": 80,
-      "uuid": "2d7a04af-3ac8-40e7-aff0-9f58b2be6405",
+      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
       "transport": {
         "type": "ws",
         "path": "/",

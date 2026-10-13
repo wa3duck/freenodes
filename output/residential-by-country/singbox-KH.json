@@ -1,0 +1,39 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇭 柬埔寨 01",
+      "server": "ruot.ayucloudservices.nl",
+      "server_port": 35019,
+      "method": "aes-128-gcm",
+      "password": "9c51ca33-a332-4de5-8677-5624e940097c"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇰🇭 柬埔寨 01"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇰🇭 柬埔寨 01"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

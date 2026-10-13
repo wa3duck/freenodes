@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 01",
+      "server": "144.172.65.72",
+      "server_port": 8443,
+      "uuid": "8afeb33c-b686-43e9-a629-0d98f991ec28",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 02",
       "server": "vpn-au-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -20,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 01"
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 01"
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

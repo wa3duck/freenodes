@@ -5,24 +5,68 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 01
-  server: spainspeedboostjbl88.qcloud.surf
-  port: 27313
+  server: 77.91.68.70
+  port: 55983
   udp: true
-  type: hysteria2
-  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-  sni: spainspeedboostjbl88.qcloud.surf
-  skip-cert-verify: true
+  type: vless
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  tls: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+    short-id: 0e
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇦🇲 亚美尼亚 02
+  server: 77.91.68.70
+  port: 55983
+  udp: true
+  type: vless
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  tls: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+    short-id: 0e
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇦🇲 亚美尼亚 03
+  server: 77.91.68.70
+  port: 55983
+  udp: true
+  type: vless
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇦🇲 亚美尼亚 04
+  server: 77.91.68.70
+  port: 55983
+  udp: true
+  type: vless
+  uuid: f667a096-5231-4cfb-8759-92bb32473139
+  tls: true
+  reality-opts:
+    public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg
+    short-id: 0e
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇲 亚美尼亚 01
+  - 🇦🇲 亚美尼亚 02
+  - 🇦🇲 亚美尼亚 03
+  - 🇦🇲 亚美尼亚 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇲 亚美尼亚 01
+  - 🇦🇲 亚美尼亚 02
+  - 🇦🇲 亚美尼亚 03
+  - 🇦🇲 亚美尼亚 04
 rules:
 - MATCH,PROXIES

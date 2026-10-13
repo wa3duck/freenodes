@@ -5,24 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 01
-  server: 95.85.238.173
+  server: 195.123.245.241
   port: 443
   udp: true
-  type: hysteria2
-  password: c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl
-  sni: cz.h2.cleanersaz.help
-  skip-cert-verify: true
+  type: vless
+  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
+    short-id: 23d0950d60bc0d5b
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 02
+  server: czekkk.loknietotop.digital
+  port: 443
+  udp: true
+  type: vless
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM
+    short-id: f19e02a2fb573c18
+  servername: czekkk.loknietotop.digital
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 01
+  - 🇨🇿 捷克 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 01
+  - 🇨🇿 捷克 02
 rules:
 - MATCH,PROXIES

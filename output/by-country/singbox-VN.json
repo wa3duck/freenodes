@@ -5,22 +5,29 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇨 塞舌尔 01",
-      "server": "hk3n.wxgqlfx.vip",
-      "server_port": 35193,
-      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
+      "tag": "🇻🇳 越南 01",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 02",
+      "server": "154.21.203.106",
+      "server_port": 51279,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
-          "short_id": "e8daed2d"
+          "public_key": "f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A",
+          "short_id": "bb82c8"
         }
       }
     },
@@ -29,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 01"
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 01"
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

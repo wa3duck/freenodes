@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 01
+  server: 144.172.65.72
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
+  servername: www.tradingview.com
+  client-fingerprint: random
+- name: 🇦🇺 澳大利亚 02
   server: vpn-au-001.fastervpn.world
   port: 443
   udp: true
@@ -18,11 +30,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 01
+  - 🇦🇺 澳大利亚 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 01
+  - 🇦🇺 澳大利亚 02
 rules:
 - MATCH,PROXIES

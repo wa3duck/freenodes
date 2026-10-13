@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 01",
-      "server": "185.164.175.81",
-      "server_port": 19999,
+      "server": "57.131.48.45",
+      "server_port": 8388,
       "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "password": "itzvpn@321"
     },
     {
       "type": "vless",
@@ -21,62 +21,43 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 03",
-      "server": "57.131.48.45",
-      "server_port": 8388,
+      "server": "185.164.175.81",
+      "server_port": 19999,
       "method": "aes-256-gcm",
-      "password": "itzvpn@321"
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 04",
-      "server": "91.201.65.122",
-      "server_port": 9059,
-      "method": "aes-256-cfb",
-      "password": "9XwYyZsK8SNzQDtY"
+      "server": "31.59.180.155",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "italynew.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0bRaAOYHd4ccDCmnlIq9I13WLRuT4LzlXfV_GGHKE0",
+          "short_id": "5aab0b0401044801"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 05",
       "server": "91.201.65.122",
-      "server_port": 9002,
+      "server_port": 9092,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 06",
-      "server": "91.201.65.122",
-      "server_port": 9074,
-      "method": "aes-256-cfb",
-      "password": "p5wSkb2uM3pKSS3j"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 07",
-      "server": "91.201.65.122",
-      "server_port": 9053,
-      "method": "aes-256-cfb",
-      "password": "SBM7R883jBmnqe6C"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 08",
-      "server": "91.201.65.122",
-      "server_port": 9050,
-      "method": "aes-256-cfb",
-      "password": "FG5ddLsMPbV5CutE"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 09",
-      "server": "91.201.65.122",
-      "server_port": 9070,
-      "method": "aes-256-cfb",
-      "password": "bf7v334KKDV3YDhH"
+      "password": "TyNkGmp9hs6eGpDK"
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 10",
+      "tag": "🇮🇹 意大利 06",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -96,15 +77,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 11",
+      "tag": "🇮🇹 意大利 07",
       "server": "91.201.65.122",
-      "server_port": 9039,
+      "server_port": 9070,
       "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "bf7v334KKDV3YDhH"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 12",
+      "tag": "🇮🇹 意大利 08",
       "server": "91.201.65.122",
       "server_port": 9097,
       "method": "aes-256-cfb",
@@ -112,7 +93,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 13",
+      "tag": "🇮🇹 意大利 09",
       "server": "82.118.16.189",
       "server_port": 443,
       "uuid": "d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e",
@@ -122,7 +103,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -133,23 +114,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 14",
+      "tag": "🇮🇹 意大利 10",
       "server": "91.201.65.122",
-      "server_port": 9065,
+      "server_port": 9059,
       "method": "aes-256-cfb",
-      "password": "PeHSHm5SqEjBuEXE"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 15",
-      "server": "91.201.65.122",
-      "server_port": 9092,
-      "method": "aes-256-cfb",
-      "password": "TyNkGmp9hs6eGpDK"
+      "password": "9XwYyZsK8SNzQDtY"
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 16",
+      "tag": "🇮🇹 意大利 11",
       "server": "82.118.16.187",
       "server_port": 443,
       "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
@@ -159,7 +132,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -167,6 +140,46 @@
           "short_id": "cd6065902eea7a02"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 12",
+      "server": "91.201.65.122",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 13",
+      "server": "91.201.65.122",
+      "server_port": 9074,
+      "method": "aes-256-cfb",
+      "password": "p5wSkb2uM3pKSS3j"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 14",
+      "server": "91.201.65.122",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 15",
+      "server": "91.201.65.122",
+      "server_port": 9053,
+      "method": "aes-256-cfb",
+      "password": "SBM7R883jBmnqe6C"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 16",
+      "server": "91.201.65.122",
+      "server_port": 9050,
+      "method": "aes-256-cfb",
+      "password": "FG5ddLsMPbV5CutE"
     },
     {
       "type": "vless",
@@ -180,7 +193,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

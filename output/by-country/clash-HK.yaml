@@ -5,136 +5,88 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 01
-  server: 46.29.166.27
-  port: 20221
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 02
-  server: 82.29.36.250
-  port: 443
+  server: 103.193.173.51
+  port: 39485
   udp: true
   type: vless
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  uuid: 25b3faeb-89b0-4dff-b0a3-0e70997dc962
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  servername: aws.amazon.com
+    public-key: pzmFiyOtVaKJpJlXYC_hJcDw0hiPvPZ661uZn4NO0Xs
+    short-id: b9
+  servername: www.icloud.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 03
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 04
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 05
-  server: jumpernode.site
+  server: 34.92.19.135
   port: 443
   udp: true
   type: vless
-  uuid: 23af32ca-bea1-4a5e-bebb-04d1b1b633bc
-  flow: xtls-rprx-vision
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
   tls: true
   reality-opts:
-    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
-    short-id: 6d962e8d8a0dce
-  servername: p-nt-www-amazon-com-kalias.amazon.com
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 06
-  server: 45.207.157.24
-  port: 9443
-  udp: true
-  type: vless
-  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 07
+- name: 🇭🇰 中国香港 04
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 08
-  server: full-ox.rooster465.autos
+- name: 🇭🇰 中国香港 05
+  server: 202.146.222.29
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: full-ox.rooster465.autos
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2����
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 06
+  server: 207.56.137.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 07
+  server: 202.144.192.76
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 08
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 09
-  server: fsjp19.46852.top
-  port: 13443
-  udp: true
-  type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dTq-YWrVvHlS96DKmXR0CBChFtBFn1_Ax9mJ_5uavyU
-    short-id: 25e9
-  servername: cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 10
-  server: fsjp19.46852.top
-  port: 13442
-  udp: true
-  type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: hjEWVcnJ5XxC2weWCPKWUQec4x_uhs-tQngGP72_EkQ
-    short-id: cce0d78eb4
-  servername: cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 11
-  server: fsjp19.46852.top
-  port: 13441
-  udp: true
-  type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _jKwZDkzrS7AyUfYc4iyaiRdyU0m0XnsU8wRaqmoiWQ
-    short-id: 8f153b
-  servername: cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 12
-  server: fsjp19.46852.top
-  port: 13444
-  udp: true
-  type: vless
-  uuid: 1b0ef044-585e-4b57-ab38-8b97e4eef8fa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: syblyh3jQvCZZroMAY32G0-N_PV2jJueLExT9fmMaQM
-    short-id: 91fe992dc6a4f6
-  servername: cloudflare.com
-  client-fingerprint: ios
-- name: 🇭🇰 中国香港 13
   server: 154.37.216.186
   port: 443
   udp: true
@@ -147,7 +99,7 @@ proxies:
     short-id: f39ad9d9eb26df47
   servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 14
+- name: 🇭🇰 中国香港 10
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -163,7 +115,7 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 15
+- name: 🇭🇰 中国香港 11
   server: hk2.998998.best
   port: 443
   udp: true
@@ -179,14 +131,29 @@ proxies:
     path: /asivewritten
     headers:
       Host: server15.9966338.xyz
-- name: 🇭🇰 中国香港 16
-  server: mz.hkychina.com
-  port: 8443
+- name: 🇭🇰 中国香港 12
+  server: 3696b38bsg.murphyweb.sbs
+  port: 32134
+  udp: true
+  type: vless
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  servername: buylite.music.apple.com
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 13
+  server: nas.aizhzo.com
+  port: 5010
   udp: true
   type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -205,9 +172,6 @@ proxy-groups:
   - 🇭🇰 中国香港 11
   - 🇭🇰 中国香港 12
   - 🇭🇰 中国香港 13
-  - 🇭🇰 中国香港 14
-  - 🇭🇰 中国香港 15
-  - 🇭🇰 中国香港 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -226,8 +190,5 @@ proxy-groups:
   - 🇭🇰 中国香港 11
   - 🇭🇰 中国香港 12
   - 🇭🇰 中国香港 13
-  - 🇭🇰 中国香港 14
-  - 🇭🇰 中国香港 15
-  - 🇭🇰 中国香港 16
 rules:
 - MATCH,PROXIES

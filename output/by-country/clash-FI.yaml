@@ -5,20 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 185.103.110.68
-  port: 18283
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 02
   server: 185.103.110.66
   port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 02
+  server: 185.103.110.68
+  port: 18283
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 03
+  server: 87.58.149.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 04
+  server: 152.233.71.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  servername: brointelengence.com
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 05
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -30,42 +56,54 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 04
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 05
-  server: feow.nomush.ir
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: K63q-WhHdJoC_AIxT6E4r_IIuGIb6CuV
 - name: 🇫🇮 芬兰 06
-  server: 144.31.27.215
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 07
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 07
+  server: 109.172.54.135
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
 - name: 🇫🇮 芬兰 08
-  server: 87.228.92.114
+  server: finaluty.loknietotop.digital
+  port: 443
+  udp: true
+  type: vless
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: III2StgFziJtisbaKDYlEF2qYwBHJZnzZH5DHdwuFQ8
+    short-id: d110331f200987ae
+  servername: finaluty.loknietotop.digital
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 09
+  server: 45.147.28.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 10
+  server: fi-p1.h1cloud.net
   port: 25481
   udp: true
   type: vless
@@ -75,51 +113,63 @@ proxies:
     public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
     short-id: 3b84fc70657725af
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 09
-  server: 195.226.92.129
-  port: 8446
+- name: 🇫🇮 芬兰 11
+  server: 45.133.151.173
+  port: 25550
   udp: true
   type: vless
-  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
+  uuid: 83383473-0d62-4089-ac4d-d7ecb413504a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
-    short-id: 7bac4b112d30d1
-  servername: amd.com
-  client-fingerprint: edge
-- name: 🇫🇮 芬兰 10
-  server: 83.220.175.235
-  port: 2096
+    public-key: 2NETEB242BYUAfGq2zfFjqI2XtnKGGA4O4RUdvCuSHM
+    short-id: 6f5c241c3a917c66
+  servername: cdn.jsdelivr.net
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 12
+  server: 87.228.92.122
+  port: 25007
   udp: true
   type: vless
-  uuid: f13b36ac-3765-4458-8a4d-08575038c463
+  uuid: 83383473-0d62-4089-ac4d-d7ecb413504a
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-- name: 🇫🇮 芬兰 11
-  server: 144.31.156.82
+    public-key: Xbn-qvyXocqL2KPA9ItDJ6PfKN-ubXgKnnP4YnKZDQE
+    short-id: 47572f6cd14ed898
+  servername: est-1.ardesnode.ru
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 13
+  server: 217.60.72.238
   port: 443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: 0de1d303-d7de-506f-8679-c4cb67e2e2cc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 12
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 14
+  server: 87.242.95.150
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 7ac594a4-fabc-486c-9a91-5662c09e63cd
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pobC1laHCtpMK1EA520CyOpYeel0t90hEV_eRJExFAE
+    short-id: 20272c52657d22da
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 15
   server: 45.133.151.188
   port: 443
   udp: true
@@ -130,18 +180,10 @@ proxies:
     public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
     short-id: b3c9d0c6bdd114a6
   servername: 36a466g.fi1.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 0adb9638509b
-- name: 🇫🇮 芬兰 13
-  server: finkawwwbroy5.qcloud.surf
-  port: 20326
-  udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: finkawwwbroy5.qcloud.surf
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -160,6 +202,8 @@ proxy-groups:
   - 🇫🇮 芬兰 11
   - 🇫🇮 芬兰 12
   - 🇫🇮 芬兰 13
+  - 🇫🇮 芬兰 14
+  - 🇫🇮 芬兰 15
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,5 +222,7 @@ proxy-groups:
   - 🇫🇮 芬兰 11
   - 🇫🇮 芬兰 12
   - 🇫🇮 芬兰 13
+  - 🇫🇮 芬兰 14
+  - 🇫🇮 芬兰 15
 rules:
 - MATCH,PROXIES

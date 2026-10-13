@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -26,21 +26,21 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 02",
-      "server": "139.84.220.85",
+      "server": "148.113.5.44",
       "server_port": 443,
-      "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "googleapis.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ",
-          "short_id": ""
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
         }
       }
     },
@@ -53,24 +53,15 @@
       "password": "RexnBgU7EV5ADxG"
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇳 印度 04",
-      "server": "148.113.5.44",
+      "server": "in.tronsg.com",
       "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
+        "server_name": "in.tronsg.com",
+        "insecure": true
       }
     },
     {

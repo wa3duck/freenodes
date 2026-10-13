@@ -5,38 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
-  server: 13.143.174.151
-  port: 21223
+  server: 70.34.212.124
+  port: 8388
   udp: true
-  type: hysteria2
-  password: 8bd04756-3beb-4348-82c9-d35453df50ce
-  sni: sweedenqfds777.qcloud.surf
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 02
-  server: 191.44.114.51
-  port: 443
+  server: se3.h1cloud.net
+  port: 25119
   udp: true
   type: vless
-  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: oT9R1OPLe1DlvnRK9sXmUH7_bXQ8LcbqEZRCCw4gXgA
-    short-id: af01c62234f5a7b5
-  servername: google.com
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 03
-  server: 2.26.55.163
-  port: 443
-  udp: true
-  type: vless
-  uuid: 621bcb9e-7df5-427b-a9d4-6e87223c8bca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw
-  servername: specific3.kandnet.com
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇸🇪 瑞典 03
+  server: swerka.loknietotop.digital
+  port: 443
+  udp: true
+  type: vless
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: swerka.loknietotop.digital
+  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 04
   server: 62.60.159.81
   port: 2053
@@ -48,23 +48,85 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 05
-  server: 136.148.223.212
-  port: 25119
+  server: swe.wizard.select
+  port: 443
   udp: true
   type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: edge
+- name: 🇸🇪 瑞典 06
+  server: 94.143.231.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  tls: true
+  servername: sub.merky.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
+- name: 🇸🇪 瑞典 07
+  server: se1.h1cloud.net
+  port: 26128
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: sACiHit5lNtPRK_eFP6jT8dMPUZ4kQRsfPj_LL5p7Uk
+    short-id: 13ac4d3bdadf1ea1
+  servername: www.icloud.com
   client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: df50147201bf
+- name: 🇸🇪 瑞典 08
+  server: 46.246.125.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I
+    short-id: a83b77e064761e3c
+  servername: res.cdn.office.net
+  client-fingerprint: ''
+- name: 🇸🇪 瑞典 09
+  server: sweedenqfds777.qcloud.surf
+  port: 21223
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 10
+  server: se1.h1cloud.net
+  port: 26100
+  udp: true
+  type: vless
+  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  tls: true
+  reality-opts:
+    public-key: 1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI
+    short-id: 8045087bda646f1b
+  servername: www.icloud.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,6 +137,11 @@ proxy-groups:
   - 🇸🇪 瑞典 03
   - 🇸🇪 瑞典 04
   - 🇸🇪 瑞典 05
+  - 🇸🇪 瑞典 06
+  - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
+  - 🇸🇪 瑞典 09
+  - 🇸🇪 瑞典 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +152,10 @@ proxy-groups:
   - 🇸🇪 瑞典 03
   - 🇸🇪 瑞典 04
   - 🇸🇪 瑞典 05
+  - 🇸🇪 瑞典 06
+  - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
+  - 🇸🇪 瑞典 09
+  - 🇸🇪 瑞典 10
 rules:
 - MATCH,PROXIES

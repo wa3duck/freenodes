@@ -15,95 +15,99 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 02
+  server: 213.165.56.102
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
+  client-fingerprint: random
+- name: 🇷🇺 俄罗斯 03
   server: 194.38.11.86
   port: 65443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 03
+- name: 🇷🇺 俄罗斯 04
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: match-stream.lovkisport.blog
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 05
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-- name: 🇷🇺 俄罗斯 04
-  server: 139.28.168.126
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
-  sni: hopp-honkong-new.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 05
-  server: m-vruvc.mvpstr.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7c86240f-ac0c-4cfe-87c8-fa0dd69b2d25
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ZtAlhN1pU4MTmv4KaX9J_5_8KWnwy9IOnc-BLzIf234
-    short-id: f709479ae7bf583f
-  servername: m-vruvc.mvpstr.com
-  client-fingerprint: edge
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
 - name: 🇷🇺 俄罗斯 06
-  server: 194.55.239.101
-  port: 8443
+  server: 217.60.72.238
+  port: 443
   udp: true
   type: vless
-  uuid: accfae78-b31c-47cb-86a1-bb9a07973e4a
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: vxA0Fdcn39Z6w1JrR958Ii0W9uLk2Knxg5XDagcPtxQ
-    short-id: e016190556fb1c9b
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 07
-  server: edge.cloudtechone.org
-  port: 443
+  server: 5.42.99.64
+  port: 8443
   udp: true
   type: vless
-  uuid: 5036de9b-1a18-40e2-97f6-9cbb4a4753e4
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
-    short-id: f93c9d5127e622e4
-  servername: edge.cloudtechone.org
-  client-fingerprint: firefox
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 08
-  server: 94.198.54.132
-  port: 443
+  server: 5.42.99.64
+  port: 8443
   udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 09
-  server: 93.188.184.150
+  server: 159.194.240.128
   port: 443
   udp: true
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ru-1-2.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ru-api
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 10
-  server: 5.42.99.64
+  server: du-rov.secureservice.top
   port: 8443
   udp: true
   type: vless
@@ -114,33 +118,19 @@ proxies:
     public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 11
-  server: 5.42.99.64
-  port: 8443
+  server: 45.12.75.242
+  port: 26424
   udp: true
   type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 12
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -157,7 +147,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 09
   - 🇷🇺 俄罗斯 10
   - 🇷🇺 俄罗斯 11
-  - 🇷🇺 俄罗斯 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -174,6 +163,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 09
   - 🇷🇺 俄罗斯 10
   - 🇷🇺 俄罗斯 11
-  - 🇷🇺 俄罗斯 12
 rules:
 - MATCH,PROXIES

@@ -4,15 +4,79 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇲 亚美尼亚 01",
-      "server": "spainspeedboostjbl88.qcloud.surf",
-      "server_port": 27313,
-      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
+      "server": "77.91.68.70",
+      "server_port": 55983,
+      "uuid": "f667a096-5231-4cfb-8759-92bb32473139",
       "tls": {
         "enabled": true,
-        "server_name": "spainspeedboostjbl88.qcloud.surf",
-        "insecure": true
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg",
+          "short_id": "0e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 02",
+      "server": "77.91.68.70",
+      "server_port": 55983,
+      "uuid": "f667a096-5231-4cfb-8759-92bb32473139",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg",
+          "short_id": "0e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 03",
+      "server": "77.91.68.70",
+      "server_port": 55983,
+      "uuid": "f667a096-5231-4cfb-8759-92bb32473139",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 04",
+      "server": "77.91.68.70",
+      "server_port": 55983,
+      "uuid": "f667a096-5231-4cfb-8759-92bb32473139",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg",
+          "short_id": "0e"
+        }
       }
     },
     {
@@ -20,14 +84,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 01"
+        "🇦🇲 亚美尼亚 01",
+        "🇦🇲 亚美尼亚 02",
+        "🇦🇲 亚美尼亚 03",
+        "🇦🇲 亚美尼亚 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 01"
+        "🇦🇲 亚美尼亚 01",
+        "🇦🇲 亚美尼亚 02",
+        "🇦🇲 亚美尼亚 03",
+        "🇦🇲 亚美尼亚 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
