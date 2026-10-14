@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 02
-  server: 103.86.49.57
+  server: support.zoom.us.v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -21,9 +21,29 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
 - name: 🇹🇭 泰国 03
+  server: 104.16.10.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 04
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 05
   server: 154.21.203.106
   port: 21033
   udp: true
@@ -36,27 +56,19 @@ proxies:
     short-id: cbd39bea0805e2
   servername: www.kaidee.com
   client-fingerprint: firefox
-- name: 🇹🇭 泰国 04
-  server: 104.16.111.193
-  port: 443
+- name: 🇹🇭 泰国 06
+  server: funagfrdfs.alixxplay.com
+  port: 56415
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
   tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 05
-  server: 103.107.52.106
-  port: 52351
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,6 +79,7 @@ proxy-groups:
   - 🇹🇭 泰国 03
   - 🇹🇭 泰国 04
   - 🇹🇭 泰国 05
+  - 🇹🇭 泰国 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +90,6 @@ proxy-groups:
   - 🇹🇭 泰国 03
   - 🇹🇭 泰国 04
   - 🇹🇭 泰国 05
+  - 🇹🇭 泰国 06
 rules:
 - MATCH,PROXIES

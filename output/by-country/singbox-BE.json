@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 01",
-      "server": "83.147.18.75",
+      "tag": "🇧🇪 比利时 01",
+      "server": "172.67.134.136",
       "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
-      "flow": "xtls-rprx-vision",
+      "uuid": "fa45096d-bed0-ad80-c773-23c300000003",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 01"
+        "🇧🇪 比利时 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 01"
+        "🇧🇪 比利时 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

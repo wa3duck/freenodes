@@ -5,28 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 01
-  server: 3.253.106.233
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 02
-  server: adapting-basilisk.rooster465.autos
+  server: 54.72.130.222
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 03
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 02
   server: master-possum.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: master-possum.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 03
+  server: loved-shark.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 04
   server: v4.hdacd.com

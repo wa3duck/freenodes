@@ -5,7 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
-  server: googol.wookshop.ir
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 02
+  server: 206.1.102.81
   port: 17915
   udp: true
   type: vless
@@ -13,12 +19,7 @@ proxies:
   tls: true
   servername: googol.wookshop.ir
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 02
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

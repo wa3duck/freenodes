@@ -15,36 +15,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 02
-  server: 148.113.5.44
-  port: 443
-  udp: true
-  type: vless
-  uuid: 72ea5a91-ffcc-43d2-9297-5993c3abf186
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
-    short-id: 221873918e0bb74d
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 03
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇮🇳 印度 04
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 05
   server: 152.67.8.205
   port: 80
   udp: true
@@ -55,6 +27,21 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇮🇳 印度 03
+  server: in.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: in.tronsg.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 04
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,7 +51,6 @@ proxy-groups:
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
-  - 🇮🇳 印度 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +60,5 @@ proxy-groups:
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
-  - 🇮🇳 印度 05
 rules:
 - MATCH,PROXIES
