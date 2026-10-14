@@ -12,17 +12,12 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 02
-  server: 95.216.27.15
-  port: 2053
+  server: 185.103.110.66
+  port: 18280
   udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 03
   server: 152.233.71.81
   port: 443
@@ -35,33 +30,48 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 04
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 05
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 06
   server: edge10.cyrionflare.com
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 05
-  server: 217.60.72.238
-  port: 443
+- name: 🇫🇮 芬兰 07
+  server: 79.175.136.238
+  port: 7879
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-506f-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
+  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
   tls: true
   reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 06
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
+    short-id: 63ca289314edc51b
+  servername: account.samsung.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,6 +83,7 @@ proxy-groups:
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
   - 🇫🇮 芬兰 06
+  - 🇫🇮 芬兰 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +95,6 @@ proxy-groups:
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
   - 🇫🇮 芬兰 06
+  - 🇫🇮 芬兰 07
 rules:
 - MATCH,PROXIES

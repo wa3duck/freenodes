@@ -21,8 +21,10 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 03
-  server: 104.16.111.193
+  server: 104.18.26.90
   port: 443
   udp: true
   type: vless
@@ -30,6 +32,7 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
@@ -47,7 +50,14 @@ proxies:
     public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
     short-id: cbd39bea0805e2
   servername: www.kaidee.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇹🇭 泰国 05
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +67,7 @@ proxy-groups:
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
   - 🇹🇭 泰国 04
+  - 🇹🇭 泰国 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +77,6 @@ proxy-groups:
   - 🇹🇭 泰国 02
   - 🇹🇭 泰国 03
   - 🇹🇭 泰国 04
+  - 🇹🇭 泰国 05
 rules:
 - MATCH,PROXIES
