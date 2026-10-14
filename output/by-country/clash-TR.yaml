@@ -19,19 +19,6 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 02
-  server: 85.192.48.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 03
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -43,23 +30,21 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 04
-  server: tr2.h1cloud.net
-  port: 25375
+- name: 🇹🇷 土耳其 03
+  server: tr.datanode-internal.net
+  port: 443
   udp: true
   type: vless
-  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
+  uuid: 93996a55-febe-4183-9366-df6cb11a34dd
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PdiXtqIEtNpVRKgB1WCKnmIOC7yJ-VR4uUe1uYjcqXM
-    short-id: 8e2a0cd6de5dc50a
-  servername: www.bing.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 05195f917c82
-- name: 🇹🇷 土耳其 05
-  server: 172.67.176.3
+    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
+    short-id: abbcd128
+  servername: sun9-38.userapi.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 04
+  server: nimm.mpd.cc.cd
   port: 2053
   udp: true
   type: trojan
@@ -78,7 +63,6 @@ proxy-groups:
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
   - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,6 +72,5 @@ proxy-groups:
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
   - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
 rules:
 - MATCH,PROXIES

@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 01",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 02",
+      "tag": "🇷🇴 罗马尼亚 01",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -28,66 +20,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 03",
-      "server": "hy2-new.aspidnet.xyz",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 04",
-      "server": "46.28.67.55",
-      "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 05",
-      "server": "146.70.124.85",
-      "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 06",
+      "tag": "🇷🇴 罗马尼亚 02",
       "server": "82.117.255.174",
       "server_port": 443,
       "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
@@ -108,35 +42,64 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 07",
-      "server": "app-str-53.nexus-infinitus.com",
+      "tag": "🇷🇴 罗马尼亚 03",
+      "server": "146.70.124.85",
       "server_port": 443,
-      "uuid": "0cf8e402-e801-4aeb-9b7a-00a933f9f1c1",
+      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "assets-str-53.nexus-infinitus.com",
+        "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gLO2GRqV0iVDmVdytcJLqGyZEB5Swxb-NAOC9AL13UM",
-          "short_id": "344f1f56582dda0f"
+          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
+          "short_id": "fe24f8a0a560056e"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 08",
+      "tag": "🇷🇴 罗马尼亚 04",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "whatsapp.com",
         "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 05",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 06",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
       }
     },
     {
@@ -149,9 +112,7 @@
         "🇷🇴 罗马尼亚 03",
         "🇷🇴 罗马尼亚 04",
         "🇷🇴 罗马尼亚 05",
-        "🇷🇴 罗马尼亚 06",
-        "🇷🇴 罗马尼亚 07",
-        "🇷🇴 罗马尼亚 08"
+        "🇷🇴 罗马尼亚 06"
       ]
     },
     {
@@ -163,9 +124,7 @@
         "🇷🇴 罗马尼亚 03",
         "🇷🇴 罗马尼亚 04",
         "🇷🇴 罗马尼亚 05",
-        "🇷🇴 罗马尼亚 06",
-        "🇷🇴 罗马尼亚 07",
-        "🇷🇴 罗马尼亚 08"
+        "🇷🇴 罗马尼亚 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
