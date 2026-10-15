@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 01
-  server: 64.177.90.30
-  port: 8388
+- name: 🇰🇷 韩国 01
+  server: 218.237.185.234
+  port: 4652
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 01
+  - 🇰🇷 韩国 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 01
+  - 🇰🇷 韩国 01
 rules:
 - MATCH,PROXIES

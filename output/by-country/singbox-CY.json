@@ -4,8 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇾 塞浦路斯 01",
+      "server": "185.233.187.188",
+      "server_port": 2087,
+      "password": "d0589fb6-420b-4078-a72a-66d270a25fd9",
+      "tls": {
+        "enabled": true,
+        "server_name": "fireedge.eaglors.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 02",
+      "server": "hydra.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 03",
       "server": "hydra.yokkastars.com",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -32,14 +65,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 01"
+        "🇨🇾 塞浦路斯 01",
+        "🇨🇾 塞浦路斯 02",
+        "🇨🇾 塞浦路斯 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 01"
+        "🇨🇾 塞浦路斯 01",
+        "🇨🇾 塞浦路斯 02",
+        "🇨🇾 塞浦路斯 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 01
+  server: 128.241.25.11
+  port: 30021
+  udp: true
+  type: vless
+  uuid: fd9172bb-1a14-4052-8385-40de84e47495
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇦🇪 阿联酋 02
   server: 157.228.155.238
   port: 443
   udp: true
@@ -16,17 +30,7 @@ proxies:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 02
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  client-fingerprint: qq
 - name: 🇦🇪 阿联酋 03
   server: 185.253.116.33
   port: 14430
@@ -39,6 +43,30 @@ proxies:
     headers:
       Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 04
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 05
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 9839893f-46e4-4d2b-811a-179ff9437220
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇦🇪 阿联酋 06
   server: 157.228.128.59
   port: 443
   udp: true
@@ -51,7 +79,51 @@ proxies:
     short-id: 06e00e7c
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 05
+- name: 🇦🇪 阿联酋 07
+  server: 185.125.103.62
+  port: 8082
+  udp: true
+  type: vless
+  uuid: 13d2a3d9-2148-4946-be61-b7550a5d0b1d
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇦🇪 阿联酋 08
+  server: 31.59.210.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
+  servername: www.yandex.ru
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 09
+  server: 203.137.165.164
+  port: 57554
+  udp: true
+  type: vless
+  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+- name: 🇦🇪 阿联酋 10
   server: 31.59.210.26
   port: 2088
   udp: true
@@ -62,11 +134,11 @@ proxies:
     public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
     short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: qq
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 06
+- name: 🇦🇪 阿联酋 11
   server: 31.59.210.32
   port: 443
   udp: true
@@ -81,7 +153,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 07
+- name: 🇦🇪 阿联酋 12
+  server: 116.204.164.60
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 48942ced-a272-41c1-98ac-75745d83bf93
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+- name: 🇦🇪 阿联酋 13
   server: 31.59.210.25
   port: 2087
   udp: true
@@ -96,7 +183,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 08
+- name: 🇦🇪 阿联酋 14
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -105,21 +192,10 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 09
-  server: 146.70.102.82
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 10
-  server: 84.235.244.108
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 15
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -129,6 +205,20 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 16
+  server: 45.77.241.190
+  port: 8441
+  udp: true
+  type: vless
+  uuid: 6a13fa6a-5c5f-4afe-82f7-9d550531239e
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +234,12 @@ proxy-groups:
   - 🇦🇪 阿联酋 08
   - 🇦🇪 阿联酋 09
   - 🇦🇪 阿联酋 10
+  - 🇦🇪 阿联酋 11
+  - 🇦🇪 阿联酋 12
+  - 🇦🇪 阿联酋 13
+  - 🇦🇪 阿联酋 14
+  - 🇦🇪 阿联酋 15
+  - 🇦🇪 阿联酋 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -159,5 +255,11 @@ proxy-groups:
   - 🇦🇪 阿联酋 08
   - 🇦🇪 阿联酋 09
   - 🇦🇪 阿联酋 10
+  - 🇦🇪 阿联酋 11
+  - 🇦🇪 阿联酋 12
+  - 🇦🇪 阿联酋 13
+  - 🇦🇪 阿联酋 14
+  - 🇦🇪 阿联酋 15
+  - 🇦🇪 阿联酋 16
 rules:
 - MATCH,PROXIES

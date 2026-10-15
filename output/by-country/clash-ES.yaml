@@ -5,21 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 01
+  server: 130.250.137.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime05.workers.dev
+- name: 🇪🇸 西班牙 02
   server: 5.188.181.201
-  port: 9014
+  port: 9027
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: KnJGad3FqTvjqbaX
-- name: 🇪🇸 西班牙 02
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
+  password: EXN3S3eQpjE7EJu8
 - name: 🇪🇸 西班牙 03
+  server: 5.188.181.201
+  port: 9019
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: 🇪🇸 西班牙 04
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 05
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -31,20 +54,7 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 04
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 05
+- name: 🇪🇸 西班牙 06
   server: es2.xiaoliyu.cyou
   port: 18333
   udp: true
@@ -52,7 +62,7 @@ proxies:
   password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
   sni: es2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 06
+- name: 🇪🇸 西班牙 07
   server: 193.238.154.78
   port: 443
   udp: true
@@ -65,6 +75,19 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 08
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +99,8 @@ proxy-groups:
   - 🇪🇸 西班牙 04
   - 🇪🇸 西班牙 05
   - 🇪🇸 西班牙 06
+  - 🇪🇸 西班牙 07
+  - 🇪🇸 西班牙 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +112,7 @@ proxy-groups:
   - 🇪🇸 西班牙 04
   - 🇪🇸 西班牙 05
   - 🇪🇸 西班牙 06
+  - 🇪🇸 西班牙 07
+  - 🇪🇸 西班牙 08
 rules:
 - MATCH,PROXIES
