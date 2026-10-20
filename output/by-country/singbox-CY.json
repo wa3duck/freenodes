@@ -4,60 +4,48 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇾 塞浦路斯 01",
-      "server": "185.233.187.188",
-      "server_port": 2087,
-      "password": "d0589fb6-420b-4078-a72a-66d270a25fd9",
-      "tls": {
-        "enabled": true,
-        "server_name": "fireedge.eaglors.com",
-        "insecure": false
-      }
+      "server": "5.253.29.254",
+      "server_port": 10443,
+      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d"
     },
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 02",
-      "server": "hydra.yokkastars.com",
-      "server_port": 40443,
-      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
+      "server": "5.253.29.254",
+      "server_port": 14430,
+      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.253.29.254"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 03",
-      "server": "hydra.yokkastars.com",
-      "server_port": 2443,
-      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
+      "server": "2.56.175.179",
+      "server_port": 9443,
+      "uuid": "8179d7cc-82bc-4eae-a97f-5d30c6c2a812",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "itunes.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
-          "short_id": "92c32de179e5d908"
+          "public_key": "8bhS-nnIN67a292RpJsCPzXQy4CzpzOVLTPn5CiAFyg",
+          "short_id": "6ba7b810"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "rex-eb0bf76b710ce763"
+        "service_name": "grpc"
       }
     },
     {

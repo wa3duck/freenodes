@@ -5,39 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 01
-  server: 45.205.27.78
-  port: 10443
-  udp: true
-  type: trojan
-  password: ec8ab781-f92f-4aba-8ce9-5e3cdbaa8609
-  sni: 45.205.27.78
-  skip-cert-verify: true
-- name: 🇸🇨 塞舌尔 02
-  server: 156.226.168.221
-  port: 35193
+  server: 45.145.12.148
+  port: 443
   udp: true
   type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-  flow: xtls-rprx-vision
+  uuid: b869a8d0-0733-4346-8d1c-c1230a78651c
   tls: true
   reality-opts:
-    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
-    short-id: e8daed2d
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM
+    short-id: 35debf0dc757d053
+  servername: max.ru
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 01
-  - 🇸🇨 塞舌尔 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 01
-  - 🇸🇨 塞舌尔 02
 rules:
 - MATCH,PROXIES

@@ -6,28 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 01",
-      "server": "cf1.466688.xyz",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime54.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 02",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 03",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -36,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -46,10 +24,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 02",
+      "server": "45.90.59.15",
+      "server_port": 443,
+      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
+          "short_id": "19253fae84102271"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 04",
+      "tag": "🇨🇭 瑞士 03",
       "server": "208.69.78.217",
-      "server_port": 21154,
+      "server_port": 33077,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -63,7 +62,35 @@
     },
     {
       "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 04",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 05",
+      "server": "208.69.78.217",
+      "server_port": 33044,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 06",
       "server": "208.69.78.217",
       "server_port": 33025,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -78,146 +105,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 06",
-      "server": "80.240.18.227",
-      "server_port": 10051,
-      "uuid": "73996ef7-544c-45e7-abc0-973218c727e2",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 07",
-      "server": "45.90.59.15",
-      "server_port": 443,
-      "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY",
-          "short_id": "19253fae84102271"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 08",
-      "server": "45.133.151.186",
-      "server_port": 25393,
-      "uuid": "d54a7512-dda3-4218-8ae7-c591d300fd7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI",
-          "short_id": "bcc707a7148e4a0c"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 09",
-      "server": "208.69.78.217",
-      "server_port": 21158,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 10",
-      "server": "208.69.78.217",
-      "server_port": 8444,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 11",
-      "server": "87.228.92.113",
-      "server_port": 25576,
-      "uuid": "d54a7512-dda3-4218-8ae7-c591d300fd7c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc",
-          "short_id": "58914abc2bb85e84"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 12",
-      "server": "138.124.63.224",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -227,13 +114,7 @@
         "🇨🇭 瑞士 03",
         "🇨🇭 瑞士 04",
         "🇨🇭 瑞士 05",
-        "🇨🇭 瑞士 06",
-        "🇨🇭 瑞士 07",
-        "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09",
-        "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11",
-        "🇨🇭 瑞士 12"
+        "🇨🇭 瑞士 06"
       ]
     },
     {
@@ -245,13 +126,7 @@
         "🇨🇭 瑞士 03",
         "🇨🇭 瑞士 04",
         "🇨🇭 瑞士 05",
-        "🇨🇭 瑞士 06",
-        "🇨🇭 瑞士 07",
-        "🇨🇭 瑞士 08",
-        "🇨🇭 瑞士 09",
-        "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11",
-        "🇨🇭 瑞士 12"
+        "🇨🇭 瑞士 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

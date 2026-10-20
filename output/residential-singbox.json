@@ -4,60 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 01",
-      "server": "789156.xyz",
-      "server_port": 443,
-      "uuid": "5f11c240-89df-494c-9c81-8b619023bb58",
-      "tls": {
-        "enabled": true,
-        "server_name": "789156.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048fp=randomized",
-        "headers": {
-          "Host": "789156.xyz"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 02",
-      "server": "218.237.185.234",
+      "tag": "🇰🇷 韩国 01",
+      "server": "p141.panda001.net",
       "server_port": 4652,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 03",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 04",
-      "server": "fujrdt.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
-      "security": "auto",
+      "tag": "🇹🇼 中国台湾 02",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "fujrdt.d6f54hd1j.cc",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "fujrdt.d6f54hd1j.cc"
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
@@ -66,20 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 01",
-        "🇰🇷 韩国 02",
-        "🇹🇷 土耳其 03",
-        "🇹🇼 中国台湾 04"
+        "🇰🇷 韩国 01",
+        "🇹🇼 中国台湾 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 01",
-        "🇰🇷 韩国 02",
-        "🇹🇷 土耳其 03",
-        "🇹🇼 中国台湾 04"
+        "🇰🇷 韩国 01",
+        "🇹🇼 中国台湾 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

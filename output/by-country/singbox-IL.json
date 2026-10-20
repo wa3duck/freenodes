@@ -25,18 +25,44 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 02",
+      "server": "94.103.2.23",
+      "server_port": 8459,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 01"
+        "🇮🇱 以色列 01",
+        "🇮🇱 以色列 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 01"
+        "🇮🇱 以色列 01",
+        "🇮🇱 以色列 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

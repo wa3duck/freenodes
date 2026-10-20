@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 185.103.110.68
-  port: 18283
+  server: 65.109.28.164
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  type: vless
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 02
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 03
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -30,6 +29,14 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 03
+  server: 2.26.3.75
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
+  sni: fi.67chat.ru
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 04
   server: 45.144.234.157
   port: 14430
@@ -42,86 +49,17 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 05
-  server: edge10.cyrionflare.com
-  port: 2052
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 06
-  server: b2a2.velqixa.ir
-  port: 39221
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Pzlcb_PeV3uRgiC2NNoNKw
-- name: 🇫🇮 芬兰 07
-  server: 36a466g.fi1.h1clayd.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
-  tls: true
-  reality-opts:
-    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
-    short-id: b3c9d0c6bdd114a6
-  servername: 36a466g.fi1.h1clayd.click
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 0adb9638509b
-- name: 🇫🇮 芬兰 08
-  server: fi-p1.h1cloud.net
-  port: 25481
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 09
-  server: 79.175.136.238
-  port: 7879
-  udp: true
-  type: vless
-  uuid: bd5ea9bc-16ec-408e-b933-4219ed022de1
-  tls: true
-  reality-opts:
-    public-key: 0PVs0FZprxXi0bV-YX-SkyAx6a_9GHjSZ6hpCpa1lnE
-    short-id: 63ca289314edc51b
-  servername: account.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 10
-  server: ultimate.warriorofblacksun.run
-  port: 443
-  udp: true
-  type: vless
-  uuid: 97c52223-dc53-4d59-ae9b-2bf4344eb5eb
-  tls: true
-  reality-opts:
-    public-key: Ww_HS9_n7ob3uESSXtbU23EPM-BOJ5ZYLp-RFB0L0SY
-  servername: ultimate.warriorofblacksun.run
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: xyz
-- name: 🇫🇮 芬兰 11
-  server: 188.241.54.208
-  port: 443
-  udp: true
-  type: vless
-  uuid: fbaa413d-2ffb-4e36-8444-e1b1ab829fe1
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: qlVZ2ehdXHCxIADkf5swgXT2ZHrpSP7HM6SKTBMQXRU
-    short-id: 456bf62e2b728b97
-  servername: www.samsung.com
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -133,12 +71,6 @@ proxy-groups:
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
-  - 🇫🇮 芬兰 06
-  - 🇫🇮 芬兰 07
-  - 🇫🇮 芬兰 08
-  - 🇫🇮 芬兰 09
-  - 🇫🇮 芬兰 10
-  - 🇫🇮 芬兰 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,11 +81,5 @@ proxy-groups:
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
-  - 🇫🇮 芬兰 06
-  - 🇫🇮 芬兰 07
-  - 🇫🇮 芬兰 08
-  - 🇫🇮 芬兰 09
-  - 🇫🇮 芬兰 10
-  - 🇫🇮 芬兰 11
 rules:
 - MATCH,PROXIES

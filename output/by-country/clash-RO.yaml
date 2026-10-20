@@ -5,6 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 01
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 02
+  server: de1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de1.dedushka.top
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 03
+  server: it1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: it1.dedushka.top
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 04
   server: 162.249.125.133
   port: 443
   udp: true
@@ -14,26 +37,26 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 02
-  server: 82.117.255.174
+- name: 🇷🇴 罗马尼亚 05
+  server: 146.70.124.85
   port: 443
   udp: true
   type: vless
-  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
-    short-id: 31e91d43e553bf32
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 03
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 06
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: vk.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -43,6 +66,9 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 01
   - 🇷🇴 罗马尼亚 02
   - 🇷🇴 罗马尼亚 03
+  - 🇷🇴 罗马尼亚 04
+  - 🇷🇴 罗马尼亚 05
+  - 🇷🇴 罗马尼亚 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +77,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 01
   - 🇷🇴 罗马尼亚 02
   - 🇷🇴 罗马尼亚 03
+  - 🇷🇴 罗马尼亚 04
+  - 🇷🇴 罗马尼亚 05
+  - 🇷🇴 罗马尼亚 06
 rules:
 - MATCH,PROXIES
