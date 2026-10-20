@@ -5,14 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 01
-  server: p141.panda001.net
-  port: 4652
+  server: 49.254.204.133
+  port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qwerREWQ@@
+  password: 1234!@#$
 - name: 🇹🇼 中国台湾 02
-  server: hinet1.2yly.com
+  server: 6aa21c4d-11d4-45bf-ba55-59512593692c.7b63595a-1119-4080-80e1-3f638120be58.smartprivatelink.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3nFa_3MSnFQDm9XfVfFHOnMb3FOptREpe1ehXjAbk1c
+    short-id: d369dbc2
+  servername: www.douyin.com
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 03
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -21,7 +34,14 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 04
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +49,8 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 01
   - 🇹🇼 中国台湾 02
+  - 🇹🇼 中国台湾 03
+  - 🇰🇷 韩国 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +58,7 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 01
   - 🇹🇼 中国台湾 02
+  - 🇹🇼 中国台湾 03
+  - 🇰🇷 韩国 04
 rules:
 - MATCH,PROXIES

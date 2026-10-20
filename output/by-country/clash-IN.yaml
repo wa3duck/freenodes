@@ -5,23 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01
-  server: 13.140.56.100
-  port: 14430
+  server: 139.84.166.47
+  port: 8388
   udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
+  type: ss
+  cipher: aes-256-gcm
+  password: GEdoeeqLZtkJRgSa
 - name: 🇮🇳 印度 02
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 03
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -32,18 +22,18 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 04
-  server: 152.67.8.205
-  port: 80
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 03
+  server: 13.140.56.100
+  port: 14430
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   network: ws
   ws-opts:
-    path: /
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +42,6 @@ proxy-groups:
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
-  - 🇮🇳 印度 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +50,5 @@ proxy-groups:
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
-  - 🇮🇳 印度 04
 rules:
 - MATCH,PROXIES

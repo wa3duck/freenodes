@@ -12,6 +12,40 @@ proxies:
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
 - name: 🇨🇿 捷克 02
+  server: 153.76.190.31
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: d65fb384-5029-4edf-bdc7-0f5960600e3d
+  sni: speedtestmark.com
+  skip-cert-verify: true
+- name: 🇨🇿 捷克 03
+  server: 153.76.190.31
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d65fb384-5029-4edf-bdc7-0f5960600e3d
+  tls: true
+  servername: speedtestmark.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- name: 🇨🇿 捷克 04
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: 68cf8d29-5aa0-44b3-88a9-f1a576b6e84c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 73a9e631a09b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇨🇿 捷克 05
   server: 195.123.245.241
   port: 443
   udp: true
@@ -23,7 +57,7 @@ proxies:
     public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +65,9 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 01
   - 🇨🇿 捷克 02
+  - 🇨🇿 捷克 03
+  - 🇨🇿 捷克 04
+  - 🇨🇿 捷克 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +75,8 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 01
   - 🇨🇿 捷克 02
+  - 🇨🇿 捷克 03
+  - 🇨🇿 捷克 04
+  - 🇨🇿 捷克 05
 rules:
 - MATCH,PROXIES

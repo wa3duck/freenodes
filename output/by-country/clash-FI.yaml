@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 65.109.28.164
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 02
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -29,15 +16,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 03
-  server: 2.26.3.75
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  sni: fi.67chat.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 04
+- name: 🇫🇮 芬兰 02
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -48,7 +27,15 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 05
+- name: 🇫🇮 芬兰 03
+  server: 2.26.3.75
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
+  sni: fi.67chat.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 04
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -70,7 +57,6 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
-  - 🇫🇮 芬兰 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,6 +66,5 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
-  - 🇫🇮 芬兰 05
 rules:
 - MATCH,PROXIES

@@ -6,53 +6,20 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 01",
-      "server": "funagfrdfs.alixxplay.com",
-      "server_port": 56415,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.kaidee.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
-          "short_id": "cbd39bea0805e2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 02",
-      "server": "v2ray.simspeedup.com",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇭 泰国 03",
-      "server": "pphfree2.mvpnpvpn.de5.net",
-      "server_port": 52351,
-      "method": "aes-256-gcm",
-      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 04",
-      "server": "104.16.10.185",
+      "server": "188.114.98.0",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -63,14 +30,20 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇭 泰国 02",
+      "server": "103.107.52.106",
+      "server_port": 52351,
+      "method": "aes-256-gcm",
+      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 01",
-        "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04"
+        "🇹🇭 泰国 02"
       ]
     },
     {
@@ -78,9 +51,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 01",
-        "🇹🇭 泰国 02",
-        "🇹🇭 泰国 03",
-        "🇹🇭 泰国 04"
+        "🇹🇭 泰国 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

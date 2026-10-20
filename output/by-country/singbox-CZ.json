@@ -12,8 +12,64 @@
       "password": "I6o9NnialYLMEjVt28RF4dpjmr9wMvNL"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇿 捷克 02",
+      "server": "153.76.190.31",
+      "server_port": 8443,
+      "password": "d65fb384-5029-4edf-bdc7-0f5960600e3d",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 03",
+      "server": "153.76.190.31",
+      "server_port": 2083,
+      "uuid": "d65fb384-5029-4edf-bdc7-0f5960600e3d",
+      "tls": {
+        "enabled": true,
+        "server_name": "speedtestmark.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 04",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "73a9e631a09b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 05",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -23,7 +79,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +94,10 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02"
+        "🇨🇿 捷克 02",
+        "🇨🇿 捷克 03",
+        "🇨🇿 捷克 04",
+        "🇨🇿 捷克 05"
       ]
     },
     {
@@ -46,7 +105,10 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02"
+        "🇨🇿 捷克 02",
+        "🇨🇿 捷克 03",
+        "🇨🇿 捷克 04",
+        "🇨🇿 捷克 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
