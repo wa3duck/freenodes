@@ -14,6 +14,20 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 02",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 03",
       "server": "se1-cl3.vless-fiberstasis.top",
       "server_port": 443,
       "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
@@ -36,8 +50,20 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 04",
+      "server": "promo.betust.net",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo.betust.net",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 03",
+      "tag": "🇸🇪 瑞典 05",
       "server": "191.44.114.154",
       "server_port": 8443,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
@@ -57,20 +83,29 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 04",
-      "server": "swe2.obxodvpn.us",
-      "server_port": 4443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 06",
+      "server": "191.44.114.179",
+      "server_port": 8443,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
-        "insecure": false
+        "server_name": "www.wikipedia.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 05",
+      "tag": "🇸🇪 瑞典 07",
       "server": "191.44.114.179",
       "server_port": 2096,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
@@ -100,7 +135,9 @@
         "🇸🇪 瑞典 02",
         "🇸🇪 瑞典 03",
         "🇸🇪 瑞典 04",
-        "🇸🇪 瑞典 05"
+        "🇸🇪 瑞典 05",
+        "🇸🇪 瑞典 06",
+        "🇸🇪 瑞典 07"
       ]
     },
     {
@@ -111,7 +148,9 @@
         "🇸🇪 瑞典 02",
         "🇸🇪 瑞典 03",
         "🇸🇪 瑞典 04",
-        "🇸🇪 瑞典 05"
+        "🇸🇪 瑞典 05",
+        "🇸🇪 瑞典 06",
+        "🇸🇪 瑞典 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

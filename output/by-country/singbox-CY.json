@@ -11,20 +11,8 @@
       "uuid": "6aed42ba-cd2d-4671-87d9-c949b6876888"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇨🇾 塞浦路斯 02",
-      "server": "hys-eu.letsconnectpoint.com",
-      "server_port": 443,
-      "password": "4b1be712-774c-4b65-8491-a3339e124a70",
-      "tls": {
-        "enabled": true,
-        "server_name": "hys-eu.letsconnectpoint.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇨🇾 塞浦路斯 03",
+      "tag": "🇨🇾 塞浦路斯 02",
       "server": "171.22.119.74",
       "server_port": 8446,
       "password": "Pass-Client-1",
@@ -36,6 +24,18 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc-video-call"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇾 塞浦路斯 03",
+      "server": "hys-eu.letsconnectpoint.com",
+      "server_port": 443,
+      "password": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "tls": {
+        "enabled": true,
+        "server_name": "hys-eu.letsconnectpoint.com",
+        "insecure": false
       }
     },
     {

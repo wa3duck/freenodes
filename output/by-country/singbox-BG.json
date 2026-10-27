@@ -4,24 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 01",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "server": "93.152.214.248",
+      "server_port": 443,
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "us5.pc-peervax.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk",
+          "short_id": "a9c3f7e2"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 02",
-      "server": "213.183.63.60",
-      "server_port": 9028,
-      "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 03",
       "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
@@ -29,23 +34,15 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 03",
+      "server": "213.183.63.60",
+      "server_port": 9030,
+      "method": "aes-256-cfb",
+      "password": "GeregetR8cvQHzYr"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 04",
-      "server": "213.183.63.60",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 05",
-      "server": "213.183.63.60",
-      "server_port": 9061,
-      "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 06",
       "server": "213.183.63.60",
       "server_port": 9066,
       "method": "aes-256-cfb",
@@ -53,7 +50,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 07",
+      "tag": "🇧🇬 保加利亚 05",
       "server": "213.183.63.60",
       "server_port": 9049,
       "method": "aes-256-cfb",
@@ -61,11 +58,43 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 06",
+      "server": "213.183.63.60",
+      "server_port": 9028,
+      "method": "aes-256-cfb",
+      "password": "9eeJ2fwnZA5Fxgz8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 07",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 08",
       "server": "213.183.63.60",
-      "server_port": 9030,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
+      "password": "cp8pRSUAyLhTfVWH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 09",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 10",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "selector",
@@ -79,7 +108,9 @@
         "🇧🇬 保加利亚 05",
         "🇧🇬 保加利亚 06",
         "🇧🇬 保加利亚 07",
-        "🇧🇬 保加利亚 08"
+        "🇧🇬 保加利亚 08",
+        "🇧🇬 保加利亚 09",
+        "🇧🇬 保加利亚 10"
       ]
     },
     {
@@ -93,7 +124,9 @@
         "🇧🇬 保加利亚 05",
         "🇧🇬 保加利亚 06",
         "🇧🇬 保加利亚 07",
-        "🇧🇬 保加利亚 08"
+        "🇧🇬 保加利亚 08",
+        "🇧🇬 保加利亚 09",
+        "🇧🇬 保加利亚 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

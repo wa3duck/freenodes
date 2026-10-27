@@ -5,15 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇪 爱尔兰 01",
-      "server": "ir-new-ded.failspace.top",
+      "tag": "🇦🇿 阿塞拜疆 01",
+      "server": "94.20.141.53",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "uuid": "f439e4fe-139b-4882-ad8b-a16176d09c88",
       "tls": {
         "enabled": true,
-        "server_name": "ir-new-ded.failspace.top",
-        "insecure": false
+        "server_name": "eu63.cdn77.icu",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+          "short_id": "1ed136481e0ede74"
+        }
       }
     },
     {
@@ -21,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 01"
+        "🇦🇿 阿塞拜疆 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 01"
+        "🇦🇿 阿塞拜疆 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,8 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 01",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "185.253.116.33"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 02",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 03",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -20,25 +42,17 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 02",
-      "server": "forshynewh.duckdns.org",
-      "server_port": 443,
-      "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
-      "tls": {
-        "enabled": true,
-        "server_name": "forshynewh.duckdns.org",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 03",
-      "server": "uae.unixzone.us",
+      "tag": "🇦🇪 阿联酋 04",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
@@ -48,7 +62,8 @@
         "auto",
         "🇦🇪 阿联酋 01",
         "🇦🇪 阿联酋 02",
-        "🇦🇪 阿联酋 03"
+        "🇦🇪 阿联酋 03",
+        "🇦🇪 阿联酋 04"
       ]
     },
     {
@@ -57,7 +72,8 @@
       "outbounds": [
         "🇦🇪 阿联酋 01",
         "🇦🇪 阿联酋 02",
-        "🇦🇪 阿联酋 03"
+        "🇦🇪 阿联酋 03",
+        "🇦🇪 阿联酋 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
