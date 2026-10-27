@@ -27,6 +27,27 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 02",
+      "server": "cz-prg.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 03",
       "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
@@ -51,7 +72,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02"
+        "🇨🇿 捷克 02",
+        "🇨🇿 捷克 03"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02"
+        "🇨🇿 捷克 02",
+        "🇨🇿 捷克 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

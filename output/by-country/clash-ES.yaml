@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 01
   server: 5.188.181.201
+  port: 9005
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: ZET59LF6DvCC8KVt
+- name: 🇪🇸 西班牙 02
+  server: 5.188.181.201
   port: 9025
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: XPtzA9sCug3SPR4c
-- name: 🇪🇸 西班牙 02
-  server: 5.188.181.201
-  port: 9027
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: EXN3S3eQpjE7EJu8
 - name: 🇪🇸 西班牙 03
   server: 212.227.235.66
   port: 2053
@@ -29,37 +29,16 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇪🇸 西班牙 04
-  server: 66.163.118.131
+  server: 66.163.118.244
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discovergreatjobsandadvanceyourcareer.com
+  sni: api.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 05
-  server: 66.163.118.251
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 06
-  server: 76.164.203.38
-  port: 12443
-  udp: true
-  type: vless
-  uuid: 3edfab95-a259-45f2-846c-3a1ca12c9b60
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2gPjlDKHzQ8r5bfg_m7ekyEOfyh16WxD21-1GZYISXc
-    short-id: 5bc6cbb663c9561d
-  servername: a7e9803d2255.j.cloudfront.hls.ttvnw.net
-  client-fingerprint: ios
-- name: 🇪🇸 西班牙 07
   server: 156.252.229.11
   port: 8443
   udp: true
@@ -71,15 +50,7 @@ proxies:
     short-id: 974f7f8f
   servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 08
-  server: 66.163.118.244
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 09
+- name: 🇪🇸 西班牙 06
   server: 193.238.154.78
   port: 443
   udp: true
@@ -92,19 +63,14 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 10
-  server: 46.28.71.247
+- name: 🇪🇸 西班牙 07
+  server: 66.163.118.131
   port: 443
   udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,9 +83,6 @@ proxy-groups:
   - 🇪🇸 西班牙 05
   - 🇪🇸 西班牙 06
   - 🇪🇸 西班牙 07
-  - 🇪🇸 西班牙 08
-  - 🇪🇸 西班牙 09
-  - 🇪🇸 西班牙 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,8 +95,5 @@ proxy-groups:
   - 🇪🇸 西班牙 05
   - 🇪🇸 西班牙 06
   - 🇪🇸 西班牙 07
-  - 🇪🇸 西班牙 08
-  - 🇪🇸 西班牙 09
-  - 🇪🇸 西班牙 10
 rules:
 - MATCH,PROXIES

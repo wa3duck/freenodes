@@ -5,41 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 01
-  server: 103.86.49.57
-  port: 80
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 02
-  server: 38.60.254.50
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇹🇭 泰国 03
-  server: 104.16.111.193
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 04
   server: 45.154.26.63
   port: 443
   udp: true
@@ -51,6 +16,41 @@ proxies:
     public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
     short-id: 3c032a7e
   servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇹🇭 泰国 02
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 03
+  server: V2rAy.SiMsPeEdUp.CoM
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 泰国 04
+  server: 38.60.254.50
+  port: 22222
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

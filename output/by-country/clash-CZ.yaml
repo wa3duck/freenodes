@@ -18,6 +18,18 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 02
+  server: cz-prg.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 03
   server: 193.124.17.190
   port: 443
   udp: true
@@ -37,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 01
   - 🇨🇿 捷克 02
+  - 🇨🇿 捷克 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 01
   - 🇨🇿 捷克 02
+  - 🇨🇿 捷克 03
 rules:
 - MATCH,PROXIES

@@ -5,26 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 01
-  server: 141.164.45.187
-  port: 8091
+  server: 211.178.105.134
+  port: 6123
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 02
   server: 141.164.45.187
-  port: 9101
+  port: 9090
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
+  password: Y6R9pAtvxxzmGC
 - name: 🇰🇷 韩国 03
-  server: 152.70.237.123
-  port: 2053
+  server: 152.69.231.175
+  port: 50160
   udp: true
   type: hysteria2
-  password: maintell
-  sni: 152.70.237.123
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
   skip-cert-verify: true
 - name: 🇰🇷 韩国 04
   server: 132.226.226.189
@@ -32,16 +32,9 @@ proxies:
   udp: true
   type: hysteria2
   password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
+  sni: www.bing.com
   skip-cert-verify: true
 - name: 🇰🇷 韩国 05
-  server: 141.164.45.187
-  port: 6697
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: 🇰🇷 韩国 06
   server: 3.39.4.109
   port: 18967
   udp: true
@@ -53,16 +46,16 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 07
-  server: 152.69.231.175
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 06
+  server: 152.67.200.82
   port: 50160
   udp: true
   type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: t.me
   skip-cert-verify: true
-- name: 🇰🇷 韩国 08
+- name: 🇰🇷 韩国 07
   server: 150-230-252-217.liao.kdns.fr
   port: 50160
   udp: true
@@ -70,7 +63,7 @@ proxies:
   password: 9cfc9458e48c028ec03ff86ebc71c744
   sni: 150-230-252-217.liao.kdns.fr
   skip-cert-verify: false
-- name: 🇰🇷 韩国 09
+- name: 🇰🇷 韩国 08
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -78,7 +71,7 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 10
+- name: 🇰🇷 韩国 09
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -90,8 +83,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇰🇷 韩国 11
+  client-fingerprint: random
+- name: 🇰🇷 韩国 10
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -102,15 +95,23 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 12
-  server: 152.67.200.82
-  port: 50160
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 11
+  server: 152.70.237.123
+  port: 2053
   udp: true
   type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152-67-200-82.liao.kdns.fr
+  password: maintell
+  sni: bing.com
   skip-cert-verify: true
+- name: 🇰🇷 韩国 12
+  server: 140.238.2.250
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 13
   server: 132.145.80.230
   port: 80
@@ -122,21 +123,21 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
+    headers:
+      Host: kr02.a0a.xyz
 - name: 🇰🇷 韩国 14
-  server: 140.238.2.250
-  port: 443
+  server: 47.80.19.173
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 15
-  server: 141.164.45.187
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
+  type: vless
+  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
+    short-id: 3c4041d3
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,7 +157,6 @@ proxy-groups:
   - 🇰🇷 韩国 12
   - 🇰🇷 韩国 13
   - 🇰🇷 韩国 14
-  - 🇰🇷 韩国 15
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -176,6 +176,5 @@ proxy-groups:
   - 🇰🇷 韩国 12
   - 🇰🇷 韩国 13
   - 🇰🇷 韩国 14
-  - 🇰🇷 韩国 15
 rules:
 - MATCH,PROXIES
