@@ -5,6 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 01
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+- name: 🇻🇳 越南 02
   server: funagfrdfs.alixxplay.com
   port: 55688
   udp: true
@@ -17,12 +23,6 @@ proxies:
     short-id: a46bb5972cf50671
   servername: bilibili-vn.biliimg.com
   client-fingerprint: firefox
-- name: 🇻🇳 越南 02
-  server: 150.95.109.109
-  port: 2086
-  udp: true
-  type: vless
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,6 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 01
+  server: 193.160.141.2
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d24e0961-dd20-4528-8796-2a974e79348e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 02
+  server: 193.160.141.81
+  port: 8443
+  udp: true
+  type: vless
+  uuid: ee82f319-ab92-425d-8e04-28a29f33f670
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 03
+  server: 103.91.147.203
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a756c39b-da0c-4195-94fd-f2a35e37622a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 04
+  server: 147.45.46.157
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 05
   server: 77.90.61.135
   port: 443
   udp: true
@@ -16,67 +64,123 @@ proxies:
     short-id: ce1dc482
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 02
-  server: 176.32.33.143
+- name: 🇷🇺 俄罗斯 06
+  server: 193.160.140.159
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d4353076-3ec7-47dc-88b0-f21eb59fbfb8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 07
+  server: 193.160.140.168
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5ce803ae-a81c-4276-b1f8-ee3b845c5c4b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 08
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
+- name: 🇷🇺 俄罗斯 09
+  server: 193.233.253.180
+  port: 8444
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 10
+  server: 193.223.104.106
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d68be168-fda7-4e8c-8638-33a82d2202ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 11
+  server: 91.206.92.238
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 03
-  server: 193.233.253.180
-  port: 8444
+- name: 🇷🇺 俄罗斯 12
+  server: 195.133.5.107
+  port: 18443
   udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 04
-  server: 81.177.215.156
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 13
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: 194.87.118.184
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 14
+  server: xsru1.ddnsfree.com
   port: 443
   udp: true
   type: vless
-  uuid: 9ab9291e-fd72-4af9-b227-93419e90ff2e
-  flow: xtls-rprx-vision
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  reality-opts:
-    public-key: VNinTQ6vwOujTkrJgK_NPV4SpSBU6B7xG2tpM7prITQ
-    short-id: fd5b0def0660cdb1
-  servername: tr-4vps.yourzloy.site
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 05
-  server: 103.24.207.39
-  port: 444
+  servername: xsru1.ddnsfree.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 15
+  server: 94.228.167.12
+  port: 443
   udp: true
   type: vless
-  uuid: 258d8fc5-206c-48fd-88df-169dbbe44d3f
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: P7F65GjTQGZju-N8CVHtlKNaWebVe_76Xt7Lm00RuH0
-  servername: vextor.win
+    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
+    short-id: c13c9bd7bd45847d
+  servername: washingphonicseatable.solsticedigest.me
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 06
-  server: 139.28.168.75
-  port: 10444
+- name: 🇷🇺 俄罗斯 16
+  server: 45.12.75.242
+  port: 26424
   udp: true
   type: vless
-  uuid: 154bd388-4968-4900-a088-18676f428a20
-  flow: xtls-rprx-vision
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 07
+- name: 🇷🇺 俄罗斯 17
   server: 5.42.99.64
   port: 8443
   udp: true
@@ -89,7 +193,32 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 08
+- name: 🇷🇺 俄罗斯 18
+  server: 5.42.99.64
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 19
+  server: 113.30.154.207
+  port: 8443
+  udp: true
+  type: vless
+  uuid: ca926603-c678-4639-b726-a5b82d7e110c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 20
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -115,6 +244,18 @@ proxy-groups:
   - 🇷🇺 俄罗斯 06
   - 🇷🇺 俄罗斯 07
   - 🇷🇺 俄罗斯 08
+  - 🇷🇺 俄罗斯 09
+  - 🇷🇺 俄罗斯 10
+  - 🇷🇺 俄罗斯 11
+  - 🇷🇺 俄罗斯 12
+  - 🇷🇺 俄罗斯 13
+  - 🇷🇺 俄罗斯 14
+  - 🇷🇺 俄罗斯 15
+  - 🇷🇺 俄罗斯 16
+  - 🇷🇺 俄罗斯 17
+  - 🇷🇺 俄罗斯 18
+  - 🇷🇺 俄罗斯 19
+  - 🇷🇺 俄罗斯 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,5 +269,17 @@ proxy-groups:
   - 🇷🇺 俄罗斯 06
   - 🇷🇺 俄罗斯 07
   - 🇷🇺 俄罗斯 08
+  - 🇷🇺 俄罗斯 09
+  - 🇷🇺 俄罗斯 10
+  - 🇷🇺 俄罗斯 11
+  - 🇷🇺 俄罗斯 12
+  - 🇷🇺 俄罗斯 13
+  - 🇷🇺 俄罗斯 14
+  - 🇷🇺 俄罗斯 15
+  - 🇷🇺 俄罗斯 16
+  - 🇷🇺 俄罗斯 17
+  - 🇷🇺 俄罗斯 18
+  - 🇷🇺 俄罗斯 19
+  - 🇷🇺 俄罗斯 20
 rules:
 - MATCH,PROXIES

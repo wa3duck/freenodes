@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇷 克罗地亚 01",
-      "server": "5.181.2.168",
-      "server_port": 443,
-      "uuid": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇱🇺 卢森堡 01",
+      "server": "107.189.7.176",
+      "server_port": 32752,
+      "uuid": "4970c1cd-13e1-498a-920a-61d07be2fa65",
       "tls": {
         "enabled": true,
-        "server_name": "hr1-4v.zvcorp24.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FSoosmyb1Odcc6yucO4B-0YC0fKytdBbvuwJKn7Wbkg",
-          "short_id": "86afa150bc3a48f6"
+          "public_key": "pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA",
+          "short_id": "d758a643034ad90e"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇷 克罗地亚 01"
+        "🇱🇺 卢森堡 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇷 克罗地亚 01"
+        "🇱🇺 卢森堡 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

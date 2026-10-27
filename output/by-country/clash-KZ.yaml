@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 01
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   udp: true
   type: vmess
@@ -16,8 +16,19 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 02
+  server: 46.8.43.125
+  port: 443
+  udp: true
+  type: vless
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  tls: true
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 03
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -29,6 +40,18 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 04
+  server: 178.236.16.98
+  port: 35728
+  udp: true
+  type: vless
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +59,8 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 01
   - 🇰🇿 哈萨克斯坦 02
+  - 🇰🇿 哈萨克斯坦 03
+  - 🇰🇿 哈萨克斯坦 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +68,7 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 01
   - 🇰🇿 哈萨克斯坦 02
+  - 🇰🇿 哈萨克斯坦 03
+  - 🇰🇿 哈萨克斯坦 04
 rules:
 - MATCH,PROXIES
