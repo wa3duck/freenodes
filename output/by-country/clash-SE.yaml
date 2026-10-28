@@ -5,13 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
-  server: 70.34.212.124
-  port: 8388
+  server: 51.20.192.255
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: vless
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  network: h2
+  h2-opts:
+    host: []
+    path: /
 - name: 🇸🇪 瑞典 02
+  server: 50.7.38.243
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 03
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -20,32 +31,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 03
-  server: se1-cl3.vless-fiberstasis.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  tls: true
-  reality-opts:
-    public-key: qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo
-    short-id: 11d37dd92940329e
-  servername: se1-cl3.vless-fiberstasis.top
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-se-3
 - name: 🇸🇪 瑞典 04
-  server: promo.betust.net
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 05
   server: 191.44.114.154
   port: 8443
   udp: true
@@ -58,6 +44,21 @@ proxies:
     short-id: c4359f3827231250
   servername: www.wikipedia.org
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 05
+  server: 191.44.114.154
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: st5ff8a.rumedia-cdn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st5ff8a.rumedia-cdn.com
 - name: 🇸🇪 瑞典 06
   server: 191.44.114.179
   port: 8443
@@ -68,9 +69,23 @@ proxies:
   tls: true
   reality-opts:
     public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
+    short-id: 9d48935b2c2b8011
   servername: www.wikipedia.org
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 07
+  server: 193.188.21.253
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 08
   server: 191.44.114.179
   port: 2096
   udp: true
@@ -97,6 +112,7 @@ proxy-groups:
   - 🇸🇪 瑞典 05
   - 🇸🇪 瑞典 06
   - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,5 +125,6 @@ proxy-groups:
   - 🇸🇪 瑞典 05
   - 🇸🇪 瑞典 06
   - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
 rules:
 - MATCH,PROXIES

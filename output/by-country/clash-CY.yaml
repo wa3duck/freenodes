@@ -6,12 +6,6 @@ log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 01
   server: 171.22.119.74
-  port: 8447
-  udp: true
-  type: vless
-  uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
-- name: 🇨🇾 塞浦路斯 02
-  server: 171.22.119.74
   port: 8446
   udp: true
   type: trojan
@@ -21,14 +15,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-video-call
-- name: 🇨🇾 塞浦路斯 03
-  server: hys-eu.letsconnectpoint.com
+- name: 🇨🇾 塞浦路斯 02
+  server: 45.12.63.20
   port: 443
   udp: true
-  type: hysteria2
-  password: 4b1be712-774c-4b65-8491-a3339e124a70
-  sni: hys-eu.letsconnectpoint.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: c0qm24de441.staticpool.store
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
-  - 🇨🇾 塞浦路斯 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
-  - 🇨🇾 塞浦路斯 03
 rules:
 - MATCH,PROXIES

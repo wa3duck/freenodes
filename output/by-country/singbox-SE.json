@@ -4,55 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 01",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 02",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 03",
-      "server": "se1-cl3.vless-fiberstasis.top",
+      "server": "51.20.192.255",
       "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
-      "tls": {
-        "enabled": true,
-        "server_name": "se1-cl3.vless-fiberstasis.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
-          "short_id": "11d37dd92940329e"
-        }
-      },
+      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc-se-3"
+        "type": "http"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 04",
-      "server": "promo.betust.net",
+      "tag": "🇸🇪 瑞典 02",
+      "server": "50.7.38.243",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
       "tls": {
@@ -63,7 +27,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 05",
+      "tag": "🇸🇪 瑞典 03",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 04",
       "server": "191.44.114.154",
       "server_port": 8443,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
@@ -84,6 +59,29 @@
     },
     {
       "type": "vless",
+      "tag": "🇸🇪 瑞典 05",
+      "server": "191.44.114.154",
+      "server_port": 2096,
+      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
+      "tls": {
+        "enabled": true,
+        "server_name": "st5ff8a.rumedia-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "st5ff8a.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇸🇪 瑞典 06",
       "server": "191.44.114.179",
       "server_port": 8443,
@@ -99,13 +97,34 @@
         "reality": {
           "enabled": true,
           "public_key": "WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY",
-          "short_id": ""
+          "short_id": "9d48935b2c2b8011"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 07",
+      "server": "193.188.21.253",
+      "server_port": 10444,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 08",
       "server": "191.44.114.179",
       "server_port": 2096,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
@@ -137,7 +156,8 @@
         "🇸🇪 瑞典 04",
         "🇸🇪 瑞典 05",
         "🇸🇪 瑞典 06",
-        "🇸🇪 瑞典 07"
+        "🇸🇪 瑞典 07",
+        "🇸🇪 瑞典 08"
       ]
     },
     {
@@ -150,7 +170,8 @@
         "🇸🇪 瑞典 04",
         "🇸🇪 瑞典 05",
         "🇸🇪 瑞典 06",
-        "🇸🇪 瑞典 07"
+        "🇸🇪 瑞典 07",
+        "🇸🇪 瑞典 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

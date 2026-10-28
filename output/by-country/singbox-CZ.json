@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 02",
-      "server": "cz-prg.dontblockmepls.com",
+      "server": "31.77.13.22",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
@@ -50,11 +50,11 @@
       "tag": "🇨🇿 捷克 03",
       "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
+      "uuid": "6dfc9149-1ff9-41c3-8563-0ef284381731",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.techradar.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -62,7 +62,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "87f895f23064"
+          "short_id": "1374bddeb25d"
         }
       }
     },

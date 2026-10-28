@@ -5,25 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 02
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇮🇳 印度 03
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -34,17 +16,56 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 04
-  server: 152.67.8.205
-  port: 80
+- name: 🇮🇳 印度 02
+  server: 13.140.56.100
+  port: 14430
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   network: ws
   ws-opts:
-    path: /
+    path: /vless
+- name: 🇮🇳 印度 03
+  server: 139.84.145.241
+  port: 46362
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: in002.zestapp778.com
+  skip-cert-verify: false
+- name: 🇮🇳 印度 04
+  server: in.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇮🇳 印度 05
+  server: 109.237.98.217
+  port: 443
+  udp: true
+  type: vless
+  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lR8BTY8XJ6qt9th7wR3ZnfwCiqRs2yosrONK-SuSsDo
+  servername: rdaes5js9g1.img-assets.world
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 06
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +75,8 @@ proxy-groups:
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
+  - 🇮🇳 印度 05
+  - 🇮🇳 印度 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +86,7 @@ proxy-groups:
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
+  - 🇮🇳 印度 05
+  - 🇮🇳 印度 06
 rules:
 - MATCH,PROXIES

@@ -7,29 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 01",
       "server": "5.188.181.201",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 02",
-      "server": "5.188.181.201",
-      "server_port": 9027,
-      "method": "aes-256-cfb",
-      "password": "EXN3S3eQpjE7EJu8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 03",
-      "server": "5.188.181.201",
       "server_port": 9025,
       "method": "aes-256-cfb",
       "password": "XPtzA9sCug3SPR4c"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 02",
+      "server": "5.188.181.201",
+      "server_port": 9014,
+      "method": "aes-256-cfb",
+      "password": "KnJGad3FqTvjqbaX"
+    },
+    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 04",
+      "tag": "🇪🇸 西班牙 03",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -49,7 +41,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 05",
+      "tag": "🇪🇸 西班牙 04",
       "server": "66.163.118.244",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -61,26 +53,56 @@
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 06",
-      "server": "66.163.118.251",
+      "tag": "🇪🇸 西班牙 05",
+      "server": "66.163.118.131",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 07",
-      "server": "66.163.118.62",
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 06",
+      "server": "46.28.71.247",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 07",
+      "server": "109.237.98.221",
+      "server_port": 443,
+      "uuid": "26f751bc-2edc-4338-9c3f-abeb32aba3b7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vy6leazit.originhub.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "waUvU_PYX9kshdI5kYhf25185HH9pkQzc39sP-KMynE",
+          "short_id": ""
+        }
       }
     },
     {
@@ -96,6 +118,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 09",
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1354,
+      "method": "chacha20-ietf-poly1305",
+      "password": "U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -107,7 +137,8 @@
         "🇪🇸 西班牙 05",
         "🇪🇸 西班牙 06",
         "🇪🇸 西班牙 07",
-        "🇪🇸 西班牙 08"
+        "🇪🇸 西班牙 08",
+        "🇪🇸 西班牙 09"
       ]
     },
     {
@@ -121,7 +152,8 @@
         "🇪🇸 西班牙 05",
         "🇪🇸 西班牙 06",
         "🇪🇸 西班牙 07",
-        "🇪🇸 西班牙 08"
+        "🇪🇸 西班牙 08",
+        "🇪🇸 西班牙 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

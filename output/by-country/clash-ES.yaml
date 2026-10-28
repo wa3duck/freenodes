@@ -6,26 +6,19 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 01
   server: 5.188.181.201
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇪🇸 西班牙 02
-  server: 5.188.181.201
-  port: 9027
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: EXN3S3eQpjE7EJu8
-- name: 🇪🇸 西班牙 03
-  server: 5.188.181.201
   port: 9025
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: XPtzA9sCug3SPR4c
-- name: 🇪🇸 西班牙 04
+- name: 🇪🇸 西班牙 02
+  server: 5.188.181.201
+  port: 9014
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+- name: 🇪🇸 西班牙 03
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -37,7 +30,7 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 05
+- name: 🇪🇸 西班牙 04
   server: 66.163.118.244
   port: 443
   udp: true
@@ -45,22 +38,39 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: api.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
+- name: 🇪🇸 西班牙 05
+  server: 66.163.118.131
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
 - name: 🇪🇸 西班牙 06
-  server: 66.163.118.251
+  server: 46.28.71.247
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 07
-  server: 66.163.118.62
+  server: 109.237.98.221
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: waUvU_PYX9kshdI5kYhf25185HH9pkQzc39sP-KMynE
+  servername: vy6leazit.originhub.site
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 08
   server: 66.163.118.166
   port: 443
@@ -69,6 +79,13 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
+- name: 🇪🇸 西班牙 09
+  server: dns22.m3hrzd.ir
+  port: 1354
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +99,7 @@ proxy-groups:
   - 🇪🇸 西班牙 06
   - 🇪🇸 西班牙 07
   - 🇪🇸 西班牙 08
+  - 🇪🇸 西班牙 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +113,6 @@ proxy-groups:
   - 🇪🇸 西班牙 06
   - 🇪🇸 西班牙 07
   - 🇪🇸 西班牙 08
+  - 🇪🇸 西班牙 09
 rules:
 - MATCH,PROXIES

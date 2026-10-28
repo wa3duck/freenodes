@@ -5,19 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 01
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 02
   server: 155.117.5.208
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇷🇴 罗马尼亚 02
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 03
   server: 46.28.67.55
   port: 443
@@ -30,7 +29,7 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 04
   server: 162.249.125.133
   port: 443
@@ -42,18 +41,13 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 05
-  server: 82.117.255.174
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: vless
-  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
-    short-id: 31e91d43e553bf32
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
