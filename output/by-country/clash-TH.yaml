@@ -5,32 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 01
-  server: 103.86.49.57
-  port: 80
+  server: th001.zestapp778.com
+  port: 33079
   udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: th001.zestapp778.com
+  skip-cert-verify: true
 - name: 🇹🇭 泰国 02
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 03
   server: 45.154.26.63
   port: 443
   udp: true
@@ -43,28 +25,6 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 04
-  server: th001.zestapp778.com
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇹🇭 泰国 05
-  server: 109.237.98.213
-  port: 443
-  udp: true
-  type: vless
-  uuid: 26f751bc-2edc-4338-9c3f-abeb32aba3b7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
-    short-id: 6ba85179e30d4fc2
-  servername: xy4l6bpbjk.xeltrona-host26.sbs
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,9 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
-  - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
-  - 🇹🇭 泰国 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,8 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 01
   - 🇹🇭 泰国 02
-  - 🇹🇭 泰国 03
-  - 🇹🇭 泰国 04
-  - 🇹🇭 泰国 05
 rules:
 - MATCH,PROXIES

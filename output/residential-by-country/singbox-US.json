@@ -5,14 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇩 印尼 01",
-      "server": "130.94.95.198",
-      "server_port": 57353,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tag": "🇺🇸 美国 01",
+      "server": "ld.235231.xyz",
+      "server_port": 443,
+      "uuid": "65d3f9b3-d289-4a8e-9c87-90bba156de30",
       "tls": {
         "enabled": true,
-        "server_name": "in001.zestapp778.com",
+        "server_name": "ld.235231.xyz",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fp=chrome",
+        "headers": {
+          "Host": "ld.235231.xyz"
+        }
       }
     },
     {
@@ -20,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 01"
+        "🇺🇸 美国 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 01"
+        "🇺🇸 美国 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

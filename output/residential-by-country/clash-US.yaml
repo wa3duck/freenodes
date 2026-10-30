@@ -4,27 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 菲律宾 01
-  server: 130.94.52.94
-  port: 15656
+- name: 🇺🇸 美国 01
+  server: ld.235231.xyz
+  port: 443
   udp: true
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
   tls: true
-  servername: ph001.zestapp778.com
+  servername: ld.235231.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ld.235231.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 菲律宾 01
+  - 🇺🇸 美国 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 菲律宾 01
+  - 🇺🇸 美国 01
 rules:
 - MATCH,PROXIES

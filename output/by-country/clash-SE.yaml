@@ -5,15 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
-  server: 51.20.192.255
+  server: couchbase.com
   port: 443
   udp: true
   type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
+  uuid: e818a20d-9bcd-4744-9061-ca51b9c8aeea
+  tls: true
+  servername: wallweb-4ez.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
     path: /
+    headers:
+      Host: wallweb-4ez.pages.dev
 - name: 🇸🇪 瑞典 02
   server: 50.7.38.243
   port: 443
@@ -21,8 +26,16 @@ proxies:
   type: hysteria2
   password: d4ca9415f0eac7897472e1e5b86d2e96
   sni: promo.betust.net
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 03
+  server: 192.142.23.46
+  port: 443
+  udp: true
+  type: hysteria2
+  password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
+  sni: diffoscope.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 04
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -31,75 +44,19 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇸🇪 瑞典 04
-  server: 191.44.114.154
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ndQzAcG4g-2OhvFb8EjFnZyxJ2lhawiulTLJOZrK8lY
-    short-id: c4359f3827231250
-  servername: www.wikipedia.org
-  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 05
-  server: 191.44.114.154
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st5ff8a.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st5ff8a.rumedia-cdn.com
-- name: 🇸🇪 瑞典 06
-  server: 191.44.114.179
+  server: 31.172.65.4
   port: 8443
   udp: true
   type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  uuid: 9c6e83fc-b755-4ad4-9b0a-14b610153d8f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
-    short-id: 9d48935b2c2b8011
-  servername: www.wikipedia.org
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 07
-  server: 193.188.21.253
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 08
-  server: 191.44.114.179
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st33614.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
+    public-key: wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU
+    short-id: 0e7741edc378622f
+  servername: www.bing.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,9 +67,6 @@ proxy-groups:
   - 🇸🇪 瑞典 03
   - 🇸🇪 瑞典 04
   - 🇸🇪 瑞典 05
-  - 🇸🇪 瑞典 06
-  - 🇸🇪 瑞典 07
-  - 🇸🇪 瑞典 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,8 +77,5 @@ proxy-groups:
   - 🇸🇪 瑞典 03
   - 🇸🇪 瑞典 04
   - 🇸🇪 瑞典 05
-  - 🇸🇪 瑞典 06
-  - 🇸🇪 瑞典 07
-  - 🇸🇪 瑞典 08
 rules:
 - MATCH,PROXIES

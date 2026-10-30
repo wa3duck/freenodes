@@ -5,21 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 01
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 02
+  server: 104.17.3.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  tls: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 03
   server: 129.150.59.74
   port: 14384
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
-- name: 🇸🇬 新加坡 02
-  server: 149.88.23.207
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 03
+- name: 🇸🇬 新加坡 04
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -27,30 +45,21 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 04
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 05
-  server: 68.183.227.4
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 06
+  server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 06
-  server: 45.77.40.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: sg003.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇸🇬 新加坡 07
   server: 68.183.235.240
   port: 8080
@@ -59,6 +68,34 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 08
+  server: 68.183.227.45
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 09
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 10
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 11
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 12
   server: 134.185.81.5
   port: 47881
   udp: true
@@ -70,30 +107,30 @@ proxies:
     public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
     short-id: 38d72071
   servername: www.tesla.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 09
-  server: 128.199.172.224
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 10
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 11
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 13
   server: 128.1.186.132
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 12
+- name: 🇸🇬 新加坡 14
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 15
+  server: 139.180.146.200
+  port: 8886
+  udp: true
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 139.180.146.200
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 16
   server: 172.237.88.103
   port: 443
   udp: true
@@ -106,37 +143,49 @@ proxies:
     short-id: 5a42dbd7e26a0415
   servername: zoom.us
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 13
-  server: 128.1.186.73
-  port: 8080
+- name: 🇸🇬 新加坡 17
+  server: 149.28.130.108
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 14
-  server: 68.183.227.45
-  port: 8080
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchcreativejobsandshowcaseyourartistictalents.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 18
+  server: 86.38.247.109
+  port: 2087
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 15
-  server: 68.183.227.236
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 16
-  server: 95.111.195.98
+  type: trojan
+  password: sshs8_6481354771
+  sni: ul-singapore1.09vpn.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 19
+  server: 206.206.76.75
   port: 443
   udp: true
   type: vless
-  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 新加坡 17
+  uuid: 32cf52f4-b8d2-4ed5-a37c-0d0a8e743309
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gSHylaTvEzWj19Bk-zLHXKYUINGWVmo_ybCiD2CRinE
+    short-id: a775360a48ef5cfb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 20
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 21
   server: 172.237.88.103
   port: 447
   udp: true
@@ -149,23 +198,7 @@ proxies:
     short-id: 5a42dbd7e26a0415
   servername: netflix.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 18
-  server: 8.219.97.17
-  port: 443
-  udp: true
-  type: vmess
-  uuid: a9f4de8b-68f1-44b6-b6a2-1db60940503a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: wjofhsqteueywxeq.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: wjofhsqteueywxeq.v.3dns.vip
-- name: 🇸🇬 新加坡 19
+- name: 🇸🇬 新加坡 22
   server: 54.251.9.130
   port: 24146
   udp: true
@@ -177,67 +210,34 @@ proxies:
     public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
     short-id: 7205d9079521832c
   servername: www.intel.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 20
-  server: 213.152.180.55
-  port: 2089
-  udp: true
-  type: vless
-  uuid: 38d3d211-cc9f-491a-a8ab-9a5be57bb712
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oRmj7gTi5H2oIClNYxxgOjqp8-j5kFYtGFU8CNuMj34
-    short-id: deccc6fac1ddb0ff
-  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 21
-  server: 178.94.25.73
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 2dacc738-5720-4824-b8bc-e3db57596ba7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 22
-  server: 147.93.173.45
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
 - name: 🇸🇬 新加坡 23
-  server: 3.0.111.82
-  port: 12972
+  server: 139.162.27.96
+  port: 2096
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 24
+  server: sg.fasti.win
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  servername: sg.fasti.win
   client-fingerprint: random
-- name: 🇸🇬 新加坡 24
-  server: 139.180.146.200
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 139.180.146.200
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 25
   server: 3.0.111.82
   port: 17623
@@ -250,7 +250,59 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 26
+  server: 147.93.173.45
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
+- name: 🇸🇬 新加坡 27
+  server: 103.247.28.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: 64726966-0000-4000-8000-740000000000
+  tls: true
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /fp=firefox
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+- name: 🇸🇬 新加坡 28
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 29
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -281,6 +333,10 @@ proxy-groups:
   - 🇸🇬 新加坡 23
   - 🇸🇬 新加坡 24
   - 🇸🇬 新加坡 25
+  - 🇸🇬 新加坡 26
+  - 🇸🇬 新加坡 27
+  - 🇸🇬 新加坡 28
+  - 🇸🇬 新加坡 29
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -311,5 +367,9 @@ proxy-groups:
   - 🇸🇬 新加坡 23
   - 🇸🇬 新加坡 24
   - 🇸🇬 新加坡 25
+  - 🇸🇬 新加坡 26
+  - 🇸🇬 新加坡 27
+  - 🇸🇬 新加坡 28
+  - 🇸🇬 新加坡 29
 rules:
 - MATCH,PROXIES

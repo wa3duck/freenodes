@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 01",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 02",
+      "tag": "🇷🇴 罗马尼亚 01",
       "server": "155.117.5.208",
       "server_port": 2052,
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 03",
+      "tag": "🇷🇴 罗马尼亚 02",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -30,7 +22,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -41,7 +33,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 04",
+      "tag": "🇷🇴 罗马尼亚 03",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -57,7 +49,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 05",
+      "tag": "🇷🇴 罗马尼亚 04",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
@@ -66,6 +58,14 @@
         "server_name": "185.156.44.99",
         "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 05",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",

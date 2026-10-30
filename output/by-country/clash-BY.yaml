@@ -11,17 +11,6 @@ proxies:
   type: vless
   uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
 - name: 🇧🇾 白俄罗斯 02
-  server: 178.172.227.124
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 178.172.227.124
-- name: 🇧🇾 白俄罗斯 03
   server: 95.128.71.79
   port: 14430
   udp: true
@@ -32,6 +21,17 @@ proxies:
     path: /vless
     headers:
       Host: 95.128.71.79
+- name: 🇧🇾 白俄罗斯 03
+  server: 178.172.227.124
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 178.172.227.124
 - name: 🇧🇾 白俄罗斯 04
   server: 178.172.227.228
   port: 14430
@@ -41,9 +41,20 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 178.172.227.228
 - name: 🇧🇾 白俄罗斯 05
+  server: 178.172.227.228
+  port: 10444
+  udp: true
+  type: vless
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: safari
+- name: 🇧🇾 白俄罗斯 06
   server: 95.128.71.79
   port: 10444
   udp: true
@@ -56,19 +67,6 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: firefox
-- name: 🇧🇾 白俄罗斯 06
-  server: 178.172.227.228
-  port: 10444
-  udp: true
-  type: vless
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: ios
 - name: 🇧🇾 白俄罗斯 07
   server: 178.172.227.124
   port: 10444

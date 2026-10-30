@@ -6,41 +6,17 @@
     {
       "type": "trojan",
       "tag": "🇧🇷 巴西 01",
-      "server": "216.238.104.154",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 02",
       "server": "br001.zestapp778.com",
-      "server_port": 15040,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "server_port": 39533,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "br.zestapp778.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇧🇷 巴西 03",
-      "server": "147.15.108.14",
-      "server_port": 20000,
-      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+        "server_name": "br001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -48,18 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 01",
-        "🇧🇷 巴西 02",
-        "🇧🇷 巴西 03"
+        "🇧🇷 巴西 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 01",
-        "🇧🇷 巴西 02",
-        "🇧🇷 巴西 03"
+        "🇧🇷 巴西 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

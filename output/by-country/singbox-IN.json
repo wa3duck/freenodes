@@ -6,6 +6,48 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 01",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 02",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 03",
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 04",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -24,22 +66,11 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 02",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 03",
-      "server": "139.84.145.241",
-      "server_port": 46362,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "type": "trojan",
+      "tag": "🇮🇳 印度 05",
+      "server": "in002.zestapp778.com",
+      "server_port": 42733,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "in002.zestapp778.com",
@@ -47,56 +78,22 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇮🇳 印度 04",
-      "server": "in.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 05",
-      "server": "109.237.98.217",
-      "server_port": 443,
-      "uuid": "26f751bc-2edc-4338-9c3f-abeb32aba3b7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "rdaes5js9g1.img-assets.world",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lR8BTY8XJ6qt9th7wR3ZnfwCiqRs2yosrONK-SuSsDo",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 06",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 07",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -109,7 +106,8 @@
         "🇮🇳 印度 03",
         "🇮🇳 印度 04",
         "🇮🇳 印度 05",
-        "🇮🇳 印度 06"
+        "🇮🇳 印度 06",
+        "🇮🇳 印度 07"
       ]
     },
     {
@@ -121,7 +119,8 @@
         "🇮🇳 印度 03",
         "🇮🇳 印度 04",
         "🇮🇳 印度 05",
-        "🇮🇳 印度 06"
+        "🇮🇳 印度 06",
+        "🇮🇳 印度 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
