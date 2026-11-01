@@ -5,12 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 01
-  server: 155.117.5.208
+  server: 104.129.164.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime40.workers.dev
+- name: 🇷🇴 罗马尼亚 02
+  server: 178.83.45.226
   port: 2052
   udp: true
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇷🇴 罗马尼亚 02
+- name: 🇷🇴 罗马尼亚 03
+  server: 88.80.135.65
+  port: 4127
+  udp: true
+  type: vless
+  uuid: 33972eb3-3f57-4558-80ff-b6926480ff69
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /Telegram=@AmyraxVPN
+    headers:
+      Host: 88.80.135.65
+- name: 🇷🇴 罗马尼亚 04
+  server: 162.249.125.133
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 05
   server: 46.28.67.55
   port: 443
   udp: true
@@ -22,26 +54,42 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 03
-  server: 162.249.125.133
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 06
+  server: 82.117.255.174
   port: 443
   udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 04
+  type: vless
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 07
+  server: 2.26.89.192
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HA8RX24k72lyACy0T1mCDeYcUQh22XRlT4wuhj3Onl4
+    short-id: 36b707a341db758d
+  servername: assets-ms-90.next-gen-shopping.com
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 08
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: 185.156.44.99
+  sni: www.amazon.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 05
+- name: 🇷🇴 罗马尼亚 09
   server: 154.46.31.106
   port: 443
   udp: true
@@ -58,6 +106,10 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 03
   - 🇷🇴 罗马尼亚 04
   - 🇷🇴 罗马尼亚 05
+  - 🇷🇴 罗马尼亚 06
+  - 🇷🇴 罗马尼亚 07
+  - 🇷🇴 罗马尼亚 08
+  - 🇷🇴 罗马尼亚 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +120,9 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 03
   - 🇷🇴 罗马尼亚 04
   - 🇷🇴 罗马尼亚 05
+  - 🇷🇴 罗马尼亚 06
+  - 🇷🇴 罗马尼亚 07
+  - 🇷🇴 罗马尼亚 08
+  - 🇷🇴 罗马尼亚 09
 rules:
 - MATCH,PROXIES

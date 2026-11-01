@@ -29,7 +29,7 @@ proxies:
     public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
     short-id: e90360ec7cc61b20
   servername: udemy.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇨🇿 捷克 03
   server: 31.77.13.22
   port: 2063
@@ -43,19 +43,20 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇨🇿 捷克 04
-  server: 46.8.113.64
+  server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: 55ad002b-6cdf-4d76-81bb-91f3f605afc5
+  uuid: d84c13b2-c2b9-4a7c-838f-05ac09ee422e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _SukRXeT9BnvrE3eQTrw8vwsrhu7w3hNTMTEK2xzHEw
-  servername: www.zabbix.com
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 2a2ce9e42980
+  servername: www.mozilla.org
   client-fingerprint: firefox
 - name: 🇨🇿 捷克 05
-  server: 193.124.17.190
+  server: server.slavkiti.monster
   port: 443
   udp: true
   type: vless
@@ -66,7 +67,7 @@ proxies:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
     short-id: 87f895f23064
   servername: www.techradar.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

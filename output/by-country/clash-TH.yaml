@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 01
+  server: 119.46.51.45
+  port: 37515
+  udp: true
+  type: vmess
+  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 02
   server: th001.zestapp778.com
   port: 33079
   udp: true
@@ -12,19 +20,6 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
   skip-cert-verify: true
-- name: 🇹🇭 泰国 02
-  server: 45.154.26.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: ff85e702-b605-4109-884d-2c1f065d0954
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
-    short-id: 3c032a7e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

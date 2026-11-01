@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 65.21.52.113
-  port: 53731
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QoYjvkIZ7-bMIYfVI9IzRXUx5A1o3kj7
-- name: 🇫🇮 芬兰 02
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -22,20 +15,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 03
-  server: 45.144.52.187
-  port: 443
+- name: 🇫🇮 芬兰 02
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
   tls: true
-  servername: b.fi-1.bnc-gt.co.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇮 芬兰 04
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 03
   server: 78.17.27.137
   port: 8443
   udp: true
@@ -47,44 +40,19 @@ proxies:
     short-id: a05ccbf2edb5ebd1
   servername: www.aalto.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 05
-  server: 65.109.211.81
-  port: 465
+- name: 🇫🇮 芬兰 04
+  server: 94.228.168.219
+  port: 8443
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
+  flow: xtls-rprx-vision
   tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 06
-  server: hw3.divarkhaghazi.com
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 07
-  server: tun.xelnivo.ir
-  port: 2044
-  udp: true
-  type: vmess
-  uuid: f6547466-a44a-41e7-9b71-473c5bf05723
-  alterId: 0
-  cipher: auto
+  reality-opts:
+    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
+    short-id: 385cb18df0892069
+  servername: fin2.vpngold.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,9 +62,6 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
-  - 🇫🇮 芬兰 05
-  - 🇫🇮 芬兰 06
-  - 🇫🇮 芬兰 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,8 +71,5 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
-  - 🇫🇮 芬兰 05
-  - 🇫🇮 芬兰 06
-  - 🇫🇮 芬兰 07
 rules:
 - MATCH,PROXIES

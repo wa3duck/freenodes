@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 01",
-      "server": "5.252.179.15",
+      "tag": "🇦🇱 AL 01",
+      "server": "151.123.187.198",
       "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+      "uuid": "b24ad12f-f6ce-4f0b-a264-d58a76104026",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "al2.magazinnarubeva.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
+          "public_key": "trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI",
+          "short_id": "8718c58d3d51db59"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇩 摩尔多瓦 01"
+        "🇦🇱 AL 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇩 摩尔多瓦 01"
+        "🇦🇱 AL 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

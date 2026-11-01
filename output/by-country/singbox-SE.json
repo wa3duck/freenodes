@@ -6,35 +6,26 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 01",
-      "server": "couchbase.com",
-      "server_port": 443,
-      "uuid": "e818a20d-9bcd-4744-9061-ca51b9c8aeea",
-      "tls": {
-        "enabled": true,
-        "server_name": "wallweb-4ez.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vless",
         "headers": {
-          "Host": "wallweb-4ez.pages.dev"
+          "Host": "5.178.109.174"
         }
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇸🇪 瑞典 02",
-      "server": "50.7.38.243",
+      "server": "70.34.207.14",
       "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "promo.betust.net",
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
         "insecure": false
       }
     },
@@ -53,34 +44,31 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 04",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 05",
-      "server": "31.172.65.4",
-      "server_port": 8443,
-      "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
+      "server": "83.166.237.167",
+      "server_port": 443,
+      "uuid": "902e7be9-d0a8-42a6-994f-8320916a9d9e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "pine.gaznw.my",
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wRvUAKwcHc4pBNVouIcVjQkVD9aCRR-AmtcFyBV36lU",
-          "short_id": "0e7741edc378622f"
+          "public_key": "oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU",
+          "short_id": "46da9a2868751b85"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 05",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",

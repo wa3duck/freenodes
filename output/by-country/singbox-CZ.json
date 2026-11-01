@@ -36,7 +36,7 @@
         "server_name": "udemy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -69,28 +69,28 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 04",
-      "server": "46.8.113.64",
+      "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "55ad002b-6cdf-4d76-81bb-91f3f605afc5",
+      "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.zabbix.com",
+        "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_SukRXeT9BnvrE3eQTrw8vwsrhu7w3hNTMTEK2xzHEw",
-          "short_id": ""
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "2a2ce9e42980"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 05",
-      "server": "193.124.17.190",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
       "flow": "xtls-rprx-vision",
@@ -99,7 +99,7 @@
         "server_name": "www.techradar.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

@@ -1,0 +1,44 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 爱沙尼亚 01
+  server: ee.h1cloud.net
+  port: 25895
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  tls: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 02
+  server: 179.253.179.109
+  port: 57043
+  udp: true
+  type: vless
+  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  tls: true
+  servername: 87.121.86.24
+  skip-cert-verify: false
+  client-fingerprint: firefox
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 爱沙尼亚 01
+  - 🇪🇪 爱沙尼亚 02
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 01
+  - 🇪🇪 爱沙尼亚 02
+rules:
+- MATCH,PROXIES

@@ -6,34 +6,39 @@
     {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 01",
-      "server": "155.117.5.208",
+      "server": "104.129.164.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime40.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 02",
+      "server": "178.83.45.226",
       "server_port": 2052,
       "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 02",
-      "server": "46.28.67.55",
-      "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
+      "tag": "🇷🇴 罗马尼亚 03",
+      "server": "88.80.135.65",
+      "server_port": 4127,
+      "uuid": "33972eb3-3f57-4558-80ff-b6926480ff69",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/Telegram=@AmyraxVPN",
+        "host": "88.80.135.65"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 03",
+      "tag": "🇷🇴 罗马尼亚 04",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -48,20 +53,83 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 05",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 06",
+      "server": "82.117.255.174",
+      "server_port": 443,
+      "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0",
+          "short_id": "31e91d43e553bf32"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 07",
+      "server": "2.26.89.192",
+      "server_port": 443,
+      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-ms-90.next-gen-shopping.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HA8RX24k72lyACy0T1mCDeYcUQh22XRlT4wuhj3Onl4",
+          "short_id": "36b707a341db758d"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 04",
+      "tag": "🇷🇴 罗马尼亚 08",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "www.amazon.com",
         "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 05",
+      "tag": "🇷🇴 罗马尼亚 09",
       "server": "154.46.31.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
@@ -76,7 +144,11 @@
         "🇷🇴 罗马尼亚 02",
         "🇷🇴 罗马尼亚 03",
         "🇷🇴 罗马尼亚 04",
-        "🇷🇴 罗马尼亚 05"
+        "🇷🇴 罗马尼亚 05",
+        "🇷🇴 罗马尼亚 06",
+        "🇷🇴 罗马尼亚 07",
+        "🇷🇴 罗马尼亚 08",
+        "🇷🇴 罗马尼亚 09"
       ]
     },
     {
@@ -87,7 +159,11 @@
         "🇷🇴 罗马尼亚 02",
         "🇷🇴 罗马尼亚 03",
         "🇷🇴 罗马尼亚 04",
-        "🇷🇴 罗马尼亚 05"
+        "🇷🇴 罗马尼亚 05",
+        "🇷🇴 罗马尼亚 06",
+        "🇷🇴 罗马尼亚 07",
+        "🇷🇴 罗马尼亚 08",
+        "🇷🇴 罗马尼亚 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

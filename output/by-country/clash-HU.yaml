@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 01
-  server: ld.235231.xyz
-  port: 443
+- name: 🇭🇺 匈牙利 01
+  server: 172.67.131.125
+  port: 2083
   udp: true
   type: vless
-  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
+  uuid: f418674e-f518-4318-8ff9-e10000000046
   tls: true
-  servername: ld.235231.xyz
+  servername: smart-edge-424.arti98399-1905.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /fp=chrome
+    path: /sync
     headers:
-      Host: ld.235231.xyz
+      Host: smart-edge-424.arti98399-1905.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 01
+  - 🇭🇺 匈牙利 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 01
+  - 🇭🇺 匈牙利 01
 rules:
 - MATCH,PROXIES
