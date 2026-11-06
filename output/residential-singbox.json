@@ -4,101 +4,65 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 01",
-      "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
-      "server_port": 443,
-      "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
+      "type": "trojan",
+      "tag": "🇺🇸 美国 01",
+      "server": "130.94.19.95",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 02",
-      "server": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "367e233c-2f54-11ee-9ae1-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "39c981a4-tmm5c0-u093mf-1mina.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 03",
-      "server": "2219f493-tmm5c0-tpftcp-13x18.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "e4499a62-0cfe-11eb-ad8c-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "2219f493-tmm5c0-tpftcp-13x18.nw4.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 04",
-      "server": "122.176.216.52",
-      "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-      "tls": {
-        "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "server_name": "us001.zestapp778.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 02",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
       },
       "transport": {
-        "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
-        "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
-        }
+        "type": "grpc",
+        "service_name": "db"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 05",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
+      "tag": "🇰🇷 韩国 03",
+      "server": "49.254.204.133",
+      "server_port": 1774,
       "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 01",
-        "🇭🇰 中国香港 02",
-        "🇭🇰 中国香港 03",
-        "🇮🇳 印度 04",
-        "🇰🇷 韩国 05"
+        "🇺🇸 美国 01",
+        "🇹🇼 中国台湾 02",
+        "🇰🇷 韩国 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 01",
-        "🇭🇰 中国香港 02",
-        "🇭🇰 中国香港 03",
-        "🇮🇳 印度 04",
-        "🇰🇷 韩国 05"
+        "🇺🇸 美国 01",
+        "🇹🇼 中国台湾 02",
+        "🇰🇷 韩国 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01
-  server: 151.123.187.198
-  port: 443
+- name: 🇸🇦 沙特 01
+  server: 81.208.170.142
+  port: 1500
   udp: true
   type: vless
-  uuid: b24ad12f-f6ce-4f0b-a264-d58a76104026
-  flow: xtls-rprx-vision
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   tls: true
   reality-opts:
-    public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
-    short-id: 8718c58d3d51db59
-  servername: al2.magazinnarubeva.ru
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+    short-id: 775eb6408888248e
+  servername: www.ebay.com
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01
+  - 🇸🇦 沙特 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01
+  - 🇸🇦 沙特 01
 rules:
 - MATCH,PROXIES

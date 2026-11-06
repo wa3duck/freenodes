@@ -16,106 +16,20 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
 - name: 🇰🇿 哈萨克斯坦 02
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: viber.com
-- name: 🇰🇿 哈萨克斯坦 03
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 04
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 05
-  server: 46.8.43.125
+  server: 95.57.50.87
   port: 443
   udp: true
   type: vless
-  uuid: f190853d-4cc5-4a67-acfb-5e0b3b750537
-  tls: true
-  reality-opts:
-    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
-  servername: kz-central.v8x2b.lol
-  client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 06
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇰🇿 哈萨克斯坦 07
-  server: 95.56.251.12
-  port: 47443
-  udp: true
-  type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
-    short-id: ae97223a8f799877
-  servername: kz1.waspnest.space
+    public-key: eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE
+    short-id: 4000cdda6278d236
+  servername: kz1.japancase.site
   client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 08
-  server: 178.236.16.98
-  port: 35728
-  udp: true
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 09
-  server: 109.248.170.119
-  port: 13447
-  udp: true
-  type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  tls: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,13 +37,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 01
   - 🇰🇿 哈萨克斯坦 02
-  - 🇰🇿 哈萨克斯坦 03
-  - 🇰🇿 哈萨克斯坦 04
-  - 🇰🇿 哈萨克斯坦 05
-  - 🇰🇿 哈萨克斯坦 06
-  - 🇰🇿 哈萨克斯坦 07
-  - 🇰🇿 哈萨克斯坦 08
-  - 🇰🇿 哈萨克斯坦 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -137,12 +44,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 01
   - 🇰🇿 哈萨克斯坦 02
-  - 🇰🇿 哈萨克斯坦 03
-  - 🇰🇿 哈萨克斯坦 04
-  - 🇰🇿 哈萨克斯坦 05
-  - 🇰🇿 哈萨克斯坦 06
-  - 🇰🇿 哈萨克斯坦 07
-  - 🇰🇿 哈萨克斯坦 08
-  - 🇰🇿 哈萨克斯坦 09
 rules:
 - MATCH,PROXIES

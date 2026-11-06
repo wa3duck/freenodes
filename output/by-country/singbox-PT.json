@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇨🇴 哥伦比亚 01",
-      "server": "149.104.107.41",
-      "server_port": 8090,
-      "method": "aes-256-gcm",
-      "password": "PCnnH6SQSnfoS27"
+      "tag": "🇵🇹 葡萄牙 01",
+      "server": "185.231.233.91",
+      "server_port": 17167,
+      "method": "aes-128-gcm",
+      "password": "d925ddb6fe1e6e62887cf3dc3f5137f3"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇴 哥伦比亚 01"
+        "🇵🇹 葡萄牙 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇴 哥伦比亚 01"
+        "🇵🇹 葡萄牙 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

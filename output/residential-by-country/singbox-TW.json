@@ -4,26 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇬 埃及 01",
-      "server": "38.54.59.102",
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 01",
+      "server": "125.227.86.45",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "pKEW8JPByTVTLtM"
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇬 埃及 01"
+        "🇹🇼 中国台湾 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇬 埃及 01"
+        "🇹🇼 中国台湾 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

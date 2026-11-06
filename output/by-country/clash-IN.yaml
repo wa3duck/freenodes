@@ -15,9 +15,9 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇳 印度 02
-  server: in.smrtai.top
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -27,16 +27,8 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 03
-  server: 139.84.210.39
-  port: 42733
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: in002.zestapp778.com
-  skip-cert-verify: false
-- name: 🇮🇳 印度 04
   server: 152.67.8.205
   port: 80
   udp: true
@@ -47,7 +39,9 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇮🇳 印度 05
+    headers:
+      Host: in-152.67.8.205-0179
+- name: 🇮🇳 印度 04
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -58,13 +52,6 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 06
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,8 +61,6 @@ proxy-groups:
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
-  - 🇮🇳 印度 05
-  - 🇮🇳 印度 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,7 +70,5 @@ proxy-groups:
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
   - 🇮🇳 印度 04
-  - 🇮🇳 印度 05
-  - 🇮🇳 印度 06
 rules:
 - MATCH,PROXIES

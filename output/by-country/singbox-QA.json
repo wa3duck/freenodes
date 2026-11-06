@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01",
-      "server": "151.123.187.198",
-      "server_port": 443,
-      "uuid": "b24ad12f-f6ce-4f0b-a264-d58a76104026",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇶🇦 卡塔尔 01",
+      "server": "149.104.121.174",
+      "server_port": 8443,
+      "uuid": "1506f2e0-ae12-4718-b5ab-c5609161300e",
       "tls": {
         "enabled": true,
-        "server_name": "al2.magazinnarubeva.ru",
+        "server_name": "as10.cdn77.icu",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI",
-          "short_id": "8718c58d3d51db59"
+          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
+          "short_id": ""
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01"
+        "🇶🇦 卡塔尔 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01"
+        "🇶🇦 卡塔尔 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

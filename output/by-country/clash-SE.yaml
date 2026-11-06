@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 01
+  server: 138.199.55.243
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇪 瑞典 02
+  server: 70.34.207.14
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 03
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -15,42 +30,46 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 02
-  server: 70.34.207.14
+- name: 🇸🇪 瑞典 04
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 05
+  server: 138.199.55.230
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 06
+  server: 95.143.196.97
   port: 443
   udp: true
   type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 03
-  server: 192.142.23.46
-  port: 443
-  udp: true
-  type: hysteria2
-  password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
-  sni: diffoscope.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 04
-  server: 83.166.237.167
+- name: 🇸🇪 瑞典 07
+  server: 194.104.94.141
   port: 443
   udp: true
   type: vless
-  uuid: 902e7be9-d0a8-42a6-994f-8320916a9d9e
-  flow: xtls-rprx-vision
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   tls: true
-  reality-opts:
-    public-key: oKG1EhkfIvBM6xLEk7ck51ZbjvUKDR22RNjTJR_7sTU
-    short-id: 46da9a2868751b85
-  servername: pine.gaznw.my
-  client-fingerprint: qq
-- name: 🇸🇪 瑞典 05
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  servername: se3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +80,8 @@ proxy-groups:
   - 🇸🇪 瑞典 03
   - 🇸🇪 瑞典 04
   - 🇸🇪 瑞典 05
+  - 🇸🇪 瑞典 06
+  - 🇸🇪 瑞典 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +92,7 @@ proxy-groups:
   - 🇸🇪 瑞典 03
   - 🇸🇪 瑞典 04
   - 🇸🇪 瑞典 05
+  - 🇸🇪 瑞典 06
+  - 🇸🇪 瑞典 07
 rules:
 - MATCH,PROXIES
