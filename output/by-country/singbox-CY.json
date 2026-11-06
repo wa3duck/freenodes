@@ -13,7 +13,7 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 02",
-      "server": "45.86.60.190",
+      "server": "ee2.japancase.site",
       "server_port": 443,
       "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
       "flow": "xtls-rprx-vision",
@@ -22,7 +22,7 @@
         "server_name": "ee2.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -32,34 +32,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 03",
-      "server": "5.253.30.99",
-      "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 01",
-        "🇨🇾 塞浦路斯 02",
-        "🇨🇾 塞浦路斯 03"
+        "🇨🇾 塞浦路斯 02"
       ]
     },
     {
@@ -67,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 01",
-        "🇨🇾 塞浦路斯 02",
-        "🇨🇾 塞浦路斯 03"
+        "🇨🇾 塞浦路斯 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

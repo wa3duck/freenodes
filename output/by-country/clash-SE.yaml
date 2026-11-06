@@ -20,17 +20,6 @@ proxies:
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 03
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 04
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -41,6 +30,17 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 04
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 05
   server: 138.199.55.230
   port: 1270
@@ -53,15 +53,28 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 06
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 07
   server: 95.143.196.97
   port: 443
   udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
+  type: hysteria2
+  password: 769f34f0-1500-488f-b414-03bc90666502
+  sni: se.mimowhat.online
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 07
-  server: 194.104.94.141
+- name: 🇸🇪 瑞典 08
+  server: se3.shtil.io
   port: 443
   udp: true
   type: vless
@@ -82,6 +95,7 @@ proxy-groups:
   - 🇸🇪 瑞典 05
   - 🇸🇪 瑞典 06
   - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,5 +108,6 @@ proxy-groups:
   - 🇸🇪 瑞典 05
   - 🇸🇪 瑞典 06
   - 🇸🇪 瑞典 07
+  - 🇸🇪 瑞典 08
 rules:
 - MATCH,PROXIES

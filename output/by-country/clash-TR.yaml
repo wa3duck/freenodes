@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
-  server: 153.56.210.61
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 02
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -29,6 +16,16 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇹🇷 土耳其 02
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  type: hysteria2
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
 - name: 🇹🇷 土耳其 03
   server: 62.133.63.45
   port: 8444
@@ -40,11 +37,24 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 04
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 05
   server: 198.105.123.224
   port: 443
   udp: true
@@ -66,6 +76,7 @@ proxy-groups:
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
   - 🇹🇷 土耳其 04
+  - 🇹🇷 土耳其 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,5 +86,6 @@ proxy-groups:
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
   - 🇹🇷 土耳其 04
+  - 🇹🇷 土耳其 05
 rules:
 - MATCH,PROXIES

@@ -6,9 +6,9 @@
     {
       "type": "vmess",
       "tag": "🇨🇳 CN 01",
-      "server": "39.108.113.127",
+      "server": "120.48.133.162",
       "server_port": 10086,
-      "uuid": "fccbad0f-eb6c-4bdd-80ed-145409e2f761",
+      "uuid": "2a489513-46b5-488c-9899-9faaf2d83cd9",
       "security": "auto",
       "transport": {
         "type": "ws"
@@ -17,7 +17,7 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 02",
-      "server": "104.17.11.191",
+      "server": "8.35.211.242",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -40,7 +40,7 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 03",
-      "server": "172.67.166.188",
+      "server": "vpn.cintaku.qzz.io",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
@@ -54,10 +54,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
+        "path": "/vlessws"
       }
     },
     {

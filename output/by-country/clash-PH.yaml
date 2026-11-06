@@ -13,7 +13,7 @@ proxies:
   sni: ph001.zestapp778.com
   skip-cert-verify: false
 - name: 🇵🇭 菲律宾 02
-  server: 130.94.52.37
+  server: ph001.zestapp778.com
   port: 46298
   udp: true
   type: trojan

@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01
-  server: 39.108.113.127
+  server: 120.48.133.162
   port: 10086
   udp: true
   type: vmess
-  uuid: fccbad0f-eb6c-4bdd-80ed-145409e2f761
+  uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
     path: /
 - name: 🇨🇳 CN 02
-  server: 104.17.11.191
+  server: 8.35.211.242
   port: 443
   udp: true
   type: vless
@@ -31,7 +31,7 @@ proxies:
     headers:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 03
-  server: 172.67.166.188
+  server: vpn.cintaku.qzz.io
   port: 443
   udp: true
   type: vless
@@ -43,8 +43,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select

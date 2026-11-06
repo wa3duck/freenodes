@@ -11,7 +11,7 @@ proxies:
   type: vless
   uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 - name: 🇨🇾 塞浦路斯 02
-  server: 45.86.60.190
+  server: ee2.japancase.site
   port: 443
   udp: true
   type: vless
@@ -22,20 +22,7 @@ proxies:
     public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
     short-id: 41ae8e266bc3346f
   servername: ee2.japancase.site
-  client-fingerprint: ''
-- name: 🇨🇾 塞浦路斯 03
-  server: 5.253.30.99
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
-  - 🇨🇾 塞浦路斯 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 01
   - 🇨🇾 塞浦路斯 02
-  - 🇨🇾 塞浦路斯 03
 rules:
 - MATCH,PROXIES

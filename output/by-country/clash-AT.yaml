@@ -23,12 +23,18 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇦🇹 奥地利 03
-  server: 152.53.1.57
-  port: 8388
+  server: at1.japancase.site
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
+    short-id: 41ae8e266bc3346f
+  servername: at1.japancase.site
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
