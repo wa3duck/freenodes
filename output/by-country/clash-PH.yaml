@@ -12,27 +12,17 @@ proxies:
   password: 5t6i121em5lkmsmk
   sni: ph001.zestapp778.com
   skip-cert-verify: false
-- name: 🇵🇭 菲律宾 02
-  server: ph001.zestapp778.com
-  port: 46298
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: ph001.zestapp778.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇭 菲律宾 01
-  - 🇵🇭 菲律宾 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇭 菲律宾 01
-  - 🇵🇭 菲律宾 02
 rules:
 - MATCH,PROXIES

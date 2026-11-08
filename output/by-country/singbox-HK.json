@@ -6,46 +6,37 @@
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 01",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 02",
-      "server": "209.33.160.122",
-      "server_port": 39098,
-      "uuid": "7852e4df-db54-4f75-a35e-3b8fbe89e56d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dash.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 03",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 02",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 03",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
@@ -56,58 +47,13 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2ð¨ð³",
+        "server_name": "https://t.me/wangcai2üá",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 05",
-      "server": "e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "a4c9b7cc-a816-11ed-9f65-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "e4e8e68f-tmm5c0-tny186-4lg6.nw4.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 06",
-      "server": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "f7d95364-607b-11ee-93af-f23c91369f2d",
-      "tls": {
-        "enabled": true,
-        "server_name": "e49952e3-tmm5c0-tv7zgh-1ijh5.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 07",
-      "server": "85.155.149.190",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk1.japancase.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pGCqNljaUIUVC7xpHa9nFnu6vsQ0OX3QyfvYMhLZuWY",
-          "short_id": "bee10b047804c637"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 08",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -122,6 +68,42 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 06",
+      "server": "planb.mojcn.com.linuxlh.xin",
+      "server_port": 16632,
+      "uuid": "56a511bd-f207-48f4-be5b-4652afe178a4",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 07",
+      "server": "165.154.63.139",
+      "server_port": 443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
+          "short_id": "ca4aedd4"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -132,8 +114,7 @@
         "🇭🇰 中国香港 04",
         "🇭🇰 中国香港 05",
         "🇭🇰 中国香港 06",
-        "🇭🇰 中国香港 07",
-        "🇭🇰 中国香港 08"
+        "🇭🇰 中国香港 07"
       ]
     },
     {
@@ -146,8 +127,7 @@
         "🇭🇰 中国香港 04",
         "🇭🇰 中国香港 05",
         "🇭🇰 中国香港 06",
-        "🇭🇰 中国香港 07",
-        "🇭🇰 中国香港 08"
+        "🇭🇰 中国香港 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

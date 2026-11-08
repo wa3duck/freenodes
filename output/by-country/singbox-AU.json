@@ -12,6 +12,34 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 02",
+      "server": "au001.zestapp778.com",
+      "server_port": 54374,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "au001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇦🇺 澳大利亚 03",
+      "server": "user02.godvpn.lol",
+      "server_port": 62405,
+      "password": "4bbfa33a-449a-4a50-8dfc-6d0de880f7bc",
+      "tls": {
+        "enabled": true,
+        "server_name": "user02.godvpn.lol",
         "insecure": true
       }
     },
@@ -20,14 +48,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 01"
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇦🇺 澳大利亚 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 01"
+        "🇦🇺 澳大利亚 01",
+        "🇦🇺 澳大利亚 02",
+        "🇦🇺 澳大利亚 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

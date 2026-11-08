@@ -5,27 +5,54 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 01
-  server: 149.22.95.183
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦 加拿大 02
   server: 138.197.141.58
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 02
+  server: 134.195.196.154
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
 - name: 🇨🇦 加拿大 03
+  server: ca001.zestapp778.com
+  port: 46977
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: ca001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 04
   server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 04
+- name: 🇨🇦 加拿大 05
+  server: 51.79.64.198
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 06
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 07
   server: 158.51.121.246
   port: 1270
   udp: true
@@ -36,15 +63,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇨🇦 加拿大 05
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 06
+- name: 🇨🇦 加拿大 08
   server: 209.200.246.148
   port: 443
   udp: true
@@ -57,54 +76,7 @@ proxies:
     short-id: f98843107912e782
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇦 加拿大 07
-  server: 134.195.196.154
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇨🇦 加拿大 08
-  server: 188.114.96.1
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: www.windowsmsidownloads.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.windowsmsidownloads.com
 - name: 🇨🇦 加拿大 09
-  server: 51.222.136.236
-  port: 8882
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 10
-  server: ca1.japancase.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zN5buqMK95hn0mv3vKlfoOAi99ehuvP73cUuyNbZNWc
-    short-id: dbd6b473c7038dd5
-  servername: ca1.japancase.site
-  client-fingerprint: edge
-- name: 🇨🇦 加拿大 11
   server: 134.195.196.211
   port: 18000
   udp: true
@@ -112,32 +84,38 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇨🇦 加拿大 10
+  server: 149.22.95.183
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 11
+  server: 216.152.147.48
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
 - name: 🇨🇦 加拿大 12
-  server: 103.106.229.37
-  port: 21001
+  server: 216.152.147.85
+  port: 443
   udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: ab39fc68ab3dee81
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
 - name: 🇨🇦 加拿大 13
-  server: 103.106.229.37
-  port: 21003
+  server: 51.222.136.236
+  port: 8882
   udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: bab49aa4c2a88d27
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
 - name: 🇨🇦 加拿大 14
-  server: 510.150333.xyz
+  server: 103.106.229.177
   port: 21002
   udp: true
   type: vless
@@ -149,22 +127,66 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇦 加拿大 15
-  server: 216.152.147.79
-  port: 443
+  server: 103.106.229.37
+  port: 21004
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 2df2bd9d8366cef1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 16
-  server: 149.248.50.252
-  port: 46977
+  server: 103.106.229.177
+  port: 21001
   udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: ca001.zestapp778.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: a51c3ccb2320024a
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 17
+  server: 511.150333.xyz
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 3ab8d93dd9b1a5be
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 18
+  server: 103.106.229.37
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: ab39fc68ab3dee81
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 19
+  server: 103.106.229.37
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: bab49aa4c2a88d27
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 20
   server: 103.106.229.177
   port: 21003
   udp: true
@@ -176,19 +198,7 @@ proxies:
     short-id: f3602a3a1cf928b7
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 18
-  server: 510.150333.xyz
-  port: 21001
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: a51c3ccb2320024a
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 19
+- name: 🇨🇦 加拿大 21
   server: 510.150333.xyz
   port: 21004
   udp: true
@@ -199,15 +209,44 @@ proxies:
     public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
     short-id: 4e0418d648f86141
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 20
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 22
+  server: 51.222.12.127
+  port: 445
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 23
   server: 51.222.200.165
   port: 5000
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 21
+- name: 🇨🇦 加拿大 24
+  server: 216.152.147.79
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: false
+- name: 🇨🇦 加拿大 25
+  server: 158.51.121.221
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇦 加拿大 26
+  server: 51.222.155.32
+  port: 5003
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+- name: 🇨🇦 加拿大 27
   server: 216.152.147.74
   port: 443
   udp: true
@@ -215,36 +254,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: api.connectingpeoplewithgreatjobs.com
   skip-cert-verify: false
-- name: 🇨🇦 加拿大 22
-  server: 158.51.121.221
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇨🇦 加拿大 23
-  server: 216.152.147.48
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.connectingpeoplewithgreatjobs.com
-  skip-cert-verify: false
-- name: 🇨🇦 加拿大 24
-  server: 216.152.147.93
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectingpeoplewithgreatjobs.com
-  skip-cert-verify: false
-- name: 🇨🇦 加拿大 25
-  server: 51.79.85.185
-  port: 8118
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
 proxy-groups:
 - name: PROXIES
   type: select
@@ -275,6 +284,8 @@ proxy-groups:
   - 🇨🇦 加拿大 23
   - 🇨🇦 加拿大 24
   - 🇨🇦 加拿大 25
+  - 🇨🇦 加拿大 26
+  - 🇨🇦 加拿大 27
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -305,5 +316,7 @@ proxy-groups:
   - 🇨🇦 加拿大 23
   - 🇨🇦 加拿大 24
   - 🇨🇦 加拿大 25
+  - 🇨🇦 加拿大 26
+  - 🇨🇦 加拿大 27
 rules:
 - MATCH,PROXIES

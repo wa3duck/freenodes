@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 02
-  server: 153.56.210.134
-  port: 57251
-  udp: true
-  type: hysteria2
-  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 03
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -41,7 +19,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 04
+- name: 🇹🇷 土耳其 02
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 03
   server: 78.135.73.47
   port: 443
   udp: true
@@ -53,20 +43,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 05
-  server: 198.105.123.224
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
-    short-id: 41ae8e266bc3346f
-  servername: tr1.japancase.site
-  client-fingerprint: ''
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,8 +52,6 @@ proxy-groups:
   - 🇹🇷 土耳其 01
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
-  - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,7 +60,5 @@ proxy-groups:
   - 🇹🇷 土耳其 01
   - 🇹🇷 土耳其 02
   - 🇹🇷 土耳其 03
-  - 🇹🇷 土耳其 04
-  - 🇹🇷 土耳其 05
 rules:
 - MATCH,PROXIES

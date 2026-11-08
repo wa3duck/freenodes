@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 193.25.216.31
+  server: 217.144.188.185
   port: 443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: firefox
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 02
   server: 45.144.234.157
   port: 14430
@@ -29,29 +28,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 03
-  server: 104.24.0.1
-  port: 2053
-  udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 04
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
+  server: 5.129.249.155
+  port: 443
   udp: true
   type: vless
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
+  servername: assets-59.topp-con.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +48,6 @@ proxy-groups:
   - 🇫🇮 芬兰 01
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
-  - 🇫🇮 芬兰 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +56,5 @@ proxy-groups:
   - 🇫🇮 芬兰 01
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
-  - 🇫🇮 芬兰 04
 rules:
 - MATCH,PROXIES

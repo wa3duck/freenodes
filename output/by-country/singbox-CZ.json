@@ -27,34 +27,13 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 02",
-      "server": "212.102.38.25",
-      "server_port": 443,
-      "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "udemy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE",
-          "short_id": "e90360ec7cc61b20"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 03",
       "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -62,7 +41,7 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "8325360e8bd2"
+          "short_id": "ee1716767f9b"
         }
       }
     },
@@ -72,8 +51,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02",
-        "🇨🇿 捷克 03"
+        "🇨🇿 捷克 02"
       ]
     },
     {
@@ -81,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02",
-        "🇨🇿 捷克 03"
+        "🇨🇿 捷克 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,21 +6,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 01",
-      "server": "193.25.216.31",
+      "server": "217.144.188.185",
       "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
+        "server_name": "www.nordea.fi",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
+          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
+          "short_id": ""
         }
       }
     },
@@ -39,49 +39,23 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 03",
-      "server": "104.24.0.1",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
-      "tls": {
-        "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 04",
-      "server": "6.bmi.ir.asopardaz.ir",
-      "server_port": 8443,
-      "uuid": "fe4d2b3e-965f-4389-a6e4-05887ef5fd2b",
+      "tag": "🇫🇮 芬兰 03",
+      "server": "5.129.249.155",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hostgator.com",
+        "server_name": "assets-59.topp-con.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
-          "short_id": "e915"
+          "public_key": "LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU",
+          "short_id": "b9120cd53ffd7bba"
         }
       }
     },
@@ -92,8 +66,7 @@
         "auto",
         "🇫🇮 芬兰 01",
         "🇫🇮 芬兰 02",
-        "🇫🇮 芬兰 03",
-        "🇫🇮 芬兰 04"
+        "🇫🇮 芬兰 03"
       ]
     },
     {
@@ -102,8 +75,7 @@
       "outbounds": [
         "🇫🇮 芬兰 01",
         "🇫🇮 芬兰 02",
-        "🇫🇮 芬兰 03",
-        "🇫🇮 芬兰 04"
+        "🇫🇮 芬兰 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

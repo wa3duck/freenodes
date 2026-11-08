@@ -18,30 +18,17 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 02
-  server: 212.102.38.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
-    short-id: e90360ec7cc61b20
-  servername: udemy.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 03
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
+  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
+    short-id: ee1716767f9b
+  servername: www.tradingview.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 01
   - 🇨🇿 捷克 02
-  - 🇨🇿 捷克 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 01
   - 🇨🇿 捷克 02
-  - 🇨🇿 捷克 03
 rules:
 - MATCH,PROXIES

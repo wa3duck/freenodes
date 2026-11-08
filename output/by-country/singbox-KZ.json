@@ -6,17 +6,13 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 01",
-      "server": "3h-kazakhstan1.09vpn.com",
+      "server": "38.107.234.57",
       "server_port": 8443,
       "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
       "tls": {
         "enabled": true,
         "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       },
       "transport": {
         "type": "ws",
@@ -44,29 +40,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 03",
-      "server": "95.57.50.87",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "kz1.japancase.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE",
-          "short_id": "4000cdda6278d236"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 04",
+      "tag": "🇰🇿 哈萨克斯坦 03",
       "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
@@ -75,20 +50,8 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "38.107.234.57"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 05",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
       }
     },
     {
@@ -98,9 +61,7 @@
         "auto",
         "🇰🇿 哈萨克斯坦 01",
         "🇰🇿 哈萨克斯坦 02",
-        "🇰🇿 哈萨克斯坦 03",
-        "🇰🇿 哈萨克斯坦 04",
-        "🇰🇿 哈萨克斯坦 05"
+        "🇰🇿 哈萨克斯坦 03"
       ]
     },
     {
@@ -109,9 +70,7 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 01",
         "🇰🇿 哈萨克斯坦 02",
-        "🇰🇿 哈萨克斯坦 03",
-        "🇰🇿 哈萨克斯坦 04",
-        "🇰🇿 哈萨克斯坦 05"
+        "🇰🇿 哈萨克斯坦 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

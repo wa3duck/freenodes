@@ -4,24 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 01",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "in-152.67.8.205-0250"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 02",
-      "server": "in.smrtai.top",
+      "tag": "🇮🇳 印度 01",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -29,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -40,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 03",
+      "tag": "🇮🇳 印度 02",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -53,35 +38,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 04",
-      "server": "in1.japancase.site",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "in1.japancase.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lDBwW08dYwPP-7dVxYQ_clzfFwsDHLlclz9K2cEV6DM",
-          "short_id": "df7b054cfc29800c"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 01",
-        "🇮🇳 印度 02",
-        "🇮🇳 印度 03",
-        "🇮🇳 印度 04"
+        "🇮🇳 印度 02"
       ]
     },
     {
@@ -89,9 +51,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 01",
-        "🇮🇳 印度 02",
-        "🇮🇳 印度 03",
-        "🇮🇳 印度 04"
+        "🇮🇳 印度 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

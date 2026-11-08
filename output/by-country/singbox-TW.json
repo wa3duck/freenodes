@@ -11,70 +11,14 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 02",
-      "server": "152.32.167.33",
-      "server_port": 443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
-          "short_id": "cff998a4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 03",
-      "server": "83.147.13.74",
-      "server_port": 8443,
-      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.githubassets.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
-          "short_id": "4ad2e4e660550e43"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 04",
-      "server": "18.141.210.28",
-      "server_port": 10000,
-      "password": "eRlY6dXnQ4QUzVOQi6YDfZWq",
-      "tls": {
-        "enabled": true,
-        "server_name": "sg-transit-3.nebulacloud.win",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 05",
-      "server": "vpn-tw-002.fastervpn.world",
+      "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
@@ -84,15 +28,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 03",
+      "server": "152.32.167.33",
+      "server_port": 443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4",
+          "short_id": "cff998a4"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 01",
         "🇹🇼 中国台湾 02",
-        "🇹🇼 中国台湾 03",
-        "🇹🇼 中国台湾 04",
-        "🇹🇼 中国台湾 05"
+        "🇹🇼 中国台湾 03"
       ]
     },
     {
@@ -101,9 +64,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 01",
         "🇹🇼 中国台湾 02",
-        "🇹🇼 中国台湾 03",
-        "🇹🇼 中国台湾 04",
-        "🇹🇼 中国台湾 05"
+        "🇹🇼 中国台湾 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
