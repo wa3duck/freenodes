@@ -5,73 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 01
+  server: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  sni: 633b0024-tmm5c0-ttx5yr-1j0y6.hk3.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 02
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 02
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 03
-  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 04
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 05
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 06
-  server: planb.mojcn.com.linuxlh.xin
-  port: 16632
-  udp: true
-  type: vmess
-  uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
-- name: 🇭🇰 中国香港 07
-  server: 165.154.63.139
+- name: 🇭🇰 中国香港 04
+  server: 202.146.222.89
   port: 443
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 05
+  server: f7f87486-tmm5c0-ts3rye-mrtr.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  sni: f7f87486-tmm5c0-ts3rye-mrtr.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,8 +54,6 @@ proxy-groups:
   - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
   - 🇭🇰 中国香港 05
-  - 🇭🇰 中国香港 06
-  - 🇭🇰 中国香港 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,7 +64,5 @@ proxy-groups:
   - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
   - 🇭🇰 中国香港 05
-  - 🇭🇰 中国香港 06
-  - 🇭🇰 中国香港 07
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 01",
+      "server": "31.222.235.81",
+      "server_port": 443,
+      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
+          "short_id": "d8b58872"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 02",
       "server": "83.147.18.75",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -15,7 +35,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -26,10 +46,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 02",
+      "tag": "🇺🇦 乌克兰 03",
       "server": "104.253.216.227",
       "server_port": 443,
-      "uuid": "106d20f6-d70a-40e2-b69b-8e82baf8d117",
+      "uuid": "2ba7f500-017b-4891-87a0-e4e62a4ad52d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -41,7 +61,7 @@
         "reality": {
           "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "60500a63ad12"
+          "short_id": "9409f73c2fd7"
         }
       }
     },
@@ -51,7 +71,8 @@
       "outbounds": [
         "auto",
         "🇺🇦 乌克兰 01",
-        "🇺🇦 乌克兰 02"
+        "🇺🇦 乌克兰 02",
+        "🇺🇦 乌克兰 03"
       ]
     },
     {
@@ -59,7 +80,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇦 乌克兰 01",
-        "🇺🇦 乌克兰 02"
+        "🇺🇦 乌克兰 02",
+        "🇺🇦 乌克兰 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

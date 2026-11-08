@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇵🇭 菲律宾 01",
-      "server": "ph001.zestapp778.com",
-      "server_port": 46298,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "ph001.zestapp778.com",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇱🇺 卢森堡 01",
+      "server": "87.228.61.175",
+      "server_port": 1443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tAGGzgRCi6W95UwG0qerf6"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 01"
+        "🇱🇺 卢森堡 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 01"
+        "🇱🇺 卢森堡 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

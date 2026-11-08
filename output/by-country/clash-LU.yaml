@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇵🇭 菲律宾 01
-  server: ph001.zestapp778.com
-  port: 46298
+- name: 🇱🇺 卢森堡 01
+  server: 87.228.61.175
+  port: 1443
   udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: ph001.zestapp778.com
-  skip-cert-verify: false
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: tAGGzgRCi6W95UwG0qerf6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇵🇭 菲律宾 01
+  - 🇱🇺 卢森堡 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇵🇭 菲律宾 01
+  - 🇱🇺 卢森堡 01
 rules:
 - MATCH,PROXIES

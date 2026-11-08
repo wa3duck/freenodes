@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 01
   server: 217.30.10.44
-  port: 9099
+  port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: mENfxTFQpRKKh4As
 - name: 🇵🇱 波兰 02
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 03
   server: 217.30.10.44
   port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 04
+- name: 🇵🇱 波兰 03
   server: 217.30.10.44
-  port: 9095
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 04
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 05
   server: 217.30.10.44
   port: 9063
@@ -40,6 +40,27 @@ proxies:
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 06
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 07
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 08
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 09
   server: 70.34.252.255
   port: 443
   udp: true
@@ -47,7 +68,17 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 07
+- name: 🇵🇱 波兰 10
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 11
   server: 82.118.22.161
   port: 443
   udp: true
@@ -60,57 +91,6 @@ proxies:
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 08
-  server: 201.58.181.231
-  port: 2053
-  udp: true
-  type: vless
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MNiFXYg5jUmPSGK799ApRlrPR1CV8QflX85dDakOzRg
-    short-id: cc91595f8222fda2
-  servername: ya.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 09
-  server: 201.58.181.231
-  port: 2083
-  udp: true
-  type: vless
-  uuid: fafc7c16-f890-45ee-a856-02df225172dd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uKk4cvAJii_YbhzUm9IeMKLHR851E_1sfiMP-ncyeyM
-    short-id: e69c662141e37e7b
-  servername: ya.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 10
-  server: 57.128.214.26
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3cd559a7-b896-4852-ab8b-81a192dc8460
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5vNAgd2gzZUUJAU-njR7Sz542IJHdLdea9TtgwBttl4
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 11
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
