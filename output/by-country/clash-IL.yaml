@@ -18,13 +18,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 02
-  server: 64.176.163.182
-  port: 443
+  server: 64.177.66.60
+  port: 8388
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: jfWoSVCVYXRmNBfC
 proxy-groups:
 - name: PROXIES
   type: select

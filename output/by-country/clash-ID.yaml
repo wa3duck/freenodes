@@ -4,32 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 01
-  server: 170.114.46.6
-  port: 2096
+- name: 🇮🇩 印尼 01
+  server: 13.249.231.85
+  port: 443
   udp: true
-  type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  type: vmess
+  uuid: a84c132a-3151-40fe-947b-4dd9a7d2122c
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: pcloud.z-tas.com
+  servername: d7pu5mzr9c4b0.cloudfront.net
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /
+    path: /vmess
     headers:
-      Host: pcloud.z-tas.com
+      Host: d7pu5mzr9c4b0.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 01
+  - 🇮🇩 印尼 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 01
+  - 🇮🇩 印尼 01
 rules:
 - MATCH,PROXIES

@@ -5,14 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
-  server: 65.108.240.210
-  port: 39018
+  server: 178.214.125.1
+  port: 443
   udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
+    short-id: 6172ba9cffe9c22f
+  servername: conf.emaar.ru
+  client-fingerprint: edge
 - name: 🇫🇮 芬兰 02
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 03
+  server: 65.109.208.183
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  tls: true
+  servername: free.for.member.iiproxy.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 04
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -23,28 +46,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 03
-  server: 177.202.75.56
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 04
-  server: 5.129.249.155
+- name: 🇫🇮 芬兰 05
+  server: 188.225.46.162
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
+  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
   tls: true
-  reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: assets-59.topp-con.xyz
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 05
+  servername: filnex.baby
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: lalibobi.tw.de1.Connect
+- name: 🇫🇮 芬兰 06
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -56,6 +71,51 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 07
+  server: 146.103.118.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  tls: true
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 芬兰 08
+  server: 66.bmi.ir.asopardaz.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 7c356ae5-3b11-4040-9e76-2d2b7b8ea2f4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 09
+  server: free.for.member.iiproxy.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5f07a2a1-82a5-494d-847b-b882e6903192
+  tls: true
+  servername: free.for.member.iiproxy.com
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 10
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +126,11 @@ proxy-groups:
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
+  - 🇫🇮 芬兰 06
+  - 🇫🇮 芬兰 07
+  - 🇫🇮 芬兰 08
+  - 🇫🇮 芬兰 09
+  - 🇫🇮 芬兰 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +141,10 @@ proxy-groups:
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
+  - 🇫🇮 芬兰 06
+  - 🇫🇮 芬兰 07
+  - 🇫🇮 芬兰 08
+  - 🇫🇮 芬兰 09
+  - 🇫🇮 芬兰 10
 rules:
 - MATCH,PROXIES

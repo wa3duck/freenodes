@@ -12,16 +12,8 @@
       "password": "AxIYWtskJWIIaefW"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 02",
-      "server": "138.199.55.243",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 03",
+      "tag": "🇸🇪 瑞典 02",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -41,7 +33,28 @@
     },
     {
       "type": "vmess",
+      "tag": "🇸🇪 瑞典 03",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 04",
+      "server": "138.199.55.243",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 05",
       "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -54,7 +67,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 05",
+      "tag": "🇸🇪 瑞典 06",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -67,117 +80,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 06",
-      "server": "193.25.216.88",
-      "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 07",
-      "server": "70.34.207.14",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 08",
-      "server": "se3.shtil.io",
-      "server_port": 443,
-      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
-      "tls": {
-        "enabled": true,
-        "server_name": "se3.shtil.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 09",
-      "server": "138.199.55.230",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 10",
-      "server": "196.196.149.34",
-      "server_port": 443,
-      "uuid": "632cd343-1e8f-4bf6-a9a2-20ada1f6970f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "3fb2b6t.se1.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA",
-          "short_id": "1061f1b1cdaad3ad"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 11",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 12",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -187,13 +89,7 @@
         "🇸🇪 瑞典 03",
         "🇸🇪 瑞典 04",
         "🇸🇪 瑞典 05",
-        "🇸🇪 瑞典 06",
-        "🇸🇪 瑞典 07",
-        "🇸🇪 瑞典 08",
-        "🇸🇪 瑞典 09",
-        "🇸🇪 瑞典 10",
-        "🇸🇪 瑞典 11",
-        "🇸🇪 瑞典 12"
+        "🇸🇪 瑞典 06"
       ]
     },
     {
@@ -205,13 +101,7 @@
         "🇸🇪 瑞典 03",
         "🇸🇪 瑞典 04",
         "🇸🇪 瑞典 05",
-        "🇸🇪 瑞典 06",
-        "🇸🇪 瑞典 07",
-        "🇸🇪 瑞典 08",
-        "🇸🇪 瑞典 09",
-        "🇸🇪 瑞典 10",
-        "🇸🇪 瑞典 11",
-        "🇸🇪 瑞典 12"
+        "🇸🇪 瑞典 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

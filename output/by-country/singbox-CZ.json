@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 01",
+      "server": "153.52.69.249",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cache-78.topp-con.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U",
+          "short_id": "d5492c7a39515c65"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 02",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -26,22 +47,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 02",
-      "server": "193.124.17.190",
+      "tag": "🇨🇿 捷克 03",
+      "server": "212.102.38.25",
       "server_port": 443,
-      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
+      "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "udemy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "d659da01fb94"
+          "public_key": "23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE",
+          "short_id": "e90360ec7cc61b20"
         }
       }
     },
@@ -51,7 +72,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02"
+        "🇨🇿 捷克 02",
+        "🇨🇿 捷克 03"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 01",
-        "🇨🇿 捷克 02"
+        "🇨🇿 捷克 02",
+        "🇨🇿 捷克 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
