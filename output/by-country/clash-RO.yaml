@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 01
-  server: 82.152.132.211
-  port: 8044
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-- name: 🇷🇴 罗马尼亚 02
   server: 46.28.67.55
   port: 443
   udp: true
@@ -24,37 +17,17 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 03
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 04
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 01
-  - 🇷🇴 罗马尼亚 02
-  - 🇷🇴 罗马尼亚 03
-  - 🇷🇴 罗马尼亚 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 01
-  - 🇷🇴 罗马尼亚 02
-  - 🇷🇴 罗马尼亚 03
-  - 🇷🇴 罗马尼亚 04
 rules:
 - MATCH,PROXIES

@@ -59,22 +59,21 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 04",
-      "server": "176.120.21.23",
-      "server_port": 443,
-      "uuid": "83cc8226-1087-49ae-aac3-1f157ddc57b4",
-      "flow": "xtls-rprx-vision",
+      "server": "3h-kazakhstan1.09vpn.com",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU",
-          "short_id": "c4d4cf50489d51"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {

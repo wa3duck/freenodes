@@ -4,29 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 01",
-      "server": "185.95.231.156",
-      "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 02",
+      "tag": "🇮🇱 以色列 01",
       "server": "64.177.66.60",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -37,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 01",
-        "🇮🇱 以色列 02"
+        "🇮🇱 以色列 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 01",
-        "🇮🇱 以色列 02"
+        "🇮🇱 以色列 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

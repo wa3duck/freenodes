@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 01",
-      "server": "82.152.132.211",
-      "server_port": 8044,
-      "method": "chacha20-ietf-poly1305",
-      "password": "byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 02",
+      "tag": "🇷🇴 罗马尼亚 01",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -33,40 +25,18 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 03",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 04",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 01",
-        "🇷🇴 罗马尼亚 02",
-        "🇷🇴 罗马尼亚 03",
-        "🇷🇴 罗马尼亚 04"
+        "🇷🇴 罗马尼亚 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 01",
-        "🇷🇴 罗马尼亚 02",
-        "🇷🇴 罗马尼亚 03",
-        "🇷🇴 罗马尼亚 04"
+        "🇷🇴 罗马尼亚 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

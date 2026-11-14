@@ -41,18 +41,18 @@ proxies:
   servername: yahoo.com
   client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 04
-  server: 176.120.21.23
-  port: 443
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
   udp: true
   type: vless
-  uuid: 83cc8226-1087-49ae-aac3-1f157ddc57b4
-  flow: xtls-rprx-vision
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  reality-opts:
-    public-key: OAU9917HKYqvTO59c9SvAL9BBh8v85tfJhw5PMg-2iU
-    short-id: c4d4cf50489d51
-  servername: yahoo.com
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select

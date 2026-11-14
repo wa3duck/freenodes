@@ -13,30 +13,28 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 02
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 03
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 03
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 04
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: google.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 05
   server: 202.146.222.89
@@ -44,28 +42,8 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 06
-  server: 103.172.116.201
-  port: 10103
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU
-    short-id: f96b3b17a0f5b1fe
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 07
-  server: 213.176.92.148
-  port: 40647
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,8 +54,6 @@ proxy-groups:
   - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
   - 🇭🇰 中国香港 05
-  - 🇭🇰 中国香港 06
-  - 🇭🇰 中国香港 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,7 +64,5 @@ proxy-groups:
   - 🇭🇰 中国香港 03
   - 🇭🇰 中国香港 04
   - 🇭🇰 中国香港 05
-  - 🇭🇰 中国香港 06
-  - 🇭🇰 中国香港 07
 rules:
 - MATCH,PROXIES
