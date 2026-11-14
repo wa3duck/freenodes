@@ -16,16 +16,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 02
-  server: 177.202.65.158
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
-  sni: hy2-fi2.snobvpn.online
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
-- name: 🇫🇮 芬兰 03
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -33,6 +23,14 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: 94.183.164.119
   skip-cert-verify: true
+- name: 🇫🇮 芬兰 03
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 04
   server: 95.216.27.15
   port: 2053
@@ -45,6 +43,19 @@ proxies:
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 05
+  server: 94.183.234.245
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +65,7 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
+  - 🇫🇮 芬兰 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +75,6 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
+  - 🇫🇮 芬兰 05
 rules:
 - MATCH,PROXIES

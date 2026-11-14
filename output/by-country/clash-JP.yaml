@@ -12,6 +12,17 @@ proxies:
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
 - name: 🇯🇵 日本 02
+  server: 168.110.63.247
+  port: 8081
+  udp: true
+  type: vmess
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇯🇵 日本 03
   server: 31.76.91.70
   port: 443
   udp: true
@@ -24,97 +35,120 @@ proxies:
     short-id: bd6f67b6b2152b45
   servername: fuji.etherhub.cc
   client-fingerprint: firefox
-- name: 🇯🇵 日本 03
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
 - name: 🇯🇵 日本 04
-  server: 103.75.118.228
-  port: 11452
+  server: 166.0.22.244
+  port: 2053
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 7102f0c3-1964-47f1-936b-26b8caee9aba
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: jp8.netease.uz
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 05
-  server: 193.123.160.109
-  port: 8443
+  server: 166.0.22.242
+  port: 2053
   udp: true
-  type: trojan
-  password: F3NzMNuYnG7akU2mSlBY
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 20e53e28-2094-436c-a5ed-917ee60bb042
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jp2.netease.uz
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 06
-  server: 168.110.45.41
-  port: 23444
+  server: 166.0.22.246
+  port: 2053
   udp: true
   type: vless
-  uuid: ee2112e4-1e58-4f77-b162-5ef869358df9
+  uuid: 9dc3aaa8-4330-4e0d-9363-b19cf6d9fc62
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c
-    short-id: 119c9e68498f5900
-  servername: www.microsoft.com
-  client-fingerprint: chrome
+  servername: jp4.netease.uz
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 07
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 08
-  server: 158.101.151.157
-  port: 443
+  server: 166.0.22.238
+  port: 2053
   udp: true
   type: vless
-  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  uuid: 9b2be2d3-96cd-4ffc-aac2-649c74f92402
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
-    short-id: 684c7531e599dec0
-  servername: www.microsoft.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 09
-  server: 84.247.155.196
-  port: 443
+  servername: jp1.netease.uz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 08
+  server: 166.0.22.236
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: vless
+  uuid: 9f862257-b1fa-4fb9-9558-bcd6b03ff309
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jp5.netease.uz
+  skip-cert-verify: true
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 09
+  server: 166.0.22.245
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 5a90143c-dc79-491d-a4e0-0e9ec6345d1d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jp9.netease.uz
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 10
+  server: 166.0.22.243
+  port: 2053
+  udp: true
+  type: vless
+  uuid: ad65ebef-654b-4b5f-afa7-200f12b2ef40
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jp3.netease.uz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 11
+  server: 166.0.22.237
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d7067561-10b3-4aba-8834-6baedd2adfb5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: jp6.netease.uz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 12
   server: 138.3.208.26
   port: 50160
   udp: true
   type: hysteria2
   password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
+  sni: 'off'
   skip-cert-verify: true
-- name: 🇯🇵 日本 11
-  server: dog-jp.kunlun01dns.com
-  port: 21016
+- name: 🇯🇵 日本 13
+  server: JP032009.ssgreen.org
+  port: 443
   udp: true
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: ac5f3041-2767-4f2d-a173-29555b868b3e
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 12
-  server: jp.yi-yi.xyz
+  tls: true
+  servername: JP032009.ssgreen.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: JP032009.ssgreen.org
+- name: 🇯🇵 日本 14
+  server: 154.36.155.142
   port: 8443
   udp: true
   type: vless
@@ -126,56 +160,30 @@ proxies:
     short-id: 956d8072a694ff37
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 13
-  server: 13.140.248.125
+- name: 🇯🇵 日本 15
+  server: 84.247.155.196
   port: 443
   udp: true
-  type: vless
-  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
-  tls: true
-  servername: xray-p1vi234h-lunar-forest-6.cloady.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /e3e2aa65089989f0
-    headers:
-      Host: xray-p1vi234h-lunar-forest-6.cloady.io
-- name: 🇯🇵 日本 14
-  server: 142.91.101.39
-  port: 627
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 16
+  server: 8.211.175.236
+  port: 8443
   udp: true
-  type: vless
-  uuid: 569b5df8-ffab-4e9f-b999-21479d7a62a6
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 15
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 17
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 16
-  server: 155.248.175.201
-  port: 23169
-  udp: true
-  type: vless
-  uuid: 7318caa1-93d1-4a9d-c481-504599902700
-  flow: xtls-rprx-vision
-  tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: true
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 17
-  server: 104.24.0.1
+- name: 🇯🇵 日本 18
+  server: 104.19.12.94
   port: 443
   udp: true
   type: vless
@@ -189,6 +197,34 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: 🇯🇵 日本 19
+  server: zfapi.zalolink.com
+  port: 43149
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 20
+  server: 13.140.248.125
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
+  tls: true
+  servername: xray-p1vi234h-lunar-forest-6.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /e3e2aa65089989f0
+    headers:
+      Host: xray-p1vi234h-lunar-forest-6.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -211,6 +247,9 @@ proxy-groups:
   - 🇯🇵 日本 15
   - 🇯🇵 日本 16
   - 🇯🇵 日本 17
+  - 🇯🇵 日本 18
+  - 🇯🇵 日本 19
+  - 🇯🇵 日本 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -233,5 +272,8 @@ proxy-groups:
   - 🇯🇵 日本 15
   - 🇯🇵 日本 16
   - 🇯🇵 日本 17
+  - 🇯🇵 日本 18
+  - 🇯🇵 日本 19
+  - 🇯🇵 日本 20
 rules:
 - MATCH,PROXIES
