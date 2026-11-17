@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 01",
       "server": "213.183.63.60",
-      "server_port": 9028,
-      "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 02",
-      "server": "213.183.63.60",
       "server_port": 9064,
       "method": "aes-256-cfb",
       "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 03",
+      "tag": "🇧🇬 保加利亚 02",
       "server": "213.183.63.60",
       "server_port": 9066,
       "method": "aes-256-cfb",
@@ -29,11 +21,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 03",
+      "server": "213.183.63.60",
+      "server_port": 9028,
+      "method": "aes-256-cfb",
+      "password": "9eeJ2fwnZA5Fxgz8"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 04",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "shadowsocks",
@@ -47,9 +47,9 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 06",
       "server": "213.183.63.60",
-      "server_port": 9049,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "vless",
@@ -73,14 +73,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 08",
-      "server": "213.183.63.60",
-      "server_port": 9029,
-      "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -91,8 +83,7 @@
         "🇧🇬 保加利亚 04",
         "🇧🇬 保加利亚 05",
         "🇧🇬 保加利亚 06",
-        "🇧🇬 保加利亚 07",
-        "🇧🇬 保加利亚 08"
+        "🇧🇬 保加利亚 07"
       ]
     },
     {
@@ -105,8 +96,7 @@
         "🇧🇬 保加利亚 04",
         "🇧🇬 保加利亚 05",
         "🇧🇬 保加利亚 06",
-        "🇧🇬 保加利亚 07",
-        "🇧🇬 保加利亚 08"
+        "🇧🇬 保加利亚 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -38,28 +38,7 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 04",
-      "server": "45.86.228.39",
-      "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ae1.gofizzin.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6_gm-7Bn-4wN79POTNyDJrJvPh1I5SSiO85zMKpKRUI",
-          "short_id": "29967a52"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 05",
-      "server": "uae.unixzone.us",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -71,17 +50,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 06",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -89,9 +57,7 @@
         "🇦🇪 阿联酋 01",
         "🇦🇪 阿联酋 02",
         "🇦🇪 阿联酋 03",
-        "🇦🇪 阿联酋 04",
-        "🇦🇪 阿联酋 05",
-        "🇦🇪 阿联酋 06"
+        "🇦🇪 阿联酋 04"
       ]
     },
     {
@@ -101,9 +67,7 @@
         "🇦🇪 阿联酋 01",
         "🇦🇪 阿联酋 02",
         "🇦🇪 阿联酋 03",
-        "🇦🇪 阿联酋 04",
-        "🇦🇪 阿联酋 05",
-        "🇦🇪 阿联酋 06"
+        "🇦🇪 阿联酋 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -1,0 +1,71 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 01",
+      "server": "104.21.7.133",
+      "server_port": 80,
+      "uuid": "0cf6d970-3f1d-4aae-a989-92a8f76ae3db",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "vmess.lbw666.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 02",
+      "server": "172.67.217.240",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🌐 其他地区 01",
+        "🌐 其他地区 02"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 其他地区 01",
+        "🌐 其他地区 02"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
