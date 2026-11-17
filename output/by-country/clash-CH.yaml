@@ -33,6 +33,74 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 05
+  server: 91.214.190.127
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3fcmILwQG2sbwo58XW9Z1lziNQXmAFwUglFuXQFePRI
+    short-id: 95da6299f1
+  servername: ch1.gofizzin.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 06
+  server: 208.69.78.208
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 07
+  server: 208.69.78.29
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 08
+  server: 152.67.75.161
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: 🇨🇭 瑞士 09
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 10
+  server: 208.69.78.158
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 11
+  server: 179.43.170.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: oI8uBtOZSUZ6paMGUrKhdMOuvQ08EyPfWpCfnveBjV8
+    short-id: b93d8d2f
+  servername: spire.northgleam.top
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 12
   server: 45.90.59.15
   port: 443
   udp: true
@@ -44,44 +112,16 @@ proxies:
     public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
     short-id: 19253fae84102271
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 06
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 07
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 08
-  server: 208.69.78.33
+  client-fingerprint: random
+- name: 🇨🇭 瑞士 13
+  server: 208.69.78.60
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.yourultimateprofessionalcareerhub.com
+  sni: cdn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 09
-  server: guide.blog-forme.ru
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: guide.blog-forme.ru
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 10
+- name: 🇨🇭 瑞士 14
   server: 208.69.78.19
   port: 443
   udp: true
@@ -89,17 +129,15 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: www.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 11
-  server: 208.69.78.217
-  port: 21154
+- name: 🇨🇭 瑞士 15
+  server: 208.69.78.222
+  port: 443
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 12
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 16
   server: 74.161.152.237
   port: 2083
   udp: true
@@ -112,22 +150,6 @@ proxies:
     short-id: 0123456789abcdef
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 13
-  server: 208.69.78.208
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 14
-  server: 208.69.78.222
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -147,6 +169,8 @@ proxy-groups:
   - 🇨🇭 瑞士 12
   - 🇨🇭 瑞士 13
   - 🇨🇭 瑞士 14
+  - 🇨🇭 瑞士 15
+  - 🇨🇭 瑞士 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -166,5 +190,7 @@ proxy-groups:
   - 🇨🇭 瑞士 12
   - 🇨🇭 瑞士 13
   - 🇨🇭 瑞士 14
+  - 🇨🇭 瑞士 15
+  - 🇨🇭 瑞士 16
 rules:
 - MATCH,PROXIES

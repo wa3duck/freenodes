@@ -1,0 +1,59 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇩🇪 德国 01
+  server: 8.220.81.25
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇲🇾 马来西亚 02
+  server: 192.228.145.118
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 03
+  server: 9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 04
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇩🇪 德国 01
+  - 🇲🇾 马来西亚 02
+  - 🇭🇰 中国香港 03
+  - 🇰🇷 韩国 04
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇩🇪 德国 01
+  - 🇲🇾 马来西亚 02
+  - 🇭🇰 中国香港 03
+  - 🇰🇷 韩国 04
+rules:
+- MATCH,PROXIES

@@ -13,6 +13,19 @@ proxies:
   sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 02
+  server: 195.114.14.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CcxdRFcNF4OLIFqS999iAHZSa6dsFB6wuhyKlBr45DI
+    short-id: 7d9e4e85e6f9
+  servername: au1.gofizz.in
+  client-fingerprint: firefox
+- name: 🇦🇺 澳大利亚 03
   server: 176.97.68.100
   port: 443
   udp: true
@@ -25,8 +38,8 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: ios
-- name: 🇦🇺 澳大利亚 03
-  server: doghkzf.zalolink.com
+- name: 🇦🇺 澳大利亚 04
+  server: 43.255.157.53
   port: 48158
   udp: true
   type: vless
@@ -46,6 +59,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
+  - 🇦🇺 澳大利亚 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +68,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
+  - 🇦🇺 澳大利亚 04
 rules:
 - MATCH,PROXIES

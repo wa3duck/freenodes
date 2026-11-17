@@ -6,26 +6,6 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 01",
-      "server": "163.61.182.194",
-      "server_port": 34646,
-      "uuid": "5407a1c6-fbbf-417a-864d-48563da8e454",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.receptivity.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UuXUXzPnZM8IY-D5bQPy4iBIzEpK4PJFEOJzeObISRA",
-          "short_id": "4710d669"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇻🇳 越南 02",
       "server": "150.95.109.109",
       "server_port": 2086,
       "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
@@ -35,16 +15,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 01",
-        "🇻🇳 越南 02"
+        "🇻🇳 越南 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 01",
-        "🇻🇳 越南 02"
+        "🇻🇳 越南 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

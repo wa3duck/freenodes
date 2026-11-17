@@ -17,33 +17,21 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 02
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇳 印度 03
   server: 13.140.253.35
   port: 443
   udp: true
   type: vless
-  uuid: f1a7e2c8-b140-50d1-8acf-e62090f96599
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   tls: true
-  servername: xray-bprkdwje-clever-comet-4.cloady.io
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /27dbf143acdd7bca
+    path: /0175469f14317d82
     headers:
-      Host: xray-bprkdwje-clever-comet-4.cloady.io
-- name: 🇮🇳 印度 04
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+- name: 🇮🇳 印度 03
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -54,6 +42,17 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
+- name: 🇮🇳 印度 04
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select

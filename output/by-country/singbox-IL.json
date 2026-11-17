@@ -25,12 +25,25 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇱 以色列 02",
-      "server": "64.177.66.60",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "jfWoSVCVYXRmNBfC"
+      "server": "45.150.108.180",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "il1.gofizzin.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Jw--SSPecJpt9-lke7H9Bdr8F73xxtvC_5ZrxiWRog0",
+          "short_id": "dc1bf50b0e0a"
+        }
+      }
     },
     {
       "type": "selector",

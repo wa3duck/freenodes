@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 01
-  server: 163.61.182.194
-  port: 34646
-  udp: true
-  type: vless
-  uuid: 5407a1c6-fbbf-417a-864d-48563da8e454
-  tls: true
-  reality-opts:
-    public-key: UuXUXzPnZM8IY-D5bQPy4iBIzEpK4PJFEOJzeObISRA
-    short-id: 4710d669
-  servername: api.receptivity.io
-  client-fingerprint: chrome
-- name: 🇻🇳 越南 02
   server: 150.95.109.109
   port: 2086
   udp: true
@@ -28,13 +16,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇻🇳 越南 01
-  - 🇻🇳 越南 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 01
-  - 🇻🇳 越南 02
 rules:
 - MATCH,PROXIES

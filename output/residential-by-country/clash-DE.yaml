@@ -4,28 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01
-  server: 39.108.113.127
-  port: 10086
+- name: 🇩🇪 德国 01
+  server: 8.220.81.25
+  port: 443
   udp: true
-  type: vmess
-  uuid: d50cc563-0c03-4136-899f-85cbc0b02699
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01
+  - 🇩🇪 德国 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01
+  - 🇩🇪 德国 01
 rules:
 - MATCH,PROXIES
