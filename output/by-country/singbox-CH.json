@@ -14,37 +14,70 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 02",
-      "server": "23.166.88.127",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 03",
       "server": "186.190.215.251",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 03",
+      "server": "95.85.232.23",
+      "server_port": 443,
+      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gsghhb.wey-land.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WZami4D42ZojJikzQgAGY73KHXrq9DuIxuS04PWGylk",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 04",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 05",
       "server": "79.127.184.104",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 06",
+      "server": "23.166.88.127",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
       "type": "trojan",
-      "tag": "🇨🇭 瑞士 05",
-      "server": "208.69.78.60",
+      "tag": "🇨🇭 瑞士 07",
+      "server": "208.69.78.19",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.yourultimateprofessionalcareerhub.com",
-        "insecure": true,
+        "server_name": "www.yourultimateprofessionalcareerhub.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -53,35 +86,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 06",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 07",
-      "server": "208.69.78.29",
+      "tag": "🇨🇭 瑞士 08",
+      "server": "guide.blog-forme.ru",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "learn.yourultimateprofessionalcareerhub.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "guide.blog-forme.ru",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 08",
+      "tag": "🇨🇭 瑞士 09",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -102,7 +119,23 @@
     },
     {
       "type": "trojan",
-      "tag": "🇨🇭 瑞士 09",
+      "tag": "🇨🇭 瑞士 10",
+      "server": "208.69.78.29",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "208.69.78.29",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇭 瑞士 11",
       "server": "208.69.78.222",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -118,30 +151,18 @@
     },
     {
       "type": "trojan",
-      "tag": "🇨🇭 瑞士 10",
+      "tag": "🇨🇭 瑞士 12",
       "server": "208.69.78.208",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "resources.yourultimateprofessionalcareerhub.com",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 11",
-      "server": "208.69.78.158",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.yourultimateprofessionalcareerhub.com",
-        "insecure": false
       }
     },
     {
@@ -159,7 +180,8 @@
         "🇨🇭 瑞士 08",
         "🇨🇭 瑞士 09",
         "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11"
+        "🇨🇭 瑞士 11",
+        "🇨🇭 瑞士 12"
       ]
     },
     {
@@ -176,7 +198,8 @@
         "🇨🇭 瑞士 08",
         "🇨🇭 瑞士 09",
         "🇨🇭 瑞士 10",
-        "🇨🇭 瑞士 11"
+        "🇨🇭 瑞士 11",
+        "🇨🇭 瑞士 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
