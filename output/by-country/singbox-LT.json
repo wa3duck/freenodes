@@ -7,37 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 01",
       "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 02",
-      "server": "195.238.126.84",
-      "server_port": 9039,
-      "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 03",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 04",
-      "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
       "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 05",
+      "tag": "🇱🇹 立陶宛 02",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 03",
       "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",
@@ -45,7 +29,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 06",
+      "tag": "🇱🇹 立陶宛 04",
+      "server": "195.238.126.20",
+      "server_port": 9011,
+      "method": "aes-256-cfb",
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 05",
       "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
@@ -53,7 +45,23 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 06",
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 07",
+      "server": "195.238.126.84",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 08",
       "server": "195.238.126.20",
       "server_port": 9001,
       "method": "aes-256-cfb",
@@ -61,19 +69,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 08",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 09",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "vless",
@@ -86,7 +86,7 @@
         "server_name": "api-dns-gw.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -98,12 +98,12 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 11",
-      "server": "84.32.248.124",
+      "server": "84.32.51.135",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "net-io-api.galioncc.com",
+        "server_name": "svc-io-mgr.galioncc.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -114,14 +114,6 @@
           "short_id": "a7d309e4c16b825f"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 12",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "selector",
@@ -138,8 +130,7 @@
         "🇱🇹 立陶宛 08",
         "🇱🇹 立陶宛 09",
         "🇱🇹 立陶宛 10",
-        "🇱🇹 立陶宛 11",
-        "🇱🇹 立陶宛 12"
+        "🇱🇹 立陶宛 11"
       ]
     },
     {
@@ -156,8 +147,7 @@
         "🇱🇹 立陶宛 08",
         "🇱🇹 立陶宛 09",
         "🇱🇹 立陶宛 10",
-        "🇱🇹 立陶宛 11",
-        "🇱🇹 立陶宛 12"
+        "🇱🇹 立陶宛 11"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

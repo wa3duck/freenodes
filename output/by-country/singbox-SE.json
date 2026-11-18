@@ -20,9 +20,31 @@
       "password": "2e555e46dbc421452416834962fd014f"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 03",
-      "server": "138.199.55.230",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 04",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 05",
+      "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -34,7 +56,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 04",
+      "tag": "🇸🇪 瑞典 06",
       "server": "88.216.214.159",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -54,7 +76,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 05",
+      "tag": "🇸🇪 瑞典 07",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -64,7 +86,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -73,23 +95,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 06",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 07",
-      "server": "62.93.166.184",
+      "tag": "🇸🇪 瑞典 08",
+      "server": "138.199.55.230",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
       "security": "auto",
@@ -101,8 +109,82 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 08",
-      "server": "362c1eg.se1.h1clayd.click",
+      "tag": "🇸🇪 瑞典 09",
+      "server": "lodizu.hagrid-connected.com",
+      "server_port": 443,
+      "uuid": "beda6bd0-7ce4-477a-91f1-860d018dbfcb",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lodizu.hagrid-connected.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 10",
+      "server": "143.246.195.46",
+      "server_port": 443,
+      "uuid": "5311859f-0b5d-4c26-a8bf-2648f113e4ea",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sweden13.clearorbitllc.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "453QgfqoHVVQ-M7xjfH-bUu0HXz1mdWGuR3vNoBoeCM",
+          "short_id": "4e1682"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 11",
+      "server": "95.143.196.97",
+      "server_port": 443,
+      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
+      "tls": {
+        "enabled": true,
+        "server_name": "connect-se.mimowhat.online",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 12",
+      "server": "88.216.60.73",
+      "server_port": 443,
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "tls": {
+        "enabled": true,
+        "server_name": "ns-api-gw.galioncc.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "a7c92e4b10d6f835"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 13",
+      "server": "89.125.234.224",
       "server_port": 443,
       "uuid": "3ede439b-410f-4eae-b449-4e15064c0706",
       "tls": {
@@ -124,100 +206,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 09",
-      "server": "88.216.60.73",
+      "tag": "🇸🇪 瑞典 14",
+      "server": "92.223.84.254",
       "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "uuid": "740b2630-b42d-425c-bacd-37e7e30d78f1",
       "tls": {
         "enabled": true,
-        "server_name": "ns-api-gw.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 10",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
-      "tls": {
-        "enabled": true,
-        "server_name": "connect-se.mimowhat.online",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 11",
-      "server": "88.216.60.73",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ns-api-gw.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 12",
-      "server": "88.216.60.73",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ns-api-gw.galioncc.com",
+        "server_name": "subgift.gcorecdn.com",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 13",
-      "server": "143.246.195.46",
-      "server_port": 443,
-      "uuid": "5311859f-0b5d-4c26-a8bf-2648f113e4ea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sweden13.clearorbitllc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "453QgfqoHVVQ-M7xjfH-bUu0HXz1mdWGuR3vNoBoeCM",
-          "short_id": "4e1682"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/t.me-SubGift",
+        "headers": {
+          "Host": "subgift.gcorecdn.com"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 14",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 15",
+      "server": "185.164.72.192",
+      "server_port": 26206,
+      "password": "Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-",
+      "tls": {
+        "enabled": true,
+        "server_name": "config7x.de5.net",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "vxvnmus9agdzduvz"
+      }
     },
     {
       "type": "selector",
@@ -237,7 +261,8 @@
         "🇸🇪 瑞典 11",
         "🇸🇪 瑞典 12",
         "🇸🇪 瑞典 13",
-        "🇸🇪 瑞典 14"
+        "🇸🇪 瑞典 14",
+        "🇸🇪 瑞典 15"
       ]
     },
     {
@@ -257,7 +282,8 @@
         "🇸🇪 瑞典 11",
         "🇸🇪 瑞典 12",
         "🇸🇪 瑞典 13",
-        "🇸🇪 瑞典 14"
+        "🇸🇪 瑞典 14",
+        "🇸🇪 瑞典 15"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

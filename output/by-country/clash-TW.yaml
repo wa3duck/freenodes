@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 01
-  server: 103.115.109.49
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 02
   server: 85.237.207.221
   port: 443
   udp: true
@@ -25,6 +17,14 @@ proxies:
     short-id: fd2fa5e06670120b
   servername: dl.google.com
   client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 02
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 03
   server: 160.187.100.109
   port: 443

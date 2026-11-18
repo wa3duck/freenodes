@@ -5,6 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 01
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 02
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 03
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -16,19 +35,20 @@ proxies:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   servername: apple.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 02
-  server: 45.144.234.157
-  port: 14430
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 04
+  server: 138.124.80.29
+  port: 443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 03
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: fin1-r.bankai.party
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 05
   server: 94.183.164.119
   port: 24433
   udp: true
@@ -36,19 +56,6 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: lakes.blog-forme.ru
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 04
-  server: 213.176.92.168
-  port: 10444
-  udp: true
-  type: vless
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,6 +65,7 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
+  - 🇫🇮 芬兰 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +75,6 @@ proxy-groups:
   - 🇫🇮 芬兰 02
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
+  - 🇫🇮 芬兰 05
 rules:
 - MATCH,PROXIES
