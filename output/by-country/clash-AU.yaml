@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 01
-  server: 13.55.52.44
-  port: 36712
-  udp: true
-  type: hysteria2
-  password: linlin-2026
-  sni: 13.55.52.44
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 02
   server: 45.63.30.142
   port: 443
   udp: true
@@ -20,20 +12,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: false
-- name: 🇦🇺 澳大利亚 03
-  server: zfapi.zalolink.com
-  port: 54528
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇦🇺 澳大利亚 04
+- name: 🇦🇺 澳大利亚 02
   server: 176.97.68.100
   port: 443
   udp: true
@@ -46,7 +25,7 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: ios
-- name: 🇦🇺 澳大利亚 05
+- name: 🇦🇺 澳大利亚 03
   server: 43.255.157.53
   port: 48158
   udp: true
@@ -59,6 +38,14 @@ proxies:
     short-id: 54cca3c1c1c7
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 04
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,7 +55,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
   - 🇦🇺 澳大利亚 04
-  - 🇦🇺 澳大利亚 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +64,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
   - 🇦🇺 澳大利亚 04
-  - 🇦🇺 澳大利亚 05
 rules:
 - MATCH,PROXIES

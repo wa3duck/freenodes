@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇭 BH 01
-  server: bh1.vpnjantit.com
+- name: 🇪🇪 爱沙尼亚 01
+  server: 5.129.202.80
   port: 443
   udp: true
   type: vless
-  uuid: b36a16e4-ded8-11f1-bdea-5254b0a2c347
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lDEkUokSL-mrM1jsH8UKs8-3cfJMvkxhY7k37iBkFi4
-    short-id: 32b72239bc69220e
-  servername: cloudflare.com
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  servername: mirror-50.topp-con.xyz
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇭 BH 01
+  - 🇪🇪 爱沙尼亚 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇭 BH 01
+  - 🇪🇪 爱沙尼亚 01
 rules:
 - MATCH,PROXIES
