@@ -5,16 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01
-  server: 13.140.56.100
-  port: 14430
+  server: 172.105.39.124
+  port: 7002
   udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 02
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vless
-- name: 🇮🇳 印度 02
-  server: in.smrtai.top
+    path: /
+- name: 🇮🇳 印度 03
+  server: 178.212.35.198
   port: 443
   udp: true
   type: vless
@@ -24,8 +33,19 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 03
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 04
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 05
   server: 13.140.253.35
   port: 443
   udp: true
@@ -48,6 +68,8 @@ proxy-groups:
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
+  - 🇮🇳 印度 04
+  - 🇮🇳 印度 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +78,7 @@ proxy-groups:
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
   - 🇮🇳 印度 03
+  - 🇮🇳 印度 04
+  - 🇮🇳 印度 05
 rules:
 - MATCH,PROXIES

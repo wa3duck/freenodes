@@ -5,18 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 01",
-      "server": "93.88.206.70",
+      "tag": "🇧🇭 BH 01",
+      "server": "bh1.vpnjantit.com",
       "server_port": 443,
-      "uuid": "44ddb84a-f152-47ef-a970-fd63f2df9b30",
+      "uuid": "b36a16e4-ded8-11f1-bdea-5254b0a2c347",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pulse.sevka.xyz",
-        "insecure": false,
+        "server_name": "cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lDEkUokSL-mrM1jsH8UKs8-3cfJMvkxhY7k37iBkFi4",
+          "short_id": "32b72239bc69220e"
         }
       }
     },
@@ -25,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 01"
+        "🇧🇭 BH 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 01"
+        "🇧🇭 BH 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

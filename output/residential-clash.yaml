@@ -5,20 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 01
+  server: 172.64.88.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
+  tls: true
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    headers:
+      Host: 1v5vp5jsq611a5dsm.pages.dev
+- name: 🇩🇪 德国 02
   server: 8.220.81.25
   port: 443
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 韩国 02
+- name: 🇩🇪 德国 03
+  server: 47.85.162.44
+  port: 443
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+- name: 🇰🇷 韩国 04
   server: 49.254.204.133
   port: 1774
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇹🇼 中国台湾 03
+- name: 🇹🇼 中国台湾 05
   server: 60.248.219.78
   port: 443
   udp: true
@@ -32,21 +54,35 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇲🇾 马来西亚 06
+  server: 192.228.145.118
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇪 德国 01
-  - 🇰🇷 韩国 02
-  - 🇹🇼 中国台湾 03
+  - 🇩🇪 德国 02
+  - 🇩🇪 德国 03
+  - 🇰🇷 韩国 04
+  - 🇹🇼 中国台湾 05
+  - 🇲🇾 马来西亚 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 01
-  - 🇰🇷 韩国 02
-  - 🇹🇼 中国台湾 03
+  - 🇩🇪 德国 02
+  - 🇩🇪 德国 03
+  - 🇰🇷 韩国 04
+  - 🇹🇼 中国台湾 05
+  - 🇲🇾 马来西亚 06
 rules:
 - MATCH,PROXIES
