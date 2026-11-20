@@ -4,23 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇬🇷 希腊 01",
-      "server": "85.90.197.220",
-      "server_port": 443,
-      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇱🇺 卢森堡 01",
+      "server": "193.57.88.100",
+      "server_port": 16200,
+      "password": "4mq9w5ckqw3ewbdg",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "staticxfastline.taymaztest.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
-          "short_id": "94acb54627612d43"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/biyasd",
+        "headers": {
+          "Host": "staticxfastline.taymaztest.ir"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 01"
+        "🇱🇺 卢森堡 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 01"
+        "🇱🇺 卢森堡 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

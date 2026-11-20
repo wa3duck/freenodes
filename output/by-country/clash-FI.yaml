@@ -16,27 +16,6 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 02
-  server: 157.180.98.124
-  port: 49659
-  udp: true
-  type: vless
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 03
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 04
   server: 138.124.80.29
   port: 443
   udp: true
@@ -48,8 +27,49 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: fin1-r.bankai.party
   client-fingerprint: ''
+- name: 🇫🇮 芬兰 03
+  server: 157.180.98.124
+  port: 49659
+  udp: true
+  type: vless
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  servername: apple.com
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 04
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 05
-  server: 198.202.24.142
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
+- name: 🇫🇮 芬兰 06
+  server: 196.196.204.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 63aa95e5-3b36-4e53-a86f-7df59652e994
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk
+    short-id: 597e1c279d224774
+  servername: 4c980ft.fi15.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 07
+  server: 162.159.160.117
   port: 2083
   udp: true
   type: vless
@@ -73,6 +93,8 @@ proxy-groups:
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
+  - 🇫🇮 芬兰 06
+  - 🇫🇮 芬兰 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +105,7 @@ proxy-groups:
   - 🇫🇮 芬兰 03
   - 🇫🇮 芬兰 04
   - 🇫🇮 芬兰 05
+  - 🇫🇮 芬兰 06
+  - 🇫🇮 芬兰 07
 rules:
 - MATCH,PROXIES

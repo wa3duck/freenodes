@@ -14,6 +14,20 @@
       "type": "vless",
       "tag": "🇧🇾 白俄罗斯 02",
       "server": "178.172.227.124",
+      "server_port": 14430,
+      "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "178.172.227.124"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇾 白俄罗斯 03",
+      "server": "178.172.227.124",
       "server_port": 10444,
       "uuid": "1af36694-b548-4b18-89a0-bc076eab4ed7",
       "flow": "xtls-rprx-vision",
@@ -22,7 +36,7 @@
         "server_name": "ads.x5.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -37,7 +51,8 @@
       "outbounds": [
         "auto",
         "🇧🇾 白俄罗斯 01",
-        "🇧🇾 白俄罗斯 02"
+        "🇧🇾 白俄罗斯 02",
+        "🇧🇾 白俄罗斯 03"
       ]
     },
     {
@@ -45,7 +60,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇾 白俄罗斯 01",
-        "🇧🇾 白俄罗斯 02"
+        "🇧🇾 白俄罗斯 02",
+        "🇧🇾 白俄罗斯 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

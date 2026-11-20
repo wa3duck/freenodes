@@ -13,13 +13,18 @@ proxies:
   sni: 127.0.0.1
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 02
-  server: 103.115.109.49
-  port: 443
+  server: dp8yk.xiaoyan.io
+  port: 16616
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
 proxy-groups:
 - name: PROXIES
   type: select
