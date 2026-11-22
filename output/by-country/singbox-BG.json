@@ -7,41 +7,41 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 01",
       "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 02",
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 03",
+      "server": "213.183.63.60",
+      "server_port": 9028,
+      "method": "aes-256-cfb",
+      "password": "9eeJ2fwnZA5Fxgz8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 04",
+      "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
       "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 02",
-      "server": "213.183.63.60",
-      "server_port": 9029,
-      "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 03",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 04",
+      "tag": "🇧🇬 保加利亚 05",
       "server": "213.183.63.60",
       "server_port": 9061,
       "method": "aes-256-cfb",
       "password": "4R3hUfZ2FHhDmNcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 05",
-      "server": "213.183.63.60",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
@@ -55,50 +55,17 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 07",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 08",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 09",
-      "server": "195.123.226.21",
-      "server_port": 443,
-      "uuid": "6589c320-db68-43cd-a273-b46299bab355",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo",
-          "short_id": "77bb0d07bddbc832"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇧🇬 保加利亚 10",
-      "server": "87.121.112.83",
-      "server_port": 443,
-      "password": "9a9f167d-b461-466f-be50-f0ffd598a6f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "bulghys.live",
-        "insecure": true
-      }
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "selector",
@@ -112,9 +79,7 @@
         "🇧🇬 保加利亚 05",
         "🇧🇬 保加利亚 06",
         "🇧🇬 保加利亚 07",
-        "🇧🇬 保加利亚 08",
-        "🇧🇬 保加利亚 09",
-        "🇧🇬 保加利亚 10"
+        "🇧🇬 保加利亚 08"
       ]
     },
     {
@@ -128,9 +93,7 @@
         "🇧🇬 保加利亚 05",
         "🇧🇬 保加利亚 06",
         "🇧🇬 保加利亚 07",
-        "🇧🇬 保加利亚 08",
-        "🇧🇬 保加利亚 09",
-        "🇧🇬 保加利亚 10"
+        "🇧🇬 保加利亚 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

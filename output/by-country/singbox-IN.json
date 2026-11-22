@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 01",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 02",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -28,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -39,8 +25,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 03",
-      "server": "xray-ikmqcro3-rapid-river-6.cloady.io",
+      "tag": "🇮🇳 印度 02",
+      "server": "13.140.253.35",
       "server_port": 443,
       "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
       "tls": {
@@ -58,7 +44,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 04",
+      "tag": "🇮🇳 印度 03",
       "server": "13.140.253.35",
       "server_port": 443,
       "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
@@ -86,8 +72,7 @@
         "auto",
         "🇮🇳 印度 01",
         "🇮🇳 印度 02",
-        "🇮🇳 印度 03",
-        "🇮🇳 印度 04"
+        "🇮🇳 印度 03"
       ]
     },
     {
@@ -96,8 +81,7 @@
       "outbounds": [
         "🇮🇳 印度 01",
         "🇮🇳 印度 02",
-        "🇮🇳 印度 03",
-        "🇮🇳 印度 04"
+        "🇮🇳 印度 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

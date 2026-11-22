@@ -6,19 +6,46 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 01",
-      "server": "160.187.100.109",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "https://t.me/wangcai2",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 02",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 02",
-      "server": "dp8yk.xiaoyan.io",
+      "tag": "🇹🇼 中国台湾 03",
+      "server": "afzuv.xiaoyan.io",
+      "server_port": 16616,
+      "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 04",
+      "server": "162.19.192.89",
       "server_port": 16616,
       "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
       "security": "auto",
@@ -36,7 +63,9 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02"
+        "🇹🇼 中国台湾 02",
+        "🇹🇼 中国台湾 03",
+        "🇹🇼 中国台湾 04"
       ]
     },
     {
@@ -44,7 +73,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 01",
-        "🇹🇼 中国台湾 02"
+        "🇹🇼 中国台湾 02",
+        "🇹🇼 中国台湾 03",
+        "🇹🇼 中国台湾 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

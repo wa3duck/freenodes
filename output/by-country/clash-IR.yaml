@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 01
-  server: 64.177.90.30
-  port: 8388
+- name: 🇮🇷 IR 01
+  server: 87.82.59.60
+  port: 837
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: BWyPPTusFKhGgzKh
+  type: vless
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 01
+  - 🇮🇷 IR 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 01
+  - 🇮🇷 IR 01
 rules:
 - MATCH,PROXIES

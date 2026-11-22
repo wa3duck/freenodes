@@ -5,23 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
-  server: 87.76.154.28
-  port: 57231
-  udp: true
-  type: vless
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
-- name: 🇹🇷 土耳其 02
-  server: 77.83.245.79
+  server: 188.225.78.178
   port: 443
   udp: true
   type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  flow: xtls-rprx-vision
+  uuid: a4740bee-81ad-4a58-99c9-eca576ecb6e6
   tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: tr1-r.bankai.party
+  servername: cadrin.wtf
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cache.sync.v1
+- name: 🇹🇷 土耳其 02
+  server: chatgpt.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  tls: true
+  servername: sinavm3.soft10.ir
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    headers:
+      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select

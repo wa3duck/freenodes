@@ -4,28 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 01
-  server: 193.57.88.100
-  port: 16200
+- name: 🇻🇳 越南 01
+  server: 150.95.109.109
+  port: 2086
   udp: true
-  type: trojan
-  password: 4mq9w5ckqw3ewbdg
-  sni: staticxfastline.taymaztest.ir
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /biyasd
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 01
+  - 🇻🇳 越南 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 01
+  - 🇻🇳 越南 01
 rules:
 - MATCH,PROXIES

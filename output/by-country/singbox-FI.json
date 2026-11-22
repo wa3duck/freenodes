@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 01",
+      "server": "2.29.210.28",
+      "server_port": 25565,
+      "method": "chacha20-ietf-poly1305",
+      "password": "C8ZJ7R4p_HHJ32cst7ilT-0Zi2F22hAc"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 02",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -18,109 +26,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 02",
-      "server": "138.124.80.29",
-      "server_port": 443,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fin1-r.bankai.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 03",
-      "server": "157.180.98.124",
-      "server_port": 49659,
-      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
-          "short_id": "81959fce"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 04",
+      "tag": "🇫🇮 芬兰 03",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 05",
-      "server": "fn1s.sublinkplas.ir",
-      "server_port": 53731,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 06",
-      "server": "196.196.204.148",
-      "server_port": 443,
-      "uuid": "63aa95e5-3b36-4e53-a86f-7df59652e994",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "4c980ft.fi15.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-ZN1kT3JlPFxu1E906JRqLAGoQQucSmL6xPiuAyasTk",
-          "short_id": "597e1c279d224774"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 07",
-      "server": "162.159.160.117",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
-      "tls": {
-        "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
-        }
+        "server_name": "94.183.164.119",
+        "insecure": true
       }
     },
     {
@@ -130,11 +44,7 @@
         "auto",
         "🇫🇮 芬兰 01",
         "🇫🇮 芬兰 02",
-        "🇫🇮 芬兰 03",
-        "🇫🇮 芬兰 04",
-        "🇫🇮 芬兰 05",
-        "🇫🇮 芬兰 06",
-        "🇫🇮 芬兰 07"
+        "🇫🇮 芬兰 03"
       ]
     },
     {
@@ -143,11 +53,7 @@
       "outbounds": [
         "🇫🇮 芬兰 01",
         "🇫🇮 芬兰 02",
-        "🇫🇮 芬兰 03",
-        "🇫🇮 芬兰 04",
-        "🇫🇮 芬兰 05",
-        "🇫🇮 芬兰 06",
-        "🇫🇮 芬兰 07"
+        "🇫🇮 芬兰 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

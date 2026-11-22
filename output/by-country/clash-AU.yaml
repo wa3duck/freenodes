@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 01
-  server: 45.63.30.142
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 45.63.30.142
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 02
   server: 13.55.52.44
   port: 36712
   udp: true
@@ -20,21 +12,32 @@ proxies:
   password: linlin-2026
   sni: 13.55.52.44
   skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 02
+  server: 3.106.35.101
+  port: 36712
+  udp: true
+  type: hysteria2
+  password: linlin-2026
+  sni: 3.106.35.101
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 03
-  server: 104.18.10.153
+  server: 13.237.192.121
+  port: 36712
+  udp: true
+  type: hysteria2
+  password: linlin-2026
+  sni: 13.237.192.121
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 04
+  server: 152.67.115.203
   port: 443
   udp: true
-  type: vless
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
-  tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /e0843c8ad581
-    headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+  type: hysteria2
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +46,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
+  - 🇦🇺 澳大利亚 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +55,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 01
   - 🇦🇺 澳大利亚 02
   - 🇦🇺 澳大利亚 03
+  - 🇦🇺 澳大利亚 04
 rules:
 - MATCH,PROXIES

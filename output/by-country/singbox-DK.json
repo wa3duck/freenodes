@@ -4,28 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇱🇺 卢森堡 01",
-      "server": "193.57.88.100",
-      "server_port": 16200,
-      "password": "4mq9w5ckqw3ewbdg",
+      "type": "vless",
+      "tag": "🇩🇰 丹麦 01",
+      "server": "135.136.33.134",
+      "server_port": 8443,
+      "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "staticxfastline.taymaztest.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/biyasd",
-        "headers": {
-          "Host": "staticxfastline.taymaztest.ir"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU",
+          "short_id": "f8d0271b4b5f9efc"
         }
       }
     },
@@ -34,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 01"
+        "🇩🇰 丹麦 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 01"
+        "🇩🇰 丹麦 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

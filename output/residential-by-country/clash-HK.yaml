@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 01
-  server: 119.46.51.45
-  port: 37515
+- name: 🇭🇰 中国香港 01
+  server: hkgb707.ifastcdncache.com
+  port: 60852
   udp: true
   type: vmess
-  uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
-  alterId: 0
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 01
+  - 🇭🇰 中国香港 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 01
+  - 🇭🇰 中国香港 01
 rules:
 - MATCH,PROXIES

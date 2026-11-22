@@ -5,132 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 01
-  server: 202.50.253.72
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 02
-  server: 202.50.253.45
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 03
-  server: 185.164.175.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 04
   server: 202.50.253.27
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 05
-  server: 57.131.27.21
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇮🇹 意大利 06
-  server: 202.50.253.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 07
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 08
+- name: 🇮🇹 意大利 02
   server: 202.50.253.36
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 09
-  server: 202.50.253.90
+- name: 🇮🇹 意大利 03
+  server: 202.50.253.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 10
-  server: 202.50.253.99
+- name: 🇮🇹 意大利 04
+  server: 202.50.253.54
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 11
-  server: 202.50.253.63
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 12
-  server: 57.131.21.102
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: n4uygjtq54pz1oiv
-- name: 🇮🇹 意大利 13
+- name: 🇮🇹 意大利 05
   server: 91.201.65.122
-  port: 9074
+  port: 9053
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: p5wSkb2uM3pKSS3j
-- name: 🇮🇹 意大利 14
-  server: 202.50.253.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 15
-  server: 91.201.65.122
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇮🇹 意大利 16
-  server: 91.201.65.122
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇮🇹 意大利 17
-  server: 91.201.65.122
-  port: 9070
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: bf7v334KKDV3YDhH
-- name: 🇮🇹 意大利 18
-  server: 91.201.65.122
-  port: 9059
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
-- name: 🇮🇹 意大利 19
+  password: SBM7R883jBmnqe6C
+- name: 🇮🇹 意大利 06
   server: 82.118.16.189
   port: 443
   udp: true
@@ -142,15 +51,78 @@ proxies:
     public-key: zmo2VkZkfjh2kWjaRghXUs39ImQo87LmPhjvzbX3yB4
     short-id: 1e9a49dd374c1191
   servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇮🇹 意大利 20
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 07
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 08
   server: 91.201.65.122
-  port: 9097
+  port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Sn5B7jTqr76aCJT8
-- name: 🇮🇹 意大利 21
+  password: qYEN5HX4JKeVCdEC
+- name: 🇮🇹 意大利 09
+  server: 91.201.65.122
+  port: 9092
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: TyNkGmp9hs6eGpDK
+- name: 🇮🇹 意大利 10
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 11
+  server: 91.201.65.122
+  port: 9074
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: p5wSkb2uM3pKSS3j
+- name: 🇮🇹 意大利 12
+  server: 91.201.65.122
+  port: 9065
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PeHSHm5SqEjBuEXE
+- name: 🇮🇹 意大利 13
+  server: 45.154.96.18
+  port: 1349
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pFlEjR_10osoxyR2CnNIhUMpAy4CzfXr
+- name: 🇮🇹 意大利 14
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 15
+  server: 202.50.253.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 16
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 17
   server: 82.118.16.187
   port: 443
   udp: true
@@ -163,6 +135,20 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇹 意大利 18
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 19
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -187,8 +173,6 @@ proxy-groups:
   - 🇮🇹 意大利 17
   - 🇮🇹 意大利 18
   - 🇮🇹 意大利 19
-  - 🇮🇹 意大利 20
-  - 🇮🇹 意大利 21
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -213,7 +197,5 @@ proxy-groups:
   - 🇮🇹 意大利 17
   - 🇮🇹 意大利 18
   - 🇮🇹 意大利 19
-  - 🇮🇹 意大利 20
-  - 🇮🇹 意大利 21
 rules:
 - MATCH,PROXIES

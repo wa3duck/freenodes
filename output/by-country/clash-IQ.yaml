@@ -5,41 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01
-  server: 85.92.156.133
-  port: 443
-  udp: true
-  type: vless
-  uuid: 67864856-8730-40cc-9e1a-a0df697d912b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: de.krabvpn.pro
-  skip-cert-verify: false
-  client-fingerprint: edge
-- name: 🇮🇶 IQ 02
-  server: 201.8.64.254
+  server: 79.182.39.135
   port: 443
   udp: true
   type: vless
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01
-  - 🇮🇶 IQ 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01
-  - 🇮🇶 IQ 02
 rules:
 - MATCH,PROXIES

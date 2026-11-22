@@ -5,19 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 01
-  server: 104.17.3.81
+  server: i1tr.mateflora.com
   port: 443
   udp: true
-  type: vless
-  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
-  tls: true
-  servername: natan.srpcom.cloud
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: natan.srpcom.cloud
+  type: trojan
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: i1tr.mateflora.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

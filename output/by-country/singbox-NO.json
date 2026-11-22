@@ -12,32 +12,18 @@
       "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇴 挪威 02",
-      "server": "168.113.254.247",
-      "server_port": 443,
-      "password": "b006650f-8771-0001-b7fa-e18fc6e80ef1",
-      "tls": {
-        "enabled": true,
-        "server_name": "vcerx-ru-67sb.my-fade.cloud",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 01",
-        "🇳🇴 挪威 02"
+        "🇳🇴 挪威 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 01",
-        "🇳🇴 挪威 02"
+        "🇳🇴 挪威 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
