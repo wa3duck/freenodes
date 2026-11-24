@@ -12,8 +12,29 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇦🇹 奥地利 02",
+      "server": "144.31.131.73",
+      "server_port": 443,
+      "uuid": "534a0469-a507-4fec-b9a1-f648864e5da0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aura2.fastlaplegends.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QQgfv5J_fvr_v7GrfflVOb9ZRvBf66qfRzGWS8EKxQw",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇹 奥地利 03",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -22,27 +43,6 @@
         "enabled": true,
         "server_name": "xmfhlpy.com",
         "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 03",
-      "server": "152.53.1.170",
-      "server_port": 443,
-      "uuid": "4fddfe0e-fddc-4032-b4c8-09c6d811fed0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-au.neverlock.uk",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
       }
     },
     {

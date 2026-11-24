@@ -13,11 +13,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 02",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "tag": "🇩🇪 德国 02",
+      "server": "47.254.167.157",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
       "type": "vless",
@@ -40,7 +40,19 @@
     },
     {
       "type": "anytls",
-      "tag": "🇭🇰 中国香港 04",
+      "tag": "🇹🇼 中国台湾 04",
+      "server": "a54ge.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 05",
       "server": "ibsdsf.df6h451rh.xin",
       "server_port": 443,
       "password": "2902c46c8493",
@@ -51,14 +63,37 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 06",
+      "server": "rtifgjdr.df6h451rh.xin",
+      "server_port": 443,
+      "password": "2902c46c8493",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 07",
+      "server": "195.133.135.238",
+      "server_port": 10086,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇩🇪 德国 01",
-        "🇰🇷 韩国 02",
+        "🇩🇪 德国 02",
         "🇹🇼 中国台湾 03",
-        "🇭🇰 中国香港 04"
+        "🇹🇼 中国台湾 04",
+        "🇭🇰 中国香港 05",
+        "🇹🇼 中国台湾 06",
+        "🇸🇬 新加坡 07"
       ]
     },
     {
@@ -66,9 +101,12 @@
       "tag": "auto",
       "outbounds": [
         "🇩🇪 德国 01",
-        "🇰🇷 韩国 02",
+        "🇩🇪 德国 02",
         "🇹🇼 中国台湾 03",
-        "🇭🇰 中国香港 04"
+        "🇹🇼 中国台湾 04",
+        "🇭🇰 中国香港 05",
+        "🇹🇼 中国台湾 06",
+        "🇸🇬 新加坡 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

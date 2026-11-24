@@ -5,56 +5,76 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 01
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 02
   server: 195.238.126.84
   port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 03
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 04
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 05
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 06
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 07
+- name: 🇱🇹 立陶宛 02
   server: 195.238.126.20
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 03
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 04
+  server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 05
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 06
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 07
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 08
-  server: 84.32.209.118
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 09
+  server: lt.memepn.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: f69e272f-e0e5-4e9d-b180-5be63930cde9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: lt.memepn.com
+  client-fingerprint: firefox
+- name: 🇱🇹 立陶宛 10
+  server: 84.32.83.197
   port: 443
   udp: true
   type: vless
@@ -64,7 +84,7 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7d309e4c16b825f
   servername: api-dns-gw.galioncc.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +98,8 @@ proxy-groups:
   - 🇱🇹 立陶宛 06
   - 🇱🇹 立陶宛 07
   - 🇱🇹 立陶宛 08
+  - 🇱🇹 立陶宛 09
+  - 🇱🇹 立陶宛 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +113,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 06
   - 🇱🇹 立陶宛 07
   - 🇱🇹 立陶宛 08
+  - 🇱🇹 立陶宛 09
+  - 🇱🇹 立陶宛 10
 rules:
 - MATCH,PROXIES
