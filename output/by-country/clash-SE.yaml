@@ -23,6 +23,18 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 03
+  server: 88.216.60.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: ns-api-gw.galioncc.com
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 04
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -33,7 +45,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 04
+- name: 🇸🇪 瑞典 05
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -42,11 +54,10 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 05
+- name: 🇸🇪 瑞典 06
   server: sajed.kdns.fr
   port: 443
   udp: true
@@ -57,7 +68,28 @@ proxies:
     path: /@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe@Ghiinvdikhfe
     headers:
       Host: sajed.kdns.fr
-- name: 🇸🇪 瑞典 06
+- name: 🇸🇪 瑞典 07
+  server: 188.225.46.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: a077dc9a-712f-48ea-b75c-d94af64011ec
+  flow: xtls-rprx-vision
+  tls: true
+  servername: spb.b2ai.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 08
+  server: m1.config7x.kz.ci
+  port: 26206
+  udp: true
+  type: hysteria2
+  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
+  sni: config7x.de5.net
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: vxvnmus9agdzduvz
+- name: 🇸🇪 瑞典 09
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -68,34 +100,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 07
-  server: subgift.gcorecdn.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 63242a2a-7bdb-4775-bc3f-65c2f260f224
-  tls: true
-  servername: subgift.gcorecdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
-- name: 🇸🇪 瑞典 08
-  server: 185.117.88.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +113,7 @@ proxy-groups:
   - 🇸🇪 瑞典 06
   - 🇸🇪 瑞典 07
   - 🇸🇪 瑞典 08
+  - 🇸🇪 瑞典 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,5 +127,6 @@ proxy-groups:
   - 🇸🇪 瑞典 06
   - 🇸🇪 瑞典 07
   - 🇸🇪 瑞典 08
+  - 🇸🇪 瑞典 09
 rules:
 - MATCH,PROXIES

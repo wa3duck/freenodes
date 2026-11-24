@@ -11,18 +11,54 @@
       "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
+      "type": "vless",
+      "tag": "🇻🇳 越南 02",
+      "server": "kir3.crackerbinam.org",
+      "server_port": 56026,
+      "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls",
+          "short_id": "99676967e6867063"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇻🇳 越南 03",
+      "server": "43.255.157.222",
+      "server_port": 443,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "xvxn1hkzf.mateflora.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 01"
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 01"
+        "🇻🇳 越南 01",
+        "🇻🇳 越南 02",
+        "🇻🇳 越南 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇰 斯洛伐克 01
-  server: 156.146.40.84
-  port: 8443
+- name: 🇲🇽 墨西哥 01
+  server: 40.233.1.77
+  port: 61503
   udp: true
   type: vless
-  uuid: 9a597d68-6688-4046-bf24-a5a541e115e0
+  uuid: 04bcfbb8-06d1-4922-ad5a-54ab28b1afda
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU
-    short-id: f8d0271b4b5f9efc
-  servername: www.apple.com
+    public-key: U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU
+    short-id: 1f2519bb96e5589c
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇰 斯洛伐克 01
+  - 🇲🇽 墨西哥 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇰 斯洛伐克 01
+  - 🇲🇽 墨西哥 01
 rules:
 - MATCH,PROXIES

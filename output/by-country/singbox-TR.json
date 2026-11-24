@@ -6,32 +6,9 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 01",
-      "server": "188.225.78.178",
+      "server": "172.64.155.209",
       "server_port": 443,
-      "uuid": "a4740bee-81ad-4a58-99c9-eca576ecb6e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "cadrin.wtf",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cache.sync.v1"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 02",
-      "server": "chatgpt.com",
-      "server_port": 443,
-      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
+      "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
       "tls": {
         "enabled": true,
         "server_name": "sinavm3.soft10.ir",
@@ -50,6 +27,26 @@
         "headers": {
           "Host": "sinavm3.soft10.ir"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 02",
+      "server": "188.225.36.219",
+      "server_port": 443,
+      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
+      "tls": {
+        "enabled": true,
+        "server_name": "olvento.space",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "olvento.sync.v1"
       }
     },
     {

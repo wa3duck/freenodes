@@ -5,11 +5,11 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 01",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "tag": "🇩🇪 德国 01",
+      "server": "47.254.167.157",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
       "type": "shadowsocks",
@@ -20,8 +20,16 @@
       "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 03",
+      "server": "195.133.135.238",
+      "server_port": 10086,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 03",
+      "tag": "🇹🇼 中国台湾 04",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -39,65 +47,24 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 04",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 05",
-      "server": "hkgb707.ifastcdncache.com",
-      "server_port": 60852,
-      "uuid": "f8eca8df-a1a5-4918-a194-d34112a3673f",
-      "security": "auto",
-      "alter_id": 2,
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 06",
-      "server": "47.254.167.157",
-      "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 01",
+        "🇩🇪 德国 01",
         "🇩🇪 德国 02",
-        "🇹🇼 中国台湾 03",
-        "🇹🇼 中国台湾 04",
-        "🇭🇰 中国香港 05",
-        "🇩🇪 德国 06"
+        "🇸🇬 新加坡 03",
+        "🇹🇼 中国台湾 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 01",
+        "🇩🇪 德国 01",
         "🇩🇪 德国 02",
-        "🇹🇼 中国台湾 03",
-        "🇹🇼 中国台湾 04",
-        "🇭🇰 中国香港 05",
-        "🇩🇪 德国 06"
+        "🇸🇬 新加坡 03",
+        "🇹🇼 中国台湾 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

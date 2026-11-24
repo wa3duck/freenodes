@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇰 丹麦 01",
-      "server": "135.136.33.134",
-      "server_port": 8443,
-      "uuid": "9a597d68-6688-4046-bf24-a5a541e115e0",
+      "tag": "🇲🇽 墨西哥 01",
+      "server": "40.233.1.77",
+      "server_port": 61503,
+      "uuid": "04bcfbb8-06d1-4922-ad5a-54ab28b1afda",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "6FI4VM9WlQEGVjyCvLDQLz1jOkrzzhtfGl9eQTBn6HU",
-          "short_id": "f8d0271b4b5f9efc"
+          "public_key": "U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU",
+          "short_id": "1f2519bb96e5589c"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇰 丹麦 01"
+        "🇲🇽 墨西哥 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇰 丹麦 01"
+        "🇲🇽 墨西哥 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

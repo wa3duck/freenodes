@@ -4,13 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 01
-  server: 49.254.204.133
-  port: 1774
+- name: 🇩🇪 德国 01
+  server: 47.254.167.157
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 - name: 🇩🇪 德国 02
   server: 47.254.175.2
   port: 443
@@ -18,7 +18,15 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇹🇼 中国台湾 03
+- name: 🇸🇬 新加坡 03
+  server: 195.133.135.238
+  port: 10086
+  udp: true
+  type: vmess
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 04
   server: 60.248.219.78
   port: 443
   udp: true
@@ -32,53 +40,23 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇹🇼 中国台湾 04
-  server: 161.114.15.215
-  port: 30502
-  udp: true
-  type: trojan
-  password: 5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 05
-  server: hkgb707.ifastcdncache.com
-  port: 60852
-  udp: true
-  type: vmess
-  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 06
-  server: 47.254.167.157
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 01
+  - 🇩🇪 德国 01
   - 🇩🇪 德国 02
-  - 🇹🇼 中国台湾 03
+  - 🇸🇬 新加坡 03
   - 🇹🇼 中国台湾 04
-  - 🇭🇰 中国香港 05
-  - 🇩🇪 德国 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 01
+  - 🇩🇪 德国 01
   - 🇩🇪 德国 02
-  - 🇹🇼 中国台湾 03
+  - 🇸🇬 新加坡 03
   - 🇹🇼 中国台湾 04
-  - 🇭🇰 中国香港 05
-  - 🇩🇪 德国 06
 rules:
 - MATCH,PROXIES
