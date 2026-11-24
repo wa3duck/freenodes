@@ -30,40 +30,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 02",
-      "server": "188.225.36.219",
-      "server_port": 443,
-      "uuid": "0b6a7fe0-206b-4071-9f96-cd397d1ec01a",
-      "tls": {
-        "enabled": true,
-        "server_name": "olvento.space",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "olvento.sync.v1"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 01",
-        "🇹🇷 土耳其 02"
+        "🇹🇷 土耳其 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 01",
-        "🇹🇷 土耳其 02"
+        "🇹🇷 土耳其 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

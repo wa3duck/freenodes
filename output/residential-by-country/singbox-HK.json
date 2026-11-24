@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇮🇩 印尼 01",
-      "server": "149.33.27.162",
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 01",
+      "server": "ibsdsf.df6h451rh.xin",
       "server_port": 443,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "password": "2902c46c8493",
       "tls": {
         "enabled": true,
-        "server_name": "i1tr.mateflora.com",
-        "insecure": false
+        "server_name": "docs.microsoft.com",
+        "insecure": true
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 01"
+        "🇭🇰 中国香港 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 01"
+        "🇭🇰 中国香港 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

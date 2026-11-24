@@ -5,13 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 01
-  server: 150.95.109.109
-  port: 2086
-  udp: true
-  type: vless
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-- name: 🇻🇳 越南 02
-  server: kir3.crackerbinam.org
+  server: 103.163.24.22
   port: 56026
   udp: true
   type: vless
@@ -21,15 +15,21 @@ proxies:
     public-key: gjOKbmRb5cGDPbdz3x8xkBFL43pn3xqL-I6sALHO7ls
     short-id: 99676967e6867063
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇻🇳 越南 03
-  server: 43.255.157.222
+  client-fingerprint: firefox
+- name: 🇻🇳 越南 02
+  server: xvxn1hkzf.mateflora.com
   port: 443
   udp: true
   type: trojan
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   sni: xvxn1hkzf.mateflora.com
-  skip-cert-verify: false
+  skip-cert-verify: true
+- name: 🇻🇳 越南 03
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,14 +6,7 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 01",
-      "server": "150.95.109.109",
-      "server_port": 2086,
-      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
-    },
-    {
-      "type": "vless",
-      "tag": "🇻🇳 越南 02",
-      "server": "kir3.crackerbinam.org",
+      "server": "103.163.24.22",
       "server_port": 56026,
       "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
       "tls": {
@@ -21,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -32,15 +25,22 @@
     },
     {
       "type": "trojan",
-      "tag": "🇻🇳 越南 03",
-      "server": "43.255.157.222",
+      "tag": "🇻🇳 越南 02",
+      "server": "xvxn1hkzf.mateflora.com",
       "server_port": 443,
       "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "tls": {
         "enabled": true,
         "server_name": "xvxn1hkzf.mateflora.com",
-        "insecure": false
+        "insecure": true
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 03",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",

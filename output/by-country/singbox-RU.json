@@ -6,50 +6,28 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 01",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 02",
       "server": "48.103.218.77",
       "server_port": 18443,
       "method": "aes-256-gcm",
       "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 03",
-      "server": "46.17.42.129",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 04",
-      "server": "200.169.179.233",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
+      "tag": "🇷🇺 俄罗斯 02",
+      "server": "194.26.229.207",
+      "server_port": 4100,
+      "uuid": "026ecbd6-2838-40f6-b530-d2c303c4f629",
       "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
+        "type": "ws",
+        "path": "/v1",
+        "headers": {
+          "Host": "live.ok.ru"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 05",
+      "tag": "🇷🇺 俄罗斯 03",
       "server": "136.148.83.71",
       "server_port": 443,
       "uuid": "00000000-0000-0001-0000-000000000000",
@@ -65,7 +43,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 06",
+      "tag": "🇷🇺 俄罗斯 04",
       "server": "103.88.243.142",
       "server_port": 11592,
       "password": "41edb44c8e",
@@ -77,7 +55,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 07",
+      "tag": "🇷🇺 俄罗斯 05",
+      "server": "201.51.12.98",
+      "server_port": 443,
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps3.nemnogogo.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 06",
       "server": "185.178.208.167",
       "server_port": 443,
       "uuid": "c2b17066-5386-0001-803b-5e652c0528f9",
@@ -100,8 +98,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 08",
-      "server": "147.45.175.81",
+      "tag": "🇷🇺 俄罗斯 07",
+      "server": "xssite.webredirect.org",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
@@ -119,44 +117,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 09",
-      "server": "212.233.90.78",
-      "server_port": 443,
-      "uuid": "9548ef84-b54d-41dc-b17c-9da21d52ba82",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "birch-ledger.justext.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FwPphm8xGAKY6u74WDRVrcVye3A7GdLDfJoNSDWFsFQ",
-          "short_id": "2c6df23e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 10",
-      "server": "91.132.190.161",
-      "server_port": 443,
-      "uuid": "04920673-035c-410d-94e4-5b1469d3fb6f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "171.22.183.166",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -167,10 +127,7 @@
         "🇷🇺 俄罗斯 04",
         "🇷🇺 俄罗斯 05",
         "🇷🇺 俄罗斯 06",
-        "🇷🇺 俄罗斯 07",
-        "🇷🇺 俄罗斯 08",
-        "🇷🇺 俄罗斯 09",
-        "🇷🇺 俄罗斯 10"
+        "🇷🇺 俄罗斯 07"
       ]
     },
     {
@@ -183,10 +140,7 @@
         "🇷🇺 俄罗斯 04",
         "🇷🇺 俄罗斯 05",
         "🇷🇺 俄罗斯 06",
-        "🇷🇺 俄罗斯 07",
-        "🇷🇺 俄罗斯 08",
-        "🇷🇺 俄罗斯 09",
-        "🇷🇺 俄罗斯 10"
+        "🇷🇺 俄罗斯 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇩🇪 德国 01",
-      "server": "47.254.167.157",
-      "server_port": 443,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 02",
       "server": "47.254.175.2",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -24,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02"
+        "🇩🇪 德国 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 01",
-        "🇩🇪 德国 02"
+        "🇩🇪 德国 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

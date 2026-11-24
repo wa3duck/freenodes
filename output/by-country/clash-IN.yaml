@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 01
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇮🇳 印度 02
   server: 178.212.35.198
   port: 443
   udp: true
@@ -23,30 +16,19 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 03
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: in-152.67.8.205-0204
-- name: 🇮🇳 印度 04
-  server: 13.140.56.100
-  port: 14430
+- name: 🇮🇳 印度 02
+  server: xray-dmr3b3hy-calm-maple-7.cloady.io
+  port: 443
   udp: true
   type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
+  tls: true
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
+    path: /0175469f14317d82
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,8 +36,6 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
-  - 🇮🇳 印度 03
-  - 🇮🇳 印度 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,7 +43,5 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 01
   - 🇮🇳 印度 02
-  - 🇮🇳 印度 03
-  - 🇮🇳 印度 04
 rules:
 - MATCH,PROXIES
