@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 01
+  server: turkey-ip1.mmdaqaorg.xyz
+  port: 50738
+  udp: true
+  type: vless
+  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  tls: true
+  servername: turkey-ip1.mmdaqaorg.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 02
   server: 172.64.155.209
   port: 443
   udp: true
@@ -19,16 +29,24 @@ proxies:
     path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
       Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 02
-  server: 143.246.136.128
-  port: 50738
+- name: 🇹🇷 土耳其 03
+  server: tr.subscriptionservice.ir
+  port: 2089
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+- name: 🇹🇷 土耳其 04
+  server: v2new.nimbaha9.ir
+  port: 8080
   udp: true
   type: vless
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
-  tls: true
-  servername: turkey-ip1.mmdaqaorg.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 308230a0-0097-4158-98d7-8f09bf339d60
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 01
   - 🇹🇷 土耳其 02
+  - 🇹🇷 土耳其 03
+  - 🇹🇷 土耳其 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 01
   - 🇹🇷 土耳其 02
+  - 🇹🇷 土耳其 03
+  - 🇹🇷 土耳其 04
 rules:
 - MATCH,PROXIES

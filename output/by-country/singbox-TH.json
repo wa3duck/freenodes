@@ -12,18 +12,48 @@
       "security": "auto"
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 02",
+      "server": "47.81.36.173",
+      "server_port": 18565,
+      "uuid": "853a251f-de85-40cc-84a6-ab8748c7258c",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 03",
+      "server": "8.213.211.160",
+      "server_port": 18565,
+      "uuid": "853a251f-de85-40cc-84a6-ab8748c7258c",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 04",
+      "server": "47.87.64.133",
+      "server_port": 18565,
+      "uuid": "853a251f-de85-40cc-84a6-ab8748c7258c",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 01"
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇹🇭 泰国 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 01"
+        "🇹🇭 泰国 01",
+        "🇹🇭 泰国 02",
+        "🇹🇭 泰国 03",
+        "🇹🇭 泰国 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

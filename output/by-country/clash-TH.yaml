@@ -12,17 +12,47 @@ proxies:
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
+- name: 🇹🇭 泰国 02
+  server: 47.81.36.173
+  port: 18565
+  udp: true
+  type: vmess
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 03
+  server: 8.213.211.160
+  port: 18565
+  udp: true
+  type: vmess
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
+- name: 🇹🇭 泰国 04
+  server: 47.87.64.133
+  port: 18565
+  udp: true
+  type: vmess
+  uuid: 853a251f-de85-40cc-84a6-ab8748c7258c
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 01
+  - 🇹🇭 泰国 02
+  - 🇹🇭 泰国 03
+  - 🇹🇭 泰国 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 01
+  - 🇹🇭 泰国 02
+  - 🇹🇭 泰国 03
+  - 🇹🇭 泰国 04
 rules:
 - MATCH,PROXIES

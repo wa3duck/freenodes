@@ -6,6 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 01",
+      "server": "3.106.35.101",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.106.35.101",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 02",
       "server": "13.237.192.121",
       "server_port": 36712,
       "password": "linlin-2026",
@@ -17,7 +29,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 02",
+      "tag": "🇦🇺 澳大利亚 03",
+      "server": "13.55.52.44",
+      "server_port": 36712,
+      "password": "linlin-2026",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.55.52.44",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 04",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -33,19 +57,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 03",
-      "server": "3.106.35.101",
-      "server_port": 36712,
-      "password": "linlin-2026",
-      "tls": {
-        "enabled": true,
-        "server_name": "3.106.35.101",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 04",
+      "tag": "🇦🇺 澳大利亚 05",
       "server": "159.13.55.48",
       "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
@@ -67,7 +79,8 @@
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
         "🇦🇺 澳大利亚 03",
-        "🇦🇺 澳大利亚 04"
+        "🇦🇺 澳大利亚 04",
+        "🇦🇺 澳大利亚 05"
       ]
     },
     {
@@ -77,7 +90,8 @@
         "🇦🇺 澳大利亚 01",
         "🇦🇺 澳大利亚 02",
         "🇦🇺 澳大利亚 03",
-        "🇦🇺 澳大利亚 04"
+        "🇦🇺 澳大利亚 04",
+        "🇦🇺 澳大利亚 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

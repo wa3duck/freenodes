@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 01",
+      "server": "turkey-ip1.mmdaqaorg.xyz",
+      "server_port": 50738,
+      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
+      "tls": {
+        "enabled": true,
+        "server_name": "turkey-ip1.mmdaqaorg.xyz",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 02",
       "server": "172.64.155.209",
       "server_port": 443,
       "uuid": "14eccb4f-ca88-4732-b191-d8daacf63448",
@@ -30,22 +50,24 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 03",
+      "server": "tr.subscriptionservice.ir",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 02",
-      "server": "143.246.136.128",
-      "server_port": 50738,
-      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
-      "tls": {
-        "enabled": true,
-        "server_name": "turkey-ip1.mmdaqaorg.xyz",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+      "tag": "🇹🇷 土耳其 04",
+      "server": "v2new.nimbaha9.ir",
+      "server_port": 8080,
+      "uuid": "308230a0-0097-4158-98d7-8f09bf339d60",
+      "transport": {
+        "type": "ws",
+        "path": "/XDS45",
+        "headers": {
+          "Host": "v2new.nimbaha9.ir"
         }
       }
     },
@@ -55,7 +77,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 01",
-        "🇹🇷 土耳其 02"
+        "🇹🇷 土耳其 02",
+        "🇹🇷 土耳其 03",
+        "🇹🇷 土耳其 04"
       ]
     },
     {
@@ -63,7 +87,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 01",
-        "🇹🇷 土耳其 02"
+        "🇹🇷 土耳其 02",
+        "🇹🇷 土耳其 03",
+        "🇹🇷 土耳其 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
